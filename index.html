@@ -707,7 +707,7 @@
       <section class="warehouse-page">
         <div class="data-note">
           <div><b>统一数据仓库</b><span>所有需求视图共享的单一数据源；此页面用于核对数据一致性。</span></div>
-          <div><span>仓库修订版本 <b id="warehouseRevision" style="display:inline;color:var(--text)">0</b></span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span>仓库修订版本 <b id="warehouseRevision" style="display:inline;color:var(--text)">0</b></span><button id="exportLocalData" class="control button" type="button">导出本地数据</button></div>
         </div>
         <div class="warehouse-meta">
           <article class="warehouse-stat"><span>需求记录</span><b id="warehouseRequirementCount">0</b></article>
@@ -2489,6 +2489,23 @@
     document.querySelector("#warehouseSearch").addEventListener("input", renderWarehouse);
     document.querySelector("#warehouseStage").addEventListener("change", renderWarehouse);
     document.querySelector("#warehouseReset").addEventListener("click", () => { document.querySelector("#warehouseSearch").value = ""; document.querySelector("#warehouseStage").value = ""; renderWarehouse(); });
+    document.querySelector("#exportLocalData").addEventListener("click", () => {
+      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
+      const data = {};
+      projectKeys.forEach(key => {
+        const value = localStorage.getItem(key);
+        if (value === null) return;
+        try { data[key] = JSON.parse(value); } catch (_) { data[key] = value; }
+      });
+      const payload = { version: 1, exportedAt: new Date().toISOString(), source: "GVG Schedule Dashboard", data };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "local-storage-data.json";
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
     document.querySelector("#delayDialogCancel").addEventListener("click", closeDelayDialog);
     document.querySelector("#delayHistoryAdd").addEventListener("click", () => {
       if (!activeDelayTarget) return;
