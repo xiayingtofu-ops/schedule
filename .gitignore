@@ -1,0 +1,7 @@
+automation/
+gvg_sheet_chunks/
+gvg_sheet_chunks_utf8/
+timeline-skill-test/
+*.log
+gvg_sheet_extract*.txt
+
