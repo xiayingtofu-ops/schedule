@@ -771,6 +771,23 @@
     <div id="deadlineHistoryTooltip" class="deadline-history-tooltip" hidden></div>
   </main>
 
+  <script>
+    (() => {
+      try {
+        const request = new XMLHttpRequest();
+        request.open("GET", "data/local-storage-data.json", false);
+        request.send(null);
+        if (request.status < 200 || request.status >= 300) return;
+        const snapshot = JSON.parse(request.responseText);
+        const marker = `gvgPublishedSnapshot:${snapshot.exportedAt || "unknown"}`;
+        if (localStorage.getItem("gvgPublishedSnapshotVersion") === marker) return;
+        Object.entries(snapshot.data || {}).forEach(([key, value]) => {
+          localStorage.setItem(key, JSON.stringify(value));
+        });
+        localStorage.setItem("gvgPublishedSnapshotVersion", marker);
+      } catch (_) {}
+    })();
+  </script>
   <script src="generated-data.js"></script>
   <script src="requirement-store.js"></script>
   <script>
