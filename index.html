@@ -373,6 +373,7 @@
     .kanban-card-top .kanban-card-title { min-width: 0; }
     .kanban-deadline { flex: 0 0 auto; padding: 3px 7px; border: 1px solid #b9ccef; border-radius: 6px; color: #245dbf; background: #eaf1ff; font-size: 12px; font-weight: 800; white-space: nowrap; box-shadow: 0 1px 3px rgba(40,100,220,.08); }
     span.kanban-deadline::before { content: "▣ "; opacity: .72; }
+    .kanban-card:not(.overdue) button.kanban-deadline::before { content: "▣ "; opacity: .72; }
     .kanban-card.overdue .kanban-deadline { padding: 3px 7px; border-color: #d94b4b; border-radius: 6px; color: #fff; background: #d94b4b; }
     button.kanban-deadline { border: 0; font: inherit; cursor: pointer; }
     button.kanban-deadline:hover { box-shadow: 0 0 0 3px rgba(216,63,63,.16); }
@@ -1735,8 +1736,9 @@
           let history = [];
           try { history = JSON.parse(decodeURIComponent(button.dataset.deadlineHistory || "")); } catch (_) {}
           activeDelayTarget = { kind, key, field: button.dataset.delayField || "nextMilestone", history, modules: [...new Set(history.map(record => record.module).filter(Boolean))] };
-          document.querySelector("#delayDialogTitle").textContent = `${button.dataset.delayTitle} · 延期信息`;
-          document.querySelector("#delayDialogMeta").textContent = `截止日期 ${button.dataset.delayDate}，已延期 ${button.dataset.delayDays} 天`;
+          const delayDays = Number(button.dataset.delayDays || 0);
+          document.querySelector("#delayDialogTitle").textContent = `${button.dataset.delayTitle} · ${delayDays > 0 ? "延期信息" : "截止日期信息"}`;
+          document.querySelector("#delayDialogMeta").textContent = delayDays > 0 ? `截止日期 ${button.dataset.delayDate}，已延期 ${delayDays} 天` : `截止日期 ${button.dataset.delayDate}，当前未延期`;
           document.querySelector("#delayReasonInput").value = currentReason;
           renderDelayHistoryEditor();
           const popover = document.querySelector("#delayDialog");
@@ -1859,7 +1861,7 @@
         const deadline = featureDeadline(item, stage);
         const delayReason = requirementStore?.getRequirement(item.title)?.delayReason || "";
         const historyData = escapeHtml(encodeURIComponent(JSON.stringify(deadline.history || [])));
-        const deadlineHtml = deadline.label ? deadline.overdue ? `<button class="kanban-deadline" type="button" draggable="false" data-deadline-history="${historyData}" data-delay-field="${deadline.field}" data-delay-kind="feature" data-delay-key="${escapeHtml(item.title)}" data-delay-title="${escapeHtml(item.title)}" data-delay-date="${deadline.label}" data-delay-days="${deadline.delayDays}">${deadline.label}</button>` : `<span class="kanban-deadline" data-deadline-history="${historyData}">${deadline.label}</span>` : "";
+        const deadlineHtml = deadline.label ? `<button class="kanban-deadline" type="button" draggable="false" data-deadline-history="${historyData}" data-delay-field="${deadline.field}" data-delay-kind="feature" data-delay-key="${escapeHtml(item.title)}" data-delay-title="${escapeHtml(item.title)}" data-delay-date="${deadline.label}" data-delay-days="${deadline.delayDays}">${deadline.label}</button>` : "";
         return `<article class="kanban-card ${boardStatusClass(stage)}${deadline.overdue ? " overdue" : ""}" draggable="true" data-feature-card="${escapeHtml(item.title)}"><div class="kanban-card-top"><button class="kanban-card-title" type="button" data-board-detail="${escapeHtml(item.title)}">${escapeHtml(item.title)}</button>${deadlineHtml}</div><div class="kanban-card-meta">${item.priority ? `<span class="stage-tag stage-dev">${escapeHtml(item.priority)}</span>` : ""}<span>${escapeHtml(item.owner || "待补充负责人")}</span></div><div class="kanban-card-note">${renderStages(item)}</div>${deadline.overdue ? `<div class="kanban-delay">延期${deadline.delayDays}天</div>` : ""}${delayReason ? `<div class="kanban-delay-reason">${escapeHtml(delayReason)}</div>` : ""}</article>`;
       };
       const sortedItems = (stage, items) => items.sort((a, b) => (featureDeadline(a, stage).date?.getTime() ?? Infinity) - (featureDeadline(b, stage).date?.getTime() ?? Infinity) || a.title.localeCompare(b.title, "zh-CN"));
@@ -1898,7 +1900,7 @@
         const deadline = boardDeadlineInfo(currentDate, status === "已验收", baselineDate);
         deadline.history = unitHistory;
         const historyData = escapeHtml(encodeURIComponent(JSON.stringify(deadline.history)));
-        const deadlineHtml = deadline.label ? deadline.overdue ? `<button class="kanban-deadline" type="button" draggable="false" data-deadline-history="${historyData}" data-delay-field="nextMilestone" data-delay-kind="unit" data-delay-key="${escapeHtml(item.key)}" data-delay-title="${escapeHtml(item.name)}" data-delay-date="${deadline.label}" data-delay-days="${deadline.delayDays}">${deadline.label}</button>` : `<span class="kanban-deadline" data-deadline-history="${historyData}">${deadline.label}</span>` : "";
+        const deadlineHtml = deadline.label ? `<button class="kanban-deadline" type="button" draggable="false" data-deadline-history="${historyData}" data-delay-field="nextMilestone" data-delay-kind="unit" data-delay-key="${escapeHtml(item.key)}" data-delay-title="${escapeHtml(item.name)}" data-delay-date="${deadline.label}" data-delay-days="${deadline.delayDays}">${deadline.label}</button>` : "";
         return `<article class="kanban-card ${boardStatusClass(status)}${deadline.overdue ? " overdue" : ""}" draggable="true" data-unit-card="${escapeHtml(item.key)}"><div class="kanban-card-top"><div class="kanban-card-title">${escapeHtml(item.name)}</div>${deadlineHtml}</div><div class="kanban-card-meta"><span>${escapeHtml(item.faction || "未分阵营")}</span><span>·</span><span>${escapeHtml(item.type || unitGroup(item))}</span></div><div class="kanban-card-note">制作环节 ${completedSteps(item)}/8</div>${deadline.overdue ? `<div class="kanban-delay">延期${deadline.delayDays}天</div>` : ""}${item.delayReason ? `<div class="kanban-delay-reason">${escapeHtml(item.delayReason)}</div>` : ""}</article>`;
       };
       document.querySelector("#unitKanban").innerHTML = groups.map(group => {
