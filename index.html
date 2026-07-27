@@ -788,7 +788,8 @@
           snapshot = JSON.parse(request.responseText);
         }
         const marker = `gvgPublishedSnapshot:${snapshot.exportedAt || "unknown"}`;
-        if (localStorage.getItem("gvgPublishedSnapshotVersion") === marker) return;
+        // 本地文件每次打开都以随页面发布的数据为准，避免旧 localStorage 覆盖新导入结果。
+        if (location.protocol !== "file:" && localStorage.getItem("gvgPublishedSnapshotVersion") === marker) return;
         Object.entries(snapshot.data || {}).forEach(([key, value]) => {
           localStorage.setItem(key, JSON.stringify(value));
         });
