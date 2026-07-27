@@ -774,14 +774,19 @@
     <div id="deadlineHistoryTooltip" class="deadline-history-tooltip" hidden></div>
   </main>
 
+  <script src="data/local-storage-data.js"></script>
   <script>
     (() => {
       try {
-        const request = new XMLHttpRequest();
-        request.open("GET", "data/local-storage-data.json", false);
-        request.send(null);
-        if (request.status < 200 || request.status >= 300) return;
-        const snapshot = JSON.parse(request.responseText);
+        let snapshot = window.GVG_PUBLISHED_SNAPSHOT;
+        if (!snapshot) {
+          const request = new XMLHttpRequest();
+          request.open("GET", "data/local-storage-data.json", false);
+          request.send(null);
+          // file:// 成功读取本地文件时状态码为 0；只要有响应内容就应继续导入。
+          if (!request.responseText || (request.status !== 0 && (request.status < 200 || request.status >= 300))) return;
+          snapshot = JSON.parse(request.responseText);
+        }
         const marker = `gvgPublishedSnapshot:${snapshot.exportedAt || "unknown"}`;
         if (localStorage.getItem("gvgPublishedSnapshotVersion") === marker) return;
         Object.entries(snapshot.data || {}).forEach(([key, value]) => {
