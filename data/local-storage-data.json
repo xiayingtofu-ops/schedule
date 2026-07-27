@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-07-24T11:11:07.733Z",
+  "exportedAt": "2026-07-27T12:00:00.000Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
@@ -5105,7 +5105,7 @@
             "聊天": {
               "design": "6.30",
               "development": "7.9",
-              "acceptance": "7.17",
+              "acceptance": "8.7",
               "note": "",
               "status": "验收中"
             }
@@ -6308,8 +6308,8 @@
           "designMarkup": "<span class=\"pm-mark done\">6.30</span>",
           "development": "7.9",
           "developmentMarkup": "<span class=\"pm-mark done\">7.9</span>",
-          "acceptance": "7.17",
-          "acceptanceMarkup": "7.17",
+          "acceptance": "8.7",
+          "acceptanceMarkup": "8.7",
           "note": "",
           "noteMarkup": "",
           "status": "验收中"
@@ -6328,6 +6328,36 @@
           "note": "增加聊天系统修改、依赖地图城市边界数据",
           "noteMarkup": "增加聊天系统修改、依赖地图城市边界数据",
           "status": "开发中"
+        },
+        {
+          "module": "新PVE",
+          "moduleMarkup": "新PVE",
+          "owner": "@王嘉西",
+          "ownerMarkup": "@王嘉西",
+          "design": "7.29",
+          "designMarkup": "7.29",
+          "development": "",
+          "developmentMarkup": "",
+          "acceptance": "",
+          "acceptanceMarkup": "",
+          "note": "",
+          "noteMarkup": "",
+          "status": "设计中"
+        },
+        {
+          "module": "兵书方案",
+          "moduleMarkup": "兵书方案",
+          "owner": "@刘洋",
+          "ownerMarkup": "@刘洋",
+          "design": "7.27",
+          "designMarkup": "7.27",
+          "development": "",
+          "developmentMarkup": "",
+          "acceptance": "",
+          "acceptanceMarkup": "",
+          "note": "",
+          "noteMarkup": "",
+          "status": "设计中"
         },
         {
           "module": "要塞",
