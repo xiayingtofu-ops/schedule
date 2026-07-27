@@ -511,15 +511,15 @@
     </header>
 
     <nav class="tabs" aria-label="页面切换">
-      <button class="tab" type="button" data-page="boardPage">看板视图</button>
-      <button class="tab active" type="button" data-page="planningPage">策划用表</button>
+      <button class="tab active" type="button" data-page="boardPage">看板视图</button>
+      <button class="tab" type="button" data-page="planningPage">策划用表</button>
       <button class="tab" type="button" data-page="pmPage">PM管理页</button>
       <button class="tab" type="button" data-page="warehousePage">数据仓库</button>
       <button class="tab" type="button" data-page="unitPage">兵种制作进度</button>
       <button class="tab" type="button" data-page="summaryPage">进度汇总</button>
     </nav>
 
-    <div id="boardPage" class="page">
+    <div id="boardPage" class="page active">
       <section class="board-shell">
         <section class="milestone-calendar" aria-label="需求关键节点日历">
           <header class="calendar-head">
@@ -638,7 +638,7 @@
       </aside>
     </div>
 
-    <div id="planningPage" class="page active">
+    <div id="planningPage" class="page">
       <div class="toolbar">
         <input id="planningSearch" class="control search" type="search" placeholder="搜索需求标题、优先级或负责人…" />
         <button id="planningReset" class="control button" type="button">重置搜索</button>
@@ -964,10 +964,15 @@
     }
 
     function calendarMilestones(item) {
-      const pmEvents = rawPmRowsForTitle(item.title).flatMap(row => [
-        ...((row.design || "").match(/\b\d{1,2}[./]\d{1,2}\b/g) || []).map(value => ({ value, type: "proposal", label: `${row.module} · 设计案讨论` })),
-        ...((row.acceptance || "").match(/\b\d{1,2}[./]\d{1,2}\b/g) || []).map(value => ({ value, type: "acceptance", label: `${row.module} · 验收` }))
-      ]).map(event => {
+      const latestDateValue = value => (String(value || "").match(/\b\d{1,2}[./]\d{1,2}\b/g) || []).at(-1) || "";
+      const pmEvents = rawPmRowsForTitle(item.title).flatMap(row => {
+        const design = latestDateValue(row.design);
+        const acceptance = latestDateValue(row.acceptance);
+        return [
+          design && { value: design, type: "proposal", label: `${row.module} · 设计案讨论` },
+          acceptance && { value: acceptance, type: "acceptance", label: `${row.module} · 验收` }
+        ].filter(Boolean);
+      }).map(event => {
         const [month, day] = event.value.split(/[./]/).map(Number);
         return { ...event, date: new Date(calendarCursor.getFullYear(), month - 1, day) };
       });
