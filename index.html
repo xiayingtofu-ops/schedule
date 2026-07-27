@@ -2393,6 +2393,34 @@
       requirements: requirementSeed,
       pmRows: collectPmRows()
     });
+    // file:// 页面可能无法读取发布快照；将已确认的里程碑合并到浏览器旧数据中。
+    const publishedMilestoneOverrides = {
+      "新PVE": { owner: "@王嘉西", design: "7.29", acceptance: "", status: "设计中" },
+      "兵书方案": { owner: "@刘洋", design: "7.27", acceptance: "", status: "设计中" },
+      "聊天": { owner: "@王宇轩", design: "6.30", development: "7.9", acceptance: "8.7", status: "验收中" }
+    };
+    const mergedPublishedPmRows = requirementStore.getPmRows();
+    Object.entries(publishedMilestoneOverrides).forEach(([module, patch]) => {
+      let row = mergedPublishedPmRows.find(item => item.module === module);
+      if (!row) {
+        row = { module, moduleMarkup: module, development: "", developmentMarkup: "", acceptance: "", acceptanceMarkup: "", note: "", noteMarkup: "" };
+        mergedPublishedPmRows.push(row);
+      }
+      Object.assign(row, patch, {
+        ownerMarkup: patch.owner,
+        designMarkup: patch.design,
+        developmentMarkup: patch.development ?? row.development ?? "",
+        acceptanceMarkup: patch.acceptance
+      });
+    });
+    requirementStore.replacePmRows(mergedPublishedPmRows, { source: "published-milestones" });
+    requirementStore.updateRequirements(Object.fromEntries(Object.entries(publishedMilestoneOverrides).map(([title, patch]) => {
+      const current = requirementStore.getRequirement(title) || { key: title, title };
+      return [title, {
+        owner: patch.owner.replace(/^@/, ""),
+        pmMilestones: { ...(current.pmMilestones || {}), [title]: { ...(current.pmMilestones?.[title] || {}), ...patch } }
+      }];
+    })), { source: "published-milestones" });
     platformData.forEach(item => {
       const stored = requirementStore.getRequirement(item.title);
       if (!stored) return;
