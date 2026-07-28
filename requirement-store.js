@@ -52,6 +52,22 @@
       this.commit({ type: "requirements.updated", keys: Object.keys(patches || {}), ...meta });
     }
 
+    removeRequirementFields(fields, meta = {}) {
+      const names = new Set(fields || []);
+      const keys = [];
+      Object.entries(this.state.requirements || {}).forEach(([key, requirement]) => {
+        let changed = false;
+        names.forEach(field => {
+          if (Object.prototype.hasOwnProperty.call(requirement, field)) {
+            delete requirement[field];
+            changed = true;
+          }
+        });
+        if (changed) keys.push(key);
+      });
+      if (keys.length) this.commit({ type: "requirements.updated", keys, ...meta });
+    }
+
     replacePmRows(rows, meta = {}) {
       this.state.pmRows = clone(rows || []);
       this.commit({ type: "pmRows.replaced", ...meta });

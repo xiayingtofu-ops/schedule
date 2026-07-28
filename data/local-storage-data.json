@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-07-27T03:02:46.076855Z",
+  "exportedAt": "2026-07-28T06:10:14.917480Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 34,
+      "revision": 35,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -817,7 +817,6 @@
             "doing",
             "todo"
           ],
-          "nextDate": "2026-07-07",
           "projectItems": [
             {
               "name": "联盟系统",
@@ -861,6 +860,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-07",
+            "note": ""
           }
         },
         "要塞和关卡": {
@@ -1567,7 +1571,6 @@
             "todo",
             "doing"
           ],
-          "nextDate": "2026-07-23",
           "projectItems": [
             {
               "name": "要塞",
@@ -1642,6 +1645,11 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-23",
+            "note": ""
           }
         },
         "GVE": {
@@ -1658,7 +1666,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -1689,6 +1696,11 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "GVG": {
@@ -2225,7 +2237,6 @@
             "todo",
             "doing"
           ],
-          "nextDate": "未排期",
           "projectItems": [
             {
               "name": "GVG",
@@ -2262,6 +2273,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
           }
         },
         "联盟建筑": {
@@ -2755,7 +2771,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "2026-07-21",
           "projectItems": [
             {
               "name": "联盟建筑",
@@ -2807,6 +2822,11 @@
                 "date": "2026-08-04T16:00:00.000Z"
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-21",
+            "note": ""
           }
         },
         "载具队列": {
@@ -3292,7 +3312,6 @@
             "done",
             "doing"
           ],
-          "nextDate": "2026-07-15",
           "projectItems": [
             {
               "name": "载具队列",
@@ -3329,6 +3348,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-15",
+            "note": ""
           }
         },
         "要塞王虫": {
@@ -3345,7 +3369,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -3376,6 +3399,11 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "联盟矿点": {
@@ -3392,7 +3420,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -3423,6 +3450,11 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "抽奖二期优化": {
@@ -3940,7 +3972,6 @@
             "done",
             "doing"
           ],
-          "nextDate": "2026-07-29",
           "projectItems": [
             {
               "name": "抽卡系统二期需求",
@@ -3975,6 +4006,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-29",
+            "note": ""
           }
         },
         "PVE（城内王虫）重构": {
@@ -3991,10 +4027,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "对标韬略的成长线": {
           "key": "对标韬略的成长线",
@@ -4010,10 +4050,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "场景化内城初步方案": {
           "key": "场景化内城初步方案",
@@ -4029,10 +4073,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "载具模组系统迭代": {
           "key": "载具模组系统迭代",
@@ -4048,10 +4096,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "新手迭代": {
           "key": "新手迭代",
@@ -4067,10 +4119,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "天下大势": {
           "key": "天下大势",
@@ -4086,10 +4142,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "联盟阵营色规则": {
           "key": "联盟阵营色规则",
@@ -4105,10 +4165,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "联盟资源整体设计": {
           "key": "联盟资源整体设计",
@@ -4124,10 +4188,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "debuff展示": {
           "key": "debuff展示",
@@ -4143,10 +4211,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "技能自动释放": {
           "key": "技能自动释放",
@@ -4162,10 +4234,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "邮件二期": {
           "key": "邮件二期",
@@ -4181,10 +4257,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "战报*": {
           "project_stage": "验收中",
@@ -4702,7 +4782,6 @@
             "todo",
             "doing"
           ],
-          "nextDate": "未排期",
           "projectItems": [
             {
               "name": "载具战报",
@@ -4739,6 +4818,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
           }
         },
         "迁城": {
@@ -4755,7 +4839,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -4779,6 +4862,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "功能开启": {
@@ -4795,7 +4883,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -4808,6 +4895,11 @@
               "note": "",
               "status": "设计中"
             }
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "邮件系统": {
@@ -4824,10 +4916,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "聊天": {
           "project_stage": "验收中",
@@ -5267,7 +5363,6 @@
             "doing",
             "todo"
           ],
-          "nextDate": "未排期",
           "projectItems": [
             {
               "name": "接入聊天系统",
@@ -5304,6 +5399,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
           }
         },
         "地图LOD设计*": {
@@ -5763,7 +5863,6 @@
             "doing",
             "doing"
           ],
-          "nextDate": "7/31 验收完成",
           "projectItems": [
             {
               "name": "缩略图",
@@ -5800,6 +5899,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "已完成",
+            "date": "2026-07-31",
+            "note": "验收完成"
           }
         },
         "背包系统": {
@@ -6257,7 +6361,6 @@
             "done",
             "done"
           ],
-          "nextDate": "未排期",
           "projectItems": [
             {
               "name": "背包功能",
@@ -6294,6 +6397,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
           }
         },
         "新手期": {
@@ -6310,7 +6418,6 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -6323,6 +6430,11 @@
               "note": "",
               "status": "设计中"
             }
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "地图元素分享": {
@@ -6339,10 +6451,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "充值": {
           "key": "充值",
@@ -6358,10 +6474,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "云游": {
           "key": "云游",
@@ -6377,10 +6497,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "月卡": {
           "key": "月卡",
@@ -6396,10 +6520,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "商店": {
           "key": "商店",
@@ -6415,10 +6543,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "战功": {
           "key": "战功",
@@ -6434,10 +6566,14 @@
             "todo",
             "todo"
           ],
-          "nextDate": "",
           "projectItems": [],
           "docUrls": [],
-          "chats": []
+          "chats": [],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          }
         },
         "新PVE": {
           "key": "新PVE",
@@ -6463,6 +6599,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "兵书方案": {
@@ -6489,6 +6630,11 @@
                 "reason": ""
               }
             ]
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         },
         "新地图搭建": {
@@ -6504,6 +6650,11 @@
               "note": "搭建完成，服务器数据7/13接入",
               "status": "开发中"
             }
+          },
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
           }
         }
       },
@@ -6871,7 +7022,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-07-27T03:02:46.076855Z"
+      "updatedAt": "2026-07-28T06:10:14.917480Z"
     },
     "pmManagementTableV2": [
       "模块",
