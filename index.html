@@ -1080,7 +1080,7 @@
     }
 
     const platformData = [
-      "联盟系统", "要塞", "关卡", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
+      "联盟系统", "要塞", "关卡", "改装系统", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
       "抽奖二期优化", "PVE（城内王虫）重构", "对标韬略的成长线", "场景化内城初步方案", "载具模组系统迭代",
       "新手迭代", "天下大势", "联盟阵营色规则", "联盟资源整体设计", "debuff展示", "技能自动释放", "邮件二期",
       "战报*", "迁城", "功能开启", "邮件系统", "聊天", "地图LOD设计*", "背包系统", "新手期", "地图元素分享",
@@ -1108,14 +1108,15 @@
       { name: "载具队列", id: "7034188688", type: "story", target: "载具队列" },
       { name: "背包功能", id: "7039397524", type: "story", target: "背包系统" },
       { name: "断线重连界面（参考下图warpath）", id: "7039184166", type: "story" },
-      { name: "抽卡系统二期需求", id: "7028640756", type: "story", target: "抽奖二期优化" }
+      { name: "抽卡系统二期需求", id: "7028640756", type: "story", target: "抽奖二期优化" },
+      { name: "改装系统", id: "7060811967", type: "story", target: "改装系统" }
     ].map(item => ({ ...item, url: `https://project.feishu.cn/t0k6tk/${item.type}/detail/${item.id}` }));
 
     const workStatusById = {
       "7013835628": "验收中", "7051692125": "美术制作中", "7039522368": "开发中",
       "7029524810": "开发中", "7013935660": "美术制作中", "7042650782": "开发中",
       "7042536066": "开发中", "7034188688": "验收中", "7039397524": "已完成",
-      "7028640756": "验收完成", "7034449825": "验收中"
+      "7028640756": "验收完成", "7034449825": "验收中", "7060811967": "美术制作中"
     };
     viewItems.forEach(item => item.stage = workStatusById[item.id] || "待识别");
 
@@ -1181,6 +1182,7 @@
       "关卡": { owner: "王宇轩", docs: ["https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"], chats: ["oc_7109fb60c1e7695d0565d9be2374b871"] },
       "GVG": { priority: "P0", owner: "杨心权", docs: ["https://centurygames.feishu.cn/wiki/R3hJw4oHwiK5CMkvbIecVCCqnsh?sheet=kBnV5H"], chats: ["oc_d0a57d8d2422756a115099317fa82ed3"] },
       "新PVE": { priority: "P1", owner: "王嘉西", docs: [], chats: [] },
+      "改装系统": { priority: "P1", owner: "刘洋", docs: ["https://centurygames.feishu.cn/wiki/AtoZwFUcliIBOVktSgXcLcccnQe?fromScene=spaceOverview"], chats: [] },
       "联盟建筑": { owner: "王嘉西", docs: ["https://centurygames.feishu.cn/wiki/VlyuwPzBNid1sGkw2bpcgNm5n4b"], chats: ["oc_f445de8bb8b75ba8fdb23c249c6241d9"] },
       "载具队列": { priority: "P1", owner: "王嘉西", docs: ["https://centurygames.feishu.cn/wiki/Q00EwtnDzi4s29k6nQCcqtbSn7d"], chats: ["oc_3dfb7387e3c18c473cdbeb65c31a6eed"] },
       "抽奖二期优化": { priority: "P1", owner: "刘洋", docs: ["https://centurygames.feishu.cn/wiki/COnxwdQpFijKfmkOtCKchko0nRe?fromScene=spaceOverview"], chats: [] },
