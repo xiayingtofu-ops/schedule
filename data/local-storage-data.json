@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-07-28T06:10:14.917480Z",
+  "exportedAt": "2026-07-31T07:27:21.519405Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 35,
+      "revision": 124,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -817,6 +817,11 @@
             "doing",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-07",
+            "note": ""
+          },
           "projectItems": [
             {
               "name": "联盟系统",
@@ -838,7 +843,7 @@
             "联盟系统": {
               "design": "6.11",
               "development": "7.9",
-              "acceptance": "7.22 7.24",
+              "acceptance": "7.22  7.24",
               "note": "",
               "status": "验收中"
             }
@@ -860,11 +865,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-07",
-            "note": ""
           }
         },
         "要塞和关卡": {
@@ -1571,6 +1571,11 @@
             "todo",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-23",
+            "note": ""
+          },
           "projectItems": [
             {
               "name": "要塞",
@@ -1597,17 +1602,17 @@
             "oc_a71c2d90abe9d218e001b33e74704a10",
             "oc_7109fb60c1e7695d0565d9be2374b871"
           ],
-          "stage": "UX制作中",
+          "stage": "其他资产制作中",
           "pmMilestones": {
             "关卡": {
-              "design": "6.29 7.1 7.5",
+              "design": "6.29  7.1  7.5",
               "development": "7/17",
               "acceptance": "",
               "note": "增加聊天系统修改、依赖地图城市边界数据",
               "status": "开发中"
             },
             "要塞": {
-              "design": "7.3 7.14",
+              "design": "7.3  7.14",
               "development": "7/3 7/14 7/31",
               "acceptance": "",
               "note": "顺延",
@@ -1646,11 +1651,306 @@
               }
             ]
           },
+          "delayReason": "",
+          "deadlineCompletions": {
+            "development": {
+              "status": "completed",
+              "completedAt": "2026-07-30"
+            }
+          }
+        },
+        "改装系统": {
+          "project_stage": "设计评审",
+          "delivery_stage": null,
+          "effective_stage": "设计评审",
+          "status_overridden": false,
+          "next_date": "2026-08-03",
+          "latest_chat": null,
+          "evidence": {},
+          "commits": [],
+          "nodes": [
+            {
+              "name": "UI验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563325433233411"
+                },
+                {
+                  "name": "",
+                  "user_key": "7622759577934629833"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UX",
+              "status": "doing",
+              "stage": "设计评审",
+              "estimate_start_time": 1785427200000,
+              "estimate_finish_time": 1785772799999,
+              "actual_begin_time": 1785313633644,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7633153806770900149"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "服务器",
+              "status": "not_started",
+              "stage": "开发中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7550129340739092484"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "QA测试",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "方案设计",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1785312875289,
+              "actual_finish_time": 1785312875293,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7537113510916980739"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求完成",
+              "status": "not_started",
+              "stage": null,
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7537113510916980739"
+                },
+                {
+                  "name": "",
+                  "user_key": "7613522372301294545"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求宣讲",
+              "status": "not_started",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7537113510916980739"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UI",
+              "status": "not_started",
+              "stage": "美术制作中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563325433233411"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "设计评审",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1785312875294,
+              "actual_finish_time": 1785313633632,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325416439811"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563325756063763"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7537113510916980739"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "客户端",
+              "status": "not_started",
+              "stage": "开发中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7541883367285932060"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "测试用例",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划配置",
+              "status": "not_started",
+              "stage": "开发中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7537113510916980739"
+                }
+              ],
+              "links": {}
+            }
+          ],
+          "timeline_phases": [],
+          "deliverables": {
+            "interaction": "",
+            "effect": null,
+            "protocol": null
+          },
+          "delayed_nodes": [],
+          "key": "改装系统",
+          "title": "改装系统",
+          "priority": "P1",
+          "owner": "刘洋",
+          "planningSteps": [
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo"
+          ],
           "nextMilestone": {
             "nextstatus": "",
-            "date": "2026-07-23",
+            "date": "2026-08-03",
             "note": ""
-          }
+          },
+          "projectItems": [
+            {
+              "name": "改装系统",
+              "id": "7060811967",
+              "type": "story",
+              "target": "改装系统",
+              "url": "https://project.feishu.cn/t0k6tk/story/detail/7060811967",
+              "stage": "美术制作中"
+            }
+          ],
+          "docUrls": [
+            "https://centurygames.feishu.cn/wiki/AtoZwFUcliIBOVktSgXcLcccnQe?fromScene=spaceOverview"
+          ],
+          "chats": [],
+          "stage": "UX制作中"
         },
         "GVE": {
           "key": "GVE",
@@ -1666,6 +1966,11 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -1696,11 +2001,6 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "GVG": {
@@ -1726,6 +2026,14 @@
               "message_id": "om_x100b6923f5788cb4b1b3753e361662f",
               "msg_type": "post"
             },
+            "ux": {
+              "time": "",
+              "sender": "飞书项目",
+              "content": "交互文档字段已填写",
+              "link": "https://www.figma.com/design/Quaib2tWv6keUuAB8FOPZP/GVG?node-id=77-2469&t=kFwxOBDM3eZkjRS0-1",
+              "message_id": "",
+              "msg_type": "post"
+            },
             "development": {
               "time": "2026-07-09 10:40",
               "sender": "杨心权",
@@ -1733,13 +2041,6 @@
               "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_d0a57d8d2422756a115099317fa82ed3&position=4",
               "message_id": "om_x100b6bc4eedf0084c427409b6581aec",
               "msg_type": "text"
-            },
-            "ux": {
-              "time": "",
-              "sender": "飞书项目",
-              "content": "交互文档字段已填写",
-              "link": "https://www.figma.com/design/Quaib2tWv6keUuAB8FOPZP/GVG?node-id=77-2469&t=kFwxOBDM3eZkjRS0-1",
-              "message_id": ""
             }
           },
           "commits": [
@@ -2237,6 +2538,11 @@
             "todo",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
+          },
           "projectItems": [
             {
               "name": "GVG",
@@ -2273,12 +2579,53 @@
                 "reason": ""
               }
             ]
-          },
+          }
+        },
+        "新PVE": {
+          "key": "新PVE",
+          "title": "新PVE",
+          "priority": "P1",
+          "owner": "王嘉西",
+          "planningSteps": [
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo",
+            "todo"
+          ],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
-            "note": "未排期"
-          }
+            "note": ""
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": [],
+          "stage": "设计中",
+          "pmMilestones": {
+            "新PVE": {
+              "design": "7.29",
+              "development": "",
+              "acceptance": "",
+              "note": "",
+              "status": "设计中",
+              "owner": "@王嘉西"
+            }
+          },
+          "deadlineHistories": {
+            "design": [
+              {
+                "module": "新PVE",
+                "sequence": 0,
+                "dateLabel": "7/31",
+                "date": "2026-07-28T16:00:00.000Z",
+                "reason": ""
+              }
+            ]
+          },
+          "delayReason": ""
         },
         "联盟建筑": {
           "project_stage": "验收中",
@@ -2771,6 +3118,11 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-21",
+            "note": ""
+          },
           "projectItems": [
             {
               "name": "联盟建筑",
@@ -2790,8 +3142,8 @@
           "stage": "验收中",
           "pmMilestones": {
             "联盟建筑": {
-              "design": "7.3 7.7",
-              "development": "7.17 7.21",
+              "design": "7.3  7.7",
+              "development": "7.17  7.21",
               "acceptance": "7/17 7/21 8/5",
               "note": "",
               "status": "验收中"
@@ -2822,11 +3174,6 @@
                 "date": "2026-08-04T16:00:00.000Z"
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-21",
-            "note": ""
           }
         },
         "载具队列": {
@@ -3312,6 +3659,11 @@
             "done",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-15",
+            "note": ""
+          },
           "projectItems": [
             {
               "name": "载具队列",
@@ -3348,11 +3700,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-15",
-            "note": ""
           }
         },
         "要塞王虫": {
@@ -3369,6 +3716,11 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -3399,11 +3751,6 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "联盟矿点": {
@@ -3420,10 +3767,15 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "UX制作中",
+          "stage": "其他资产制作中",
           "pmMilestones": {
             "联盟矿点": {
               "design": "7.17",
@@ -3450,11 +3802,6 @@
                 "date": "2026-07-30T16:00:00.000Z"
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "抽奖二期优化": {
@@ -3972,6 +4319,11 @@
             "done",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-29",
+            "note": ""
+          },
           "projectItems": [
             {
               "name": "抽卡系统二期需求",
@@ -4006,11 +4358,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-29",
-            "note": ""
           }
         },
         "PVE（城内王虫）重构": {
@@ -4027,14 +4374,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "对标韬略的成长线": {
           "key": "对标韬略的成长线",
@@ -4050,14 +4397,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "场景化内城初步方案": {
           "key": "场景化内城初步方案",
@@ -4073,14 +4420,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "载具模组系统迭代": {
           "key": "载具模组系统迭代",
@@ -4096,14 +4443,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "新手迭代": {
           "key": "新手迭代",
@@ -4119,14 +4466,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "天下大势": {
           "key": "天下大势",
@@ -4142,14 +4489,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "联盟阵营色规则": {
           "key": "联盟阵营色规则",
@@ -4165,14 +4512,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "联盟资源整体设计": {
           "key": "联盟资源整体设计",
@@ -4188,14 +4535,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "debuff展示": {
           "key": "debuff展示",
@@ -4211,14 +4558,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "技能自动释放": {
           "key": "技能自动释放",
@@ -4234,14 +4581,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "邮件二期": {
           "key": "邮件二期",
@@ -4257,14 +4604,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "战报*": {
           "project_stage": "验收中",
@@ -4782,6 +5129,11 @@
             "todo",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
+          },
           "projectItems": [
             {
               "name": "载具战报",
@@ -4802,7 +5154,7 @@
           "pmMilestones": {
             "战报": {
               "design": "6.26",
-              "development": "7.17 7.21",
+              "development": "7.17  7.21",
               "acceptance": "7.29",
               "note": "UX延期",
               "status": "验收中"
@@ -4818,11 +5170,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
           }
         },
         "迁城": {
@@ -4839,10 +5186,15 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "UX制作中",
+          "stage": "UI制作中",
           "pmMilestones": {
             "迁城": {
               "design": "7.10",
@@ -4862,11 +5214,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "功能开启": {
@@ -4883,6 +5230,11 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
@@ -4895,11 +5247,6 @@
               "note": "",
               "status": "设计中"
             }
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "邮件系统": {
@@ -4916,14 +5263,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "聊天": {
           "project_stage": "验收中",
@@ -5363,6 +5710,11 @@
             "doing",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
+          },
           "projectItems": [
             {
               "name": "接入聊天系统",
@@ -5386,7 +5738,8 @@
               "development": "7.9",
               "acceptance": "8.7",
               "note": "",
-              "status": "验收中"
+              "status": "验收中",
+              "owner": "@王宇轩"
             }
           },
           "deadlineHistories": {
@@ -5399,11 +5752,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
           }
         },
         "地图LOD设计*": {
@@ -5863,6 +6211,11 @@
             "doing",
             "doing"
           ],
+          "nextMilestone": {
+            "nextstatus": "已完成",
+            "date": "2026-07-31",
+            "note": "验收完成"
+          },
           "projectItems": [
             {
               "name": "缩略图",
@@ -5879,7 +6232,7 @@
           "chats": [
             "oc_4fea4ff8d1b93f5208a21198f8b935a0"
           ],
-          "stage": "其他资产制作中",
+          "stage": "开发中",
           "pmMilestones": {
             "地图LOD": {
               "design": "6.29",
@@ -5899,11 +6252,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "已完成",
-            "date": "2026-07-31",
-            "note": "验收完成"
           }
         },
         "背包系统": {
@@ -6361,6 +6709,11 @@
             "done",
             "done"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": "未排期"
+          },
           "projectItems": [
             {
               "name": "背包功能",
@@ -6397,11 +6750,6 @@
                 "reason": ""
               }
             ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
           }
         },
         "新手期": {
@@ -6418,10 +6766,15 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "UX制作中",
+          "stage": "UI制作中",
           "pmMilestones": {
             "新手期": {
               "design": "",
@@ -6430,11 +6783,6 @@
               "note": "",
               "status": "设计中"
             }
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
           }
         },
         "地图元素分享": {
@@ -6451,14 +6799,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "充值": {
           "key": "充值",
@@ -6474,14 +6822,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "云游": {
           "key": "云游",
@@ -6497,14 +6845,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "月卡": {
           "key": "月卡",
@@ -6520,14 +6868,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "商店": {
           "key": "商店",
@@ -6543,14 +6891,14 @@
             "todo",
             "todo"
           ],
-          "projectItems": [],
-          "docUrls": [],
-          "chats": [],
           "nextMilestone": {
             "nextstatus": "",
             "date": "",
             "note": ""
-          }
+          },
+          "projectItems": [],
+          "docUrls": [],
+          "chats": []
         },
         "战功": {
           "key": "战功",
@@ -6566,76 +6914,14 @@
             "todo",
             "todo"
           ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "",
+            "note": ""
+          },
           "projectItems": [],
           "docUrls": [],
-          "chats": [],
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
-          }
-        },
-        "新PVE": {
-          "key": "新PVE",
-          "title": "新PVE",
-          "owner": "王嘉西",
-          "stage": "设计中",
-          "pmMilestones": {
-            "新PVE": {
-              "design": "7.29",
-              "development": "",
-              "acceptance": "",
-              "note": "",
-              "status": "设计中"
-            }
-          },
-          "deadlineHistories": {
-            "design": [
-              {
-                "module": "新PVE",
-                "sequence": 0,
-                "dateLabel": "7/29",
-                "date": "2026-07-28T16:00:00.000Z",
-                "reason": ""
-              }
-            ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
-          }
-        },
-        "兵书方案": {
-          "key": "兵书方案",
-          "title": "兵书方案",
-          "owner": "刘洋",
-          "stage": "设计中",
-          "pmMilestones": {
-            "兵书方案": {
-              "design": "7.27",
-              "development": "",
-              "acceptance": "",
-              "note": "",
-              "status": "设计中"
-            }
-          },
-          "deadlineHistories": {
-            "design": [
-              {
-                "module": "兵书方案",
-                "sequence": 0,
-                "dateLabel": "7/27",
-                "date": "2026-07-26T16:00:00.000Z",
-                "reason": ""
-              }
-            ]
-          },
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
-          }
+          "chats": []
         },
         "新地图搭建": {
           "key": "新地图搭建",
@@ -6668,7 +6954,7 @@
           "designMarkup": "<span class=\"pm-mark done\">6.11</span>",
           "development": "7.9",
           "developmentMarkup": "<span class=\"pm-mark done\">7.9</span>",
-          "acceptance": "7.22 7.24",
+          "acceptance": "7.22  7.24",
           "acceptanceMarkup": "7.22  7.24",
           "note": "",
           "noteMarkup": "",
@@ -6696,7 +6982,7 @@
           "ownerMarkup": "@张泽臻",
           "design": "6.26",
           "designMarkup": "<span class=\"pm-mark done\">6.26</span>",
-          "development": "7.17 7.21",
+          "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
           "acceptance": "7.29",
           "acceptanceMarkup": "7.29",
@@ -6765,26 +7051,11 @@
           "status": "设计中"
         },
         {
-          "module": "兵书方案",
-          "moduleMarkup": "兵书方案",
-          "owner": "@刘洋",
-          "ownerMarkup": "@刘洋",
-          "design": "7.27",
-          "designMarkup": "7.27",
-          "development": "",
-          "developmentMarkup": "",
-          "acceptance": "",
-          "acceptanceMarkup": "",
-          "note": "",
-          "noteMarkup": "",
-          "status": "设计中"
-        },
-        {
           "module": "关卡",
           "moduleMarkup": "关卡",
           "owner": "@王宇轩",
           "ownerMarkup": "@王宇轩",
-          "design": "6.29 7.1 7.5",
+          "design": "6.29  7.1  7.5",
           "designMarkup": "<span class=\"pm-mark delayed\">6.29</span>  <span class=\"pm-mark delayed\">7.1</span>  <span class=\"pm-mark done\">7.5</span>",
           "development": "7/17",
           "developmentMarkup": "7/17",
@@ -6799,7 +7070,7 @@
           "moduleMarkup": "要塞",
           "owner": "@王宇轩",
           "ownerMarkup": "@王宇轩",
-          "design": "7.3 7.14",
+          "design": "7.3  7.14",
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark updated\">7.14</span>",
           "development": "7/3 7/14 7/31",
           "developmentMarkup": "7/3 7/14 7/31",
@@ -6814,7 +7085,7 @@
           "moduleMarkup": "新地图搭建",
           "owner": "@张泽臻",
           "ownerMarkup": "@张泽臻",
-          "design": "7.3 7.8",
+          "design": "7.3  7.8",
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.8</span>",
           "development": "7.13",
           "developmentMarkup": "7.13",
@@ -6829,9 +7100,9 @@
           "moduleMarkup": "联盟建筑",
           "owner": "@王嘉西",
           "ownerMarkup": "@王嘉西",
-          "design": "7.3 7.7",
+          "design": "7.3  7.7",
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
-          "development": "7.17 7.21",
+          "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
           "acceptance": "7/17 7/21 8/5",
           "acceptanceMarkup": "7/17 7/21 8/5",
@@ -6887,7 +7158,7 @@
         {
           "module": "新手期",
           "moduleMarkup": "新手期",
-          "owner": "@杨心权 @梁洪诚-实习生",
+          "owner": "@杨心权\n@梁洪诚-实习生",
           "ownerMarkup": "@杨心权\n@梁洪诚-实习生",
           "design": "",
           "designMarkup": "",
@@ -7022,7 +7293,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-07-28T06:10:14.917480Z"
+      "updatedAt": "2026-07-31T07:27:21.519405Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7069,13 +7340,7 @@
       "",
       "新PVE",
       "@王嘉西",
-      "7.29",
-      "",
-      "",
-      "",
-      "兵书方案",
-      "@刘洋",
-      "7.27",
+      "7.31",
       "",
       "",
       "",
@@ -7198,12 +7463,6 @@
       "新PVE",
       "@王嘉西",
       "7.29",
-      "",
-      "",
-      "",
-      "兵书方案",
-      "@刘洋",
-      "7.27",
       "",
       "",
       "",
@@ -7832,14 +8091,14 @@
       "聊天": "未排期",
       "战报*": "未排期"
     },
-    "dismissedUnmatchedIds": [
-      "7039184166"
-    ],
     "planningPriorityEdits": {
       "联盟建筑": "",
       "GVG": "P0",
       "聊天": "",
       "战报*": ""
-    }
+    },
+    "dismissedUnmatchedIds": [
+      "7039184166"
+    ]
   }
 }

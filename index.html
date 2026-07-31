@@ -689,7 +689,6 @@
               <tr class="pm-status-development"><td contenteditable="true" data-pm-status="开发中">地图LOD</td><td class="pm-owner" contenteditable="true">@张泽臻</td><td contenteditable="true"><span class="pm-mark done">6.29</span></td><td contenteditable="true">7.29</td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
               <tr class="pm-status-acceptance"><td contenteditable="true" data-pm-status="验收中">聊天</td><td class="pm-owner" contenteditable="true">@王宇轩</td><td contenteditable="true">6.30</td><td contenteditable="true">7.9</td><td contenteditable="true">8.7</td><td contenteditable="true"></td></tr>
               <tr class="pm-status-design"><td contenteditable="true" data-pm-status="设计中">新PVE</td><td class="pm-owner" contenteditable="true">@王嘉西</td><td contenteditable="true">7.29</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-              <tr class="pm-status-design"><td contenteditable="true" data-pm-status="设计中">兵书方案</td><td class="pm-owner" contenteditable="true">@刘洋</td><td contenteditable="true">7.27</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
               <tr class="pm-status-development"><td contenteditable="true" data-pm-status="开发中">关卡</td><td class="pm-owner" contenteditable="true">@王宇轩</td><td contenteditable="true"><span class="pm-mark delayed">6.29</span>  <span class="pm-mark delayed">7.1</span>  <span class="pm-mark done">7.5</span></td><td contenteditable="true">7/17</td><td contenteditable="true"></td><td contenteditable="true">增加聊天系统修改、依赖地图城市边界数据</td></tr>
               <tr class="pm-status-development"><td contenteditable="true" data-pm-status="开发中">要塞</td><td class="pm-owner" contenteditable="true">@王宇轩</td><td contenteditable="true"><span class="pm-mark delayed">7.3</span>  <span class="pm-mark updated">7.14</span></td><td contenteditable="true">7/3 7/14 7/31</td><td contenteditable="true"></td><td contenteditable="true">顺延</td></tr>
               <tr class="pm-status-development"><td contenteditable="true" data-pm-status="开发中">新地图搭建</td><td class="pm-owner" contenteditable="true">@张泽臻</td><td contenteditable="true"><span class="pm-mark delayed">7.3</span>  <span class="pm-mark done">7.8</span></td><td contenteditable="true">7.13</td><td contenteditable="true"></td><td contenteditable="true">搭建完成，服务器数据7/13接入</td></tr>
@@ -1077,7 +1076,7 @@
     }
 
     const platformData = [
-      "联盟系统", "要塞和关卡", "GVE", "GVG", "新PVE", "兵书方案", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
+      "联盟系统", "要塞和关卡", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
       "抽奖二期优化", "PVE（城内王虫）重构", "对标韬略的成长线", "场景化内城初步方案", "载具模组系统迭代",
       "新手迭代", "天下大势", "联盟阵营色规则", "联盟资源整体设计", "debuff展示", "技能自动释放", "邮件二期",
       "战报*", "迁城", "功能开启", "邮件系统", "聊天", "地图LOD设计*", "背包系统", "新手期", "地图元素分享",
@@ -1177,7 +1176,6 @@
       "要塞和关卡": { owner: "王宇轩", docs: ["https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF", "https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"], chats: ["oc_a71c2d90abe9d218e001b33e74704a10", "oc_7109fb60c1e7695d0565d9be2374b871"] },
       "GVG": { priority: "P0", owner: "杨心权", docs: ["https://centurygames.feishu.cn/wiki/R3hJw4oHwiK5CMkvbIecVCCqnsh?sheet=kBnV5H"], chats: ["oc_d0a57d8d2422756a115099317fa82ed3"] },
       "新PVE": { priority: "P1", owner: "王嘉西", docs: [], chats: [] },
-      "兵书方案": { priority: "", owner: "刘洋", docs: [], chats: [] },
       "联盟建筑": { owner: "王嘉西", docs: ["https://centurygames.feishu.cn/wiki/VlyuwPzBNid1sGkw2bpcgNm5n4b"], chats: ["oc_f445de8bb8b75ba8fdb23c249c6241d9"] },
       "载具队列": { priority: "P1", owner: "王嘉西", docs: ["https://centurygames.feishu.cn/wiki/Q00EwtnDzi4s29k6nQCcqtbSn7d"], chats: ["oc_3dfb7387e3c18c473cdbeb65c31a6eed"] },
       "抽奖二期优化": { priority: "P1", owner: "刘洋", docs: ["https://centurygames.feishu.cn/wiki/COnxwdQpFijKfmkOtCKchko0nRe?fromScene=spaceOverview"], chats: [] },
@@ -2479,7 +2477,6 @@
     // file:// 页面可能无法读取发布快照；将已确认的里程碑合并到浏览器旧数据中。
     const publishedMilestoneOverrides = {
       "新PVE": { owner: "@王嘉西", design: "7.29", acceptance: "", status: "设计中" },
-      "兵书方案": { owner: "@刘洋", design: "7.27", acceptance: "", status: "设计中" },
       "聊天": { owner: "@王宇轩", design: "6.30", development: "7.9", acceptance: "8.7", status: "验收中" }
     };
     const mergedPublishedPmRows = requirementStore.getPmRows();
