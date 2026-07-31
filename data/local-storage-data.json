@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-07-31T07:27:21.519405Z",
+  "exportedAt": "2026-07-31T07:34:22.559Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 124,
+      "revision": 125,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -865,798 +865,6 @@
                 "reason": ""
               }
             ]
-          }
-        },
-        "要塞和关卡": {
-          "project_stage": "验收中",
-          "delivery_stage": "开发中",
-          "effective_stage": "开发中",
-          "status_overridden": true,
-          "next_date": "2026-07-23",
-          "latest_chat": {
-            "time": "2026-07-21 16:04",
-            "sender": "王宇轩",
-            "content": "<p>文档更新了流程图，并补充了更多不同情况对比图，补全了需求会时提到的几个缺失部分 https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF?from=auth_notice&hash=040aa5e5e80b7a6230feba8899ac53d4</p>",
-            "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=10",
-            "message_id": "om_x100b6ac631f504b0c1bc3c0130d2793",
-            "msg_type": "text"
-          },
-          "evidence": {
-            "ui": {
-              "time": "2026-07-10 19:38",
-              "sender": "王蔚",
-              "content": "![Image](img_v3_0213f_650b336c-b0a9-4a2e-9f4a-42d0423a805g) ![Image](img_v3_0213f_88bab011-ae38-4b13-a001-4a967775774g) ![Image](img_v3_0213f_67845159-e72d-4162-af75-8cc8cbf7f64g) 棱镜塔 桥梁/关卡 城墙 设计稿",
-              "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_19355154cc8fdc9a&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_19355154cc8fdc9a&thread_position=-1",
-              "message_id": "om_x100b6a39d71324acb36ab3afd24a85f",
-              "msg_type": "post"
-            }
-          },
-          "commits": [
-            {
-              "ticket": "",
-              "author": "张友福",
-              "repo": "client",
-              "message": "桥和城市符号接入",
-              "time": "2026-07-21 15:47:14",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/39e8eae9dcc5390c02729881d09dc732cc17a9a8",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "",
-              "author": "文支义",
-              "repo": "config",
-              "message": "桥开放机制",
-              "time": "2026-07-20 17:04:34",
-              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3f6a83321387087f4bc9d04fc1626fa72202d442",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "",
-              "author": "文支义",
-              "repo": "config",
-              "message": "桥开关初版提交",
-              "time": "2026-07-20 16:23:01",
-              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/571393d09dc7d1611ca1a5f7d70d266fd5a99d8c",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "7039522368",
-              "author": "张友福",
-              "repo": "client",
-              "message": "关卡开放 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-              "time": "2026-07-20 10:54:03",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/cf917b37309f2c0832bcfdd66a56122bdaf9e7e4",
-              "match": "单号 7039522368",
-              "confidence": 100
-            },
-            {
-              "ticket": "",
-              "author": "张友福",
-              "repo": "client",
-              "message": "ciytid和checkpoint id合并导出到citygrid",
-              "time": "2026-07-17 16:16:30",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ad1497111e59436d4f54b1b8329ee28213f2d063",
-              "match": "message 语义",
-              "confidence": 81
-            },
-            {
-              "ticket": "",
-              "author": "张友福",
-              "repo": "client",
-              "message": "桥头位置导出避免计算",
-              "time": "2026-07-17 15:02:39",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e8d2aec9beb38b34e5ff57fb1b8e6f514da38c24",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "7049479414",
-              "author": "张友福",
-              "repo": "client",
-              "message": "freeform加载按简易坐标计算落在block中按block加载 [Review单:地编静态物件AOI加载][链接:https://project.feishu.cn/t0k6tk/issue/detail/7049479414]",
-              "time": "2026-07-17 11:30:01",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/76c14f41336f1d40575975b9efb7e2110e121294",
-              "match": "人员排期",
-              "confidence": 55
-            },
-            {
-              "ticket": "",
-              "author": "张泽臻",
-              "repo": "client",
-              "message": "新地图数据，验证城市和关卡导出数据",
-              "time": "2026-07-16 17:45:15",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0a89a35abcf1b703499b459dd384d6bc21b06ad2",
-              "match": "message 语义",
-              "confidence": 65
-            },
-            {
-              "ticket": "7051245454",
-              "author": "张友福",
-              "repo": "client",
-              "message": "心愿奖池抽奖表现修改 [Review单:【优化】心愿值在抽卡界面显示优化][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051245454] 抽奖概率说明读表 [Review单:【bug】概率描述字段未生生效][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051406962]",
-              "time": "2026-07-16 16:34:17",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c9593e24e55d2afd49858675a6289633c77b31a2https://gitlab-sh.diandian.info/x03/client/-/commit/0e3c867920790adfe7e618deccbff026142ec75b",
-              "match": "人员排期",
-              "confidence": 55
-            },
-            {
-              "ticket": "",
-              "author": "毛逸凡",
-              "repo": "client",
-              "message": "符号层 - 桥",
-              "time": "2026-07-16 14:24:04",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/33f841c4fb77f151302a5b67f6e4a39d8f7ff56a",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "",
-              "author": "张友福",
-              "repo": "client",
-              "message": "添加请求关卡tag接口",
-              "time": "2026-07-16 11:43:50",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c69582f7908f20354996c9e60aac3db63b6cc2e3",
-              "match": "message 语义",
-              "confidence": 65
-            },
-            {
-              "ticket": "7051133226",
-              "author": "张友福",
-              "repo": "client",
-              "message": "修复重新打开奖池底图显示错误 [Review单:【bug】抽卡背景图没有刷线][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051133226]",
-              "time": "2026-07-16 11:43:15",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/6b4c9664ca32b2760eefc64569994fa465b3f17c",
-              "match": "人员排期",
-              "confidence": 55
-            },
-            {
-              "ticket": "",
-              "author": "张泽臻",
-              "repo": "client",
-              "message": "地编布局优化、新桥梁自动跨越逻辑、新河流生成方式、修复城市区域占格重复问题、规避保存地图时修改预览prefab的mat数据",
-              "time": "2026-07-14 11:51:59",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7a9b504d97f6faa2aeb443c1ecae5dff62602b01",
-              "match": "message 语义",
-              "confidence": 63
-            },
-            {
-              "ticket": "7039522368",
-              "author": "张友福",
-              "repo": "client",
-              "message": "城市 关卡 添加id scale属性 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-              "time": "2026-07-13 14:12:30",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/80584d07a173fdca436794b96073d16dad8f69a3",
-              "match": "单号 7039522368",
-              "confidence": 100
-            },
-            {
-              "ticket": "7039522368",
-              "author": "康俊花",
-              "repo": "client",
-              "message": "关卡搭建 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-              "time": "2026-07-09 17:25:08",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e08518a58269305889e4e3374d91e47f40af0599",
-              "match": "单号 7039522368",
-              "confidence": 100
-            },
-            {
-              "ticket": "7039522368",
-              "author": "王宇轩（实习）",
-              "repo": "config",
-              "message": "新增CheckPoint表 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-              "time": "2026-07-08 09:36:20",
-              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/55a20fc758a126574d56853fd7c52b8c05d2d5f3",
-              "match": "单号 7039522368",
-              "confidence": 100
-            },
-            {
-              "ticket": "7039522368",
-              "author": "王宇轩（实习）",
-              "repo": "client",
-              "message": "新增CheckPoint表 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-              "time": "2026-07-08 09:36:05",
-              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/8dd787f26db1288bc6ee39a482ecb89f5c606851",
-              "match": "单号 7039522368",
-              "confidence": 100
-            }
-          ],
-          "nodes": [
-            {
-              "name": "需求完成",
-              "status": "not_started",
-              "stage": null,
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7613522372301294545"
-                },
-                {
-                  "name": "",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "需求宣讲",
-              "status": "finished",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784627984430,
-              "actual_finish_time": 1784627990128,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "UX",
-              "status": "doing",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784627995810,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7633153806770900149"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "QA测试",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7643315047875283917"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "UI",
-              "status": "doing",
-              "stage": "美术制作中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784627990158,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7470563325613539332"
-                },
-                {
-                  "name": "",
-                  "user_key": "7470563325433233411"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "策划配置",
-              "status": "doing",
-              "stage": "开发中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784627990158,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "测试用例",
-              "status": "doing",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784627990158,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7643315047875283917"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "UI验收",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7470563325613539332"
-                },
-                {
-                  "name": "",
-                  "user_key": "7470563325433233411"
-                },
-                {
-                  "name": "",
-                  "user_key": "7622759577934629833"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "设计评审",
-              "status": "finished",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784196341151,
-              "actual_finish_time": 1784623276058,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7470563325416439811"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "方案设计",
-              "status": "finished",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1784196341149,
-              "actual_finish_time": 1784196341150,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "客户端",
-              "status": "not_started",
-              "stage": "开发中",
-              "estimate_start_time": 1784736000000,
-              "estimate_finish_time": 1784908799999,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7541883367285932060"
-                },
-                {
-                  "name": "",
-                  "user_key": "7470563324720087059"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "特效",
-              "status": "not_started",
-              "stage": "美术制作中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7654665900917935036"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "策划验收",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "服务器",
-              "status": "doing",
-              "stage": "开发中",
-              "estimate_start_time": 1784649600000,
-              "estimate_finish_time": 1784822399999,
-              "actual_begin_time": 1784627990158,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "",
-                  "user_key": "7550129340739092484"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "策划配置",
-              "status": "doing",
-              "stage": "开发中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1783482153360,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王宇轩",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "特效",
-              "status": "doing",
-              "stage": "美术制作中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1783679089500,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "姚金豆",
-                  "user_key": "7654665900917935036"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "QA测试",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "蔡耀康",
-                  "user_key": "7643315047875283917"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "测试用例",
-              "status": "finished",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1783482153360,
-              "actual_finish_time": 1784097465105,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "蔡耀康",
-                  "user_key": "7643315047875283917"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "需求宣讲",
-              "status": "finished",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1783337767388,
-              "actual_finish_time": 1783482153321,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王宇轩",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "UI验收",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王蔚",
-                  "user_key": "7622759577934629833"
-                },
-                {
-                  "name": "康俊花",
-                  "user_key": "7470563325613539332"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "策划验收",
-              "status": "not_started",
-              "stage": "验收中",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王宇轩",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "客户端",
-              "status": "doing",
-              "stage": "开发中",
-              "estimate_start_time": 1784131200000,
-              "estimate_finish_time": 1784303999999,
-              "actual_begin_time": 1783679089500,
-              "actual_finish_time": null,
-              "is_delayed": true,
-              "owners": [
-                {
-                  "name": "张友福",
-                  "user_key": "7470563325433184259"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "服务器",
-              "status": "finished",
-              "stage": "开发中",
-              "estimate_start_time": 1784044800000,
-              "estimate_finish_time": 1784217599999,
-              "actual_begin_time": 1783482153360,
-              "actual_finish_time": 1784538269038,
-              "is_delayed": true,
-              "owners": [
-                {
-                  "name": "文支义",
-                  "user_key": "7550129340739092484"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "方案设计",
-              "status": "finished",
-              "stage": "设计评审",
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": 1783337767385,
-              "actual_finish_time": 1783337767388,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王宇轩",
-                  "user_key": "7612426105194073019"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "UI",
-              "status": "finished",
-              "stage": "美术制作中",
-              "estimate_start_time": 1783526400000,
-              "estimate_finish_time": 1783699199999,
-              "actual_begin_time": 1783482153360,
-              "actual_finish_time": 1783679089493,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "康俊花",
-                  "user_key": "7470563325613539332"
-                }
-              ],
-              "links": {}
-            },
-            {
-              "name": "需求完成",
-              "status": "not_started",
-              "stage": null,
-              "estimate_start_time": null,
-              "estimate_finish_time": null,
-              "actual_begin_time": null,
-              "actual_finish_time": null,
-              "is_delayed": false,
-              "owners": [
-                {
-                  "name": "王宇轩",
-                  "user_key": "7612426105194073019"
-                },
-                {
-                  "name": "仝夏瀛",
-                  "user_key": "7613522372301294545"
-                }
-              ],
-              "links": {}
-            }
-          ],
-          "timeline_phases": [],
-          "deliverables": {
-            "interaction": "",
-            "effect": {
-              "time": "2026-07-10 19:38",
-              "sender": "王蔚",
-              "content": "![Image](img_v3_0213f_650b336c-b0a9-4a2e-9f4a-42d0423a805g) ![Image](img_v3_0213f_88bab011-ae38-4b13-a001-4a967775774g) ![Image](img_v3_0213f_67845159-e72d-4162-af75-8cc8cbf7f64g) 棱镜塔 桥梁/关卡 城墙 设计稿",
-              "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_19355154cc8fdc9a&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_19355154cc8fdc9a&thread_position=-1",
-              "message_id": "om_x100b6a39d71324acb36ab3afd24a85f",
-              "msg_type": "post"
-            },
-            "protocol": null
-          },
-          "delayed_nodes": [
-            {
-              "name": "客户端",
-              "end": "2026-07-17"
-            },
-            {
-              "name": "服务器",
-              "end": "2026-07-16"
-            }
-          ],
-          "key": "要塞和关卡",
-          "title": "要塞和关卡",
-          "priority": "",
-          "owner": "王宇轩",
-          "planningSteps": [
-            "done",
-            "todo",
-            "done",
-            "doing",
-            "doing",
-            "todo",
-            "doing"
-          ],
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-23",
-            "note": ""
-          },
-          "projectItems": [
-            {
-              "name": "要塞",
-              "id": "7051692125",
-              "type": "story",
-              "target": "要塞和关卡",
-              "url": "https://project.feishu.cn/t0k6tk/story/detail/7051692125",
-              "stage": "美术制作中"
-            },
-            {
-              "name": "关卡",
-              "id": "7039522368",
-              "type": "story",
-              "target": "要塞和关卡",
-              "url": "https://project.feishu.cn/t0k6tk/story/detail/7039522368",
-              "stage": "开发中"
-            }
-          ],
-          "docUrls": [
-            "https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF",
-            "https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"
-          ],
-          "chats": [
-            "oc_a71c2d90abe9d218e001b33e74704a10",
-            "oc_7109fb60c1e7695d0565d9be2374b871"
-          ],
-          "stage": "其他资产制作中",
-          "pmMilestones": {
-            "关卡": {
-              "design": "6.29  7.1  7.5",
-              "development": "7/17",
-              "acceptance": "",
-              "note": "增加聊天系统修改、依赖地图城市边界数据",
-              "status": "开发中"
-            },
-            "要塞": {
-              "design": "7.3  7.14",
-              "development": "7/3 7/14 7/31",
-              "acceptance": "",
-              "note": "顺延",
-              "status": "开发中"
-            }
-          },
-          "deadlineHistories": {
-            "development": [
-              {
-                "module": "关卡",
-                "sequence": 0,
-                "dateLabel": "7/17",
-                "date": "2026-07-16T16:00:00.000Z",
-                "reason": ""
-              },
-              {
-                "module": "要塞",
-                "sequence": 1,
-                "dateLabel": "7/3",
-                "date": "2026-07-02T16:00:00.000Z",
-                "reason": ""
-              },
-              {
-                "module": "要塞",
-                "sequence": 2,
-                "dateLabel": "7/14",
-                "date": "2026-07-13T16:00:00.000Z",
-                "reason": ""
-              },
-              {
-                "sequence": 3,
-                "module": "要塞",
-                "dateLabel": "7/31",
-                "reason": "",
-                "date": "2026-07-30T16:00:00.000Z"
-              }
-            ]
-          },
-          "delayReason": "",
-          "deadlineCompletions": {
-            "development": {
-              "status": "completed",
-              "completedAt": "2026-07-30"
-            }
           }
         },
         "改装系统": {
@@ -6942,6 +6150,1043 @@
             "date": "",
             "note": ""
           }
+        },
+        "要塞": {
+          "project_stage": "验收中",
+          "delivery_stage": "开发中",
+          "effective_stage": "开发中",
+          "status_overridden": true,
+          "next_date": "2026-07-30",
+          "latest_chat": {
+            "time": "2026-07-31 15:31",
+            "sender": "王宇轩",
+            "content": "就是想让玩家看到上次打这个城盟里的哪个玩家贡献很大很厉害",
+            "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=115",
+            "message_id": "om_x100b69f0b8745c8cb2a33fdc496f14c",
+            "msg_type": "text"
+          },
+          "evidence": {
+            "ui": {
+              "time": "2026-07-31 15:23",
+              "sender": "黄静茹",
+              "content": "[Image: img_v3_02144_81ecb202-40c2-42be-8663-f044c74b317g]",
+              "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=108",
+              "message_id": "om_x100b69f099a6b8acc1b205464c9137b",
+              "msg_type": "image"
+            }
+          },
+          "commits": [
+            {
+              "ticket": "",
+              "author": "毛逸凡",
+              "repo": "config",
+              "message": "要塞底座位置修正",
+              "time": "2026-07-31 10:41:13",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/d8ad89d4f1d6e9aab35e48b1a0109e6762b83146",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "",
+              "author": "毛逸凡",
+              "repo": "config",
+              "message": "要塞临时资源",
+              "time": "2026-07-31 10:11:22",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/a13661b124227fd87fbd75999fdc299c417158a1",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "",
+              "author": "毛逸凡",
+              "repo": "client",
+              "message": "要塞临时资源",
+              "time": "2026-07-31 10:11:04",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e68eb2ffd3f83451247e2782c8e86df9e97d9e6b",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "",
+              "author": "黄静茹",
+              "repo": "client",
+              "message": "迁城相关多语言",
+              "time": "2026-07-30 18:20:56",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7ea604608c9b67422d3f54697d0a129a24df294a",
+              "match": "人员排期",
+              "confidence": 55
+            },
+            {
+              "ticket": "",
+              "author": "文支义",
+              "repo": "config",
+              "message": "要塞迁城协议初版提交",
+              "time": "2026-07-30 16:33:09",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/a4bfc89cdaa1a7cc5c0703a1ee0ad5fe17f9fd65",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "config",
+              "message": "基地位置临时配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-28 15:01:43",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/d977dc17419e6779c3bfa4a6b724431faa0ae1c8",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "client",
+              "message": "基地位置临时配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-28 15:01:34",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f88efac5d2bc19344c6771b96744d93ca4505677",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "config",
+              "message": "配置护罩减伤比例 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-28 14:33:29",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3bad390c0f268c1002f6be06ea3426f151ca0d4a",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "client",
+              "message": "配置护罩减伤比例 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-28 14:32:58",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/211a220ec0862380ab445917722e9220863fbb8b",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "",
+              "author": "张泽臻",
+              "repo": "client",
+              "message": "临时要塞护罩",
+              "time": "2026-07-27 12:49:28",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/fe2fbb2b711e88dc9d0a93d8e63b9283eeda1cb6",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "",
+              "author": "张泽臻",
+              "repo": "config",
+              "message": "临时要塞护罩",
+              "time": "2026-07-27 12:04:47",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c20f0199ba61645f30b90bbe1ef6ac2567e18727",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "config",
+              "message": "调整基地坐标字段类型 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-27 11:02:12",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c262597bc36bc9d4f98f5b7e2975f9ed73aa6c6e",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "client",
+              "message": "调整基地坐标字段类型 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-27 11:02:09",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ca5a9685461e168dbbfa4c557d9696a2e53d297c",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "",
+              "author": "王宇轩（实习）",
+              "repo": "config",
+              "message": "要塞相关配置表结构",
+              "time": "2026-07-24 17:32:03",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3e60c8f0b04d5af3d381bf150d45859a26ff69f5",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "7051692125",
+              "author": "王宇轩（实习）",
+              "repo": "client",
+              "message": "要塞相关配置表结构 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+              "time": "2026-07-24 17:31:56",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/2a1149b001a9a5f3e80ae9c5e7ddb3fb2856a6f8",
+              "match": "单号 7051692125",
+              "confidence": 100
+            },
+            {
+              "ticket": "",
+              "author": "李辰扬",
+              "repo": "client",
+              "message": "要塞Mono拆分",
+              "time": "2026-07-23 18:09:45",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/36937fa99c72f0ccfc637bd4cb3abe04b1095e09",
+              "match": "message 语义",
+              "confidence": 65
+            }
+          ],
+          "nodes": [
+            {
+              "name": "UX",
+              "status": "doing",
+              "stage": "设计评审",
+              "estimate_start_time": 1785254400000,
+              "estimate_finish_time": 1785427199999,
+              "actual_begin_time": 1784627995810,
+              "actual_finish_time": null,
+              "is_delayed": true,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7633153806770900149"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求完成",
+              "status": "not_started",
+              "stage": null,
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                },
+                {
+                  "name": "",
+                  "user_key": "7613522372301294545"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "设计评审",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1784196341151,
+              "actual_finish_time": 1784623276058,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325416439811"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "测试用例",
+              "status": "doing",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1784627990158,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划配置",
+              "status": "doing",
+              "stage": "开发中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1784627990158,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "QA测试",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "服务器",
+              "status": "doing",
+              "stage": "开发中",
+              "estimate_start_time": 1785168000000,
+              "estimate_finish_time": 1785427199999,
+              "actual_begin_time": 1784627990158,
+              "actual_finish_time": null,
+              "is_delayed": true,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325739384836"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UI",
+              "status": "doing",
+              "stage": "美术制作中",
+              "estimate_start_time": 1785340800000,
+              "estimate_finish_time": 1785772799999,
+              "actual_begin_time": 1784627990158,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563325433233411"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "客户端",
+              "status": "not_started",
+              "stage": "开发中",
+              "estimate_start_time": 1785340800000,
+              "estimate_finish_time": 1785945599999,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7541883367285932060"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563324720087059"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "方案设计",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1784196341149,
+              "actual_finish_time": 1784196341150,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UI验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                },
+                {
+                  "name": "",
+                  "user_key": "7470563325433233411"
+                },
+                {
+                  "name": "",
+                  "user_key": "7622759577934629833"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "特效",
+              "status": "not_started",
+              "stage": "美术制作中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7654665900917935036"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求宣讲",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1784627984430,
+              "actual_finish_time": 1784627990128,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            }
+          ],
+          "timeline_phases": [],
+          "deliverables": {
+            "interaction": "",
+            "effect": {
+              "time": "2026-07-31 15:23",
+              "sender": "黄静茹",
+              "content": "[Image: img_v3_02144_81ecb202-40c2-42be-8663-f044c74b317g]",
+              "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=108",
+              "message_id": "om_x100b69f099a6b8acc1b205464c9137b",
+              "msg_type": "image"
+            },
+            "protocol": {
+              "time": "2026-07-30 16:33",
+              "sender": "协议提交通知",
+              "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)要塞迁城协议初版提交 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/a4bfc89cdaa1a7cc5c0703a1ee0ad5fe17f9fd65) --- </card>",
+              "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_190e848370cf9c8c&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_190e848370cf9c8c&thread_position=-1",
+              "message_id": "om_x100b69848a68e0a8b20fa32c039a950",
+              "msg_type": "interactive"
+            }
+          },
+          "delayed_nodes": [
+            {
+              "name": "UX",
+              "end": "2026-07-30"
+            },
+            {
+              "name": "服务器",
+              "end": "2026-07-30"
+            }
+          ],
+          "key": "要塞",
+          "title": "要塞",
+          "priority": "",
+          "owner": "王宇轩",
+          "planningSteps": [
+            "done",
+            "doing",
+            "doing",
+            "doing",
+            "doing",
+            "todo",
+            "doing"
+          ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-30",
+            "note": ""
+          },
+          "projectItems": [
+            {
+              "name": "要塞",
+              "id": "7051692125",
+              "type": "story",
+              "target": "要塞",
+              "url": "https://project.feishu.cn/t0k6tk/story/detail/7051692125",
+              "stage": "开发中"
+            }
+          ],
+          "docUrls": [
+            "https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF"
+          ],
+          "chats": [
+            "oc_a71c2d90abe9d218e001b33e74704a10"
+          ],
+          "stage": "开发中",
+          "pmMilestones": {
+            "要塞": {
+              "design": "7.3  7.14",
+              "development": "7/3 7/14 7/31",
+              "acceptance": "",
+              "note": "顺延",
+              "status": "开发中"
+            }
+          },
+          "deadlineHistories": {
+            "development": [
+              {
+                "module": "要塞",
+                "sequence": 1,
+                "dateLabel": "7/3",
+                "date": "2026-07-02T16:00:00.000Z",
+                "reason": ""
+              },
+              {
+                "module": "要塞",
+                "sequence": 2,
+                "dateLabel": "7/14",
+                "date": "2026-07-13T16:00:00.000Z",
+                "reason": ""
+              },
+              {
+                "sequence": 3,
+                "module": "要塞",
+                "dateLabel": "7/31",
+                "reason": "",
+                "date": "2026-07-30T16:00:00.000Z"
+              }
+            ]
+          },
+          "delayReason": ""
+        },
+        "关卡": {
+          "project_stage": "开发中",
+          "delivery_stage": "开发中",
+          "effective_stage": "开发中",
+          "status_overridden": false,
+          "next_date": "2026-07-17",
+          "latest_chat": {
+            "time": "2026-07-09 18:19",
+            "sender": "王宇轩",
+            "content": "我也不知道现在已经有了没",
+            "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_7109fb60c1e7695d0565d9be2374b871&position=37",
+            "message_id": "om_x100b6bc315153ca4b3d8f214e8d6c81",
+            "msg_type": "text"
+          },
+          "evidence": {
+            "ui": {
+              "time": "2026-07-10 19:38",
+              "sender": "王蔚",
+              "content": "![Image](img_v3_0213f_650b336c-b0a9-4a2e-9f4a-42d0423a805g) ![Image](img_v3_0213f_88bab011-ae38-4b13-a001-4a967775774g) ![Image](img_v3_0213f_67845159-e72d-4162-af75-8cc8cbf7f64g) 棱镜塔 桥梁/关卡 城墙 设计稿",
+              "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_19355154cc8fdc9a&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_19355154cc8fdc9a&thread_position=-1",
+              "message_id": "om_x100b6a39d71324acb36ab3afd24a85f",
+              "msg_type": "post"
+            }
+          },
+          "commits": [
+            {
+              "ticket": "",
+              "author": "张友福",
+              "repo": "client",
+              "message": "桥和城市符号接入",
+              "time": "2026-07-21 15:47:14",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/39e8eae9dcc5390c02729881d09dc732cc17a9a8",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "",
+              "author": "文支义",
+              "repo": "config",
+              "message": "桥开放机制",
+              "time": "2026-07-20 17:04:34",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3f6a83321387087f4bc9d04fc1626fa72202d442",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "",
+              "author": "文支义",
+              "repo": "config",
+              "message": "桥开关初版提交",
+              "time": "2026-07-20 16:23:01",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/571393d09dc7d1611ca1a5f7d70d266fd5a99d8c",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "7039522368",
+              "author": "张友福",
+              "repo": "client",
+              "message": "关卡开放 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
+              "time": "2026-07-20 10:54:03",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/cf917b37309f2c0832bcfdd66a56122bdaf9e7e4",
+              "match": "单号 7039522368",
+              "confidence": 100
+            },
+            {
+              "ticket": "",
+              "author": "张友福",
+              "repo": "client",
+              "message": "ciytid和checkpoint id合并导出到citygrid",
+              "time": "2026-07-17 16:16:30",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ad1497111e59436d4f54b1b8329ee28213f2d063",
+              "match": "message 语义",
+              "confidence": 81
+            },
+            {
+              "ticket": "",
+              "author": "张友福",
+              "repo": "client",
+              "message": "桥头位置导出避免计算",
+              "time": "2026-07-17 15:02:39",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e8d2aec9beb38b34e5ff57fb1b8e6f514da38c24",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "7049479414",
+              "author": "张友福",
+              "repo": "client",
+              "message": "freeform加载按简易坐标计算落在block中按block加载 [Review单:地编静态物件AOI加载][链接:https://project.feishu.cn/t0k6tk/issue/detail/7049479414]",
+              "time": "2026-07-17 11:30:01",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/76c14f41336f1d40575975b9efb7e2110e121294",
+              "match": "人员排期",
+              "confidence": 55
+            },
+            {
+              "ticket": "",
+              "author": "张泽臻",
+              "repo": "client",
+              "message": "新地图数据，验证城市和关卡导出数据",
+              "time": "2026-07-16 17:45:15",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0a89a35abcf1b703499b459dd384d6bc21b06ad2",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "7051245454",
+              "author": "张友福",
+              "repo": "client",
+              "message": "心愿奖池抽奖表现修改 [Review单:【优化】心愿值在抽卡界面显示优化][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051245454] 抽奖概率说明读表 [Review单:【bug】概率描述字段未生生效][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051406962]",
+              "time": "2026-07-16 16:34:17",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c9593e24e55d2afd49858675a6289633c77b31a2https://gitlab-sh.diandian.info/x03/client/-/commit/0e3c867920790adfe7e618deccbff026142ec75b",
+              "match": "人员排期",
+              "confidence": 55
+            },
+            {
+              "ticket": "",
+              "author": "毛逸凡",
+              "repo": "client",
+              "message": "符号层 - 桥",
+              "time": "2026-07-16 14:24:04",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/33f841c4fb77f151302a5b67f6e4a39d8f7ff56a",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "",
+              "author": "张友福",
+              "repo": "client",
+              "message": "添加请求关卡tag接口",
+              "time": "2026-07-16 11:43:50",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c69582f7908f20354996c9e60aac3db63b6cc2e3",
+              "match": "message 语义",
+              "confidence": 65
+            },
+            {
+              "ticket": "7051133226",
+              "author": "张友福",
+              "repo": "client",
+              "message": "修复重新打开奖池底图显示错误 [Review单:【bug】抽卡背景图没有刷线][链接:https://project.feishu.cn/t0k6tk/issue/detail/7051133226]",
+              "time": "2026-07-16 11:43:15",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/6b4c9664ca32b2760eefc64569994fa465b3f17c",
+              "match": "人员排期",
+              "confidence": 55
+            },
+            {
+              "ticket": "",
+              "author": "张泽臻",
+              "repo": "client",
+              "message": "地编布局优化、新桥梁自动跨越逻辑、新河流生成方式、修复城市区域占格重复问题、规避保存地图时修改预览prefab的mat数据",
+              "time": "2026-07-14 11:51:59",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7a9b504d97f6faa2aeb443c1ecae5dff62602b01",
+              "match": "message 语义",
+              "confidence": 63
+            },
+            {
+              "ticket": "7039522368",
+              "author": "张友福",
+              "repo": "client",
+              "message": "城市 关卡 添加id scale属性 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
+              "time": "2026-07-13 14:12:30",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/80584d07a173fdca436794b96073d16dad8f69a3",
+              "match": "单号 7039522368",
+              "confidence": 100
+            },
+            {
+              "ticket": "7039522368",
+              "author": "康俊花",
+              "repo": "client",
+              "message": "关卡搭建 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
+              "time": "2026-07-09 17:25:08",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e08518a58269305889e4e3374d91e47f40af0599",
+              "match": "单号 7039522368",
+              "confidence": 100
+            },
+            {
+              "ticket": "7039522368",
+              "author": "王宇轩（实习）",
+              "repo": "config",
+              "message": "新增CheckPoint表 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
+              "time": "2026-07-08 09:36:20",
+              "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/55a20fc758a126574d56853fd7c52b8c05d2d5f3",
+              "match": "单号 7039522368",
+              "confidence": 100
+            },
+            {
+              "ticket": "7039522368",
+              "author": "王宇轩（实习）",
+              "repo": "client",
+              "message": "新增CheckPoint表 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
+              "time": "2026-07-08 09:36:05",
+              "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/8dd787f26db1288bc6ee39a482ecb89f5c606851",
+              "match": "单号 7039522368",
+              "confidence": 100
+            }
+          ],
+          "nodes": [
+            {
+              "name": "服务器",
+              "status": "finished",
+              "stage": "开发中",
+              "estimate_start_time": 1784044800000,
+              "estimate_finish_time": 1784217599999,
+              "actual_begin_time": 1783482153360,
+              "actual_finish_time": 1784538269038,
+              "is_delayed": true,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7550129340739092484"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求宣讲",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1783337767388,
+              "actual_finish_time": 1783482153321,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "需求完成",
+              "status": "not_started",
+              "stage": null,
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                },
+                {
+                  "name": "",
+                  "user_key": "7613522372301294545"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "方案设计",
+              "status": "finished",
+              "stage": "设计评审",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1783337767385,
+              "actual_finish_time": 1783337767388,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UI",
+              "status": "finished",
+              "stage": "美术制作中",
+              "estimate_start_time": 1783526400000,
+              "estimate_finish_time": 1783699199999,
+              "actual_begin_time": 1783482153360,
+              "actual_finish_time": 1783679089493,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "QA测试",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划配置",
+              "status": "doing",
+              "stage": "开发中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1783482153360,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "测试用例",
+              "status": "finished",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1783482153360,
+              "actual_finish_time": 1784097465105,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7643315047875283917"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "客户端",
+              "status": "doing",
+              "stage": "开发中",
+              "estimate_start_time": 1784131200000,
+              "estimate_finish_time": 1784303999999,
+              "actual_begin_time": 1783679089500,
+              "actual_finish_time": null,
+              "is_delayed": true,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325433184259"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "UI验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7470563325613539332"
+                },
+                {
+                  "name": "",
+                  "user_key": "7622759577934629833"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "特效",
+              "status": "doing",
+              "stage": "美术制作中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": 1783679089500,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7654665900917935036"
+                }
+              ],
+              "links": {}
+            },
+            {
+              "name": "策划验收",
+              "status": "not_started",
+              "stage": "验收中",
+              "estimate_start_time": null,
+              "estimate_finish_time": null,
+              "actual_begin_time": null,
+              "actual_finish_time": null,
+              "is_delayed": false,
+              "owners": [
+                {
+                  "name": "",
+                  "user_key": "7612426105194073019"
+                }
+              ],
+              "links": {}
+            }
+          ],
+          "timeline_phases": [],
+          "deliverables": {
+            "interaction": "",
+            "effect": {
+              "time": "2026-07-10 19:38",
+              "sender": "王蔚",
+              "content": "![Image](img_v3_0213f_650b336c-b0a9-4a2e-9f4a-42d0423a805g) ![Image](img_v3_0213f_88bab011-ae38-4b13-a001-4a967775774g) ![Image](img_v3_0213f_67845159-e72d-4162-af75-8cc8cbf7f64g) 棱镜塔 桥梁/关卡 城墙 设计稿",
+              "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_19355154cc8fdc9a&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_19355154cc8fdc9a&thread_position=-1",
+              "message_id": "om_x100b6a39d71324acb36ab3afd24a85f",
+              "msg_type": "post"
+            },
+            "protocol": null
+          },
+          "delayed_nodes": [
+            {
+              "name": "服务器",
+              "end": "2026-07-16"
+            },
+            {
+              "name": "客户端",
+              "end": "2026-07-17"
+            }
+          ],
+          "key": "关卡",
+          "title": "关卡",
+          "priority": "",
+          "owner": "王宇轩",
+          "planningSteps": [
+            "done",
+            "todo",
+            "done",
+            "doing",
+            "done",
+            "todo",
+            "doing"
+          ],
+          "nextMilestone": {
+            "nextstatus": "",
+            "date": "2026-07-17",
+            "note": ""
+          },
+          "projectItems": [
+            {
+              "name": "关卡",
+              "id": "7039522368",
+              "type": "story",
+              "target": "关卡",
+              "url": "https://project.feishu.cn/t0k6tk/story/detail/7039522368",
+              "stage": "开发中"
+            }
+          ],
+          "docUrls": [
+            "https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"
+          ],
+          "chats": [
+            "oc_7109fb60c1e7695d0565d9be2374b871"
+          ],
+          "stage": "开发中",
+          "pmMilestones": {
+            "关卡": {
+              "design": "6.29  7.1  7.5",
+              "development": "7/17",
+              "acceptance": "",
+              "note": "增加聊天系统修改、依赖地图城市边界数据",
+              "status": "开发中"
+            }
+          },
+          "deadlineHistories": {
+            "development": [
+              {
+                "module": "关卡",
+                "sequence": 0,
+                "dateLabel": "7/17",
+                "date": "2026-07-16T16:00:00.000Z",
+                "reason": ""
+              }
+            ]
+          },
+          "delayReason": ""
         }
       },
       "pmRows": [
@@ -7293,7 +7538,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-07-31T07:27:21.519405Z"
+      "updatedAt": "2026-07-31T07:34:22.559Z"
     },
     "pmManagementTableV2": [
       "模块",

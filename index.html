@@ -806,7 +806,8 @@
     // 后续可由飞书数据同步任务替换此数组；requirementId 是唯一键。
     const requirements = [
       { requirementId: "7013835628", name: "联盟系统", owner: "杨心权、蔡耀康", active: true, activity: "UI 已进入验收，策划配置仍在进行。", activitySource: "项目进行中节点", progress: 78, node: "美术制作中 · UI验收 / 策划配置", bugs: 183, doc: true, image: true, deliverableNote: "需求文档已交付；验收效果已进入 UI 验收", risk: "high", riskText: "关联 Bug 量大，建议重点核对未关闭数量", due: "—" },
-      { requirementId: "7051692125 / 7039522368", name: "要塞和关卡", owner: "王宇轩", active: true, activity: "要塞处于设计评审；关卡的特效、客户端、服务器和策划配置并行制作。", activitySource: "2 张 Story 进行中节点", progress: 48, node: "设计评审 + 开发中", bugs: 0, doc: true, image: false, deliverableNote: "", risk: "medium", riskText: "跨端并行开发，需关注节点收敛", due: "—" },
+      { requirementId: "7051692125", name: "要塞", owner: "王宇轩", active: true, activity: "要塞客户端、服务器与资产制作持续推进。", activitySource: "飞书项目 Story", progress: 52, node: "开发中", bugs: 0, doc: true, image: false, deliverableNote: "", risk: "medium", riskText: "关注开发节点按期收敛", due: "2026-07-30" },
+      { requirementId: "7039522368", name: "关卡", owner: "王宇轩", active: true, activity: "关卡客户端与服务器节点持续推进。", activitySource: "飞书项目 Story", progress: 52, node: "开发中", bugs: 0, doc: true, image: false, deliverableNote: "", risk: "medium", riskText: "客户端与服务器节点已延期", due: "2026-07-17" },
       { requirementId: "7042536066", name: "GVG", owner: "杨心权", active: true, activity: "策划配置、服务器、测试用例、UX 与 UI 同时推进。", activitySource: "项目进行中节点", progress: 52, node: "开发中 · 5 个并行节点", bugs: 0, doc: true, image: false, deliverableNote: "", risk: "medium", riskText: "并行节点较多，存在集成协调风险", due: "—" },
       { requirementId: "7042650782", name: "联盟建筑", owner: "王嘉西", active: true, activity: "当前由客户端节点持续开发。", activitySource: "项目进行中节点", progress: 52, node: "开发中 · 客户端", bugs: 0, doc: true, image: false, deliverableNote: "需求文档已交付；验收效果待开发完成", risk: "low", riskText: "当前无关联 Bug", due: "—" },
       { requirementId: "7034188688", name: "载具队列", owner: "王嘉西", active: true, activity: "已进入策划验收和 UI 验收。", activitySource: "项目进行中节点", progress: 88, node: "验收中 · 策划验收 / UI验收", bugs: 14, doc: true, image: true, deliverableNote: "需求文档已交付；效果图进入 UI 验收", risk: "medium", riskText: "14 个关联 Bug，验收完成前需确认关闭情况", due: "—" },
@@ -818,7 +819,8 @@
 
     const delayData = {
       "联盟系统": { total: 14, delayed: 5, unplanned: 7, details: ["UX：计划 06-24，实际 06-26，延期 2 天", "特效：计划 07-10，实际 07-15，延期 5 天", "策划验收：计划 07-07，尚未开始，已延期 13 天", "需求宣讲：计划 06-11，实际 06-26，延期 15 天", "服务器：计划 07-03，实际 07-07，延期 4 天"] },
-      "要塞和关卡": { total: 25, delayed: 2, unplanned: 21, details: ["关卡-客户端：计划 07-17，进行中，已延期 3 天", "关卡-服务器：计划 07-16，进行中，已延期 4 天"] },
+      "要塞": { total: 14, delayed: 2, unplanned: 10, details: ["UX：计划 07-30，进行中", "服务器：计划 07-30，进行中"] },
+      "关卡": { total: 12, delayed: 2, unplanned: 8, details: ["客户端：计划 07-17，进行中", "服务器：计划 07-16，已完成"] },
       "GVG": { total: 13, delayed: 1, unplanned: 7, details: ["需求宣讲：计划 07-09，实际 07-16，延期 7 天"] },
       "联盟建筑": { total: 12, delayed: 2, unplanned: 8, details: ["服务器：计划 07-13，实际 07-15，延期 2 天", "UI：计划 07-13，实际 07-15，延期 2 天"] },
       "载具队列": { total: 11, delayed: 4, unplanned: 6, details: ["策划验收：计划 07-15，进行中，已延期 5 天", "服务器：计划 07-13，实际 07-14，延期 1 天", "UI：计划 07-13，实际 07-14，延期 1 天", "UX：计划 07-02，实际 07-09，延期 7 天"] },
@@ -838,7 +840,8 @@
       "抽奖二期优化": { rank: 5, label: "验收完成" },
       "载具队列": { rank: 5, label: "验收中" },
       "地图LOD设计*": { rank: 5, label: "验收中" },
-      "要塞和关卡": { rank: 4, label: "开发中" },
+      "要塞": { rank: 4, label: "开发中" },
+      "关卡": { rank: 4, label: "开发中" },
       "GVG": { rank: 4, label: "开发中" },
       "联盟建筑": { rank: 4, label: "开发中" },
       "联盟系统": { rank: 3, label: "美术制作中" },
@@ -859,7 +862,8 @@
 
     const planningStepData = {
       "联盟系统": ["done", "done", "done", "done", "done", "doing", "todo"],
-      "要塞和关卡": ["done", "todo", "doing", "doing", "doing", "todo", "doing"],
+      "要塞": ["done", "doing", "doing", "doing", "doing", "todo", "doing"],
+      "关卡": ["done", "todo", "done", "doing", "done", "todo", "doing"],
       "GVG": ["done", "doing", "doing", "todo", "doing", "todo", "doing"],
       "联盟建筑": ["done", "todo", "done", "doing", "done", "todo", "todo"],
       "载具队列": ["done", "done", "done", "done", "done", "doing", "doing"],
@@ -872,7 +876,7 @@
 
     // 来自“策划需求池”指定视图的“需UX”列；未勾选表示该环节不需要制作。
     const planningUxRequired = {
-      "联盟系统": true, "要塞和关卡": true, "GVE": true, "GVG": true,
+      "联盟系统": true, "要塞": true, "关卡": true, "GVE": true, "GVG": true,
       "联盟建筑": false, "载具队列": true, "要塞王虫": false, "联盟矿点": false,
       "抽奖二期优化": true, "PVE（城内王虫）重构": false, "对标韬略的成长线": false,
       "场景化内城初步方案": false, "载具模组系统迭代": false, "新手迭代": false, "天下大势": false,
@@ -923,7 +927,7 @@
     const planningPriorityEdits = JSON.parse(localStorage.getItem("planningPriorityEdits") || "{}");
 
     const computedNextDates = {
-      "联盟系统": "2026-07-07", "要塞和关卡": "2026-07-17", "GVG": "2026-07-23",
+      "联盟系统": "2026-07-07", "要塞": "2026-07-30", "关卡": "2026-07-17", "GVG": "2026-07-23",
       "联盟建筑": "2026-07-21", "载具队列": "2026-07-15", "抽奖二期优化": "2026-07-29",
       "战报*": "2026-07-23", "聊天": "未排期", "背包系统": "未排期", "地图LOD设计*": "未排期"
     };
@@ -981,7 +985,7 @@
     }
 
     function pmTargetModules(title) {
-      const aliases = { "战报*": ["战报"], "地图LOD设计*": ["地图LOD"], "要塞和关卡": ["关卡", "要塞"] };
+      const aliases = { "战报*": ["战报"], "地图LOD设计*": ["地图LOD"] };
       return aliases[title] || [title.replace(/\*$/, "")];
     }
 
@@ -1076,7 +1080,7 @@
     }
 
     const platformData = [
-      "联盟系统", "要塞和关卡", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
+      "联盟系统", "要塞", "关卡", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
       "抽奖二期优化", "PVE（城内王虫）重构", "对标韬略的成长线", "场景化内城初步方案", "载具模组系统迭代",
       "新手迭代", "天下大势", "联盟阵营色规则", "联盟资源整体设计", "debuff展示", "技能自动释放", "邮件二期",
       "战报*", "迁城", "功能开启", "邮件系统", "聊天", "地图LOD设计*", "背包系统", "新手期", "地图元素分享",
@@ -1085,7 +1089,7 @@
 
     const viewItems = [
       { name: "【流浪者】挂机射手-扑翼机 - ornithopter", id: "7030030529", type: "story" },
-      { name: "要塞", id: "7051692125", type: "story", target: "要塞和关卡" },
+      { name: "要塞", id: "7051692125", type: "story", target: "要塞" },
       { name: "【联邦】修理工-handyman", id: "7050679580", type: "story" },
       { name: "【设计中】【联邦】挂机射手 -悬浮坦克  hovertank", id: "7030021359", type: "story" },
       { name: "【设计中】【流浪者】挂机肉盾辅助-乌龟 - tmnt", id: "7030016748", type: "story" },
@@ -1098,7 +1102,7 @@
       { name: "X01 smarthelp 自研客服平台接入", id: "7048119320", type: "story" },
       { name: "联盟建筑", id: "7042650782", type: "story", target: "联盟建筑" },
       { name: "GVG", id: "7042536066", type: "story", target: "GVG" },
-      { name: "关卡", id: "7039522368", type: "story", target: "要塞和关卡" },
+      { name: "关卡", id: "7039522368", type: "story", target: "关卡" },
       { name: "副本PVE地图数据接入", id: "7035407911", type: "story" },
       { name: "缩略图", id: "7034449825", type: "story", target: "地图LOD设计*" },
       { name: "载具队列", id: "7034188688", type: "story", target: "载具队列" },
@@ -1173,7 +1177,8 @@
 
     const matchedDetails = {
       "联盟系统": { priority: "P0", owner: "杨心权、蔡耀康", docs: ["https://centurygames.feishu.cn/wiki/JZ16wMXAmifv9ZkNZ3bcw1QOnfe?sheet=Pd0klR"], chats: ["oc_3d937173fadbde3b31ebcc256b39599d"] },
-      "要塞和关卡": { owner: "王宇轩", docs: ["https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF", "https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"], chats: ["oc_a71c2d90abe9d218e001b33e74704a10", "oc_7109fb60c1e7695d0565d9be2374b871"] },
+      "要塞": { owner: "王宇轩", docs: ["https://centurygames.feishu.cn/docx/TvW0dnfWXoDZC2xJo8octyiznVF"], chats: ["oc_a71c2d90abe9d218e001b33e74704a10"] },
+      "关卡": { owner: "王宇轩", docs: ["https://centurygames.feishu.cn/docx/FEEidv6CIoV2zkxCdJpc1Xe5ntg"], chats: ["oc_7109fb60c1e7695d0565d9be2374b871"] },
       "GVG": { priority: "P0", owner: "杨心权", docs: ["https://centurygames.feishu.cn/wiki/R3hJw4oHwiK5CMkvbIecVCCqnsh?sheet=kBnV5H"], chats: ["oc_d0a57d8d2422756a115099317fa82ed3"] },
       "新PVE": { priority: "P1", owner: "王嘉西", docs: [], chats: [] },
       "联盟建筑": { owner: "王嘉西", docs: ["https://centurygames.feishu.cn/wiki/VlyuwPzBNid1sGkw2bpcgNm5n4b"], chats: ["oc_f445de8bb8b75ba8fdb23c249c6241d9"] },
@@ -1593,8 +1598,7 @@
     function pmScheduleRowsFor(title) {
       const aliases = {
         "战报*": ["战报"],
-        "地图LOD设计*": ["地图LOD"],
-        "要塞和关卡": ["关卡", "要塞"]
+        "地图LOD设计*": ["地图LOD"]
       };
       const targets = aliases[title] || [title.replace(/\*$/, "")];
       const storedRows = requirementStore?.getPmRows() || [];
@@ -2389,7 +2393,7 @@
       requirementStore?.replacePmRows(rows, { source: "pm-page" });
       if (requirementStore) {
         const patches = {};
-        const titleForModule = module => ({ "战报": "战报*", "地图LOD": "地图LOD设计*", "关卡": "要塞和关卡", "要塞": "要塞和关卡" }[module] || module);
+        const titleForModule = module => ({ "战报": "战报*", "地图LOD": "地图LOD设计*" }[module] || module);
         rows.forEach(row => {
           const title = titleForModule(row.module);
           if (!platformData.some(item => item.title === title)) return;
@@ -2449,7 +2453,7 @@
       chats: item.chats
     }]));
     collectPmRows().forEach(row => {
-      const title = ({ "战报": "战报*", "地图LOD": "地图LOD设计*", "关卡": "要塞和关卡", "要塞": "要塞和关卡" }[row.module] || row.module);
+      const title = ({ "战报": "战报*", "地图LOD": "地图LOD设计*" }[row.module] || row.module);
       if (!requirementSeed[title]) return;
       requirementSeed[title].owner = row.owner.replace(/@/g, "").split(/\s+/).filter(Boolean).join("、") || requirementSeed[title].owner;
       requirementSeed[title].stage = row.status;
