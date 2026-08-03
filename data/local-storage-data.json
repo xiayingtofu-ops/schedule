@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-07-31T08:09:14.662Z",
+  "exportedAt": "2026-08-03T01:53:08.969Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 126,
+      "revision": 127,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -1840,7 +1840,7 @@
           "delivery_stage": "开发中",
           "effective_stage": "开发中",
           "status_overridden": true,
-          "next_date": "",
+          "next_date": "2026-08-07",
           "latest_chat": {
             "time": "2026-07-21 17:52",
             "sender": "康俊花",
@@ -2327,8 +2327,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-21",
+            "nextstatus": "验收中",
+            "date": "2026-08-07",
             "note": ""
           },
           "projectItems": [
@@ -2352,12 +2352,12 @@
             "联盟建筑": {
               "design": "7.3  7.7",
               "development": "7.17  7.21",
-              "acceptance": "7/17 7/21 8/5",
+              "acceptance": "7/17 7/21 8/5 8/7",
               "note": "",
               "status": "验收中"
             }
           },
-          "delayReason": "城墙已有正式资源， 棱镜塔作为供应商测试发出去了，7/31收回",
+          "delayReason": "",
           "deadlineHistories": {
             "acceptance": [
               {
@@ -2380,8 +2380,22 @@
                 "dateLabel": "8/5",
                 "reason": "",
                 "date": "2026-08-04T16:00:00.000Z"
+              },
+              {
+                "sequence": 3,
+                "module": "联盟建筑",
+                "dateLabel": "8/7",
+                "status": "验收中",
+                "reason": "",
+                "date": "2026-08-06T16:00:00.000Z"
               }
             ]
+          },
+          "deadlineCompletions": {
+            "acceptance": {
+              "status": "active",
+              "completedAt": ""
+            }
           }
         },
         "载具队列": {
@@ -7355,8 +7369,8 @@
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
           "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-          "acceptance": "7/17 7/21 8/5",
-          "acceptanceMarkup": "7/17 7/21 8/5",
+          "acceptance": "7/17 7/21 8/5 8/7",
+          "acceptanceMarkup": "7/17 7/21 8/5 8/7",
           "note": "",
           "noteMarkup": "",
           "status": "验收中"
@@ -7544,7 +7558,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-07-31T08:09:14.662Z"
+      "updatedAt": "2026-08-03T01:53:08.969Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7617,7 +7631,7 @@
       "@王嘉西",
       "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
       "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-      "7/17 7/21 8/5",
+      "7/17 7/21 8/5 8/7",
       "",
       "GVG",
       "@杨心权",
@@ -7739,7 +7753,7 @@
       "@王嘉西",
       "7.3 7.7",
       "7.17 7.21",
-      "7/17 7/21 8/5",
+      "7/17 7/21 8/5 8/7",
       "",
       "GVG",
       "@杨心权",
@@ -8337,7 +8351,7 @@
     },
     "planningNextDates": {
       "地图LOD设计*": "7/31 验收完成",
-      "联盟建筑": "2026-07-21",
+      "联盟建筑": "2026-08-07",
       "GVG": "未排期",
       "聊天": "未排期",
       "战报*": "未排期"
