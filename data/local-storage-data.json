@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-03T01:56:27.579Z",
+  "exportedAt": "2026-08-03T02:10:46.741Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 128,
+      "revision": 129,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -7594,7 +7594,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-03T01:56:27.579Z"
+      "updatedAt": "2026-08-03T02:10:46.741Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -8412,6 +8412,15 @@
     },
     "dismissedUnmatchedIds": [
       "7039184166"
+    ],
+    "dashboardCalendarEvents": [
+      {
+        "id": "vehicle-resource-review-2026-08-04",
+        "title": "载具资源验收会",
+        "date": "2026-08-04",
+        "type": "meeting",
+        "allDay": true
+      }
     ]
   }
 }

@@ -423,6 +423,7 @@
     .calendar-event.p1 { color: #8a5b00; background: #fff1cf; }
     .calendar-event.acceptance { color: #17689a; background: #dff3fb; }
     .calendar-event.proposal { color: #7a4caf; background: #f0e8fb; }
+    .calendar-event.meeting { color: #17623a; background: #e2f6e9; }
     @media (max-width: 1100px) {
       .milestone-calendar { overflow-x: auto; }
       .calendar-head, .calendar-weekdays, .calendar-grid { min-width: 900px; }
@@ -1132,13 +1133,20 @@
           (eventsByDate[key] ||= []).push({ item, ...event });
         });
       });
+      const customEvents = window.GVG_PUBLISHED_SNAPSHOT?.data?.dashboardCalendarEvents || [];
+      customEvents.forEach(event => {
+        const date = new Date(`${event.date}T00:00:00`);
+        if (Number.isNaN(date.getTime())) return;
+        const key = localDateKey(date);
+        (eventsByDate[key] ||= []).push({ item: null, date, type: event.type || "meeting", label: event.title });
+      });
       const todayKey = localDateKey(new Date());
       document.querySelector("#milestoneCalendarGrid").innerHTML = Array.from({ length: 21 }, (_, index) => {
         const date = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + index);
         const key = localDateKey(date);
         const events = eventsByDate[key] || [];
         const outside = index < 7 || index >= 14;
-        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type }) => `<button class="calendar-event ${type}" type="button" data-calendar-detail="${escapeHtml(item.title)}" title="${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
+        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type }) => `<button class="calendar-event ${type}" type="button"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
       }).join("");
       document.querySelectorAll("[data-calendar-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.calendarDetail)));
     }
