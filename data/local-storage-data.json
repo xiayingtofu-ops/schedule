@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-03T01:53:08.969Z",
+  "exportedAt": "2026-08-03T01:56:27.579Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 127,
+      "revision": 128,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -1158,7 +1158,28 @@
             "https://centurygames.feishu.cn/wiki/AtoZwFUcliIBOVktSgXcLcccnQe?fromScene=spaceOverview"
           ],
           "chats": [],
-          "stage": "UX制作中"
+          "stage": "UX制作中",
+          "pmMilestones": {
+            "改装系统": {
+              "design": "8/5",
+              "development": "",
+              "acceptance": "",
+              "note": "需求宣讲",
+              "status": "UX制作中"
+            }
+          },
+          "deadlineHistories": {
+            "design": [
+              {
+                "sequence": 0,
+                "module": "改装系统",
+                "dateLabel": "8/5",
+                "status": "设计中",
+                "reason": "需求宣讲",
+                "date": "2026-08-04T16:00:00.000Z"
+              }
+            ]
+          }
         },
         "GVE": {
           "key": "GVE",
@@ -7494,6 +7515,21 @@
           "note": "",
           "noteMarkup": "",
           "status": "设计中"
+        },
+        {
+          "module": "改装系统",
+          "moduleMarkup": "改装系统",
+          "owner": "@刘洋",
+          "ownerMarkup": "@刘洋",
+          "design": "8/5",
+          "designMarkup": "8/5",
+          "development": "",
+          "developmentMarkup": "",
+          "acceptance": "",
+          "acceptanceMarkup": "",
+          "note": "需求宣讲",
+          "noteMarkup": "需求宣讲",
+          "status": "UX制作中"
         }
       ],
       "syncMeta": {
@@ -7558,7 +7594,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-03T01:53:08.969Z"
+      "updatedAt": "2026-08-03T01:56:27.579Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7680,7 +7716,13 @@
       "",
       "",
       "",
-      ""
+      "",
+      "改装系统",
+      "@刘洋",
+      "8/5",
+      "",
+      "",
+      "需求宣讲"
     ],
     "pmManagementTableV1": [
       "模块",
@@ -7802,7 +7844,13 @@
       "",
       "",
       "",
-      ""
+      "",
+      "改装系统",
+      "@刘洋",
+      "8/5",
+      "",
+      "",
+      "需求宣讲"
     ],
     "pmStatusPresetVersion": 1,
     "unitProgressEdits": {
