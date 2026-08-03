@@ -2168,12 +2168,11 @@
       return new Date(calendarCursor.getFullYear(), Number(match[1]) - 1, Number(match[2]));
     }
 
-    function boardDeadlineInfo(date, complete = false, baselineDate = date, completedDate = null) {
+    function boardDeadlineInfo(date, complete = false, completedDate = null) {
       if (!date || Number.isNaN(date.getTime())) return { date: null, label: "", overdue: false, delayDays: 0 };
       const today = new Date();
       const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-      const baseline = baselineDate && !Number.isNaN(baselineDate.getTime()) ? baselineDate : date;
-      const dueStart = new Date(baseline.getFullYear(), baseline.getMonth(), baseline.getDate());
+      const dueStart = new Date(date.getFullYear(), date.getMonth(), date.getDate());
       const endDate = complete && completedDate && !Number.isNaN(completedDate.getTime()) ? completedDate : todayStart;
       const delayDays = Math.floor((endDate - dueStart) / 86400000);
       return { date, label: `${date.getMonth() + 1}/${date.getDate()}`, complete, completedDate, overdue: !complete && delayDays > 0, delayDays: Math.max(0, delayDays) };
@@ -2192,11 +2191,10 @@
         return { module: row.module, records: tokens.map((token, index) => ({ module: row.module, sequence: index, dateLabel: token.replace(".", "/"), date: parseBoardDate(token), reason: index === tokens.length - 1 ? reason : "" })) };
       }).filter(entry => entry.records.length);
       const currentDates = histories.map(entry => entry.records.at(-1).date).filter(Boolean).sort((a, b) => a - b);
-      const baselineDates = histories.map(entry => entry.records[0].date).filter(Boolean).sort((a, b) => a - b);
       const fallback = parseBoardDate(nextDateFor(item));
       const complete = completion.status === "completed" || stage === "已完成";
       const completedDate = parseBoardDate(completion.completedAt);
-      const info = boardDeadlineInfo(currentDates[0] || fallback, complete, baselineDates[0] || fallback, completedDate);
+      const info = boardDeadlineInfo(currentDates[0] || fallback, complete, completedDate);
       if (storedRequirement.delaySuppressed) {
         info.overdue = false;
         info.delayDays = 0;
@@ -2283,9 +2281,8 @@
         const status = statusFor(item);
         const unitHistory = item.deadlineHistory?.length ? item.deadlineHistory : item.nextMilestone ? [{ sequence: 0, dateLabel: String(item.nextMilestone).replace(/^\d{4}-/, "").replace("-", "/"), reason: item.delayReason || "" }] : [];
         const currentDate = parseBoardDate(unitHistory.at(-1)?.dateLabel || item.nextMilestone);
-        const baselineDate = parseBoardDate(unitHistory[0]?.dateLabel || item.nextMilestone);
         const completion = item.milestoneCompletion || {};
-        const deadline = boardDeadlineInfo(currentDate, completion.status === "completed" || status === "已验收", baselineDate, parseBoardDate(completion.completedAt));
+        const deadline = boardDeadlineInfo(currentDate, completion.status === "completed" || status === "已验收", parseBoardDate(completion.completedAt));
         deadline.completedAt = completion.completedAt || "";
         deadline.history = unitHistory;
         const historyData = escapeHtml(encodeURIComponent(JSON.stringify(deadline.history)));

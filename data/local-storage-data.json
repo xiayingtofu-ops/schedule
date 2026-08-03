@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-03T02:19:59.145Z",
+  "exportedAt": "2026-08-03T02:21:59.725Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 130,
+      "revision": 131,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -7595,7 +7595,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-03T02:19:59.145Z"
+      "updatedAt": "2026-08-03T02:21:59.725Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -8422,6 +8422,7 @@
         "type": "meeting",
         "allDay": true
       }
-    ]
+    ],
+    "delayCalculationRule": "latest-ddl"
   }
 }
