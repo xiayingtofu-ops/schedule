@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-03T02:10:46.741Z",
+  "exportedAt": "2026-08-03T02:19:59.145Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 129,
+      "revision": 130,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -2417,7 +2417,8 @@
               "status": "active",
               "completedAt": ""
             }
-          }
+          },
+          "delaySuppressed": true
         },
         "载具队列": {
           "project_stage": "验收中",
@@ -7594,7 +7595,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-03T02:10:46.741Z"
+      "updatedAt": "2026-08-03T02:19:59.145Z"
     },
     "pmManagementTableV2": [
       "模块",

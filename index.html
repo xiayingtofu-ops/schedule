@@ -2197,6 +2197,10 @@
       const complete = completion.status === "completed" || stage === "已完成";
       const completedDate = parseBoardDate(completion.completedAt);
       const info = boardDeadlineInfo(currentDates[0] || fallback, complete, baselineDates[0] || fallback, completedDate);
+      if (storedRequirement.delaySuppressed) {
+        info.overdue = false;
+        info.delayDays = 0;
+      }
       info.completedAt = completion.completedAt || "";
       info.history = histories.flatMap(entry => entry.records);
       info.field = field;
