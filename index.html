@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    if (new URLSearchParams(location.search).get("workspace") === "2.0") {
+      document.documentElement.classList.add("workspace-2-0");
+    }
+  </script>
   <title>GVG 需求进度汇总</title>
   <style>
     :root {
@@ -38,6 +43,8 @@
     .tab.active::before { content: ""; position: absolute; left: -7px; top: 50%; width: 3px; height: 22px; transform: translateY(-50%); border-radius: 99px; background: var(--blue); }
     .page { display: none; }
     .page.active { display: block; }
+    .workspace-2-0 .tabs .tab:not([data-page="boardPage"]):not([data-page="requirementOverviewPage"]):not([data-page="unitSwimlanePage"]) { display: none !important; }
+    .workspace-2-0 .page:not(#boardPage):not(#requirementOverviewPage):not(#unitSwimlanePage) { display: none !important; }
     #planningPage table { min-width: 1100px; }
     .latest-time { white-space: nowrap; color: #495568; font-size: 12px; }
     .latest-time.empty { color: #98a1af; }

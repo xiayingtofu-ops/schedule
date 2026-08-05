@@ -16,29 +16,6 @@
   </style>
 </head>
 <body>
-  <iframe id="workspace" src="index.html" title="工作空间 2.0"></iframe>
-  <script>
-    const retainedPages = new Set([
-      "boardPage",
-      "requirementOverviewPage",
-      "unitSwimlanePage"
-    ]);
-
-    document.querySelector("#workspace").addEventListener("load", event => {
-      const app = event.currentTarget.contentDocument;
-      app.title = "工作空间 2.0";
-
-      app.querySelectorAll(".tabs .tab").forEach(tab => {
-        if (!retainedPages.has(tab.dataset.page)) {
-          tab.hidden = true;
-          tab.style.setProperty("display", "none", "important");
-        }
-      });
-
-      app.querySelectorAll(".page").forEach(page => {
-        if (!retainedPages.has(page.id)) page.style.setProperty("display", "none", "important");
-      });
-    });
-  </script>
+  <iframe id="workspace" src="index.html?workspace=2.0" title="工作空间 2.0"></iframe>
 </body>
 </html>
