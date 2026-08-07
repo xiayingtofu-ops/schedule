@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-07T02:21:24.028Z",
+  "exportedAt": "2026-08-07T02:34:10.255Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 135,
+      "revision": 136,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -818,8 +818,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-07",
+            "nextstatus": "已完成",
+            "date": "2026-07-24",
             "note": ""
           },
           "projectItems": [
@@ -843,9 +843,10 @@
             "联盟系统": {
               "design": "6.11",
               "development": "7.9",
-              "acceptance": "7.22  7.24",
+              "acceptance": "7/24",
               "note": "",
-              "status": "验收中"
+              "status": "已完成",
+              "owner": "@杨心权"
             }
           },
           "deadlineHistories": {
@@ -1140,8 +1141,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-08-03",
+            "nextstatus": "UI制作中",
+            "date": "2026-08-11",
             "note": ""
           },
           "projectItems": [
@@ -1158,14 +1159,15 @@
             "https://centurygames.feishu.cn/wiki/AtoZwFUcliIBOVktSgXcLcccnQe?fromScene=spaceOverview"
           ],
           "chats": [],
-          "stage": "UX制作中",
+          "stage": "UI制作中",
           "pmMilestones": {
             "改装系统": {
               "design": "8/5",
-              "development": "",
+              "development": "8/11",
               "acceptance": "",
               "note": "改装系统宣讲",
-              "status": "UX制作中"
+              "status": "UI制作中",
+              "owner": "@刘洋"
             }
           },
           "deadlineHistories": {
@@ -1196,8 +1198,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "设计中",
+            "date": "2026-07-31",
             "note": ""
           },
           "projectItems": [],
@@ -1206,11 +1208,12 @@
           "stage": "设计中",
           "pmMilestones": {
             "GVE": {
-              "design": "7/24 7/31",
+              "design": "7/31",
               "development": "",
               "acceptance": "",
               "note": "",
-              "status": "设计中"
+              "status": "设计中",
+              "owner": "@王宇轩"
             }
           },
           "deadlineHistories": {
@@ -1768,9 +1771,9 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
+            "nextstatus": "开发中",
+            "date": "2026-08-07",
+            "note": ""
           },
           "projectItems": [
             {
@@ -1792,10 +1795,11 @@
           "pmMilestones": {
             "GVG": {
               "design": "7.7",
-              "development": "7.30",
+              "development": "8/7",
               "acceptance": "",
               "note": "",
-              "status": "开发中"
+              "status": "开发中",
+              "owner": "@杨心权"
             }
           },
           "deadlineHistories": {
@@ -1825,8 +1829,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "设计中",
+            "date": "2026-07-31",
             "note": ""
           },
           "projectItems": [],
@@ -1835,7 +1839,7 @@
           "stage": "设计中",
           "pmMilestones": {
             "新PVE": {
-              "design": "8/11",
+              "design": "7/31",
               "development": "",
               "acceptance": "",
               "note": "",
@@ -1854,7 +1858,13 @@
               }
             ]
           },
-          "delayReason": ""
+          "delayReason": "",
+          "deadlineCompletions": {
+            "design": {
+              "status": "completed",
+              "completedAt": "2026-08-07"
+            }
+          }
         },
         "联盟建筑": {
           "project_stage": "验收中",
@@ -2350,7 +2360,7 @@
           "nextMilestone": {
             "nextstatus": "验收中",
             "date": "2026-08-11",
-            "note": ""
+            "note": "正式建造资源8/7回收"
           },
           "projectItems": [
             {
@@ -2373,12 +2383,13 @@
             "联盟建筑": {
               "design": "7.3  7.7",
               "development": "7.17  7.21",
-              "acceptance": "7/17 7/21 8/5 8/11",
+              "acceptance": "8/11",
               "note": "",
-              "status": "验收中"
+              "status": "验收中",
+              "owner": "@王嘉西"
             }
           },
-          "delayReason": "",
+          "delayReason": "正式建造资源8/7回收",
           "deadlineHistories": {
             "acceptance": [
               {
@@ -2904,8 +2915,8 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-15",
+            "nextstatus": "已完成",
+            "date": "2026-07-17",
             "note": ""
           },
           "projectItems": [
@@ -2929,9 +2940,10 @@
             "载具队列": {
               "design": "6.26",
               "development": "7.16",
-              "acceptance": "7.17",
+              "acceptance": "7/17",
               "note": "重交互，UX工作略有积压",
-              "status": "验收中"
+              "status": "已完成",
+              "owner": "@王嘉西"
             }
           },
           "deadlineHistories": {
@@ -2961,8 +2973,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "设计中",
+            "date": "2026-07-31",
             "note": ""
           },
           "projectItems": [],
@@ -2971,11 +2983,12 @@
           "stage": "设计中",
           "pmMilestones": {
             "要塞王虫": {
-              "design": "7/24 7/31",
+              "design": "7/31",
               "development": "",
               "acceptance": "",
               "note": "",
-              "status": "设计中"
+              "status": "设计中",
+              "owner": "@杨心权"
             }
           },
           "deadlineHistories": {
@@ -3012,8 +3025,8 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "其他资产制作中",
+            "date": "2026-07-31",
             "note": ""
           },
           "projectItems": [],
@@ -3023,10 +3036,11 @@
           "pmMilestones": {
             "联盟矿点": {
               "design": "7.17",
-              "development": "7/17 7/31",
+              "development": "7/31",
               "acceptance": "",
               "note": "",
-              "status": "开发中"
+              "status": "其他资产制作中",
+              "owner": "@王嘉西"
             }
           },
           "deadlineHistories": {
@@ -3564,8 +3578,8 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-29",
+            "nextstatus": "已完成",
+            "date": "2026-07-16",
             "note": ""
           },
           "projectItems": [
@@ -3587,9 +3601,10 @@
             "抽奖二期优化": {
               "design": "6.26",
               "development": "7.10",
-              "acceptance": "7.16",
+              "acceptance": "7/16",
               "note": "",
-              "status": "验收中"
+              "status": "已完成",
+              "owner": "@刘洋"
             }
           },
           "deadlineHistories": {
@@ -4374,9 +4389,9 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
+            "nextstatus": "已完成",
+            "date": "2026-07-29",
+            "note": ""
           },
           "projectItems": [
             {
@@ -4394,7 +4409,7 @@
           "chats": [
             "oc_b4cb5dcef9ebf4c11948aed61b283f80"
           ],
-          "stage": "验收中",
+          "stage": "已完成",
           "pmMilestones": {
             "战报": {
               "design": "6.26",
@@ -4402,6 +4417,11 @@
               "acceptance": "7.29",
               "note": "UX延期",
               "status": "验收中"
+            },
+            "战报*": {
+              "acceptance": "7/29",
+              "status": "已完成",
+              "owner": "@张泽臻"
             }
           },
           "deadlineHistories": {
@@ -4437,21 +4457,22 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "开发中",
+            "date": "2026-08-05",
             "note": ""
           },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "UI制作中",
+          "stage": "开发中",
           "pmMilestones": {
             "迁城": {
               "design": "7.10",
-              "development": "7/27",
+              "development": "8/5",
               "acceptance": "",
               "note": "",
-              "status": "开发中"
+              "status": "开发中",
+              "owner": "@杨心权"
             }
           },
           "deadlineHistories": {
@@ -4464,6 +4485,12 @@
                 "reason": ""
               }
             ]
+          },
+          "deadlineCompletions": {
+            "development": {
+              "status": "completed",
+              "completedAt": "2026-08-05"
+            }
           }
         },
         "功能开启": {
@@ -4481,7 +4508,7 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
+            "nextstatus": "设计中",
             "date": "",
             "note": ""
           },
@@ -4495,7 +4522,8 @@
               "development": "",
               "acceptance": "",
               "note": "",
-              "status": "设计中"
+              "status": "设计中",
+              "owner": "@杨心权"
             }
           }
         },
@@ -4961,9 +4989,9 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
+            "nextstatus": "验收中",
+            "date": "2026-08-07",
+            "note": ""
           },
           "projectItems": [
             {
@@ -4986,7 +5014,7 @@
             "聊天": {
               "design": "6.30",
               "development": "7.9",
-              "acceptance": "8.7",
+              "acceptance": "8/7",
               "note": "",
               "status": "验收中",
               "owner": "@王宇轩"
@@ -5003,7 +5031,7 @@
               }
             ]
           },
-          "delayReason": "验收延期"
+          "delayReason": ""
         },
         "地图LOD设计*": {
           "project_stage": "验收中",
@@ -5463,9 +5491,9 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "已完成",
-            "date": "2026-07-31",
-            "note": "验收完成"
+            "nextstatus": "设计中",
+            "date": "2026-08-07",
+            "note": ""
           },
           "projectItems": [
             {
@@ -5483,7 +5511,7 @@
           "chats": [
             "oc_4fea4ff8d1b93f5208a21198f8b935a0"
           ],
-          "stage": "开发中",
+          "stage": "设计中",
           "pmMilestones": {
             "地图LOD": {
               "design": "6.29",
@@ -5491,6 +5519,11 @@
               "acceptance": "",
               "note": "",
               "status": "开发中"
+            },
+            "地图LOD设计*": {
+              "design": "8/7",
+              "status": "设计中",
+              "owner": "@张泽臻"
             }
           },
           "deadlineHistories": {
@@ -5961,9 +5994,9 @@
             "done"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": "未排期"
+            "nextstatus": "已完成",
+            "date": "2026-07-17",
+            "note": ""
           },
           "projectItems": [
             {
@@ -5986,9 +6019,10 @@
             "背包系统": {
               "design": "7.6",
               "development": "7.9",
-              "acceptance": "7.17",
+              "acceptance": "7/17",
               "note": "",
-              "status": "验收中"
+              "status": "已完成",
+              "owner": "@梁洪诚-实习生"
             }
           },
           "deadlineHistories": {
@@ -6018,21 +6052,22 @@
             "todo"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
+            "nextstatus": "开发中",
+            "date": "2026-08-11",
             "note": ""
           },
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "UI制作中",
+          "stage": "开发中",
           "pmMilestones": {
             "新手期": {
               "design": "",
-              "development": "",
+              "development": "8/11",
               "acceptance": "",
               "note": "",
-              "status": "设计中"
+              "status": "开发中",
+              "owner": "@杨心权\n@梁洪诚-实习生"
             }
           }
         },
@@ -6684,8 +6719,8 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-30",
+            "nextstatus": "开发中",
+            "date": "2026-08-07",
             "note": ""
           },
           "projectItems": [
@@ -6708,10 +6743,11 @@
           "pmMilestones": {
             "要塞": {
               "design": "7.3  7.14",
-              "development": "7/3 7/14 7/31",
+              "development": "8/7",
               "acceptance": "",
               "note": "顺延",
-              "status": "开发中"
+              "status": "开发中",
+              "owner": "@王宇轩"
             }
           },
           "deadlineHistories": {
@@ -7188,8 +7224,8 @@
             "doing"
           ],
           "nextMilestone": {
-            "nextstatus": "",
-            "date": "2026-07-17",
+            "nextstatus": "开发中",
+            "date": "2026-08-13",
             "note": ""
           },
           "projectItems": [
@@ -7212,10 +7248,11 @@
           "pmMilestones": {
             "关卡": {
               "design": "6.29  7.1  7.5",
-              "development": "7/17",
+              "development": "8/13",
               "acceptance": "",
               "note": "增加聊天系统修改、依赖地图城市边界数据",
-              "status": "开发中"
+              "status": "开发中",
+              "owner": "@王宇轩"
             }
           },
           "deadlineHistories": {
@@ -7242,11 +7279,11 @@
           "designMarkup": "<span class=\"pm-mark done\">6.11</span>",
           "development": "7.9",
           "developmentMarkup": "<span class=\"pm-mark done\">7.9</span>",
-          "acceptance": "7.22  7.24",
-          "acceptanceMarkup": "7.22  7.24",
+          "acceptance": "7/24",
+          "acceptanceMarkup": "7/24",
           "note": "",
           "noteMarkup": "",
-          "status": "验收中"
+          "status": "已完成"
         },
         {
           "module": "抽奖二期优化",
@@ -7257,11 +7294,11 @@
           "designMarkup": "6.26",
           "development": "7.10",
           "developmentMarkup": "7.10",
-          "acceptance": "7.16",
-          "acceptanceMarkup": "7.16",
+          "acceptance": "7/16",
+          "acceptanceMarkup": "7/16",
           "note": "",
           "noteMarkup": "",
-          "status": "验收中"
+          "status": "已完成"
         },
         {
           "module": "战报",
@@ -7287,11 +7324,11 @@
           "designMarkup": "<span class=\"pm-mark done\">6.26</span>",
           "development": "7.16",
           "developmentMarkup": "<span class=\"pm-mark done\">7.16</span>",
-          "acceptance": "7.17",
-          "acceptanceMarkup": "7.17",
+          "acceptance": "7/17",
+          "acceptanceMarkup": "7/17",
           "note": "重交互，UX工作略有积压",
           "noteMarkup": "重交互，UX工作略有积压",
-          "status": "验收中"
+          "status": "已完成"
         },
         {
           "module": "地图LOD",
@@ -7317,8 +7354,8 @@
           "designMarkup": "6.30",
           "development": "7.9",
           "developmentMarkup": "7.9",
-          "acceptance": "8.7",
-          "acceptanceMarkup": "<span class=\"pm-mark delayed\">8.7</span>",
+          "acceptance": "8/7",
+          "acceptanceMarkup": "8/7",
           "note": "验收延期",
           "noteMarkup": "验收延期",
           "status": "验收中"
@@ -7328,8 +7365,8 @@
           "moduleMarkup": "新PVE",
           "owner": "@王嘉西",
           "ownerMarkup": "@王嘉西",
-          "design": "8/11",
-          "designMarkup": "8/11",
+          "design": "7/31",
+          "designMarkup": "7/31",
           "development": "",
           "developmentMarkup": "",
           "acceptance": "",
@@ -7345,8 +7382,8 @@
           "ownerMarkup": "@王宇轩",
           "design": "6.29  7.1  7.5",
           "designMarkup": "<span class=\"pm-mark delayed\">6.29</span>  <span class=\"pm-mark delayed\">7.1</span>  <span class=\"pm-mark done\">7.5</span>",
-          "development": "7/17",
-          "developmentMarkup": "7/17",
+          "development": "8/13",
+          "developmentMarkup": "8/13",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "增加聊天系统修改、依赖地图城市边界数据",
@@ -7360,8 +7397,8 @@
           "ownerMarkup": "@王宇轩",
           "design": "7.3  7.14",
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark updated\">7.14</span>",
-          "development": "7/3 7/14 7/31",
-          "developmentMarkup": "7/3 7/14 7/31",
+          "development": "8/7",
+          "developmentMarkup": "8/7",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "顺延",
@@ -7392,8 +7429,8 @@
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
           "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-          "acceptance": "7/17 7/21 8/5 8/11",
-          "acceptanceMarkup": "7/17 7/21 8/5 8/11",
+          "acceptance": "8/11",
+          "acceptanceMarkup": "8/11",
           "note": "",
           "noteMarkup": "",
           "status": "验收中"
@@ -7405,8 +7442,8 @@
           "ownerMarkup": "@杨心权",
           "design": "7.7",
           "designMarkup": "<span class=\"pm-mark done\">7.7</span>",
-          "development": "7.30",
-          "developmentMarkup": "7.30",
+          "development": "8/7",
+          "developmentMarkup": "8/7",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "",
@@ -7422,11 +7459,11 @@
           "designMarkup": "7.6",
           "development": "7.9",
           "developmentMarkup": "7.9",
-          "acceptance": "7.17",
-          "acceptanceMarkup": "7.17",
+          "acceptance": "7/17",
+          "acceptanceMarkup": "7/17",
           "note": "",
           "noteMarkup": "",
-          "status": "验收中"
+          "status": "已完成"
         },
         {
           "module": "迁城",
@@ -7435,8 +7472,8 @@
           "ownerMarkup": "@杨心权",
           "design": "7.10",
           "designMarkup": "7.10",
-          "development": "7/27",
-          "developmentMarkup": "7/27",
+          "development": "8/5",
+          "developmentMarkup": "8/5",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "",
@@ -7450,13 +7487,13 @@
           "ownerMarkup": "@杨心权\n@梁洪诚-实习生",
           "design": "",
           "designMarkup": "",
-          "development": "",
-          "developmentMarkup": "",
+          "development": "8/11",
+          "developmentMarkup": "8/11",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "",
           "noteMarkup": "",
-          "status": "设计中"
+          "status": "开发中"
         },
         {
           "module": "联盟矿点",
@@ -7465,21 +7502,21 @@
           "ownerMarkup": "@王嘉西",
           "design": "7.17",
           "designMarkup": "7.17",
-          "development": "7/17 7/31",
-          "developmentMarkup": "7/17 7/31",
+          "development": "7/31",
+          "developmentMarkup": "7/31",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "",
           "noteMarkup": "",
-          "status": "开发中"
+          "status": "其他资产制作中"
         },
         {
           "module": "要塞王虫",
           "moduleMarkup": "要塞王虫",
           "owner": "@杨心权",
           "ownerMarkup": "@杨心权",
-          "design": "7/24 7/31",
-          "designMarkup": "7/24 7/31",
+          "design": "7/31",
+          "designMarkup": "7/31",
           "development": "",
           "developmentMarkup": "",
           "acceptance": "",
@@ -7493,8 +7530,8 @@
           "moduleMarkup": "GVE",
           "owner": "@王宇轩",
           "ownerMarkup": "@王宇轩",
-          "design": "7/24 7/31",
-          "designMarkup": "7/24 7/31",
+          "design": "7/31",
+          "designMarkup": "7/31",
           "development": "",
           "developmentMarkup": "",
           "acceptance": "",
@@ -7525,13 +7562,43 @@
           "ownerMarkup": "@刘洋",
           "design": "8/5",
           "designMarkup": "8/5",
-          "development": "",
-          "developmentMarkup": "",
+          "development": "8/11",
+          "developmentMarkup": "8/11",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "改装系统宣讲",
           "noteMarkup": "改装系统宣讲",
-          "status": "UX制作中"
+          "status": "UI制作中"
+        },
+        {
+          "module": "地图LOD设计*",
+          "moduleMarkup": "地图LOD设计*",
+          "owner": "@张泽臻",
+          "ownerMarkup": "@张泽臻",
+          "design": "8/7",
+          "designMarkup": "8/7",
+          "development": "",
+          "developmentMarkup": "",
+          "acceptance": "",
+          "acceptanceMarkup": "",
+          "note": "",
+          "noteMarkup": "",
+          "status": "设计中"
+        },
+        {
+          "module": "战报*",
+          "moduleMarkup": "战报*",
+          "owner": "@张泽臻",
+          "ownerMarkup": "@张泽臻",
+          "design": "",
+          "designMarkup": "",
+          "development": "",
+          "developmentMarkup": "",
+          "acceptance": "7/29",
+          "acceptanceMarkup": "7/29",
+          "note": "",
+          "noteMarkup": "",
+          "status": "已完成"
         }
       ],
       "syncMeta": {
@@ -7596,7 +7663,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-07T02:21:24.028Z"
+      "updatedAt": "2026-08-07T02:34:10.255Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7609,13 +7676,13 @@
       "@杨心权",
       "<span class=\"pm-mark done\">6.11</span>",
       "<span class=\"pm-mark done\">7.9</span>",
-      "7.22  7.24",
+      "7/24",
       "",
       "抽奖二期优化",
       "@刘洋",
       "6.26",
       "7.10",
-      "7.16",
+      "7/16",
       "",
       "战报",
       "@张泽臻",
@@ -7627,7 +7694,7 @@
       "@王嘉西",
       "<span class=\"pm-mark done\">6.26</span>",
       "<span class=\"pm-mark done\">7.16</span>",
-      "7.17",
+      "7/17",
       "重交互，UX工作略有积压",
       "地图LOD",
       "@张泽臻",
@@ -7639,24 +7706,24 @@
       "@王宇轩",
       "6.30",
       "7.9",
-      "8.7",
+      "8/7",
       "验收延期",
       "新PVE",
       "@王嘉西",
-      "8/11",
+      "7/31",
       "",
       "",
       "",
       "关卡",
       "@王宇轩",
       "<span class=\"pm-mark delayed\">6.29</span>  <span class=\"pm-mark delayed\">7.1</span>  <span class=\"pm-mark done\">7.5</span>",
-      "7/17",
+      "8/13",
       "",
       "增加聊天系统修改、依赖地图城市边界数据",
       "要塞",
       "@王宇轩",
       "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark updated\">7.14</span>",
-      "7/3 7/14 7/31",
+      "8/7",
       "",
       "顺延",
       "新地图搭建",
@@ -7669,47 +7736,47 @@
       "@王嘉西",
       "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
       "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-      "7/17 7/21 8/5 8/11",
+      "8/11",
       "",
       "GVG",
       "@杨心权",
       "<span class=\"pm-mark done\">7.7</span>",
-      "7.30",
+      "8/7",
       "",
       "",
       "背包系统",
       "@梁洪诚-实习生",
       "7.6",
       "7.9",
-      "7.17",
+      "7/17",
       "",
       "迁城",
       "@杨心权",
       "7.10",
-      "7/27",
+      "8/5",
       "",
       "",
       "新手期",
       "@杨心权\n@梁洪诚-实习生",
       "",
-      "",
+      "8/11",
       "",
       "",
       "联盟矿点",
       "@王嘉西",
       "7.17",
-      "7/17 7/31",
+      "7/31",
       "",
       "",
       "要塞王虫",
       "@杨心权",
-      "7/24 7/31",
+      "7/31",
       "",
       "",
       "",
       "GVE",
       "@王宇轩",
-      "7/24 7/31",
+      "7/31",
       "",
       "",
       "",
@@ -7722,9 +7789,21 @@
       "改装系统",
       "@刘洋",
       "8/5",
+      "8/11",
+      "",
+      "改装系统宣讲",
+      "地图LOD设计*",
+      "@张泽臻",
+      "8/7",
       "",
       "",
-      "改装系统宣讲"
+      "",
+      "战报*",
+      "@张泽臻",
+      "",
+      "",
+      "7/29",
+      ""
     ],
     "pmManagementTableV1": [
       "模块",
@@ -7735,15 +7814,15 @@
       "备注",
       "联盟系统",
       "@杨心权",
-      "6.11",
-      "7.9",
-      "7.22 7.24",
+      "<span class=\"pm-mark done\">6.11</span>",
+      "<span class=\"pm-mark done\">7.9</span>",
+      "7/24",
       "",
       "抽奖二期优化",
       "@刘洋",
       "6.26",
       "7.10",
-      "7.16",
+      "7/16",
       "",
       "战报",
       "@张泽臻",
@@ -7753,9 +7832,9 @@
       "UX延期",
       "载具队列",
       "@王嘉西",
-      "6.26",
-      "7.16",
-      "7.17",
+      "<span class=\"pm-mark done\">6.26</span>",
+      "<span class=\"pm-mark done\">7.16</span>",
+      "7/17",
       "重交互，UX工作略有积压",
       "地图LOD",
       "@张泽臻",
@@ -7767,24 +7846,24 @@
       "@王宇轩",
       "6.30",
       "7.9",
-      "8.7",
+      "8/7",
       "验收延期",
       "新PVE",
       "@王嘉西",
-      "8/11",
+      "7/31",
       "",
       "",
       "",
       "关卡",
       "@王宇轩",
-      "6.29 7.1 7.5",
-      "7/17",
+      "<span class=\"pm-mark delayed\">6.29</span>  <span class=\"pm-mark delayed\">7.1</span>  <span class=\"pm-mark done\">7.5</span>",
+      "8/13",
       "",
       "增加聊天系统修改、依赖地图城市边界数据",
       "要塞",
       "@王宇轩",
-      "7.3 7.14",
-      "7/3 7/14 7/31",
+      "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark updated\">7.14</span>",
+      "8/7",
       "",
       "顺延",
       "新地图搭建",
@@ -7797,47 +7876,47 @@
       "@王嘉西",
       "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
       "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-      "7/17 7/21 8/5 8/11",
+      "8/11",
       "",
       "GVG",
       "@杨心权",
-      "7.7",
-      "7.30",
+      "<span class=\"pm-mark done\">7.7</span>",
+      "8/7",
       "",
       "",
       "背包系统",
       "@梁洪诚-实习生",
       "7.6",
       "7.9",
-      "7.17",
+      "7/17",
       "",
       "迁城",
       "@杨心权",
       "7.10",
-      "7/27",
+      "8/5",
       "",
       "",
       "新手期",
-      "@杨心权 @梁洪诚-实习生",
+      "@杨心权\n@梁洪诚-实习生",
       "",
-      "",
+      "8/11",
       "",
       "",
       "联盟矿点",
       "@王嘉西",
       "7.17",
-      "7/17 7/31",
+      "7/31",
       "",
       "",
       "要塞王虫",
       "@杨心权",
-      "7/24 7/31",
+      "7/31",
       "",
       "",
       "",
       "GVE",
       "@王宇轩",
-      "7/24 7/31",
+      "7/31",
       "",
       "",
       "",
@@ -7850,9 +7929,21 @@
       "改装系统",
       "@刘洋",
       "8/5",
+      "8/11",
+      "",
+      "改装系统宣讲",
+      "地图LOD设计*",
+      "@张泽臻",
+      "8/7",
       "",
       "",
-      "改装系统宣讲"
+      "",
+      "战报*",
+      "@张泽臻",
+      "",
+      "",
+      "7/29",
+      ""
     ],
     "pmStatusPresetVersion": 1,
     "unitProgressEdits": {
