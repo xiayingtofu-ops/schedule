@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-07T02:19:58.568Z",
+  "exportedAt": "2026-08-07T02:21:24.028Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 134,
+      "revision": 135,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -1835,7 +1835,7 @@
           "stage": "设计中",
           "pmMilestones": {
             "新PVE": {
-              "design": "7.29",
+              "design": "8/11",
               "development": "",
               "acceptance": "",
               "note": "",
@@ -7328,8 +7328,8 @@
           "moduleMarkup": "新PVE",
           "owner": "@王嘉西",
           "ownerMarkup": "@王嘉西",
-          "design": "7.29",
-          "designMarkup": "7.29",
+          "design": "8/11",
+          "designMarkup": "8/11",
           "development": "",
           "developmentMarkup": "",
           "acceptance": "",
@@ -7596,7 +7596,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-07T02:19:58.568Z"
+      "updatedAt": "2026-08-07T02:21:24.028Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7643,7 +7643,7 @@
       "验收延期",
       "新PVE",
       "@王嘉西",
-      "7.31",
+      "8/11",
       "",
       "",
       "",
@@ -7771,7 +7771,7 @@
       "验收延期",
       "新PVE",
       "@王嘉西",
-      "7.29",
+      "8/11",
       "",
       "",
       "",
