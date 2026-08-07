@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-03T02:21:59.725Z",
+  "exportedAt": "2026-08-07T02:18:29.142Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 131,
+      "revision": 133,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -1164,7 +1164,7 @@
               "design": "8/5",
               "development": "",
               "acceptance": "",
-              "note": "需求宣讲",
+              "note": "改装系统宣讲",
               "status": "UX制作中"
             }
           },
@@ -1861,7 +1861,7 @@
           "delivery_stage": "开发中",
           "effective_stage": "开发中",
           "status_overridden": true,
-          "next_date": "2026-08-07",
+          "next_date": "2026-08-11",
           "latest_chat": {
             "time": "2026-07-21 17:52",
             "sender": "康俊花",
@@ -2349,8 +2349,8 @@
           ],
           "nextMilestone": {
             "nextstatus": "验收中",
-            "date": "2026-08-07",
-            "note": ""
+            "date": "2026-08-11",
+            "note": "验收延期至 8/11"
           },
           "projectItems": [
             {
@@ -2373,12 +2373,12 @@
             "联盟建筑": {
               "design": "7.3  7.7",
               "development": "7.17  7.21",
-              "acceptance": "7/17 7/21 8/5 8/7",
+              "acceptance": "7/17 7/21 8/5 8/11",
               "note": "",
               "status": "验收中"
             }
           },
-          "delayReason": "",
+          "delayReason": "验收延期至 8/11",
           "deadlineHistories": {
             "acceptance": [
               {
@@ -2418,7 +2418,7 @@
               "completedAt": ""
             }
           },
-          "delaySuppressed": true
+          "delaySuppressed": false
         },
         "载具队列": {
           "project_stage": "验收中",
@@ -5002,7 +5002,8 @@
                 "reason": ""
               }
             ]
-          }
+          },
+          "delayReason": "验收延期"
         },
         "地图LOD设计*": {
           "project_stage": "验收中",
@@ -7317,9 +7318,9 @@
           "development": "7.9",
           "developmentMarkup": "7.9",
           "acceptance": "8.7",
-          "acceptanceMarkup": "8.7",
-          "note": "",
-          "noteMarkup": "",
+          "acceptanceMarkup": "<span class=\"pm-mark delayed\">8.7</span>",
+          "note": "验收延期",
+          "noteMarkup": "验收延期",
           "status": "验收中"
         },
         {
@@ -7391,8 +7392,8 @@
           "designMarkup": "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
           "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-          "acceptance": "7/17 7/21 8/5 8/7",
-          "acceptanceMarkup": "7/17 7/21 8/5 8/7",
+          "acceptance": "7/17 7/21 8/5 8/11",
+          "acceptanceMarkup": "7/17 7/21 8/5 <span class=\"pm-mark delayed\">8/7</span> <span class=\"pm-mark updated\">8/11</span>",
           "note": "",
           "noteMarkup": "",
           "status": "验收中"
@@ -7528,8 +7529,8 @@
           "developmentMarkup": "",
           "acceptance": "",
           "acceptanceMarkup": "",
-          "note": "需求宣讲",
-          "noteMarkup": "需求宣讲",
+          "note": "改装系统宣讲",
+          "noteMarkup": "改装系统宣讲",
           "status": "UX制作中"
         }
       ],
@@ -7595,7 +7596,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-03T02:21:59.725Z"
+      "updatedAt": "2026-08-07T02:18:29.142Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -7639,7 +7640,7 @@
       "6.30",
       "7.9",
       "8.7",
-      "",
+      "验收延期",
       "新PVE",
       "@王嘉西",
       "7.31",
@@ -7668,7 +7669,7 @@
       "@王嘉西",
       "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
       "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
-      "7/17 7/21 8/5 8/7",
+      "7/17 7/21 8/5 8/11",
       "",
       "GVG",
       "@杨心权",
@@ -7723,7 +7724,7 @@
       "8/5",
       "",
       "",
-      "需求宣讲"
+      "改装系统宣讲"
     ],
     "pmManagementTableV1": [
       "模块",
@@ -7767,7 +7768,7 @@
       "6.30",
       "7.9",
       "8.7",
-      "",
+      "验收延期",
       "新PVE",
       "@王嘉西",
       "7.29",
@@ -7794,9 +7795,9 @@
       "搭建完成，服务器数据7/13接入",
       "联盟建筑",
       "@王嘉西",
-      "7.3 7.7",
-      "7.17 7.21",
-      "7/17 7/21 8/5 8/7",
+      "<span class=\"pm-mark delayed\">7.3</span>  <span class=\"pm-mark done\">7.7</span>",
+      "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
+      "7/17 7/21 8/5 8/11",
       "",
       "GVG",
       "@杨心权",
@@ -7851,7 +7852,7 @@
       "8/5",
       "",
       "",
-      "需求宣讲"
+      "改装系统宣讲"
     ],
     "pmStatusPresetVersion": 1,
     "unitProgressEdits": {
@@ -8400,7 +8401,7 @@
     },
     "planningNextDates": {
       "地图LOD设计*": "7/31 验收完成",
-      "联盟建筑": "2026-08-07",
+      "联盟建筑": "2026-08-11",
       "GVG": "未排期",
       "聊天": "未排期",
       "战报*": "未排期"
