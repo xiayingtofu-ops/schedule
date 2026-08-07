@@ -13,9 +13,47 @@
       overflow: hidden;
       background: #f4f6f9;
     }
+    #exportLocalData {
+      position: fixed;
+      top: 14px;
+      right: 18px;
+      z-index: 10;
+      padding: 8px 12px;
+      border: 1px solid #c5d1e5;
+      border-radius: 8px;
+      color: #174f8a;
+      background: #fff;
+      font: 600 13px/1.2 system-ui, sans-serif;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(26, 52, 84, .12);
+    }
+    #exportLocalData:hover { background: #edf5ff; }
   </style>
 </head>
 <body>
   <iframe id="workspace" src="index.html?workspace=2.0" title="工作空间 2.0"></iframe>
+  <button id="exportLocalData" type="button">导出本地数据</button>
+  <script>
+    document.querySelector("#exportLocalData").addEventListener("click", () => {
+      const keys = [
+        "gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion",
+        "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows",
+        "gvgProgressUpdates", "dismissedUnmatchedIds", "gvgUnitSkillRequirementsV1"
+      ];
+      const data = {};
+      keys.forEach(key => {
+        const value = localStorage.getItem(key);
+        if (value === null) return;
+        try { data[key] = JSON.parse(value); } catch (_) { data[key] = value; }
+      });
+      const payload = { version: 1, exportedAt: new Date().toISOString(), source: "GVG Schedule Dashboard", data };
+      const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "local-storage-data.json";
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+  </script>
 </body>
 </html>
