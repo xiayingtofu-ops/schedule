@@ -6,6 +6,8 @@
   <script>
     if (new URLSearchParams(location.search).get("workspace") === "2.0") {
       document.documentElement.classList.add("workspace-2-0");
+    } else {
+      location.replace("workspace-2.0.html");
     }
   </script>
   <title>GVG 需求进度汇总</title>
