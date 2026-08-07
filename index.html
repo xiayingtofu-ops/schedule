@@ -1418,7 +1418,6 @@
       });
       if (pmEvents.length) return pmEvents.map(event => {
         if (item.title === "改装系统" && event.type === "proposal") return { ...event, type: "meeting", label: "改装系统宣讲" };
-        if (item.title === "联盟建筑" && event.type === "acceptance") return { ...event, type: "p0", label: "联盟建筑 · 验收（延期）" };
         if (item.title === "聊天" && event.type === "acceptance") return { ...event, type: "p0", label: "聊天 · 验收（延期）" };
         return event;
       });

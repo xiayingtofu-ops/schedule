@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-07T02:18:29.142Z",
+  "exportedAt": "2026-08-07T02:19:58.568Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 133,
+      "revision": 134,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -2350,7 +2350,7 @@
           "nextMilestone": {
             "nextstatus": "验收中",
             "date": "2026-08-11",
-            "note": "验收延期至 8/11"
+            "note": ""
           },
           "projectItems": [
             {
@@ -2378,7 +2378,7 @@
               "status": "验收中"
             }
           },
-          "delayReason": "验收延期至 8/11",
+          "delayReason": "",
           "deadlineHistories": {
             "acceptance": [
               {
@@ -2418,7 +2418,7 @@
               "completedAt": ""
             }
           },
-          "delaySuppressed": false
+          "delaySuppressed": true
         },
         "载具队列": {
           "project_stage": "验收中",
@@ -7393,7 +7393,7 @@
           "development": "7.17  7.21",
           "developmentMarkup": "<span class=\"pm-mark delayed\">7.17</span>  <span class=\"pm-mark updated\">7.21</span>",
           "acceptance": "7/17 7/21 8/5 8/11",
-          "acceptanceMarkup": "7/17 7/21 8/5 <span class=\"pm-mark delayed\">8/7</span> <span class=\"pm-mark updated\">8/11</span>",
+          "acceptanceMarkup": "7/17 7/21 8/5 8/11",
           "note": "",
           "noteMarkup": "",
           "status": "验收中"
@@ -7596,7 +7596,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-07T02:18:29.142Z"
+      "updatedAt": "2026-08-07T02:19:58.568Z"
     },
     "pmManagementTableV2": [
       "模块",
