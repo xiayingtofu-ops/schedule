@@ -35,6 +35,8 @@
   <button id="exportLocalData" type="button">导出本地数据</button>
   <script>
     document.querySelector("#exportLocalData").addEventListener("click", () => {
+      let storage = localStorage;
+      try { storage = document.querySelector("#workspace").contentWindow.localStorage; } catch (_) {}
       const keys = [
         "gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion",
         "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows",
@@ -42,7 +44,7 @@
       ];
       const data = {};
       keys.forEach(key => {
-        const value = localStorage.getItem(key);
+        const value = storage.getItem(key);
         if (value === null) return;
         try { data[key] = JSON.parse(value); } catch (_) { data[key] = value; }
       });
