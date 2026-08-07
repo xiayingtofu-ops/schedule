@@ -1,5 +1,5 @@
 window.GVG_SYNC_DATA = {
-  "generated_at": "2026-07-31T15:33:13+08:00",
+  "generated_at": "2026-08-06T11:08:32+08:00",
   "project_simple_name": "t0k6tk",
   "requirements": {
     "联盟系统": {
@@ -9,12 +9,12 @@ window.GVG_SYNC_DATA = {
       "status_overridden": false,
       "next_date": "2026-07-07",
       "latest_chat": {
-        "time": "2026-07-29 11:12",
-        "sender": "杨心权",
-        "content": "目前不用对联盟关闭加入这部分做额外处理，保持现状就好。后续可能会有需要，是满足某种条件，联盟不再可以申请。",
-        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_3d937173fadbde3b31ebcc256b39599d&position=261",
-        "message_id": "om_x100b69a2b6b2913cdee255972fd4257",
-        "msg_type": "text"
+        "time": "2026-08-04 18:05",
+        "sender": "黄静茹",
+        "content": "![Image](img_v3_02148_04c09b54-c137-492f-906a-e7a56a5a67fg) 联盟列表界面优化麻烦看下吧@杨心权",
+        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_3d937173fadbde3b31ebcc256b39599d&position=262",
+        "message_id": "om_x100b682fd942b0a4c44728f5bbc62a8",
+        "msg_type": "post"
       },
       "evidence": {
         "ui": {
@@ -50,6 +50,66 @@ window.GVG_SYNC_DATA = {
         }
       },
       "commits": [
+        {
+          "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "城市LOG信息 入驻信息从联盟数据移动到个人数据",
+          "time": "2026-08-04 14:08:48",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f66ab74e9d04b6f21f1e90d813037a2ba0800a4bhttps://gitlab-sh.diandian.info/x03/client/-/commit/ee4419817f635f73c54811c5c30d3ca06f158ac9",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "联盟申请协议修改",
+          "time": "2026-08-03 18:29:53",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0ead0cb38c95c84a50dc147de5cd4e03c5125435",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "邬子亮",
+          "repo": "config",
+          "message": "协议：guild优化",
+          "time": "2026-08-03 16:42:14",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/f5bd92da545490a2ae4ddcf7a7512ef0999e18be",
+          "match": "message 语义",
+          "confidence": 71
+        },
+        {
+          "ticket": "7058813425",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "联盟日志 [需求单:迁城][链接:https://project.feishu.cn/t0k6tk/story/detail/7058813425]",
+          "time": "2026-08-03 15:04:19",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a123cdd810b224f610cdbc0cd26d65bccc203b88",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "移除联盟界面预加载",
+          "time": "2026-08-03 11:41:38",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ff49194f66457c9a4e8db90d3ffdc2ef4fc792db",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "陈静",
+          "repo": "client",
+          "message": "GuildWarStateChangeNotify_DataCity刷新",
+          "time": "2026-07-31 18:32:41",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c941086155751d8964010b61725ced2f3da2991f",
+          "match": "message 语义",
+          "confidence": 71
+        },
         {
           "ticket": "7058813425",
           "author": "李辰扬",
@@ -189,154 +249,30 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/b2fbf0eb3ff431940e3a4aac5a387014cb379ad5",
           "match": "message 语义",
           "confidence": 65
-        },
-        {
-          "ticket": "7059365396",
-          "author": "陈静",
-          "repo": "client",
-          "message": "联盟权限相关 [Review单:【联盟官员】R5转让盟主后界面没有刷新][链接:https://project.feishu.cn/t0k6tk/issue/detail/7059365396]",
-          "time": "2026-07-28 11:10:08",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/754cc28f1e131bb5695e9d27679d15f41758c262",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "client",
-          "message": "补充联盟护罩配置",
-          "time": "2026-07-28 11:03:15",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/918b60ee5f770559c0effbc31264234a95e72de1",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "config",
-          "message": "补充联盟护罩配置",
-          "time": "2026-07-28 11:02:52",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/533c33cc1cc4160c8d0f36928133a2c08fc75635",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "陈静",
-          "repo": "client",
-          "message": "联盟界面优化",
-          "time": "2026-07-27 19:44:13",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/87cf1a5478bffbc1a2af4336d10ebe2fb195d9cc",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "陈静",
-          "repo": "client",
-          "message": "联盟界面拆成自己盟和它盟",
-          "time": "2026-07-27 19:14:49",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e6164de95342ea3acc9b969bf3ad6ef59d0b1867",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "邬子亮",
-          "repo": "config",
-          "message": "协议：guild优化+world rpc优化",
-          "time": "2026-07-27 18:31:13",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/b8930097a8ae3a918e21e4f7a9435e120e87d2c4",
-          "match": "message 语义",
-          "confidence": 71
         }
       ],
       "nodes": [
         {
-          "name": "QA测试",
-          "status": "not_started",
+          "name": "UI验收",
+          "status": "doing",
           "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
+          "actual_begin_time": 1784084796293,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782470434394,
-          "actual_finish_time": 1784541843977,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7519328524239421441"
+              "user_key": "7622759577934629833"
             },
             {
               "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "测试用例",
-          "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782896218951,
-          "actual_finish_time": 1783327152251,
-          "is_delayed": false,
-          "owners": [
+              "user_key": "7470563325613539332"
+            },
             {
               "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "特效",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1782403200000,
-          "estimate_finish_time": 1783699199999,
-          "actual_begin_time": 1782889278288,
-          "actual_finish_time": 1784084796285,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7654665900917935036"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "服务器",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1782144000000,
-          "estimate_finish_time": 1783094399999,
-          "actual_begin_time": 1782470434394,
-          "actual_finish_time": 1783426565838,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325739384836"
+              "user_key": "7470563325433233411"
             }
           ],
           "links": {}
@@ -363,18 +299,52 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1782316800000,
-          "estimate_finish_time": 1783612799999,
-          "actual_begin_time": 1782889278288,
-          "actual_finish_time": 1783594244760,
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325416374275"
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1782144000000,
+          "estimate_finish_time": 1783094399999,
+          "actual_begin_time": 1782470434394,
+          "actual_finish_time": 1783426565838,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325739384836"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "特效",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1782403200000,
+          "estimate_finish_time": 1783699199999,
+          "actual_begin_time": 1782889278288,
+          "actual_finish_time": 1784084796285,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7654665900917935036"
             }
           ],
           "links": {}
@@ -422,38 +392,13 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "UI验收",
-          "status": "doing",
-          "stage": "验收中",
+          "name": "设计评审",
+          "status": "finished",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1784084796293,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
-            },
-            {
-              "name": "",
-              "user_key": "7622759577934629833"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "功能验收会",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
+          "actual_begin_time": 1782470422816,
+          "actual_finish_time": 1782470430662,
           "is_delayed": false,
           "owners": [
             {
@@ -463,7 +408,37 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7470563325756063763"
-            },
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "客户端",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1782316800000,
+          "estimate_finish_time": 1783612799999,
+          "actual_begin_time": 1782889278288,
+          "actual_finish_time": 1783594244760,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416374275"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1782470434394,
+          "actual_finish_time": 1784541843977,
+          "is_delayed": false,
+          "owners": [
             {
               "name": "",
               "user_key": "7519328524239421441"
@@ -495,22 +470,47 @@ window.GVG_SYNC_DATA = {
           }
         },
         {
-          "name": "设计评审",
+          "name": "测试用例",
           "status": "finished",
-          "stage": "设计评审",
+          "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1782470422816,
-          "actual_finish_time": 1782470430662,
+          "actual_begin_time": 1782896218951,
+          "actual_finish_time": 1783327152251,
           "is_delayed": false,
           "owners": [
             {
-              "name": "王嘉西",
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "功能验收会",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
               "user_key": "7470563325416439811"
             },
             {
-              "name": "李承轩",
+              "name": "",
               "user_key": "7470563325756063763"
+            },
+            {
+              "name": "",
+              "user_key": "7519328524239421441"
+            },
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
             }
           ],
           "links": {}
@@ -769,22 +769,22 @@ window.GVG_SYNC_DATA = {
           "msg_type": "post"
         },
         "protocol": {
-          "time": "2026-07-29 11:19",
+          "time": "2026-08-03 16:42",
           "sender": "协议提交通知",
-          "content": "<card title=\"提交协议\"> @邬子亮(ou_3248797c3afbe59d3623037904b9cb2d)协议：guild fix [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/639af305ed206f379944d3891efd585bd4b526ec) --- </card>",
-          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_190cf9f4f80f5cbd&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_190cf9f4f80f5cbd&thread_position=-1",
-          "message_id": "om_x100b69a35d106ca4b11afe614f3c336",
+          "content": "<card title=\"提交协议\"> @邬子亮(ou_3248797c3afbe59d3623037904b9cb2d)协议：guild优化 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/f5bd92da545490a2ae4ddcf7a7512ef0999e18be) --- </card>",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_1915dca3820e9c90&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_1915dca3820e9c90&thread_position=-1",
+          "message_id": "om_x100b68310867ccb8b3cffb703118e3e",
           "msg_type": "interactive"
         }
       },
       "delayed_nodes": [
         {
-          "name": "特效",
-          "end": "2026-07-10"
-        },
-        {
           "name": "服务器",
           "end": "2026-07-03"
+        },
+        {
+          "name": "特效",
+          "end": "2026-07-10"
         },
         {
           "name": "需求宣讲",
@@ -805,73 +805,50 @@ window.GVG_SYNC_DATA = {
       "delivery_stage": "开发中",
       "effective_stage": "开发中",
       "status_overridden": true,
-      "next_date": "2026-07-30",
+      "next_date": "2026-08-07",
       "latest_chat": {
-        "time": "2026-07-31 15:31",
+        "time": "2026-08-05 17:48",
         "sender": "王宇轩",
-        "content": "就是想让玩家看到上次打这个城盟里的哪个玩家贡献很大很厉害",
-        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=115",
-        "message_id": "om_x100b69f0b8745c8cb2a33fdc496f14c",
+        "content": "正在",
+        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=225",
+        "message_id": "om_x100b6804212f20a4b031422f09af5c5",
         "msg_type": "text"
       },
       "evidence": {
         "ui": {
-          "time": "2026-07-31 15:23",
-          "sender": "黄静茹",
-          "content": "[Image: img_v3_02144_81ecb202-40c2-42be-8663-f044c74b317g]",
-          "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=108",
-          "message_id": "om_x100b69f099a6b8acc1b205464c9137b",
-          "msg_type": "image"
+          "time": "2026-08-05 11:39",
+          "sender": "康俊花",
+          "content": "![Image](img_v3_02149_241a9eec-fee0-4e11-ad5b-a7044a97c21g) 要塞总览/设施/居民效果图",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_1917389cb04f1c90&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_1917389cb04f1c90&thread_position=-1",
+          "message_id": "om_x100b681f4b94e8a0b3ce931f90e2fca",
+          "msg_type": "post"
+        },
+        "ux": {
+          "time": "",
+          "sender": "飞书项目",
+          "content": "交互文档字段已填写",
+          "link": "https://www.figma.com/design/FCUgpEvDA44VHSXcQiTSv3/%E8%A6%81%E5%A1%9E?node-id=79-3292&t=JTXzP3kOGgT6P2WM-1",
+          "message_id": ""
         }
       },
       "commits": [
         {
           "ticket": "",
-          "author": "毛逸凡",
+          "author": "王宇轩（实习）",
           "repo": "config",
-          "message": "要塞底座位置修正",
-          "time": "2026-07-31 10:41:13",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/d8ad89d4f1d6e9aab35e48b1a0109e6762b83146",
+          "message": "修改要塞设施描述配置",
+          "time": "2026-08-05 19:26:27",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/a929c23d437ecdd87085c8384eaa51b343ebb640",
           "match": "message 语义",
           "confidence": 65
         },
         {
           "ticket": "",
-          "author": "毛逸凡",
+          "author": "王宇轩（实习）",
           "repo": "config",
-          "message": "要塞临时资源",
-          "time": "2026-07-31 10:11:22",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/a13661b124227fd87fbd75999fdc299c417158a1",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "要塞临时资源",
-          "time": "2026-07-31 10:11:04",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e68eb2ffd3f83451247e2782c8e86df9e97d9e6b",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "黄静茹",
-          "repo": "client",
-          "message": "迁城相关多语言",
-          "time": "2026-07-30 18:20:56",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7ea604608c9b67422d3f54697d0a129a24df294a",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "文支义",
-          "repo": "config",
-          "message": "要塞迁城协议初版提交",
-          "time": "2026-07-30 16:33:09",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/a4bfc89cdaa1a7cc5c0703a1ee0ad5fe17f9fd65",
+          "message": "要塞设施三合一",
+          "time": "2026-08-05 18:10:58",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/b3e47cf404b3e772d81545642b887980f25bc118",
           "match": "message 语义",
           "confidence": 65
         },
@@ -879,9 +856,9 @@ window.GVG_SYNC_DATA = {
           "ticket": "7051692125",
           "author": "王宇轩（实习）",
           "repo": "config",
-          "message": "基地位置临时配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-28 15:01:43",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/d977dc17419e6779c3bfa4a6b724431faa0ae1c8",
+          "message": "修改护罩回血配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+          "time": "2026-08-05 17:29:30",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/4b9c9d28812779cc85c0874101ff5ab0cb7209a2",
           "match": "单号 7051692125",
           "confidence": 100
         },
@@ -889,89 +866,9 @@ window.GVG_SYNC_DATA = {
           "ticket": "7051692125",
           "author": "王宇轩（实习）",
           "repo": "client",
-          "message": "基地位置临时配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-28 15:01:34",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f88efac5d2bc19344c6771b96744d93ca4505677",
-          "match": "单号 7051692125",
-          "confidence": 100
-        },
-        {
-          "ticket": "7051692125",
-          "author": "王宇轩（实习）",
-          "repo": "config",
-          "message": "配置护罩减伤比例 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-28 14:33:29",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3bad390c0f268c1002f6be06ea3426f151ca0d4a",
-          "match": "单号 7051692125",
-          "confidence": 100
-        },
-        {
-          "ticket": "7051692125",
-          "author": "王宇轩（实习）",
-          "repo": "client",
-          "message": "配置护罩减伤比例 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-28 14:32:58",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/211a220ec0862380ab445917722e9220863fbb8b",
-          "match": "单号 7051692125",
-          "confidence": 100
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "client",
-          "message": "临时要塞护罩",
-          "time": "2026-07-27 12:49:28",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/fe2fbb2b711e88dc9d0a93d8e63b9283eeda1cb6",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "config",
-          "message": "临时要塞护罩",
-          "time": "2026-07-27 12:04:47",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c20f0199ba61645f30b90bbe1ef6ac2567e18727",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "7051692125",
-          "author": "王宇轩（实习）",
-          "repo": "config",
-          "message": "调整基地坐标字段类型 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-27 11:02:12",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c262597bc36bc9d4f98f5b7e2975f9ed73aa6c6e",
-          "match": "单号 7051692125",
-          "confidence": 100
-        },
-        {
-          "ticket": "7051692125",
-          "author": "王宇轩（实习）",
-          "repo": "client",
-          "message": "调整基地坐标字段类型 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-27 11:02:09",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ca5a9685461e168dbbfa4c557d9696a2e53d297c",
-          "match": "单号 7051692125",
-          "confidence": 100
-        },
-        {
-          "ticket": "",
-          "author": "王宇轩（实习）",
-          "repo": "config",
-          "message": "要塞相关配置表结构",
-          "time": "2026-07-24 17:32:03",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3e60c8f0b04d5af3d381bf150d45859a26ff69f5",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "7051692125",
-          "author": "王宇轩（实习）",
-          "repo": "client",
-          "message": "要塞相关配置表结构 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
-          "time": "2026-07-24 17:31:56",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/2a1149b001a9a5f3e80ae9c5e7ddb3fb2856a6f8",
+          "message": "修改护罩回血配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+          "time": "2026-08-05 17:29:19",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/61cc69f4f0f7afbe62ff65e5b6ea965041cfc004",
           "match": "单号 7051692125",
           "confidence": 100
         },
@@ -979,27 +876,194 @@ window.GVG_SYNC_DATA = {
           "ticket": "",
           "author": "李辰扬",
           "repo": "client",
-          "message": "要塞Mono拆分",
-          "time": "2026-07-23 18:09:45",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/36937fa99c72f0ccfc637bd4cb3abe04b1095e09",
+          "message": "FirsetKill预制体修复",
+          "time": "2026-08-05 17:28:45",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/385e9780091f2a578428129551e09709a417c320",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "首杀item修正",
+          "time": "2026-08-05 17:22:51",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/cdf89c1649d65f645f9cda940f0a861583b20d33",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "7051692125",
+          "author": "王宇轩（实习）",
+          "repo": "config",
+          "message": "添加要塞图片相关配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+          "time": "2026-08-05 16:50:45",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/436a76bfd1f639b822b9948989689354eae81e21",
+          "match": "单号 7051692125",
+          "confidence": 100
+        },
+        {
+          "ticket": "7051692125",
+          "author": "王宇轩（实习）",
+          "repo": "client",
+          "message": "添加要塞图片相关配置 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+          "time": "2026-08-05 16:50:39",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ef8cf6e60be8bddfe88531bf5be4c29b6fddb0ec",
+          "match": "单号 7051692125",
+          "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "Text UiStateChange优化",
+          "time": "2026-08-05 15:16:10",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/3d7dcf83b9ce03e86f93f3525c871bd9c80da215",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "康俊花",
+          "repo": "client",
+          "message": "要塞修改",
+          "time": "2026-08-05 12:00:06",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/6dcdb0e06d7f17342e758ab27f5145812f94d956",
           "match": "message 语义",
           "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "页签改CommonStateTab",
+          "time": "2026-08-05 11:46:40",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/762d79373951567f46edc519a8adec43e0adfeb7",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "uistateChange增加快捷操作",
+          "time": "2026-08-05 11:39:22",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a48572cebfa92271ff402eb64d010a49ae1076cc",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "uistateChange增加默认值",
+          "time": "2026-08-05 11:16:12",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/90a56d5a67a3071f584593cb3ffeaad1549e9cf5",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "CommonStateChange自动绑定",
+          "time": "2026-08-05 11:05:42",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ec991988e0438380b633c3643f4949c186bf8520",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "康俊花",
+          "repo": "client",
+          "message": "要塞",
+          "time": "2026-08-04 19:18:30",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/31253787d29622620e3369ba23494ee53b1a73a0",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "7051692125",
+          "author": "康俊花",
+          "repo": "client",
+          "message": "要塞总览/设施/居民搭建 [需求单:要塞][链接:https://project.feishu.cn/t0k6tk/story/detail/7051692125]",
+          "time": "2026-08-04 19:16:08",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/329ee3593368358fefb3ad3a80e8017deaf0cf59",
+          "match": "单号 7051692125",
+          "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "面板血量数据",
+          "time": "2026-08-04 18:11:30",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/d2b757e749fdd1c4f2e9eeb5c48bad414cf4b808",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "城市面板逻辑",
+          "time": "2026-08-04 17:28:07",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/53ee746a63f3897f201aa70f84b600966343a7bb",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "城市弹窗",
+          "time": "2026-08-04 17:14:35",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/68a1e5ab77ee631f9ca774667b03ed074fb2068d",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "透明背景点击修复",
+          "time": "2026-08-04 17:01:37",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0650670fa35c55f546e0dc00991753d1c32d81e3",
+          "match": "人员排期",
+          "confidence": 55
         }
       ],
       "nodes": [
         {
-          "name": "UX",
-          "status": "doing",
-          "stage": "设计评审",
-          "estimate_start_time": 1785254400000,
-          "estimate_finish_time": 1785427199999,
-          "actual_begin_time": 1784627995810,
+          "name": "策划验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
           "actual_finish_time": null,
-          "is_delayed": true,
+          "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7633153806770900149"
+              "user_key": "7612426105194073019"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "设计评审",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1784196341151,
+          "actual_finish_time": 1784623276058,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
             }
           ],
           "links": {}
@@ -1026,18 +1090,56 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "设计评审",
-          "status": "finished",
-          "stage": "设计评审",
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1784196341151,
-          "actual_finish_time": 1784623276058,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325416439811"
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1785340800000,
+          "estimate_finish_time": 1785772799999,
+          "actual_begin_time": 1784627990158,
+          "actual_finish_time": 1785842209888,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325433233411"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1785168000000,
+          "estimate_finish_time": 1785427199999,
+          "actual_begin_time": 1784627990158,
+          "actual_finish_time": 1785493987035,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325739384836"
             }
           ],
           "links": {}
@@ -1060,94 +1162,18 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划配置",
-          "status": "doing",
-          "stage": "开发中",
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1784627990158,
-          "actual_finish_time": null,
+          "actual_begin_time": 1784627984430,
+          "actual_finish_time": 1784627990128,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7612426105194073019"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "服务器",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": 1785168000000,
-          "estimate_finish_time": 1785427199999,
-          "actual_begin_time": 1784627990158,
-          "actual_finish_time": null,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325739384836"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI",
-          "status": "doing",
-          "stage": "美术制作中",
-          "estimate_start_time": 1785340800000,
-          "estimate_finish_time": 1785772799999,
-          "actual_begin_time": 1784627990158,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "客户端",
-          "status": "not_started",
-          "stage": "开发中",
-          "estimate_start_time": 1785340800000,
-          "estimate_finish_time": 1785945599999,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7541883367285932060"
-            },
-            {
-              "name": "",
-              "user_key": "7470563324720087059"
             }
           ],
           "links": {}
@@ -1195,12 +1221,33 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "not_started",
-          "stage": "验收中",
+          "name": "客户端",
+          "status": "doing",
+          "stage": "开发中",
+          "estimate_start_time": 1785340800000,
+          "estimate_finish_time": 1786118399999,
+          "actual_begin_time": 1785842209905,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7541883367285932060"
+            },
+            {
+              "name": "",
+              "user_key": "7470563324720087059"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "doing",
+          "stage": "开发中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
+          "actual_begin_time": 1784627990158,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
@@ -1213,11 +1260,11 @@ window.GVG_SYNC_DATA = {
         },
         {
           "name": "特效",
-          "status": "not_started",
+          "status": "doing",
           "stage": "美术制作中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
+          "actual_begin_time": 1785842209905,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
@@ -1229,50 +1276,56 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "需求宣讲",
+          "name": "UX",
           "status": "finished",
           "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1784627984430,
-          "actual_finish_time": 1784627990128,
-          "is_delayed": false,
+          "estimate_start_time": 1785254400000,
+          "estimate_finish_time": 1785427199999,
+          "actual_begin_time": 1784627995810,
+          "actual_finish_time": 1785826604585,
+          "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7612426105194073019"
+              "user_key": "7633153806770900149"
             }
           ],
-          "links": {}
+          "links": {
+            "交互文档": "https://www.figma.com/design/FCUgpEvDA44VHSXcQiTSv3/%E8%A6%81%E5%A1%9E?node-id=79-3292&t=JTXzP3kOGgT6P2WM-1"
+          }
         }
       ],
       "timeline_phases": [],
       "deliverables": {
-        "interaction": "",
+        "interaction": "https://www.figma.com/design/FCUgpEvDA44VHSXcQiTSv3/%E8%A6%81%E5%A1%9E?node-id=79-3292&t=JTXzP3kOGgT6P2WM-1",
         "effect": {
-          "time": "2026-07-31 15:23",
-          "sender": "黄静茹",
-          "content": "[Image: img_v3_02144_81ecb202-40c2-42be-8663-f044c74b317g]",
-          "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_a71c2d90abe9d218e001b33e74704a10&position=108",
-          "message_id": "om_x100b69f099a6b8acc1b205464c9137b",
-          "msg_type": "image"
+          "time": "2026-08-05 11:39",
+          "sender": "康俊花",
+          "content": "![Image](img_v3_02149_241a9eec-fee0-4e11-ad5b-a7044a97c21g) 要塞总览/设施/居民效果图",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_d1d86856b6b54779e284e9cd51283a6d&open_thread_id=omt_1917389cb04f1c90&openchatid=oc_d1d86856b6b54779e284e9cd51283a6d&openthreadid=omt_1917389cb04f1c90&thread_position=-1",
+          "message_id": "om_x100b681f4b94e8a0b3ce931f90e2fca",
+          "msg_type": "post"
         },
         "protocol": {
-          "time": "2026-07-30 16:33",
+          "time": "2026-08-03 15:54",
           "sender": "协议提交通知",
-          "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)要塞迁城协议初版提交 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/a4bfc89cdaa1a7cc5c0703a1ee0ad5fe17f9fd65) --- </card>",
-          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_190e848370cf9c8c&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_190e848370cf9c8c&thread_position=-1",
-          "message_id": "om_x100b69848a68e0a8b20fa32c039a950",
+          "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)要塞新曾协议 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/69a151455282d3f28696de8fba77d8b94aa05a95) --- </card>",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_1915c1d26e0e1c8b&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_1915c1d26e0e1c8b&thread_position=-1",
+          "message_id": "om_x100b6830df790cb0b274c31af140a6a",
           "msg_type": "interactive"
         }
       },
       "delayed_nodes": [
         {
-          "name": "UX",
-          "end": "2026-07-30"
+          "name": "UI",
+          "end": "2026-08-03"
         },
         {
           "name": "服务器",
+          "end": "2026-07-30"
+        },
+        {
+          "name": "UX",
           "end": "2026-07-30"
         }
       ]
@@ -1302,6 +1355,46 @@ window.GVG_SYNC_DATA = {
         }
       },
       "commits": [
+        {
+          "ticket": "",
+          "author": "王超",
+          "repo": "client",
+          "message": "删除旧桥",
+          "time": "2026-08-05 17:42:18",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/36d8afe63fd04dc60aa8f1d8c5d91a5a095ed41a",
+          "match": "message 语义",
+          "confidence": 63
+        },
+        {
+          "ticket": "",
+          "author": "王超",
+          "repo": "client",
+          "message": "更新桥",
+          "time": "2026-08-05 17:41:53",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c048748d7a8fe1d73f9d5d8983bd24b02f72c25e",
+          "match": "message 语义",
+          "confidence": 63
+        },
+        {
+          "ticket": "",
+          "author": "王超",
+          "repo": "client",
+          "message": "更新桥",
+          "time": "2026-08-05 17:40:49",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/66841521473e77d72b2fbf3080073a92fd04e738",
+          "match": "message 语义",
+          "confidence": 63
+        },
+        {
+          "ticket": "",
+          "author": "王超",
+          "repo": "client",
+          "message": "更新桥",
+          "time": "2026-08-05 17:31:42",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f3975bb5c49d223f2d9e5547ad45e305454777d8",
+          "match": "message 语义",
+          "confidence": 63
+        },
         {
           "ticket": "",
           "author": "张友福",
@@ -1461,53 +1554,9 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/55a20fc758a126574d56853fd7c52b8c05d2d5f3",
           "match": "单号 7039522368",
           "confidence": 100
-        },
-        {
-          "ticket": "7039522368",
-          "author": "王宇轩（实习）",
-          "repo": "client",
-          "message": "新增CheckPoint表 [需求单:关卡][链接:https://project.feishu.cn/t0k6tk/story/detail/7039522368]",
-          "time": "2026-07-08 09:36:05",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/8dd787f26db1288bc6ee39a482ecb89f5c606851",
-          "match": "单号 7039522368",
-          "confidence": 100
         }
       ],
       "nodes": [
-        {
-          "name": "服务器",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1784044800000,
-          "estimate_finish_time": 1784217599999,
-          "actual_begin_time": 1783482153360,
-          "actual_finish_time": 1784538269038,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7550129340739092484"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "需求宣讲",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783337767388,
-          "actual_finish_time": 1783482153321,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7612426105194073019"
-            }
-          ],
-          "links": {}
-        },
         {
           "name": "需求完成",
           "status": "not_started",
@@ -1530,69 +1579,18 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "方案设计",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783337767385,
-          "actual_finish_time": 1783337767388,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7612426105194073019"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1783526400000,
-          "estimate_finish_time": 1783699199999,
-          "actual_begin_time": 1783482153360,
-          "actual_finish_time": 1783679089493,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
+          "name": "特效",
           "status": "doing",
-          "stage": "开发中",
+          "stage": "美术制作中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783482153360,
+          "actual_begin_time": 1783679089500,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7612426105194073019"
+              "user_key": "7654665900917935036"
             }
           ],
           "links": {}
@@ -1615,18 +1613,103 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "客户端",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": 1784131200000,
-          "estimate_finish_time": 1784303999999,
-          "actual_begin_time": 1783679089500,
-          "actual_finish_time": null,
-          "is_delayed": true,
+          "name": "方案设计",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783337767385,
+          "actual_finish_time": 1783337767388,
+          "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325433184259"
+              "user_key": "7612426105194073019"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7612426105194073019"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1783526400000,
+          "estimate_finish_time": 1783699199999,
+          "actual_begin_time": 1783482153360,
+          "actual_finish_time": 1783679089493,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "doing",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783482153360,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7612426105194073019"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783337767388,
+          "actual_finish_time": 1783482153321,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7612426105194073019"
             }
           ],
           "links": {}
@@ -1653,35 +1736,35 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "特效",
+          "name": "客户端",
           "status": "doing",
-          "stage": "美术制作中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
+          "stage": "开发中",
+          "estimate_start_time": 1784131200000,
+          "estimate_finish_time": 1784303999999,
           "actual_begin_time": 1783679089500,
           "actual_finish_time": null,
-          "is_delayed": false,
+          "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7654665900917935036"
+              "user_key": "7470563325433184259"
             }
           ],
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1784044800000,
+          "estimate_finish_time": 1784217599999,
+          "actual_begin_time": 1783482153360,
+          "actual_finish_time": 1784538269038,
+          "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7612426105194073019"
+              "user_key": "7550129340739092484"
             }
           ],
           "links": {}
@@ -1702,12 +1785,12 @@ window.GVG_SYNC_DATA = {
       },
       "delayed_nodes": [
         {
-          "name": "服务器",
-          "end": "2026-07-16"
-        },
-        {
           "name": "客户端",
           "end": "2026-07-17"
+        },
+        {
+          "name": "服务器",
+          "end": "2026-07-16"
         }
       ]
     },
@@ -1718,11 +1801,11 @@ window.GVG_SYNC_DATA = {
       "status_overridden": false,
       "next_date": "未排期",
       "latest_chat": {
-        "time": "2026-07-31 10:25",
+        "time": "2026-08-05 14:51",
         "sender": "杨心权",
-        "content": "time_common_month_day {0}月{1}日 time_common_monday 周一 time_common_tuesday 周二 time_common_wednesday 周三 time_common_thursday 周四 time_common_friday 周五 time_common_saturday 周六 time_common_sunday 周日",
-        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_d0a57d8d2422756a115099317fa82ed3&position=51",
-        "message_id": "om_x100b69f4359fe484c43c5afdcd982a1",
+        "content": "@陈静 改好提交了",
+        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_d0a57d8d2422756a115099317fa82ed3&position=61",
+        "message_id": "om_x100b681998b708a8c3a2d8f9525e212",
         "msg_type": "text"
       },
       "evidence": {
@@ -1753,52 +1836,72 @@ window.GVG_SYNC_DATA = {
       },
       "commits": [
         {
+          "ticket": "7042536066",
+          "author": "陈静",
+          "repo": "client",
+          "message": "Gvg排行榜 [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+          "time": "2026-08-05 19:27:40",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/df32284d6ddbe02da60ea2b0b3acb242489f5848",
+          "match": "单号 7042536066",
+          "confidence": 100
+        },
+        {
           "ticket": "",
           "author": "邬子亮",
           "repo": "config",
-          "message": "协议：抽卡errorcode",
-          "time": "2026-07-31 15:07:59",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/26a6a48bffb62728d584c06740dd0f4d591ed3a3",
+          "message": "协议：gvg gm优化",
+          "time": "2026-08-05 19:00:50",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/67e236bf55e4d089b56299bb44ab75a66ab320d5",
+          "match": "message 语义",
+          "confidence": 67
+        },
+        {
+          "ticket": "7042536066",
+          "author": "陈静",
+          "repo": "client",
+          "message": "GvgInBattle [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+          "time": "2026-08-05 18:11:01",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/bb395a821c19993f4b7e92cee184b1cc63a51723",
+          "match": "单号 7042536066",
+          "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "新增GM，满宣战令",
+          "time": "2026-08-05 18:07:07",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/67474abd41b0f1120db825839d1f2d6227df0cd5",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "GVG城市血量由护盾提供，GVE城市血量由城市自身提供",
+          "time": "2026-08-05 17:50:53",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ea8eaafef62060dcc22d949f845e9d76a91a97c4",
+          "match": "message 语义",
+          "confidence": 67
+        },
+        {
+          "ticket": "",
+          "author": "邬子亮",
+          "repo": "config",
+          "message": "",
+          "time": "2026-08-05 17:39:53",
+          "url": "",
           "match": "人员排期",
           "confidence": 55
         },
         {
           "ticket": "",
-          "author": "陈静",
+          "author": "毛逸凡",
           "repo": "client",
-          "message": "Gvg多语言",
-          "time": "2026-07-31 10:52:04",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f5cef2af10f0a7f60c2ad8acfa78c9f321d7efe1",
-          "match": "message 语义",
-          "confidence": 67
-        },
-        {
-          "ticket": "",
-          "author": "康俊花",
-          "repo": "client",
-          "message": "gvg挂多语言",
-          "time": "2026-07-31 10:18:15",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/2b409fc2e2a437c9b71a3f7640d897572c937e5d",
-          "match": "message 语义",
-          "confidence": 67
-        },
-        {
-          "ticket": "",
-          "author": "康俊花",
-          "repo": "client",
-          "message": "gvg挂多语言",
-          "time": "2026-07-30 19:01:47",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/4651a64449e933a34d929c6d5f9e54522b8bb9b3",
-          "match": "message 语义",
-          "confidence": 67
-        },
-        {
-          "ticket": "",
-          "author": "邬子亮",
-          "repo": "config",
-          "message": "协议：gvg优化",
-          "time": "2026-07-30 18:53:25",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/13fd1465cf44c8e3f402a5b577b2e93ca8472414",
+          "message": "新增GM设置城市GVG阶段",
+          "time": "2026-08-05 17:05:45",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/b032f52a748a8ed89b6935c3b2a5247b55812250",
           "match": "message 语义",
           "confidence": 67
         },
@@ -1807,8 +1910,8 @@ window.GVG_SYNC_DATA = {
           "author": "陈静",
           "repo": "client",
           "message": "GVG",
-          "time": "2026-07-30 17:16:42",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/1be523cfa817ba7c4849683e63e477fa41f1cfa5",
+          "time": "2026-08-05 16:19:40",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/d7e86da8b2b013af0035d29f2aef086f2ed21f4a",
           "match": "message 语义",
           "confidence": 67
         },
@@ -1816,220 +1919,124 @@ window.GVG_SYNC_DATA = {
           "ticket": "",
           "author": "邬子亮",
           "repo": "config",
-          "message": "协议：要塞设施+gvg相关gm+gvg notify",
-          "time": "2026-07-30 17:06:24",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c839ca4f2b580a93797688c932bc081542c30280",
+          "message": "协议：gvg gm修改+新手期",
+          "time": "2026-08-05 16:00:34",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/9ce6179d0dd78a3743225fecc434c8bf1857e274",
+          "match": "message 语义",
+          "confidence": 67
+        },
+        {
+          "ticket": "7042536066",
+          "author": "陈静",
+          "repo": "client",
+          "message": "GvG宣战迎战和备战 [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+          "time": "2026-08-05 15:44:11",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0a13596403a8200a0f02f3b2d2c6b9d0cb53e454",
+          "match": "单号 7042536066",
+          "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "杨心权",
+          "repo": "client",
+          "message": "提交gvg的资源名字",
+          "time": "2026-08-05 14:45:42",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e2c43d3b358f5c76d851668cb941a55be89ff82c",
           "match": "message 语义",
           "confidence": 67
         },
         {
           "ticket": "",
-          "author": "陈静",
-          "repo": "client",
-          "message": "Gvg结算",
-          "time": "2026-07-30 11:47:26",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/197c68e25b679b7a2f0f1a09e7a66444420c6cd8",
+          "author": "杨心权",
+          "repo": "config",
+          "message": "提交宣战令的美术资源",
+          "time": "2026-08-05 14:35:19",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/997ecd5c139db2e9efd0ada0ddfdcf73c95528d5",
           "match": "message 语义",
-          "confidence": 68
+          "confidence": 65
         },
         {
           "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "载具传送到城市的广播",
+          "time": "2026-08-05 14:12:36",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/401ba0e88a841ae29eab6b1cf87ebd86928b9eeb",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "传送数据更新",
+          "time": "2026-08-05 14:02:57",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/d75278f0fdcf5ae82e96164fdb7e436f0cb4c8f1",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "文支义",
+          "repo": "config",
+          "message": "传送协议修改",
+          "time": "2026-08-05 14:01:22",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/5b1b3ebb6abd1d5e946bc1547556b0d6d5f675bf",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "7042536066",
           "author": "陈静",
           "repo": "client",
-          "message": "GVG_InBattle",
-          "time": "2026-07-30 11:07:15",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ab0ce0bb93e860780d18d9437b258701dda0d3a3",
+          "message": "GvGRank [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+          "time": "2026-08-05 11:54:44",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/e9862b8c212b747bfa7e8fce7dbaa9c876968434",
+          "match": "单号 7042536066",
+          "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "毛逸凡",
+          "repo": "client",
+          "message": "接入单位传送",
+          "time": "2026-08-05 11:41:49",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c5e8b5d173a4d4dadf2b25e8710da70e4f288da6",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "杨心权",
+          "repo": "config",
+          "message": "提交传送消耗的时间长度",
+          "time": "2026-08-04 19:18:22",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/2af6f92bd321ac6cd3c3a7151dfc0bf9fb0d8500",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "邬子亮",
+          "repo": "config",
+          "message": "协议：gvg GM",
+          "time": "2026-08-04 17:53:01",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/37c2ba908688109eaf31aaadd736182790d4eed9",
           "match": "message 语义",
           "confidence": 67
         },
         {
           "ticket": "",
-          "author": "毛逸凡",
+          "author": "黄静茹",
           "repo": "client",
-          "message": "DataPlayerManager解耦模型层和符号层对象",
-          "time": "2026-07-29 17:59:35",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/daa9d33157ab9901af78fe78c05e16bec3b982ac",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "地格绑定CityId",
-          "time": "2026-07-29 17:44:05",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/368624b74aebec99606f41657f8b5c29a803bbbe",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "Editor工具路径修改",
-          "time": "2026-07-29 17:10:09",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0039a4eb7a0c9037c1f96e40fc399adde669d53b",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "GM wwise测试按钮",
-          "time": "2026-07-29 17:03:29",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/758ad452f3c7ad25c7bb1c912edb01a81c32d7d8",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "删除废弃脚本",
-          "time": "2026-07-29 14:49:56",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/17dbf75f6b5bc2bac72ddd9be95425bb4acc616a",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "Editor迁移",
-          "time": "2026-07-29 14:48:49",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/80af5b6e61726d5ad6d91ac9ab1037862cea4521",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "删除旧地编工具 .meta更新",
-          "time": "2026-07-29 14:41:35",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/5dfcac1f8ad71ae0c04065ae2798691d7b1942b3https://gitlab-sh.diandian.info/x03/client/-/commit/6de0f2eecb153b9ef66aa810e20506d92b77a374",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "删除工具栏中生成城市Mesh",
-          "time": "2026-07-29 14:34:33",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/efa4ef26e98afcaeae1d435ed8e1b853cad47748",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "音频设置调整 取消后台静音",
-          "time": "2026-07-29 14:26:37",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/8b91dfe271c28cceae6b2bd22a32084a63f4ee27",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "地格Type新增城市类型",
-          "time": "2026-07-29 14:17:29",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a48e6761149a788de44e9dfc21963515d901ac8f",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "wwise测试工具",
-          "time": "2026-07-29 14:13:42",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/499d290deb3548e49e4a0d6bb0d703ce66b169bd",
-          "match": "人员排期",
-          "confidence": 55
+          "message": "gvg要塞面板UI上传",
+          "time": "2026-08-03 17:59:57",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/0aa600a032bfea688826c26d29f9fe030b64e8e0",
+          "match": "message 语义",
+          "confidence": 67
         }
       ],
       "nodes": [
-        {
-          "name": "需求完成",
-          "status": "not_started",
-          "stage": null,
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7519328524239421441"
-            },
-            {
-              "name": "",
-              "user_key": "7613522372301294545"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": 1784649600000,
-          "estimate_finish_time": 1784822399999,
-          "actual_begin_time": 1784182636721,
-          "actual_finish_time": null,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7519328524239421441"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1784131200000,
-          "estimate_finish_time": 1785254399999,
-          "actual_begin_time": 1784182636721,
-          "actual_finish_time": 1785304855894,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "服务器",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": 1784131200000,
-          "estimate_finish_time": 1785513599999,
-          "actual_begin_time": 1784182636721,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7550129340739092484"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325739384836"
-            }
-          ],
-          "links": {}
-        },
         {
           "name": "需求宣讲",
           "status": "finished",
@@ -2048,13 +2055,133 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "方案设计",
-          "status": "finished",
-          "stage": "设计评审",
+          "name": "服务器",
+          "status": "doing",
+          "stage": "开发中",
+          "estimate_start_time": 1784131200000,
+          "estimate_finish_time": 1786118399999,
+          "actual_begin_time": 1784182636721,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7550129340739092484"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325739384836"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783501183263,
-          "actual_finish_time": 1783501183267,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UX",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": 1784131200000,
+          "estimate_finish_time": 1784563199999,
+          "actual_begin_time": 1784182641216,
+          "actual_finish_time": 1785121407998,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7633153806770900149"
+            }
+          ],
+          "links": {
+            "交互文档": "https://www.figma.com/design/Quaib2tWv6keUuAB8FOPZP/GVG?node-id=77-2469&t=kFwxOBDM3eZkjRS0-1"
+          }
+        },
+        {
+          "name": "客户端",
+          "status": "doing",
+          "stage": "开发中",
+          "estimate_start_time": 1785081600000,
+          "estimate_finish_time": 1786031999999,
+          "actual_begin_time": 1785304855901,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7541883367285932060"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325416374275"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325433184259"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": 1786032000000,
+          "estimate_finish_time": 1786463999999,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7519328524239421441"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7622759577934629833"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1784182636721,
+          "actual_finish_time": 1785722491208,
           "is_delayed": false,
           "owners": [
             {
@@ -2082,9 +2209,9 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "UI验收",
+          "name": "需求完成",
           "status": "not_started",
-          "stage": "验收中",
+          "stage": null,
           "estimate_start_time": null,
           "estimate_finish_time": null,
           "actual_begin_time": null,
@@ -2093,11 +2220,28 @@ window.GVG_SYNC_DATA = {
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325613539332"
+              "user_key": "7519328524239421441"
             },
             {
               "name": "",
-              "user_key": "7622759577934629833"
+              "user_key": "7613522372301294545"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1784131200000,
+          "estimate_finish_time": 1785254399999,
+          "actual_begin_time": 1784182636721,
+          "actual_finish_time": 1785304855894,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
             }
           ],
           "links": {}
@@ -2120,30 +2264,13 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "QA测试",
-          "status": "not_started",
-          "stage": "验收中",
+          "name": "方案设计",
+          "status": "finished",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划验收",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": 1785686400000,
-          "estimate_finish_time": 1785859199999,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
+          "actual_begin_time": 1783501183263,
+          "actual_finish_time": 1783501183267,
           "is_delayed": false,
           "owners": [
             {
@@ -2152,54 +2279,6 @@ window.GVG_SYNC_DATA = {
             }
           ],
           "links": {}
-        },
-        {
-          "name": "客户端",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": 1784649600000,
-          "estimate_finish_time": 1785513599999,
-          "actual_begin_time": 1785304855901,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7541883367285932060"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325416374275"
-            },
-            {
-              "name": "",
-              "user_key": "7470563324720087059"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325433184259"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UX",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": 1784131200000,
-          "estimate_finish_time": 1784563199999,
-          "actual_begin_time": 1784182641216,
-          "actual_finish_time": 1785121407998,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7633153806770900149"
-            }
-          ],
-          "links": {
-            "交互文档": "https://www.figma.com/design/Quaib2tWv6keUuAB8FOPZP/GVG?node-id=77-2469&t=kFwxOBDM3eZkjRS0-1"
-          }
         }
       ],
       "timeline_phases": [],
@@ -2214,23 +2293,15 @@ window.GVG_SYNC_DATA = {
           "msg_type": "post"
         },
         "protocol": {
-          "time": "2026-07-30 18:53",
+          "time": "2026-08-05 19:00",
           "sender": "协议提交通知",
-          "content": "<card title=\"提交协议\"> @邬子亮(ou_3248797c3afbe59d3623037904b9cb2d)协议：gvg优化 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/13fd1465cf44c8e3f402a5b577b2e93ca8472414) --- </card>",
-          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_190ea5e30a8e9c8c&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_190ea5e30a8e9c8c&thread_position=-1",
-          "message_id": "om_x100b69869c6f44b8b20c79526f98c50",
+          "content": "<card title=\"提交协议\"> @邬子亮(ou_3248797c3afbe59d3623037904b9cb2d)协议：gvg gm优化 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/67e236bf55e4d089b56299bb44ab75a66ab320d5) --- </card>",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_19169f2c1e021be0&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_19169f2c1e021be0&thread_position=-1",
+          "message_id": "om_x100b6805309e0c70c4cdd05fc270f81",
           "msg_type": "interactive"
         }
       },
       "delayed_nodes": [
-        {
-          "name": "策划配置",
-          "end": "2026-07-23"
-        },
-        {
-          "name": "UI",
-          "end": "2026-07-28"
-        },
         {
           "name": "需求宣讲",
           "end": "2026-07-09"
@@ -2238,6 +2309,10 @@ window.GVG_SYNC_DATA = {
         {
           "name": "UX",
           "end": "2026-07-20"
+        },
+        {
+          "name": "UI",
+          "end": "2026-07-28"
         }
       ]
     },
@@ -2266,6 +2341,16 @@ window.GVG_SYNC_DATA = {
         }
       },
       "commits": [
+        {
+          "ticket": "7064478102",
+          "author": "黄静茹",
+          "repo": "client",
+          "message": "玩家基地和联盟要塞资源图标上传 [Review单:基地和联盟建筑需要对应资源Icon][链接:https://project.feishu.cn/t0k6tk/issue/detail/7064478102]",
+          "time": "2026-08-04 15:41:35",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/364b06acadb9b25dabc65e6be7cf221ac92220b3",
+          "match": "message 语义",
+          "confidence": 69
+        },
         {
           "ticket": "",
           "author": "文支义",
@@ -2455,16 +2540,6 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/2577b0b805ac2181b6988670bf977f984afd55b8",
           "match": "message 语义",
           "confidence": 70
-        },
-        {
-          "ticket": "",
-          "author": "王超",
-          "repo": "client",
-          "message": "更新后效",
-          "time": "2026-07-21 11:19:36",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/8675014595105a28267a729d7773202e6c1cc22c",
-          "match": "人员排期",
-          "confidence": 55
         }
       ],
       "nodes": [
@@ -2490,18 +2565,52 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "doing",
-          "stage": "验收中",
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1784686581403,
-          "actual_finish_time": null,
+          "actual_begin_time": 1783564150633,
+          "actual_finish_time": 1783586703436,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7470563325416439811"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783586703467,
+          "actual_finish_time": 1784083529681,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "测试用例",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783586703467,
+          "actual_finish_time": 1784283650986,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
             }
           ],
           "links": {}
@@ -2545,73 +2654,18 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "特效",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1784044800000,
-          "estimate_finish_time": 1784735999999,
-          "actual_begin_time": 1784101035900,
-          "actual_finish_time": 1784274958455,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7654665900917935036"
-            },
-            {
-              "name": "",
-              "user_key": "7527800925340139539"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "测试用例",
-          "status": "finished",
+          "name": "策划验收",
+          "status": "doing",
           "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783586703467,
-          "actual_finish_time": 1784283650986,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "需求宣讲",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783564150633,
-          "actual_finish_time": 1783586703436,
+          "actual_begin_time": 1784686581403,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7470563325416439811"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1784217600000,
-          "estimate_finish_time": 1784649599999,
-          "actual_begin_time": 1784101035900,
-          "actual_finish_time": 1784686581385,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7541883367285932060"
             }
           ],
           "links": {}
@@ -2651,6 +2705,44 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
+          "name": "客户端",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1784217600000,
+          "estimate_finish_time": 1784649599999,
+          "actual_begin_time": 1784101035900,
+          "actual_finish_time": 1784686581385,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7541883367285932060"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "特效",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1784044800000,
+          "estimate_finish_time": 1784735999999,
+          "actual_begin_time": 1784101035900,
+          "actual_finish_time": 1784274958455,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7654665900917935036"
+            },
+            {
+              "name": "",
+              "user_key": "7527800925340139539"
+            }
+          ],
+          "links": {}
+        },
+        {
           "name": "UI",
           "status": "finished",
           "stage": "美术制作中",
@@ -2663,23 +2755,6 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7470563325613539332"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783586703467,
-          "actual_finish_time": 1784083529681,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325416439811"
             }
           ],
           "links": {}
@@ -2707,12 +2782,12 @@ window.GVG_SYNC_DATA = {
       },
       "delayed_nodes": [
         {
-          "name": "客户端",
-          "end": "2026-07-21"
-        },
-        {
           "name": "服务器",
           "end": "2026-07-13"
+        },
+        {
+          "name": "客户端",
+          "end": "2026-07-21"
         },
         {
           "name": "UI",
@@ -2727,11 +2802,11 @@ window.GVG_SYNC_DATA = {
       "status_overridden": true,
       "next_date": "",
       "latest_chat": {
-        "time": "2026-07-23 17:20",
-        "sender": "文支义",
-        "content": "@李辰扬 之前有bug，VehicleQueue值没有变，现在已经改了，客户端应该不用处理就行了",
-        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_3dfb7387e3c18c473cdbeb65c31a6eed&position=184",
-        "message_id": "om_x100b692981c604a8b20ba947d292fe9",
+        "time": "2026-07-31 16:12",
+        "sender": "李辰扬",
+        "content": "@毛逸凡",
+        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_3dfb7387e3c18c473cdbeb65c31a6eed&position=186",
+        "message_id": "om_x100b69f1c1c9dca4de311246fc018ca",
         "msg_type": "text"
       },
       "evidence": {
@@ -2955,18 +3030,35 @@ window.GVG_SYNC_DATA = {
       ],
       "nodes": [
         {
-          "name": "测试用例",
+          "name": "客户端",
           "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783573184006,
-          "actual_finish_time": 1784279720911,
+          "stage": "开发中",
+          "estimate_start_time": 1783958400000,
+          "estimate_finish_time": 1784217599999,
+          "actual_begin_time": 1783995113249,
+          "actual_finish_time": 1784112023873,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7643315047875283917"
+              "user_key": "7470563324720087059"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划验收",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": 1783958400000,
+          "estimate_finish_time": 1784131199999,
+          "actual_begin_time": 1784112023879,
+          "actual_finish_time": 1784631581427,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
             }
           ],
           "links": {}
@@ -2991,6 +3083,57 @@ window.GVG_SYNC_DATA = {
           }
         },
         {
+          "name": "策划配置",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783573184006,
+          "actual_finish_time": 1783654961554,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "测试用例",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783573184006,
+          "actual_finish_time": 1784279720911,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1783526400000,
+          "estimate_finish_time": 1783958399999,
+          "actual_begin_time": 1783573184006,
+          "actual_finish_time": 1783995113242,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325433233411"
+            }
+          ],
+          "links": {}
+        },
+        {
           "name": "UI验收",
           "status": "doing",
           "stage": "验收中",
@@ -3012,40 +3155,6 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "方案设计",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782872161794,
-          "actual_finish_time": 1782872161800,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325416439811"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划验收",
-          "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": 1783958400000,
-          "estimate_finish_time": 1784131199999,
-          "actual_begin_time": 1784112023879,
-          "actual_finish_time": 1784631581427,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325416439811"
-            }
-          ],
-          "links": {}
-        },
-        {
           "name": "QA测试",
           "status": "not_started",
           "stage": "验收中",
@@ -3058,23 +3167,6 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1783958400000,
-          "estimate_finish_time": 1784217599999,
-          "actual_begin_time": 1783995113249,
-          "actual_finish_time": 1784112023873,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563324720087059"
             }
           ],
           "links": {}
@@ -3101,40 +3193,6 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1783526400000,
-          "estimate_finish_time": 1783958399999,
-          "actual_begin_time": 1783573184006,
-          "actual_finish_time": 1783995113242,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783573184006,
-          "actual_finish_time": 1783654961554,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325416439811"
-            }
-          ],
-          "links": {}
-        },
-        {
           "name": "服务器",
           "status": "finished",
           "stage": "开发中",
@@ -3147,6 +3205,23 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7550129340739092484"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "方案设计",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1782872161794,
+          "actual_finish_time": 1782872161800,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
             }
           ],
           "links": {}
@@ -3174,12 +3249,12 @@ window.GVG_SYNC_DATA = {
       },
       "delayed_nodes": [
         {
-          "name": "UX",
-          "end": "2026-07-02"
-        },
-        {
           "name": "策划验收",
           "end": "2026-07-15"
+        },
+        {
+          "name": "UX",
+          "end": "2026-07-02"
         },
         {
           "name": "UI",
@@ -3192,7 +3267,7 @@ window.GVG_SYNC_DATA = {
       ]
     },
     "抽奖二期优化": {
-      "project_stage": "验收中",
+      "project_stage": "验收完成",
       "delivery_stage": "开发中",
       "effective_stage": "开发中",
       "status_overridden": true,
@@ -3287,6 +3362,46 @@ window.GVG_SYNC_DATA = {
           "confidence": 69
         },
         {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "client",
+          "message": "修改抽奖配置",
+          "time": "2026-07-10 16:17:57",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/396e90f0a8ba2419cd56bba2b655ba4c1e7b552d",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "config",
+          "message": "修改抽奖配置",
+          "time": "2026-07-10 16:17:05",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/27b44e36d204e0e998c0edf94addfd3523a2caa9",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "client",
+          "message": "增加抽奖相关多语言",
+          "time": "2026-07-10 15:27:28",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/b68ccdc9d06a23423a803ee56410f4a530138bc4",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "config",
+          "message": "增加抽奖相关多语言",
+          "time": "2026-07-10 15:26:13",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/ac1b6e8ba1cada81ac8dcf84a999818cc7322089",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
           "ticket": "7028640756",
           "author": "陈静",
           "repo": "client",
@@ -3295,6 +3410,26 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/c5654ac564a68a289ab2715a7ce09f4acc892f51",
           "match": "单号 7028640756",
           "confidence": 100
+        },
+        {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "client",
+          "message": "增加抽奖相关图标配置",
+          "time": "2026-07-10 10:35:54",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7f7526353648e2f8c909419d1319e3020d3256aa",
+          "match": "人员排期",
+          "confidence": 55
+        },
+        {
+          "ticket": "",
+          "author": "刘洋",
+          "repo": "config",
+          "message": "增加抽奖相关图标配置",
+          "time": "2026-07-10 10:31:11",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c8f95d3ec73c83a588686e483006f2a374546af3",
+          "match": "人员排期",
+          "confidence": 55
         },
         {
           "ticket": "7028640756",
@@ -3338,154 +3473,26 @@ window.GVG_SYNC_DATA = {
         },
         {
           "ticket": "",
-          "author": "张友福",
+          "author": "刘洋",
           "repo": "client",
-          "message": "奖池界面更新",
-          "time": "2026-07-08 18:49:01",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/aafa483a5e1ad86d3ca0dd557175022087152e9b",
+          "message": "增加抽奖多语言",
+          "time": "2026-07-09 16:57:03",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/6c01e1c07662fa8ddab73746750d3a6ea5868a71",
           "match": "人员排期",
           "confidence": 55
         },
         {
           "ticket": "",
-          "author": "张友福",
-          "repo": "client",
-          "message": "导表",
-          "time": "2026-07-08 15:59:20",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/2ef8165c1748588f34cbf5439733c397c273ec88",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "张友福",
-          "repo": "client",
-          "message": "删除抽奖不用的界面",
-          "time": "2026-07-07 15:39:07",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/79fffcc06a00ec11d033ad545f5888171b734bb3",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "张友福",
-          "repo": "client",
-          "message": "修复新版地图显示错误",
-          "time": "2026-07-07 14:57:53",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/dd5f42e89f6795513d22530e15f0957e86e1f3c9",
-          "match": "人员排期",
-          "confidence": 55
-        },
-        {
-          "ticket": "7028640756",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "抽卡二期搭建 [需求单:抽卡系统二期需求][链接:https://project.feishu.cn/t0k6tk/story/detail/7028640756] 新增单位移除时播放特效 出包修复",
-          "time": "2026-07-07 14:50:10",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/14cf1b17dc6fc99ecd983b5c559fa7b7ad236b00https://gitlab-sh.diandian.info/x03/client/-/commit/ce067ec69b60750ac4c18d3172e7e0b1525a2c18https://gitlab-sh.diandian.info/x03/client/-/commit/fcad82cb004638ad46389fba1fdb29d47bbf67dc",
-          "match": "单号 7028640756",
-          "confidence": 100
-        },
-        {
-          "ticket": "",
-          "author": "姚金豆",
-          "repo": "client",
-          "message": "抽卡二期界面动画提交",
-          "time": "2026-07-07 14:10:42",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/3b370f776e4eda44eac29f802f635d3f38c73bfd",
-          "match": "message 语义",
-          "confidence": 69
-        },
-        {
-          "ticket": "7028640756",
-          "author": "康俊花",
-          "repo": "client",
-          "message": "抽卡二期搭建 [需求单:抽卡系统二期需求][链接:https://project.feishu.cn/t0k6tk/story/detail/7028640756]",
-          "time": "2026-07-06 19:18:32",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/14cf1b17dc6fc99ecd983b5c559fa7b7ad236b00",
-          "match": "单号 7028640756",
-          "confidence": 100
-        },
-        {
-          "ticket": "",
-          "author": "邬子亮",
+          "author": "刘洋",
           "repo": "config",
-          "message": "搜索等协议提交",
-          "time": "2026-07-06 16:00:23",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/db1b6fc0fce65f9bd51b4c15c31c117417393ffe",
+          "message": "增加抽奖多语言",
+          "time": "2026-07-09 16:53:41",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/95e580ddc02b34d914ca364cbdf81ee9557a4063",
           "match": "人员排期",
           "confidence": 55
         }
       ],
       "nodes": [
-        {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1782921600000,
-          "estimate_finish_time": 1783353599999,
-          "actual_begin_time": 1782456864859,
-          "actual_finish_time": 1783336734978,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "测试用例",
-          "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782896185217,
-          "actual_finish_time": 1783390465690,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "需求宣讲",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": 1782489599999,
-          "estimate_finish_time": 1782489599999,
-          "actual_begin_time": 1782376527431,
-          "actual_finish_time": 1782456864835,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "服务器",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1783008000000,
-          "estimate_finish_time": 1783353599999,
-          "actual_begin_time": 1782456864859,
-          "actual_finish_time": 1783391908479,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325739384836"
-            }
-          ],
-          "links": {}
-        },
         {
           "name": "策划配置",
           "status": "finished",
@@ -3494,23 +3501,6 @@ window.GVG_SYNC_DATA = {
           "estimate_finish_time": null,
           "actual_begin_time": 1782456864859,
           "actual_finish_time": 1783646703042,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "方案设计",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782376275865,
-          "actual_finish_time": 1782376275867,
           "is_delayed": false,
           "owners": [
             {
@@ -3540,86 +3530,6 @@ window.GVG_SYNC_DATA = {
           }
         },
         {
-          "name": "UI验收",
-          "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783908813201,
-          "actual_finish_time": 1784254357063,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7622759577934629833"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "功能验收会",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325416439811"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325756063763"
-            },
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划验收",
-          "status": "finished",
-          "stage": "验收中",
-          "estimate_start_time": 1783526400000,
-          "estimate_finish_time": 1783699199999,
-          "actual_begin_time": 1783908813201,
-          "actual_finish_time": 1784253868700,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": 1785081600000,
-          "estimate_finish_time": 1785340799999,
-          "actual_begin_time": 1784254357070,
-          "actual_finish_time": null,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
           "name": "客户端",
           "status": "finished",
           "stage": "开发中",
@@ -3636,6 +3546,23 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7470563325416374275"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1783008000000,
+          "estimate_finish_time": 1783353599999,
+          "actual_begin_time": 1782456864859,
+          "actual_finish_time": 1783391908479,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325739384836"
             }
           ],
           "links": {}
@@ -3660,6 +3587,154 @@ window.GVG_SYNC_DATA = {
             }
           ],
           "links": {}
+        },
+        {
+          "name": "功能验收会",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1785747116630,
+          "actual_finish_time": 1785750674753,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325416439811"
+            },
+            {
+              "name": "",
+              "user_key": "7470563325756063763"
+            },
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1782921600000,
+          "estimate_finish_time": 1783353599999,
+          "actual_begin_time": 1782456864859,
+          "actual_finish_time": 1783336734978,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划验收",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": 1783526400000,
+          "estimate_finish_time": 1783699199999,
+          "actual_begin_time": 1783908813201,
+          "actual_finish_time": 1784253868700,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": 1782489599999,
+          "estimate_finish_time": 1782489599999,
+          "actual_begin_time": 1782376527431,
+          "actual_finish_time": 1782456864835,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "方案设计",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1782376275865,
+          "actual_finish_time": 1782376275867,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "测试用例",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1782896185217,
+          "actual_finish_time": 1783390465690,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": 1785081600000,
+          "estimate_finish_time": 1785340799999,
+          "actual_begin_time": 1784254357070,
+          "actual_finish_time": 1785747116627,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI验收",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783908813201,
+          "actual_finish_time": 1784254357063,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            },
+            {
+              "name": "",
+              "user_key": "7622759577934629833"
+            }
+          ],
+          "links": {}
         }
       ],
       "timeline_phases": [],
@@ -3677,12 +3752,16 @@ window.GVG_SYNC_DATA = {
       },
       "delayed_nodes": [
         {
-          "name": "服务器",
-          "end": "2026-07-06"
-        },
-        {
           "name": "UX",
           "end": "2026-06-30"
+        },
+        {
+          "name": "客户端",
+          "end": "2026-07-10"
+        },
+        {
+          "name": "服务器",
+          "end": "2026-07-06"
         },
         {
           "name": "策划验收",
@@ -3691,10 +3770,6 @@ window.GVG_SYNC_DATA = {
         {
           "name": "QA测试",
           "end": "2026-07-29"
-        },
-        {
-          "name": "客户端",
-          "end": "2026-07-10"
         }
       ]
     },
@@ -3705,12 +3780,12 @@ window.GVG_SYNC_DATA = {
       "status_overridden": true,
       "next_date": "",
       "latest_chat": {
-        "time": "2026-07-30 19:56",
-        "sender": "蔡耀康",
-        "content": "@李辰扬 ![Image](img_v3_02143_c5636ab6-8c5c-4825-af71-38cce8170c2g) 这个界面 pull之后已经好了",
-        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_b4cb5dcef9ebf4c11948aed61b283f80&position=392",
-        "message_id": "om_x100b6987f186e468b2b82cf2bc7e3de",
-        "msg_type": "post"
+        "time": "2026-08-05 17:09",
+        "sender": "文支义",
+        "content": "@李辰扬 map<uint64, PBBattleReportBuildingData> building_datas = 19; // 建筑数据 key = obj uuid 敌我双方都在列表里面，判断一下 guild_id和自己相同的是友方，不同的就是敌方",
+        "link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_b4cb5dcef9ebf4c11948aed61b283f80&position=473",
+        "message_id": "om_x100b681b9555cca0b1c965d86876882",
+        "msg_type": "text"
       },
       "evidence": {
         "ui": {
@@ -3723,6 +3798,96 @@ window.GVG_SYNC_DATA = {
         }
       },
       "commits": [
+        {
+          "ticket": "",
+          "author": "文支义",
+          "repo": "config",
+          "message": "战报新加数据",
+          "time": "2026-08-05 19:12:10",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/d0b2e604749b5bd733a5013d4b087b7473bc1677",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "文支义",
+          "repo": "config",
+          "message": "战报协议修改",
+          "time": "2026-08-05 16:21:16",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/50bb746ad96b18b6f1819ec4a708ab9070809bd4",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "战报删除maindata显示",
+          "time": "2026-08-05 14:57:10",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/54972e47053fe4898e51d98cc2f82d26bc96b888",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "战报基地显示",
+          "time": "2026-08-05 11:17:13",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a8af5eb521b76dbdbef56ae78c6a3f9e3d7e9a84",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "7061570860",
+          "author": "黄静茹",
+          "repo": "client",
+          "message": "战报banner图资源优化 [Review单:PVE战报背景图片，需要换成更通用的图片][链接:https://project.feishu.cn/t0k6tk/issue/detail/7061570860] Merge branch 'master' of https://gitlab-sh.diandian.info/x03/client",
+          "time": "2026-08-04 15:15:42",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/3ce6faf8edbf6b836eed49974a0b77838c1d19b5https://gitlab-sh.diandian.info/x03/client/-/commit/6b684884d3a81f35f26444db752dda91eed98542",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "文支义",
+          "repo": "config",
+          "message": "战报协议新加字段",
+          "time": "2026-08-03 11:01:14",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/3c2e7fda55297ad0e05cd1adcf54039c15117eaa",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "文支义",
+          "repo": "config",
+          "message": "战报增加玩家基地数据",
+          "time": "2026-08-03 10:40:21",
+          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/4ba9ad1e3e213640a26867ddaac25d8e11dc6827",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "7062806602",
+          "author": "李辰扬",
+          "repo": "client",
+          "message": "战报拖拽修正 [Review单:战报列表拖拽功能有时不灵敏][链接:https://project.feishu.cn/t0k6tk/issue/detail/7062806602]",
+          "time": "2026-07-31 18:43:48",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/4710df94b1cae7efe5c04449a26585b34585d8a0",
+          "match": "message 语义",
+          "confidence": 65
+        },
+        {
+          "ticket": "",
+          "author": "黄静茹",
+          "repo": "client",
+          "message": "战报交战图标位置修改",
+          "time": "2026-07-31 18:25:32",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f290cf8037ee2f66fbb4311ae09355bb4049be84",
+          "match": "message 语义",
+          "confidence": 65
+        },
         {
           "ticket": "",
           "author": "黄静茹",
@@ -3832,99 +3997,26 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/bff7c30318a73329f8a1ac019aa402e28763244f",
           "match": "message 语义",
           "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "黄静茹",
-          "repo": "client",
-          "message": "战报弹窗增加空状态",
-          "time": "2026-07-28 11:28:49",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/166eae0e8d706d366b12af768efa11b18d39d969",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "client",
-          "message": "新增列，用于战报统计",
-          "time": "2026-07-27 16:51:33",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/174c915d5a59294d148ab088f559df590e3fc651",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "张泽臻",
-          "repo": "config",
-          "message": "新增列，用于战报统计",
-          "time": "2026-07-27 16:51:11",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/c369848ed6f9231f889ed860fcd9eadf2f7b5ad7",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "战报标签修正",
-          "time": "2026-07-27 15:42:45",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/7bce63d20392a888972d21150ed76f5a0a6f5983",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "战报跳转按钮",
-          "time": "2026-07-24 11:14:25",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/2b3080a63a2b99e435c517042afd7284d19a17e8",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "7029524810",
-          "author": "李辰扬",
-          "repo": "client",
-          "message": "一键删除/阅读 [需求单:载具战报][链接:https://project.feishu.cn/t0k6tk/story/detail/7029524810]",
-          "time": "2026-07-23 15:02:52",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/29ca316e2bd58f0b74922b3ab6fed0f4eb5382d7",
-          "match": "单号 7029524810",
-          "confidence": 100
-        },
-        {
-          "ticket": "",
-          "author": "文支义",
-          "repo": "config",
-          "message": "战报补充协议提交",
-          "time": "2026-07-23 14:43:40",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/62f4fefb198e342344b6c40ea96079594e64a0a4",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "黄静茹",
-          "repo": "client",
-          "message": "战报界面增加空状态 Merge branch 'master' of https://gitlab-sh.diandian.info/x03/client",
-          "time": "2026-07-23 14:16:53",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a0943c590454dbe50ed48df27ad6bce9fa73deadhttps://gitlab-sh.diandian.info/x03/client/-/commit/04f51f97723ce0f0c949528b8e1ba6eceb155393",
-          "match": "message 语义",
-          "confidence": 65
-        },
-        {
-          "ticket": "",
-          "author": "文支义",
-          "repo": "config",
-          "message": "战报加字段",
-          "time": "2026-07-23 11:11:00",
-          "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/92bcf385dfcccebf9acb6397b1d30ee4fadf6196",
-          "match": "message 语义",
-          "confidence": 65
         }
       ],
       "nodes": [
+        {
+          "name": "客户端",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1784563200000,
+          "estimate_finish_time": 1784822399999,
+          "actual_begin_time": 1784600093402,
+          "actual_finish_time": 1784790186838,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563324720087059"
+            }
+          ],
+          "links": {}
+        },
         {
           "name": "设计评审",
           "status": "finished",
@@ -3947,23 +4039,6 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": 1784217600000,
-          "estimate_finish_time": 1784563199999,
-          "actual_begin_time": 1784864736820,
-          "actual_finish_time": null,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7558989665794080772"
-            }
-          ],
-          "links": {}
-        },
-        {
           "name": "方案设计",
           "status": "finished",
           "stage": "设计评审",
@@ -3981,18 +4056,39 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1784563200000,
-          "estimate_finish_time": 1784822399999,
-          "actual_begin_time": 1784600093402,
-          "actual_finish_time": 1784790186838,
+          "name": "UI验收",
+          "status": "doing",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1784790186848,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563324720087059"
+              "user_key": "7470563325433233411"
+            },
+            {
+              "name": "",
+              "user_key": "7622759577934629833"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1784131200000,
+          "estimate_finish_time": 1784563199999,
+          "actual_begin_time": 1782896155125,
+          "actual_finish_time": 1784600093389,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325433233411"
             }
           ],
           "links": {}
@@ -4015,18 +4111,52 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "需求宣讲",
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1784044800000,
+          "estimate_finish_time": 1784217599999,
+          "actual_begin_time": 1782896155125,
+          "actual_finish_time": 1783578513419,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7550129340739092484"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UX",
           "status": "finished",
           "stage": "设计评审",
-          "estimate_start_time": 1782748799999,
-          "estimate_finish_time": 1782748799999,
-          "actual_begin_time": 1782896151665,
-          "actual_finish_time": 1782896155100,
+          "estimate_start_time": 1783526400000,
+          "estimate_finish_time": 1784044799999,
+          "actual_begin_time": 1783577751873,
+          "actual_finish_time": 1784269276142,
           "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7558989665794080772"
+              "user_key": "7633153806770900149"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
             }
           ],
           "links": {}
@@ -4074,90 +4204,35 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1784131200000,
-          "estimate_finish_time": 1784563199999,
-          "actual_begin_time": 1782896155125,
-          "actual_finish_time": 1784600093389,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UX",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": 1783526400000,
-          "estimate_finish_time": 1784044799999,
-          "actual_begin_time": 1783577751873,
-          "actual_finish_time": 1784269276142,
-          "is_delayed": true,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7633153806770900149"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "服务器",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1784044800000,
-          "estimate_finish_time": 1784217599999,
-          "actual_begin_time": 1782896155125,
-          "actual_finish_time": 1783578513419,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7550129340739092484"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI验收",
+          "name": "策划验收",
           "status": "doing",
           "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1784790186848,
+          "estimate_start_time": 1784217600000,
+          "estimate_finish_time": 1784563199999,
+          "actual_begin_time": 1784864736820,
           "actual_finish_time": null,
-          "is_delayed": false,
+          "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325433233411"
-            },
+              "user_key": "7558989665794080772"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": 1782748799999,
+          "estimate_finish_time": 1782748799999,
+          "actual_begin_time": 1782896151665,
+          "actual_finish_time": 1782896155100,
+          "is_delayed": true,
+          "owners": [
             {
               "name": "",
-              "user_key": "7622759577934629833"
+              "user_key": "7558989665794080772"
             }
           ],
           "links": {}
@@ -4175,23 +4250,15 @@ window.GVG_SYNC_DATA = {
           "msg_type": "post"
         },
         "protocol": {
-          "time": "2026-07-23 14:43",
+          "time": "2026-08-03 11:01",
           "sender": "协议提交通知",
-          "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)战报补充协议提交 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/62f4fefb198e342344b6c40ea96079594e64a0a4) --- </card>",
-          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_190430e9b54e9a42&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_190430e9b54e9a42&thread_position=-1",
-          "message_id": "om_x100b692fccc4b8b8deead99b35f4ea5",
+          "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)战报协议新加字段 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/3c2e7fda55297ad0e05cd1adcf54039c15117eaa) --- </card>",
+          "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_19158c49574f5c82&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_19158c49574f5c82&thread_position=-1",
+          "message_id": "om_x100b683406ca98a4b2eafe624900e82",
           "msg_type": "interactive"
         }
       },
       "delayed_nodes": [
-        {
-          "name": "策划验收",
-          "end": "2026-07-20"
-        },
-        {
-          "name": "需求宣讲",
-          "end": "2026-06-29"
-        },
         {
           "name": "UI",
           "end": "2026-07-20"
@@ -4199,6 +4266,14 @@ window.GVG_SYNC_DATA = {
         {
           "name": "UX",
           "end": "2026-07-14"
+        },
+        {
+          "name": "策划验收",
+          "end": "2026-07-20"
+        },
+        {
+          "name": "需求宣讲",
+          "end": "2026-06-29"
         }
       ]
     },
@@ -4430,18 +4505,52 @@ window.GVG_SYNC_DATA = {
       ],
       "nodes": [
         {
-          "name": "UI",
-          "status": "finished",
-          "stage": "美术制作中",
-          "estimate_start_time": 1782662400000,
+          "name": "策划验收",
+          "status": "doing",
+          "stage": "验收中",
+          "estimate_start_time": 1782403200000,
           "estimate_finish_time": 1782748799999,
-          "actual_begin_time": 1782720047420,
-          "actual_finish_time": 1782727874598,
+          "actual_begin_time": 1785398402701,
+          "actual_finish_time": null,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7612426105194073019"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7470563325433233411"
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "客户端",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1782835200000,
+          "estimate_finish_time": 1783612799999,
+          "actual_begin_time": 1783304106369,
+          "actual_finish_time": 1783510238817,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563324720087059"
             }
           ],
           "links": {}
@@ -4464,35 +4573,14 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "需求完成",
-          "status": "not_started",
-          "stage": null,
+          "name": "策划配置",
+          "status": "doing",
+          "stage": "开发中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
+          "actual_begin_time": 1782896125136,
           "actual_finish_time": null,
           "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7612426105194073019"
-            },
-            {
-              "name": "",
-              "user_key": "7613522372301294545"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划验收",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": 1782403200000,
-          "estimate_finish_time": 1782748799999,
-          "actual_begin_time": 1785398402701,
-          "actual_finish_time": null,
-          "is_delayed": true,
           "owners": [
             {
               "name": "",
@@ -4540,26 +4628,9 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1782835200000,
-          "estimate_finish_time": 1783612799999,
-          "actual_begin_time": 1783304106369,
-          "actual_finish_time": 1783510238817,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563324720087059"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
+          "name": "需求完成",
           "status": "not_started",
-          "stage": "验收中",
+          "stage": null,
           "estimate_start_time": null,
           "estimate_finish_time": null,
           "actual_begin_time": null,
@@ -4568,24 +4639,11 @@ window.GVG_SYNC_DATA = {
           "owners": [
             {
               "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "doing",
-          "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1782896125136,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
+              "user_key": "7612426105194073019"
+            },
             {
               "name": "",
-              "user_key": "7612426105194073019"
+              "user_key": "7613522372301294545"
             }
           ],
           "links": {}
@@ -4603,6 +4661,23 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI",
+          "status": "finished",
+          "stage": "美术制作中",
+          "estimate_start_time": 1782662400000,
+          "estimate_finish_time": 1782748799999,
+          "actual_begin_time": 1782720047420,
+          "actual_finish_time": 1782727874598,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325433233411"
             }
           ],
           "links": {}
@@ -4856,35 +4931,18 @@ window.GVG_SYNC_DATA = {
       ],
       "nodes": [
         {
-          "name": "需求宣讲",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783320985065,
-          "actual_finish_time": 1783491670726,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7651328591141080279"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划验收",
-          "status": "finished",
+          "name": "QA测试",
+          "status": "doing",
           "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783995149716,
-          "actual_finish_time": 1784259642829,
+          "actual_begin_time": 1784600807860,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7651328591141080279"
+              "user_key": "7643315047875283917"
             }
           ],
           "links": {}
@@ -4907,56 +4965,35 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "需求完成",
-          "status": "not_started",
-          "stage": null,
+          "name": "策划配置",
+          "status": "finished",
+          "stage": "开发中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
+          "actual_begin_time": 1783491670757,
+          "actual_finish_time": 1783995149710,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7651328591141080279"
-            },
-            {
-              "name": "",
-              "user_key": "7613522372301294545"
             }
           ],
           "links": {}
         },
         {
-          "name": "测试用例",
+          "name": "方案设计",
           "status": "finished",
-          "stage": "验收中",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783491670757,
-          "actual_finish_time": 1784283662488,
+          "actual_begin_time": 1783318224488,
+          "actual_finish_time": 1783318224492,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1784600807860,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
+              "user_key": "7651328591141080279"
             }
           ],
           "links": {}
@@ -4983,18 +5020,39 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "方案设计",
+          "name": "测试用例",
           "status": "finished",
-          "stage": "设计评审",
+          "stage": "验收中",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": 1783318224488,
-          "actual_finish_time": 1783318224492,
+          "actual_begin_time": 1783491670757,
+          "actual_finish_time": 1784283662488,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求完成",
+          "status": "not_started",
+          "stage": null,
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7651328591141080279"
+            },
+            {
+              "name": "",
+              "user_key": "7613522372301294545"
             }
           ],
           "links": {}
@@ -5017,6 +5075,40 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
+          "name": "策划验收",
+          "status": "finished",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783995149716,
+          "actual_finish_time": 1784259642829,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7651328591141080279"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求宣讲",
+          "status": "finished",
+          "stage": "设计评审",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1783320985065,
+          "actual_finish_time": 1783491670726,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7651328591141080279"
+            }
+          ],
+          "links": {}
+        },
+        {
           "name": "服务器",
           "status": "finished",
           "stage": "开发中",
@@ -5029,23 +5121,6 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7470563325739384836"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "策划配置",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1783491670757,
-          "actual_finish_time": 1783995149710,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7651328591141080279"
             }
           ],
           "links": {}
@@ -5096,6 +5171,16 @@ window.GVG_SYNC_DATA = {
         }
       },
       "commits": [
+        {
+          "ticket": "",
+          "author": "张泽臻",
+          "repo": "client",
+          "message": "增加lod管理",
+          "time": "2026-08-06 10:16:45",
+          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/d6fd52be28459273af48ceaebdef50308bf757e6",
+          "match": "message 语义",
+          "confidence": 67
+        },
         {
           "ticket": "",
           "author": "毛逸凡",
@@ -5285,32 +5370,26 @@ window.GVG_SYNC_DATA = {
           "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/ffa658db568ed1b8ee3fb12ab84260540f988b59",
           "match": "人员排期",
           "confidence": 55
-        },
-        {
-          "ticket": "",
-          "author": "毛逸凡",
-          "repo": "client",
-          "message": "符号层Mono接入城市数据",
-          "time": "2026-07-16 10:46:12",
-          "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/be212ebf15b718772aaf5f501d1c353579d1c70c",
-          "match": "人员排期",
-          "confidence": 55
         }
       ],
       "nodes": [
         {
-          "name": "客户端",
-          "status": "finished",
-          "stage": "开发中",
-          "estimate_start_time": 1783612800000,
-          "estimate_finish_time": 1784217599999,
-          "actual_begin_time": 1783679110980,
-          "actual_finish_time": 1784269227939,
-          "is_delayed": true,
+          "name": "UI验收",
+          "status": "doing",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1784269227947,
+          "actual_finish_time": null,
+          "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7541883367285932060"
+              "user_key": "7470563325613539332"
+            },
+            {
+              "name": "",
+              "user_key": "7622759577934629833"
             }
           ],
           "links": {}
@@ -5333,23 +5412,6 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1784269245372,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7558989665794080772"
-            }
-          ],
-          "links": {}
-        },
-        {
           "name": "QA测试",
           "status": "not_started",
           "stage": "验收中",
@@ -5362,27 +5424,6 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI验收",
-          "status": "doing",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1784269227947,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7622759577934629833"
             }
           ],
           "links": {}
@@ -5430,6 +5471,23 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
+          "name": "服务器",
+          "status": "finished",
+          "stage": "开发中",
+          "estimate_start_time": 1783526400000,
+          "estimate_finish_time": 1783699199999,
+          "actual_begin_time": 1782896104998,
+          "actual_finish_time": 1784182814795,
+          "is_delayed": true,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7550129340739092484"
+            }
+          ],
+          "links": {}
+        },
+        {
           "name": "测试用例",
           "status": "finished",
           "stage": "验收中",
@@ -5464,18 +5522,35 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "服务器",
+          "name": "策划验收",
+          "status": "doing",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": 1784269245372,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7558989665794080772"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "客户端",
           "status": "finished",
           "stage": "开发中",
-          "estimate_start_time": 1783526400000,
-          "estimate_finish_time": 1783699199999,
-          "actual_begin_time": 1782896104998,
-          "actual_finish_time": 1784182814795,
+          "estimate_start_time": 1783612800000,
+          "estimate_finish_time": 1784217599999,
+          "actual_begin_time": 1783679110980,
+          "actual_finish_time": 1784269227939,
           "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7550129340739092484"
+              "user_key": "7541883367285932060"
             }
           ],
           "links": {}
@@ -5503,16 +5578,16 @@ window.GVG_SYNC_DATA = {
       },
       "delayed_nodes": [
         {
-          "name": "客户端",
-          "end": "2026-07-16"
-        },
-        {
           "name": "UI",
           "end": "2026-07-08"
         },
         {
           "name": "服务器",
           "end": "2026-07-10"
+        },
+        {
+          "name": "客户端",
+          "end": "2026-07-16"
         }
       ]
     },
@@ -5526,6 +5601,120 @@ window.GVG_SYNC_DATA = {
       "evidence": {},
       "commits": [],
       "nodes": [
+        {
+          "name": "策划验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": 1786636800000,
+          "estimate_finish_time": 1786723199999,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "UI验收",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7470563325613539332"
+            },
+            {
+              "name": "",
+              "user_key": "7622759577934629833"
+            },
+            {
+              "name": "",
+              "user_key": "7670254574917225419"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "测试用例",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "策划配置",
+          "status": "not_started",
+          "stage": "开发中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "QA测试",
+          "status": "not_started",
+          "stage": "验收中",
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7643315047875283917"
+            }
+          ],
+          "links": {}
+        },
+        {
+          "name": "需求完成",
+          "status": "not_started",
+          "stage": null,
+          "estimate_start_time": null,
+          "estimate_finish_time": null,
+          "actual_begin_time": null,
+          "actual_finish_time": null,
+          "is_delayed": false,
+          "owners": [
+            {
+              "name": "",
+              "user_key": "7537113510916980739"
+            },
+            {
+              "name": "",
+              "user_key": "7613522372301294545"
+            }
+          ],
+          "links": {}
+        },
         {
           "name": "设计评审",
           "status": "finished",
@@ -5551,83 +5740,15 @@ window.GVG_SYNC_DATA = {
           "name": "客户端",
           "status": "not_started",
           "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
+          "estimate_start_time": 1786464000000,
+          "estimate_finish_time": 1786550399999,
           "actual_begin_time": null,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7541883367285932060"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UX",
-          "status": "doing",
-          "stage": "设计评审",
-          "estimate_start_time": 1785427200000,
-          "estimate_finish_time": 1785859199999,
-          "actual_begin_time": 1785313633644,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7633153806770900149"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "QA测试",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "方案设计",
-          "status": "finished",
-          "stage": "设计评审",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": 1785312875289,
-          "actual_finish_time": 1785312875293,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "测试用例",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7643315047875283917"
+              "user_key": "7470563324720087059"
             }
           ],
           "links": {}
@@ -5636,8 +5757,8 @@ window.GVG_SYNC_DATA = {
           "name": "UI",
           "status": "not_started",
           "stage": "美术制作中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
+          "estimate_start_time": 1785945600000,
+          "estimate_finish_time": 1786377599999,
           "actual_begin_time": null,
           "actual_finish_time": null,
           "is_delayed": false,
@@ -5645,10 +5766,6 @@ window.GVG_SYNC_DATA = {
             {
               "name": "",
               "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
             }
           ],
           "links": {}
@@ -5671,18 +5788,18 @@ window.GVG_SYNC_DATA = {
           "links": {}
         },
         {
-          "name": "策划验收",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
+          "name": "UX",
+          "status": "doing",
+          "stage": "设计评审",
+          "estimate_start_time": 1785427200000,
+          "estimate_finish_time": 1785859199999,
+          "actual_begin_time": 1785313633644,
           "actual_finish_time": null,
-          "is_delayed": false,
+          "is_delayed": true,
           "owners": [
             {
               "name": "",
-              "user_key": "7537113510916980739"
+              "user_key": "7633153806770900149"
             }
           ],
           "links": {}
@@ -5691,78 +5808,32 @@ window.GVG_SYNC_DATA = {
           "name": "服务器",
           "status": "not_started",
           "stage": "开发中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
+          "estimate_start_time": 1786377600000,
+          "estimate_finish_time": 1786550399999,
           "actual_begin_time": null,
           "actual_finish_time": null,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
-              "user_key": "7550129340739092484"
+              "user_key": "7470563325739384836"
             }
           ],
           "links": {}
         },
         {
-          "name": "策划配置",
-          "status": "not_started",
-          "stage": "开发中",
+          "name": "方案设计",
+          "status": "finished",
+          "stage": "设计评审",
           "estimate_start_time": null,
           "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
+          "actual_begin_time": 1785312875289,
+          "actual_finish_time": 1785312875293,
           "is_delayed": false,
           "owners": [
             {
               "name": "",
               "user_key": "7537113510916980739"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "UI验收",
-          "status": "not_started",
-          "stage": "验收中",
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7622759577934629833"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325613539332"
-            },
-            {
-              "name": "",
-              "user_key": "7470563325433233411"
-            }
-          ],
-          "links": {}
-        },
-        {
-          "name": "需求完成",
-          "status": "not_started",
-          "stage": null,
-          "estimate_start_time": null,
-          "estimate_finish_time": null,
-          "actual_begin_time": null,
-          "actual_finish_time": null,
-          "is_delayed": false,
-          "owners": [
-            {
-              "name": "",
-              "user_key": "7537113510916980739"
-            },
-            {
-              "name": "",
-              "user_key": "7613522372301294545"
             }
           ],
           "links": {}
@@ -5774,10 +5845,106 @@ window.GVG_SYNC_DATA = {
         "effect": null,
         "protocol": null
       },
-      "delayed_nodes": []
+      "delayed_nodes": [
+        {
+          "name": "UX",
+          "end": "2026-08-04"
+        }
+      ]
     }
   },
   "manual_review": [
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "张泽臻",
+        "repo": "client",
+        "message": "新增要塞传送表现",
+        "time": "2026-08-06 10:19:42",
+        "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/f7e703b445d6d0ca9fac392145ba07e569a193e1"
+      },
+      "candidates": [
+        "要塞",
+        "GVG"
+      ]
+    },
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "张泽臻",
+        "repo": "config",
+        "message": "新增要塞传送表现",
+        "time": "2026-08-06 10:19:11",
+        "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/0009a28cf96e9477c58c41c61d6e979c0d387b2f"
+      },
+      "candidates": [
+        "要塞",
+        "GVG"
+      ]
+    },
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "姚金豆",
+        "repo": "client",
+        "message": "要塞传送特效上传",
+        "time": "2026-08-05 18:58:32",
+        "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/242758c0e342dc40e02c566947b1825301b87592"
+      },
+      "candidates": [
+        "要塞",
+        "GVG"
+      ]
+    },
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "姚金豆",
+        "repo": "client",
+        "message": "要塞传送特效上传",
+        "time": "2026-08-05 15:53:43",
+        "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/937da7e8fbc112015c45ad6cb54229853f22c8c1"
+      },
+      "candidates": [
+        "要塞",
+        "GVG"
+      ]
+    },
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "文支义",
+        "repo": "config",
+        "message": "战报修改 要塞传送协议",
+        "time": "2026-08-05 10:21:23",
+        "url": "https://gitlab-sh.diandian.info/x03/config/-/commit/ce14792f0979dd89393446e97ec38fd525fa98a4https://gitlab-sh.diandian.info/x03/config/-/commit/d248f3884b5795346d0f34c2a87fa16828265072"
+      },
+      "candidates": [
+        "要塞",
+        "战报*",
+        "GVG"
+      ]
+    },
+    {
+      "type": "git_ambiguous",
+      "commit": {
+        "ticket": "",
+        "author": "黄静茹",
+        "repo": "client",
+        "message": "要塞面板联盟加旗帜图标",
+        "time": "2026-08-04 15:51:28",
+        "url": "https://gitlab-sh.diandian.info/x03/client/-/commit/a2671728de5f6f0265960e4b969c7db055053bdd"
+      },
+      "candidates": [
+        "要塞",
+        "联盟系统"
+      ]
+    },
     {
       "type": "git_ambiguous",
       "commit": {
@@ -5851,6 +6018,22 @@ window.GVG_SYNC_DATA = {
       "candidates": [
         "联盟系统",
         "聊天"
+      ]
+    },
+    {
+      "type": "special_chat_ambiguous",
+      "message": {
+        "time": "2026-08-05 10:21",
+        "sender": "协议提交通知",
+        "content": "<card title=\"提交协议\"> @文支义(ou_51c003b07abf886f5b340cba77fa5701)战报修改 要塞传送协议 [查看提交记录](https://gitlab-sh.diandian.info/x03/config/-/commit/ce14792f0979dd89393446e97ec38fd525fa98a4https://gitlab-sh.diandian.info/x03/config/-/commit/d248f3884b5795346d0f34c2a87fa16828265072) --- </card>",
+        "link": "https://applink.feishu.cn/client/thread/open?open_chat_id=oc_1b6bf69e782ae6a4894dbf73768e1a8d&open_thread_id=omt_191716e34c8e9cb7&openchatid=oc_1b6bf69e782ae6a4894dbf73768e1a8d&openthreadid=omt_191716e34c8e9cb7&thread_position=-1",
+        "message_id": "om_x100b681dac6b24b8b1ba94bd9cd509a",
+        "msg_type": "interactive"
+      },
+      "candidates": [
+        "要塞",
+        "战报*",
+        "GVG"
       ]
     },
     {

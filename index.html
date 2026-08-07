@@ -43,8 +43,46 @@
     .tab.active::before { content: ""; position: absolute; left: -7px; top: 50%; width: 3px; height: 22px; transform: translateY(-50%); border-radius: 99px; background: var(--blue); }
     .page { display: none; }
     .page.active { display: block; }
-    .workspace-2-0 .tabs .tab:not([data-page="boardPage"]):not([data-page="requirementOverviewPage"]):not([data-page="unitSwimlanePage"]) { display: none !important; }
-    .workspace-2-0 .page:not(#boardPage):not(#requirementOverviewPage):not(#unitSwimlanePage) { display: none !important; }
+    .workspace-2-0 .tabs .tab:not([data-page="boardPage"]):not([data-page="requirementOverviewPage"]):not([data-page="unitHubPage"]) { display: none !important; }
+    .workspace-2-0 .page:not(#boardPage):not(#requirementOverviewPage):not(#unitHubPage) { display: none !important; }
+    .workspace-2-0 #unitBoardPanel > .kanban-toolbar,
+    .workspace-2-0 #unitBoardPanel > #unitKanban { display: none !important; }
+    .workspace-2-0 #unitBoardPanel > .data-note { display: none !important; }
+    .unit-hub-head { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin: 22px 0 18px; }
+    .unit-hub-tabs { display: flex; gap: 8px; width: fit-content; padding: 6px; border: 1px solid #cbd6e8; border-radius: 13px; background: #e5eaf2; box-shadow: 0 5px 16px rgba(31,45,61,.08); }
+    .unit-hub-tab { padding: 9px 16px; border: 0; border-radius: 9px; color: #657286; background: transparent; font: inherit; font-weight: 650; cursor: pointer; }
+    .unit-hub-tab.active { color: var(--blue); background: #fff; box-shadow: 0 2px 8px rgba(31,45,61,.09); }
+    .unit-hub-panel { display: none; }
+    .unit-hub-panel.active { display: block; }
+    .skill-board-summary { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .skill-board-summary b { font-size: 16px; }
+    .skill-board-summary span { color: var(--muted); }
+    .skill-table .skill-unit { font-weight: 700; }
+    .skill-table .skill-name { min-width: 160px; font-weight: 650; }
+    .skill-table .skill-description { min-width: 300px; color: #4f5d70; }
+    .skill-slot { display: inline-flex; min-width: 28px; height: 24px; align-items: center; justify-content: center; border-radius: 7px; color: var(--blue); background: #edf3ff; font-size: 12px; font-weight: 750; }
+    .skill-slot.modified { color: #985b00; background: #fff3d9; }
+    .skill-status { display: inline-flex; padding: 4px 9px; border-radius: 999px; color: #687486; background: #eef1f5; font-size: 12px; white-space: nowrap; }
+    .skill-status.documented { color: #18704f; background: #e5f5ee; }
+    .new-unit-requirement-overlay { position: fixed; z-index: 180; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(24,32,42,.42); backdrop-filter: blur(3px); }
+    .new-unit-requirement-overlay[hidden] { display: none; }
+    .new-unit-requirement-dialog { width: min(620px, 100%); max-height: calc(100vh - 40px); overflow-y: auto; padding: 22px; border-radius: 16px; background: #fff; box-shadow: 0 24px 70px rgba(24,32,42,.25); }
+    .new-unit-requirement-head { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 18px; }
+    .new-unit-requirement-head h2 { margin: 0; font-size: 20px; }
+    .new-unit-requirement-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .new-unit-field { display: grid; gap: 6px; }
+    .new-unit-field.full { grid-column: 1 / -1; }
+    .new-unit-field label { color: #4e5b6d; font-size: 12px; font-weight: 700; }
+    .new-unit-field input, .new-unit-field select, .new-unit-field textarea { width: 100%; padding: 10px 11px; border: 1px solid #dce2eb; border-radius: 9px; background: #fff; color: var(--text); font: inherit; outline: none; }
+    .new-unit-field textarea { min-height: 110px; resize: vertical; }
+    .new-unit-checks { min-height: 42px; display: flex; gap: 8px; align-items: center; margin: 0; padding: 5px; border: 1px solid #dce2eb; border-radius: 9px; }
+    .new-unit-check { display: inline-flex; gap: 6px; align-items: center; padding: 5px 9px; border-radius: 7px; background: #f4f6f9; cursor: pointer; }
+    .new-unit-check input { width: auto; margin: 0; accent-color: var(--blue); }
+    .new-unit-upload { min-height: 110px; display: grid; place-items: center; padding: 14px; border: 1px dashed #9fb2d3; border-radius: 11px; color: #64748a; background: #f7f9fd; text-align: center; cursor: pointer; }
+    .new-unit-upload.dragging { border-color: var(--blue); background: #edf3ff; }
+    .new-unit-preview { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .new-unit-preview img { width: 72px; height: 72px; object-fit: cover; border: 1px solid var(--line); border-radius: 9px; }
+    .new-unit-requirement-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 18px; }
     #planningPage table { min-width: 1100px; }
     .latest-time { white-space: nowrap; color: #495568; font-size: 12px; }
     .latest-time.empty { color: #98a1af; }
@@ -212,12 +250,13 @@
     @media (max-width: 720px) { .requirement-intro { grid-template-columns: 1fr; } .requirement-field.full { grid-column: auto; } }
     .detail-overlay { position: fixed; z-index: 100; inset: 0; display: flex; justify-content: flex-end; background: rgba(24,32,42,.35); backdrop-filter: blur(3px); }
     .detail-overlay[hidden] { display: none; }
-    .detail-drawer { width: min(1240px, calc(100vw - 28px)); height: 100%; overflow-y: auto; padding: 0 22px 28px; background: #f3f5f8; box-shadow: -18px 0 50px rgba(24,32,42,.18); animation: drawerIn .2s ease-out; }
-    .detail-drawer .detail-header { margin: 0 -22px 20px; padding: 22px; border-radius: 0; box-shadow: 0 1px 0 var(--line); }
+    .detail-drawer { width: min(1080px, calc(100vw - 28px)); height: 100%; overflow-y: auto; padding: 0 20px 26px; background: #f7f8fa; box-shadow: -18px 0 50px rgba(24,32,42,.18); animation: drawerIn .2s ease-out; }
+    .detail-drawer .detail-header { margin: 0 -20px 18px; padding: 20px; border-radius: 0; box-shadow: 0 1px 0 var(--line); }
     .detail-key-facts { display: grid; grid-template-columns: minmax(210px, .8fr) minmax(250px, 1fr) minmax(430px, 1.45fr); gap: 12px; margin-bottom: 16px; align-items: stretch; }
     .detail-key-facts .detail-card { min-height: 66px; height: 100%; padding: 13px 15px; box-sizing: border-box; }
     .detail-key-facts .detail-label { margin-bottom: 6px; font-size: 12px; line-height: 1.25; }
     .detail-key-facts .detail-value { font-size: 15px; line-height: 1.35; }
+    .detail-key-facts.feature-facts { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
     .detail-key-facts .pm-schedule-card { grid-column: 1 / -1; padding: 0; overflow: hidden; }
     .pm-schedule-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid var(--line); background: #f8faff; }
     .pm-schedule-title .detail-label { margin: 0; color: var(--blue); font-size: 14px; }
@@ -248,19 +287,51 @@
     .fact-next-edit input[type="text"] { padding-left: 10px; color: #7f8793; border-left: 2px solid #9da5af; border-radius: 3px 7px 7px 3px; }
     .fact-next-edit select:hover, .fact-next-edit input:hover { border-color: #cbd7ee; background: #fff; }
     .fact-next-edit select:focus, .fact-next-edit input:focus { border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(40,100,220,.1); }
-    .detail-workspace { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: stretch; transition: grid-template-columns .2s ease; }
-    .detail-workspace[data-focused="summary"] { grid-template-columns: minmax(0, 1fr) 56px 56px; }
-    .detail-workspace[data-focused="messages"] { grid-template-columns: 56px minmax(0, 1fr) 56px; }
-    .detail-workspace[data-focused="git"] { grid-template-columns: 56px 56px minmax(0, 1fr); }
+    .detail-milestones { margin-bottom: 12px; }
+    .detail-milestones:empty { display: none; }
+    .timeline-milestone-editor { display: grid; gap: 8px; padding: 4px 2px 8px; }
+    .timeline-milestone-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .timeline-milestone-heading-main { display: flex; align-items: baseline; gap: 9px; min-width: 0; }
+    .timeline-milestone-heading h3 { margin: 0; font-size: 15px; }
+    .timeline-milestone-heading span { color: var(--muted); font-size: 11px; }
+    .timeline-requirement-link { color: var(--blue); font-size: 12px; font-weight: 750; text-decoration: none; white-space: nowrap; }
+    .timeline-requirement-link:hover { text-decoration: underline; }
+    .timeline-milestone-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 18px; row-gap: 4px; }
+    .timeline-milestone-stage { min-width: 0; padding: 11px 12px 13px; border: 1px solid transparent; border-radius: 9px; }
+    .timeline-milestone-stage.is-active { border-color: #f0d799; background: #fff8e7; }
+    .timeline-milestone-stage.is-completed { border-color: #c7e7d6; background: #eef9f3; }
+    .timeline-milestone-stage.is-pending { border-color: #e1e5ea; background: #f2f4f6; }
+    .timeline-milestone-stage-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; color: var(--blue); font-size: 12px; font-weight: 800; }
+    .timeline-milestone-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 9px; }
+    .timeline-milestone-field { display: grid; min-width: 0; gap: 4px; color: var(--muted); font-size: 11px; }
+    .timeline-milestone-field.wide { grid-column: 1 / -1; }
+    .timeline-milestone-field input:not([type="checkbox"]) { width: 100%; min-width: 0; max-width: 190px; height: 30px; padding: 4px 7px; border: 1px solid #d9e0ea; border-radius: 6px; color: var(--text); background: #fff; font: inherit; font-size: 11px; box-sizing: border-box; outline: none; }
+    .timeline-milestone-field input[data-timeline-date] { max-width: 132px; }
+    .timeline-milestone-field input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(40,100,220,.1); }
+    .timeline-milestone-link { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 0; color: var(--blue); font-size: 11px; font-weight: 750; text-decoration: none; box-sizing: border-box; }
+    .timeline-milestone-link:hover { text-decoration: underline; }
+    .timeline-milestone-complete { display: inline-flex; align-items: center; gap: 5px; color: var(--green); font-size: 11px; font-weight: 750; cursor: pointer; }
+    .timeline-milestone-complete input { width: 16px; height: 16px; accent-color: var(--green); }
+    .timeline-milestone-stage-actions { display: flex; align-items: center; gap: 10px; }
+    .timeline-milestone-delay-toggle { display: inline-flex; align-items: center; gap: 4px; padding: 2px 0; color: #a76000; font-size: 10px; font-weight: 750; cursor: pointer; }
+    .timeline-milestone-delay-toggle input { width: 14px; height: 14px; accent-color: var(--amber); }
+    .timeline-milestone-field[hidden] { display: none; }
+    @media (max-width: 900px) { .timeline-milestone-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .timeline-milestone-stages, .timeline-milestone-fields { grid-template-columns: 1fr; } .timeline-milestone-field.wide { grid-column: auto; } }
+    .detail-workspace { display: grid; grid-template-columns: 1fr; gap: 10px; align-items: start; }
+    .detail-workspace.unit-detail { grid-template-columns: 1fr; }
+    .detail-column[hidden] { display: none !important; }
     .detail-column { min-width: 0; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); box-shadow: var(--shadow); overflow: hidden; }
-    .detail-column-head { display: flex; align-items: center; gap: 9px; width: 100%; min-height: 48px; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--line); color: var(--blue); background: #f7f9ff; font: inherit; font-size: 14px; font-weight: 800; text-align: left; cursor: pointer; white-space: nowrap; }
+    .detail-column-head { display: flex; align-items: center; gap: 9px; width: 100%; min-height: 48px; padding: 10px 14px; border: 0; color: var(--blue); background: #f7f9ff; font: inherit; font-size: 14px; font-weight: 800; text-align: left; cursor: pointer; white-space: nowrap; }
+    .detail-column-head::after { content: "›"; margin-left: auto; font-size: 21px; line-height: 1; transition: transform .16s ease; }
+    .detail-column.expanded .detail-column-head { border-bottom: 1px solid var(--line); }
+    .detail-column.expanded .detail-column-head::after { transform: rotate(90deg); }
     .detail-column-icon { flex: 0 0 25px; width: 25px; height: 25px; }
-    .detail-column-head:hover, .detail-column.focused .detail-column-head { color: #fff; background: var(--blue); }
-    .detail-column-body { display: grid; gap: 12px; padding: 14px; }
+    .detail-column-head:hover, .detail-column.expanded .detail-column-head { color: #fff; background: var(--blue); }
+    .detail-column-body { display: none; gap: 12px; padding: 14px; }
+    .detail-column.expanded .detail-column-body { display: grid; }
     .detail-column .detail-card { box-shadow: none; }
     .detail-column .detail-card, .detail-column .detail-value, .detail-column .detail-list, .detail-column .node, .detail-column .work-links { min-width: 0; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; white-space: normal; }
-    .detail-workspace.focused .detail-column:not(.focused) .detail-column-head { justify-content: center; height: 100%; padding: 10px; border-bottom: 0; }
-    .detail-workspace.focused .detail-column:not(.focused) .detail-column-title, .detail-workspace.focused .detail-column:not(.focused) .detail-column-body { display: none; }
     .dev-timeline-days { display: grid; gap: 18px; }
     .dev-timeline-day { display: grid; gap: 9px; }
     .dev-timeline-day-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-bottom: 7px; border-bottom: 1px solid #dfe5ef; color: #344157; font-size: 13px; font-weight: 900; }
@@ -356,6 +427,91 @@
     @keyframes drawerIn { from { transform: translateX(35px); opacity: .7; } to { transform: translateX(0); opacity: 1; } }
     .unit-progress-table { min-width: 1560px; }
     .unit-progress-table th:nth-child(4), .unit-progress-table td:nth-child(4) { min-width: 690px; }
+    .swimlane-shell { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+    .swimlane-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .swimlane-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .swimlane-dot { width: 9px; height: 9px; border-radius: 50%; background: #e1e6ed; }
+    .swimlane-dot.done { background: #35a879; }
+    .swimlane-dot.doing { background: #3976e8; box-shadow: 0 0 0 3px #dce7ff; }
+    .swimlane-scroll { max-height: calc(100vh - 285px); overflow-x: scroll; overflow-y: auto; padding-bottom: 6px; scrollbar-gutter: stable both-edges; scrollbar-color: #8fa5c8 #dfe5ee; scrollbar-width: auto; }
+    .swimlane-scroll::-webkit-scrollbar { width: 12px; height: 16px; }
+    .swimlane-scroll::-webkit-scrollbar-track { border-radius: 999px; background: #dfe5ee; }
+    .swimlane-scroll::-webkit-scrollbar-thumb { min-width: 70px; border: 3px solid #dfe5ee; border-radius: 999px; background: #8fa5c8; }
+    .swimlane-scroll::-webkit-scrollbar-thumb:hover { background: #6684b5; }
+    .swimlane-grid { display: grid; grid-template-columns: 220px repeat(8, minmax(128px, 1fr)); min-width: 1260px; }
+    .swimlane-head { position: sticky; z-index: 4; top: 0; padding: 12px 10px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); color: #667185; background: #f7f9fc; font-size: 11px; font-weight: 800; text-align: center; }
+    .swimlane-head:first-child { left: 0; z-index: 6; text-align: left; }
+    .swimlane-unit { position: sticky; z-index: 2; left: 0; min-height: 58px; padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+    .swimlane-unit button { padding: 0; border: 0; color: var(--text); background: transparent; font: inherit; font-weight: 800; text-align: left; cursor: pointer; }
+    .swimlane-unit button:hover { color: var(--blue); }
+    .swimlane-unit-meta { margin-top: 4px; color: var(--muted); font-size: 10px; }
+    .swimlane-cell { display: flex; min-height: 58px; align-items: center; justify-content: center; padding: 8px; border-right: 1px solid #edf0f4; border-bottom: 1px solid var(--line); background: #fbfcfd; }
+    .swimlane-node { width: 100%; min-height: 34px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 8px; color: #98a1af; background: #eef1f5; font-size: 11px; font-weight: 750; }
+    .swimlane-node.done { color: #16855b; background: #e4f6ee; }
+    .swimlane-node.doing { color: #2864dc; background: #e5edff; box-shadow: inset 0 0 0 1px #b7caf7; }
+    .swimlane-node::before { content: ""; width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: currentColor; opacity: .65; }
+    .swimlane-group { grid-column: 1 / -1; position: sticky; left: 0; z-index: 3; padding: 8px 12px; border-bottom: 1px solid #dce3ee; color: #40516d; background: #edf2fa; font-size: 12px; font-weight: 850; }
+    .unit-swimlane-cards { display: grid; gap: 18px; padding: 20px; background: #eef1f5; }
+    .swimlane-card-group { margin: 4px 2px -4px; color: #40516d; font-size: 14px; font-weight: 850; }
+    .unit-swimlane-card { --card-accent: #3976e8; --card-tint: #f4f7ff; display: grid; grid-template-columns: minmax(330px, 1.35fr) minmax(250px, .9fr); gap: 26px; min-height: 250px; padding: 24px 28px; border: 2px solid color-mix(in srgb, var(--card-accent) 50%, white); border-left-width: 7px; border-radius: 12px; color: #253247; background: var(--card-tint); box-shadow: 0 3px 0 rgba(75,99,137,.08), 0 10px 24px rgba(37,49,68,.10); }
+    .unit-swimlane-card:hover { box-shadow: 0 3px 0 rgba(75,99,137,.10), 0 14px 30px rgba(37,49,68,.16); transform: translateY(-1px); }
+    .unit-swimlane-card.state-design { --card-accent: #d89b1d; --card-tint: #fffaf0; }
+    .unit-swimlane-card.state-concept { --card-accent: #9a62c7; --card-tint: #fbf5ff; }
+    .unit-swimlane-card.state-model { --card-accent: #3278d4; --card-tint: #f3f8ff; }
+    .unit-swimlane-card.state-action { --card-accent: #e06b42; --card-tint: #fff6f1; }
+    .unit-swimlane-card.state-effect { --card-accent: #c44da1; --card-tint: #fff4fb; }
+    .unit-swimlane-card.state-program { --card-accent: #268a91; --card-tint: #f1fbfb; }
+    .unit-swimlane-card.state-config { --card-accent: #6472c9; --card-tint: #f5f6ff; }
+    .unit-swimlane-card.state-acceptance { --card-accent: #d27b22; --card-tint: #fff8ef; }
+    .unit-swimlane-card.state-complete { --card-accent: #2f9b6d; --card-tint: #f0faf5; }
+    .unit-card-main { min-width: 0; }
+    .unit-card-title { display: inline-block; margin: 0 0 20px; padding: 0; border: 0; color: #253247; background: transparent; font: inherit; font-size: 28px; font-weight: 850; text-align: left; cursor: pointer; }
+    .unit-card-title:hover { color: var(--card-accent); }
+    .unit-card-art { display: flex; width: 100%; height: 150px; overflow: hidden; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.18); border-radius: 5px; background: #fff; }
+    .unit-card-art img { width: 100%; height: 100%; object-fit: contain; }
+    .unit-card-art-empty { color: #8793a5; font-size: 12px; }
+    .unit-card-info { display: flex; min-width: 0; flex-direction: column; justify-content: center; }
+    .unit-card-current { width: fit-content; margin-bottom: 20px; padding: 5px 10px; border-radius: 7px; color: var(--card-accent); background: color-mix(in srgb, var(--card-accent) 12%, white); font-size: 17px; font-weight: 850; }
+    .unit-card-meta { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 20px; color: #657185; font-size: 13px; font-weight: 700; }
+    .unit-card-progress { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+    .unit-card-stage { min-width: 0; padding: 7px 4px; border-radius: 6px; color: #aab5c5; background: rgba(255,255,255,.08); font-size: 10px; font-weight: 750; text-align: center; }
+    .unit-card-stage.done { color: #bff1dc; background: rgba(52,168,121,.24); }
+    .unit-card-stage.doing { color: #fff; background: #3976e8; box-shadow: 0 0 0 2px rgba(159,190,255,.28); }
+    @media (min-width: 1500px) { .unit-swimlane-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .swimlane-card-group { grid-column: 1 / -1; } }
+    @media (max-width: 760px) { .unit-swimlane-card { grid-template-columns: 1fr; gap: 18px; padding: 20px; } .unit-card-art { height: 130px; } }
+    .unit-stage-board { display: grid; grid-template-columns: repeat(8, minmax(230px, 1fr)); gap: 12px; min-width: 1930px; padding: 16px; background: #eef1f5; }
+    .unit-stage-column { min-height: 520px; overflow: hidden; border: 1px solid #dce2eb; border-radius: 12px; background: #f8fafc; }
+    .unit-stage-column.drag-over { border-color: var(--stage-color); background: color-mix(in srgb, var(--stage-color) 8%, white); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--stage-color) 28%, transparent); }
+    .unit-stage-column-head { position: sticky; z-index: 3; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 12px 13px; border-top: 4px solid var(--stage-color); border-bottom: 1px solid #dce2eb; color: #334157; background: #fff; font-size: 14px; font-weight: 850; }
+    .unit-stage-column-count { min-width: 22px; padding: 2px 6px; border-radius: 999px; color: var(--stage-color); background: color-mix(in srgb, var(--stage-color) 12%, white); font-size: 11px; text-align: center; }
+    .unit-stage-column-body { display: grid; gap: 10px; padding: 10px; }
+    .unit-model-sublane + .unit-model-sublane { border-top: 1px dashed #cbd4e2; }
+    .unit-model-sublane-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; color: #657185; background: #f1f4f8; font-size: 11px; font-weight: 800; cursor: pointer; list-style: none; user-select: none; transition: color .15s ease, background .15s ease, box-shadow .15s ease; }
+    .unit-model-sublane-head::-webkit-details-marker { display: none; }
+    .unit-model-sublane-head > span:first-child::before { content: "›"; display: inline-block; margin-right: 6px; font-size: 15px; line-height: 1; transform: rotate(0); transition: transform .16s ease; }
+    .unit-model-sublane[open] .unit-model-sublane-head > span:first-child::before { transform: rotate(90deg); }
+    .unit-model-sublane .unit-stage-column-body { min-height: 125px; }
+    .unit-model-sublane.drag-over { background: color-mix(in srgb, var(--stage-color) 8%, white); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--stage-color) 28%, transparent); }
+    .unit-model-sublane.drag-over > .unit-model-sublane-head { color: var(--stage-color); background: color-mix(in srgb, var(--stage-color) 16%, white); box-shadow: inset 0 0 0 2px var(--stage-color); }
+    .unit-stage-card { overflow: hidden; padding: 12px; border: 1px solid #dfe5ee; border-left: 4px solid var(--stage-color); border-radius: 9px; background: #fff; box-shadow: 0 4px 12px rgba(37,49,68,.07); }
+    .unit-stage-card[draggable="true"] { cursor: grab; }
+    .unit-stage-card.dragging { opacity: .45; cursor: grabbing; transform: rotate(1deg); }
+    .unit-stage-card-image { display: flex; width: 100%; height: 92px; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid #edf0f4; background: #f4f6f9; }
+    .unit-stage-card-image img { width: 100%; height: 100%; object-fit: contain; }
+    .unit-stage-card-image span { color: #9aa3b1; font-size: 11px; }
+    .unit-stage-card-content { padding: 10px; }
+    .unit-stage-card-title { width: 100%; margin-top: 9px; padding: 0; border: 0; color: #263247; background: transparent; font: inherit; font-weight: 850; text-align: left; cursor: pointer; }
+    .unit-stage-card-title:hover { color: var(--stage-color); }
+    .unit-stage-card-meta { margin-top: 6px; color: #7a8596; font-size: 10px; line-height: 1.5; }
+    .unit-stage-card-date { display: block; width: 100%; margin-top: 8px; padding: 6px 7px; border: 1px dashed #cbd4e2; border-radius: 6px; color: #7a8596; background: #f8fafc; font: inherit; font-size: 11px; text-align: left; cursor: pointer; }
+    .unit-stage-card-date:hover { color: var(--stage-color); border-color: var(--stage-color); background: #fff; }
+    .unit-stage-date-input { width: 100%; margin-top: 8px; padding: 5px 6px; border: 1px solid var(--stage-color); border-radius: 6px; color: #334157; background: #fff; font: inherit; font-size: 11px; box-sizing: border-box; }
+    .swimlane-filter-group { display: flex; align-items: center; gap: 6px; margin: 0; padding: 0; border: 0; }
+    .swimlane-filter-group legend { float: left; margin-right: 2px; color: var(--muted); font-size: 12px; font-weight: 750; }
+    .swimlane-filter-option { cursor: pointer; }
+    .swimlane-filter-option input { position: absolute; opacity: 0; pointer-events: none; }
+    .swimlane-filter-option span { display: inline-flex; min-height: 34px; align-items: center; padding: 0 11px; border: 1px solid #d5dce7; border-radius: 8px; color: #657185; background: #fff; font-size: 12px; font-weight: 750; }
+    .swimlane-filter-option input:checked + span { color: #2864dc; border-color: #9eb8ed; background: #edf3ff; box-shadow: inset 0 0 0 1px #c6d6f6; }
     .step-list { display: flex; gap: 8px; min-width: 680px; overflow-x: auto; padding: 2px 2px 5px; scrollbar-width: thin; }
     .step-chip { position: relative; display: grid; flex: 0 0 128px; min-height: 68px; padding: 12px 42px 10px 12px; overflow: hidden; border: 1px solid #d7dee9; border-radius: 9px; color: #536174; background: #f3f5f8; box-shadow: 0 1px 3px rgba(31,45,61,.09); font: inherit; text-align: left; cursor: pointer; transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease; }
     .step-chip:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(31,45,61,.13); }
@@ -447,9 +603,67 @@
 
     .board-shell { margin-top: 24px; }
     .board-shell > .milestone-calendar { margin: 0 0 14px; }
-    .board-tabs { display: flex; gap: 4px; width: fit-content; margin-bottom: 14px; padding: 4px; border: 1px solid var(--line); border-radius: 11px; background: #e9edf3; }
-    .board-tab { padding: 9px 16px; border: 0; border-radius: 8px; color: var(--muted); background: transparent; font: inherit; font-weight: 700; cursor: pointer; }
-    .board-tab.active { color: var(--blue); background: #fff; box-shadow: 0 2px 7px rgba(31,45,61,.09); }
+    .board-tabs { display: flex; gap: 8px; width: fit-content; margin-bottom: 18px; padding: 6px; border: 1px solid #cbd6e8; border-radius: 13px; background: #e5eaf2; box-shadow: 0 5px 16px rgba(31,45,61,.1); }
+    .board-tab { min-width: 168px; padding: 12px 22px; border: 1px solid transparent; border-radius: 9px; color: #526077; background: #f5f7fa; font: inherit; font-size: 14px; font-weight: 850; cursor: pointer; transition: color .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease, transform .15s ease; }
+    .board-tab:hover { color: var(--blue); border-color: #aebfe2; background: #fff; transform: translateY(-1px); }
+    .board-tab.active { color: #fff; border-color: var(--blue); background: var(--blue); box-shadow: 0 5px 13px rgba(40,100,220,.28); }
+    .overview-toolbar { display: flex; gap: 10px; margin-bottom: 16px; }
+    .overview-toolbar .search { flex: 1; max-width: 520px; }
+    .overview-scope-tabs { display: inline-flex; gap: 4px; margin-bottom: 14px; padding: 4px; border: 1px solid var(--line); border-radius: 11px; background: #e9edf3; }
+    .overview-scope-tab { padding: 8px 18px; border: 0; border-radius: 8px; color: var(--muted); background: transparent; font: inherit; font-weight: 750; cursor: pointer; }
+    .overview-scope-tab.active { color: var(--blue); background: #fff; box-shadow: 0 2px 7px rgba(31,45,61,.09); }
+    .overview-people-filters { display: grid; gap: 9px; margin-bottom: 14px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #f7f9fc; }
+    .overview-people-row { display: grid; grid-template-columns: 120px minmax(0, 1fr); align-items: start; gap: 12px; }
+    .overview-people-label { padding-top: 6px; color: #526077; font-size: 12px; font-weight: 850; }
+    .overview-people-options { display: flex; flex-wrap: wrap; gap: 7px; }
+    .overview-person-option { position: relative; }
+    .overview-person-option input { position: absolute; opacity: 0; pointer-events: none; }
+    .overview-person-option span { display: block; padding: 5px 11px; border: 1px solid #d7deea; border-radius: 999px; color: #566174; background: #fff; font-size: 12px; font-weight: 700; cursor: pointer; transition: .15s ease; }
+    .overview-person-option input:checked + span { border-color: var(--blue); color: #fff; background: var(--blue); box-shadow: 0 2px 7px rgba(40,100,220,.22); }
+    .overview-person-option input:focus-visible + span { outline: 2px solid #94b3f2; outline-offset: 2px; }
+    .requirement-overview-grid { display: grid; gap: 14px; }
+    .overview-swimlane { display: grid; grid-template-columns: 150px minmax(0, 1fr); min-height: 190px; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #e9edf5; box-shadow: var(--shadow); }
+    .overview-swimlane-head { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 18px 12px; border-right: 1px solid var(--line); color: #3d4a5f; background: #dfe5ef; font-size: 14px; font-weight: 850; text-align: center; }
+    .overview-swimlane-count { min-width: 28px; padding: 3px 8px; border-radius: 999px; color: var(--muted); background: #fff; font-size: 12px; }
+    .overview-swimlane-cards { display: flex; align-items: stretch; gap: 12px; overflow-x: auto; padding: 13px; }
+    .overview-card { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+    .overview-swimlane .overview-card { flex: 0 0 390px; max-width: 390px; }
+    .overview-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 18px; border-bottom: 1px solid #e7ebf2; }
+    .overview-card-title { margin: 0 0 5px; color: var(--text); font-size: 19px; }
+    .overview-card-id { color: var(--muted); font-size: 12px; }
+    .overview-open { flex: none; padding: 7px 11px; border: 1px solid #d5e1fa; border-radius: 8px; color: var(--blue); background: #f5f8ff; font: inherit; font-size: 12px; font-weight: 750; cursor: pointer; }
+    .overview-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px 18px; background: #f7f9fc; }
+    .overview-fact { min-width: 0; }
+    .overview-fact-label { margin-bottom: 4px; color: var(--muted); font-size: 11px; font-weight: 700; }
+    .overview-fact-value { overflow-wrap: anywhere; font-size: 13px; font-weight: 700; }
+    .overview-milestones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 14px 18px 18px; }
+    .overview-milestone { min-height: 66px; padding: 9px; border: 1px solid #dce6df; border-radius: 9px; background: #f2faf6; }
+    .overview-milestone.pending { border-color: #e7e9ee; background: #f8f9fb; }
+    .overview-milestone-title { margin-bottom: 6px; color: var(--blue); font-size: 12px; font-weight: 800; }
+    .overview-milestone-value { color: #566174; font-size: 11px; line-height: 1.5; }
+    .overview-milestone-date { display: block; }
+    .overview-milestone-date.completed::after { content: " ✓"; color: #16865d; font-weight: 900; }
+    .overview-milestone-date.delayed { color: #d83f3f; font-weight: 800; }
+    .overview-milestone-date.delayed.completed::after { color: #d83f3f; }
+    .timeline-stage-owners { display: inline-flex; flex-wrap: wrap; gap: 5px; margin-left: 8px; }
+    .timeline-stage-owner { padding: 2px 7px; border-radius: 999px; color: #51637e; background: #e9eef7; font-size: 11px; font-weight: 700; }
+    .timeline-delay-history { position: relative; display: inline-flex; align-items: center; margin-right: 8px; padding: 2px 7px; border-radius: 999px; color: #98610d; background: #fff0cf; font-size: 11px; font-weight: 750; cursor: help; }
+    .timeline-delay-history-popover { position: absolute; z-index: 40; right: 0; top: calc(100% + 7px); display: none; width: 280px; padding: 10px; border: 1px solid #e3d3ac; border-radius: 9px; color: #4d5563; background: #fff; box-shadow: 0 10px 30px rgba(31,45,61,.18); font-weight: 500; }
+    .timeline-delay-history:hover .timeline-delay-history-popover, .timeline-delay-history:focus-within .timeline-delay-history-popover { display: block; }
+    .timeline-delay-history-item { padding: 7px 3px; border-bottom: 1px solid #edf0f4; line-height: 1.5; }
+    .timeline-delay-history-item:last-child { border-bottom: 0; }
+    .timeline-delay-history-item b { display: block; color: #8b5c13; font-size: 11px; }
+    .overview-empty { padding: 50px 20px; color: var(--muted); text-align: center; }
+    .overview-card.status-planning { border-left: 4px solid #8d98a8; background: #fbfcfd; }
+    .overview-card.status-design { border-left: 4px solid #d39b16; background: #fffaf0; }
+    .overview-card.status-art { border-left: 4px solid #9a62bb; background: #fcf7ff; }
+    .overview-card.status-ux { border-left: 4px solid #8357bd; background: #f8f3ff; }
+    .overview-card.status-ui { border-left: 4px solid #d35b9d; background: #fff3f9; }
+    .overview-card.status-asset { border-left: 4px solid #2b9d94; background: #f0fbf9; }
+    .overview-card.status-development { border-left: 4px solid #3974df; background: #f5f8ff; }
+    .overview-card.status-acceptance { border-left: 4px solid #e58a27; background: #fff8ef; }
+    .overview-card.status-complete { border-left: 4px solid #26a36f; background: #f2fbf7; }
+    @media (max-width: 720px) { .overview-swimlane { grid-template-columns: 92px minmax(0, 1fr); } .overview-swimlane .overview-card { flex-basis: 320px; } .overview-milestones { grid-template-columns: repeat(2, 1fr); } }
     .board-panel { display: none; }
     .board-panel.active { display: block; }
     .kanban-toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; padding: 13px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); box-shadow: var(--shadow); }
@@ -617,12 +831,29 @@
 
     <nav class="tabs" aria-label="页面切换">
       <button class="tab active" type="button" data-page="boardPage">看板视图</button>
+      <button class="tab" type="button" data-page="requirementOverviewPage">需求总览</button>
+      <button class="tab" type="button" data-page="unitHubPage">兵种</button>
       <button class="tab" type="button" data-page="planningPage">策划用表</button>
       <button class="tab" type="button" data-page="pmPage">PM管理页</button>
       <button class="tab" type="button" data-page="warehousePage">数据仓库</button>
       <button class="tab" type="button" data-page="unitPage">兵种制作进度</button>
+      <button class="tab" type="button" data-page="unitSwimlanePage">兵种泳道图</button>
       <button class="tab" type="button" data-page="summaryPage">进度汇总</button>
     </nav>
+
+    <div id="requirementOverviewPage" class="page">
+      <nav class="overview-scope-tabs" aria-label="需求总览范围">
+        <button class="overview-scope-tab" type="button" data-overview-scope="mine">我参与的</button>
+        <button class="overview-scope-tab active" type="button" data-overview-scope="all">所有需求</button>
+      </nav>
+      <div class="overview-toolbar">
+        <input id="requirementOverviewSearch" class="control search" type="search" placeholder="搜索需求名称、ID、负责人或阶段…" />
+        <button id="requirementOverviewReset" class="control button" type="button">重置筛选</button>
+      </div>
+      <div id="requirementOverviewPeopleFilters" class="overview-people-filters" aria-label="按职能负责人筛选"></div>
+      <div id="requirementOverviewGrid" class="requirement-overview-grid"></div>
+      <div id="requirementOverviewEmpty" class="overview-empty" hidden>没有符合条件的需求</div>
+    </div>
 
     <div id="boardPage" class="page active">
       <section class="board-shell">
@@ -735,6 +966,7 @@
           <button id="closeDetail" class="control button" type="button">关闭</button>
         </div>
         <section id="detailKeyFacts" class="detail-key-facts"></section>
+        <section id="detailMilestones" class="detail-milestones"></section>
         <div id="detailWorkspace" class="detail-workspace">
           <section class="detail-column" data-detail-panel="summary"><button class="detail-column-head" type="button" data-detail-tab="summary"><svg class="detail-column-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="detail-column-title">时间线</span></button><div id="detailSummary" class="detail-column-body"></div></section>
           <section class="detail-column" data-detail-panel="messages"><button class="detail-column-head" type="button" data-detail-tab="messages"><svg class="detail-column-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" fill="currentColor"/><circle cx="16" cy="9" r="2.4" fill="currentColor" opacity=".72"/><path d="M3.5 18c.4-3.4 2.2-5.2 5.5-5.2s5.2 1.8 5.6 5.2M13.5 13.7c.7-.5 1.5-.7 2.5-.7 2.8 0 4.2 1.5 4.5 4.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="detail-column-title">飞书群聊 ↗</span></button><div id="detailMessages" class="detail-column-body"></div></section>
@@ -861,6 +1093,78 @@
         <div class="empty" id="unitEmpty">没有符合条件的记录</div>
       </div>
     </div>
+
+    <div id="unitSwimlanePage" class="page">
+      <div class="data-note">
+        <div><b>兵种泳道图</b><span>以兵种为泳道，横向展示全部制作环节和当前节点。</span></div>
+      </div>
+      <div class="toolbar">
+        <input id="unitSwimlaneSearch" class="control search" type="search" placeholder="搜索兵种、英文代号、阵营或类型…" />
+        <fieldset id="unitSwimlaneTypeFilters" class="swimlane-filter-group"><legend>类型</legend><label class="swimlane-filter-option"><input type="checkbox" value="载具"><span>载具</span></label><label class="swimlane-filter-option"><input type="checkbox" value="王虫"><span>王虫</span></label><label class="swimlane-filter-option"><input type="checkbox" value="建筑"><span>建筑</span></label></fieldset>
+        <fieldset id="unitSwimlaneStatusFilters" class="swimlane-filter-group"><legend>状态</legend><label class="swimlane-filter-option"><input type="checkbox" value="done"><span>已完成</span></label><label class="swimlane-filter-option"><input type="checkbox" value="doing"><span>进行中</span></label></fieldset>
+        <button id="unitSwimlaneReset" class="control button" type="button">重置筛选</button>
+      </div>
+      <section class="swimlane-shell" aria-label="兵种制作进度泳道图">
+        <div class="swimlane-legend"><b>泳道说明</b><span>每个兵种仅展示在当前制作阶段；完成的兵种归入“验收”列。</span></div>
+        <div class="swimlane-scroll"><div id="unitSwimlaneGrid" class="unit-stage-board"></div><div id="unitSwimlaneEmpty" class="empty">没有符合条件的记录</div></div>
+      </section>
+    </div>
+
+    <div id="unitHubPage" class="page">
+      <div class="unit-hub-head">
+        <nav class="unit-hub-tabs" aria-label="兵种视图切换">
+          <button class="unit-hub-tab active" type="button" data-unit-hub-panel="unitProgressHubPanel">兵种制作进度</button>
+          <button class="unit-hub-tab" type="button" data-unit-hub-panel="unitSkillBoardPanel">兵种技能看板</button>
+        </nav>
+        <button id="newUnitRequirement" class="control button" type="button">＋ 新建需求</button>
+      </div>
+      <section id="unitProgressHubPanel" class="unit-hub-panel active"></section>
+      <section id="unitSkillBoardPanel" class="unit-hub-panel">
+        <div class="skill-board-summary">
+          <div><b>兵种技能看板</b><span style="display:block">每个技能独立一行；默认预留 3 个基础技能，并支持继续追加改造型技能。</span></div>
+          <span>共 <b id="unitSkillCount">0</b> 条技能记录</span>
+        </div>
+        <div class="toolbar">
+          <input id="unitSkillSearch" class="control search" type="search" placeholder="搜索兵种、技能名称、描述或阵营…" />
+          <select id="unitSkillGroup" class="control"><option value="">全部分组</option><option>王虫</option><option>建筑</option><option>载具</option></select>
+          <select id="unitSkillStatus" class="control"><option value="">全部录入状态</option><option value="documented">已录入</option><option value="placeholder">待补充</option></select>
+          <button id="unitSkillReset" class="control button" type="button">重置筛选</button>
+        </div>
+        <div class="table-wrap">
+          <table class="skill-table">
+            <thead><tr><th>兵种</th><th>阵营 / 类型</th><th>技能槽位</th><th>技能名称</th><th>技能类型</th><th>技能描述</th><th>优先级</th><th>制作类型</th><th>参考图</th><th>录入状态</th></tr></thead>
+            <tbody id="unitSkillRows"></tbody>
+          </table>
+          <div id="unitSkillEmpty" class="empty">没有符合条件的技能记录</div>
+        </div>
+      </section>
+    </div>
+
+    <div id="newUnitRequirementOverlay" class="new-unit-requirement-overlay" hidden>
+      <section class="new-unit-requirement-dialog" role="dialog" aria-modal="true" aria-labelledby="newUnitRequirementTitle">
+        <header class="new-unit-requirement-head"><div><h2 id="newUnitRequirementTitle">新建兵种技能需求</h2><span class="subtitle">为指定载具的技能新增一条需求</span></div><button id="closeNewUnitRequirement" class="detail-close" type="button" aria-label="关闭">×</button></header>
+        <form id="newUnitRequirementForm">
+          <div class="new-unit-requirement-form">
+            <div class="new-unit-field"><label for="newUnitVehicle">载具</label><input id="newUnitVehicle" list="unitVehicleOptions" required placeholder="选择或输入载具名称" /><datalist id="unitVehicleOptions"></datalist></div>
+            <div class="new-unit-field"><label for="newUnitSkillSlot">技能</label><select id="newUnitSkillSlot" required><option value="1">技能 1</option><option value="2">技能 2</option><option value="3">技能 3</option></select></div>
+            <div class="new-unit-field"><label for="newUnitPriority">优先级</label><select id="newUnitPriority" required><option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option></select></div>
+            <div class="new-unit-field"><label>制作类型（可多选）</label><fieldset id="newUnitProductionTypes" class="new-unit-checks"><label class="new-unit-check"><input type="checkbox" value="特效" />特效</label><label class="new-unit-check"><input type="checkbox" value="动作" />动作</label><label class="new-unit-check"><input type="checkbox" value="模型" />模型</label></fieldset></div>
+            <div class="new-unit-field full"><label for="newUnitDescription">需求描述</label><textarea id="newUnitDescription" required placeholder="描述技能需求、表现和预期效果…"></textarea></div>
+            <div class="new-unit-field full"><label>参考图</label><label id="newUnitUploadZone" class="new-unit-upload" tabindex="0">点击选择、拖入或直接粘贴参考图<input id="newUnitReferenceImages" type="file" accept="image/*" multiple hidden /></label><div id="newUnitImagePreview" class="new-unit-preview"></div></div>
+          </div>
+          <div class="new-unit-requirement-actions"><button id="cancelNewUnitRequirement" class="control" type="button">取消</button><button class="control button" type="submit">创建需求</button></div>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      if (document.documentElement.classList.contains("workspace-2-0")) {
+        const unitBoardPanel = document.querySelector("#unitBoardPanel");
+        const unitSwimlanePage = document.querySelector("#unitSwimlanePage");
+        while (unitSwimlanePage?.firstChild) unitBoardPanel?.appendChild(unitSwimlanePage.firstChild);
+        document.querySelector("#unitProgressHubPanel")?.appendChild(unitBoardPanel);
+      }
+    </script>
 
     <div id="delayDialog" class="delay-dialog" hidden>
       <section class="delay-dialog-card" role="dialog" aria-labelledby="delayDialogTitle">
@@ -1401,6 +1705,33 @@
       releasePlan: ""
     }));
 
+    const unitFunctionCompletionDates = {
+      "城市建筑——联盟基地（大）": { concept: "2026-08-14", model: "2026-08-14" },
+      "城市建筑——激光塔": { concept: "2026-08-14", model: "2026-08-14" },
+      "野怪据点-野怪": { concept: "2026-07-15", model: "2026-08-28", action: "2026-08-26", effect: "2026-09-05" },
+      "蛇类王虫": { concept: "2026-07-15", model: "2026-08-28", action: "2026-08-29", effect: "2026-09-22" },
+      "青蛙王虫": { concept: "2026-07-17", model: "2026-08-28", action: "2026-09-01", effect: "2026-09-08" },
+      "花 王虫": { concept: "2026-07-17", model: "2026-08-28", action: "2026-09-07", effect: "2026-09-13" },
+      "猫": { concept: "2026-08-14", model: "2026-09-18", action: "2026-09-23" },
+      "风行者": { concept: "2026-08-14", model: "2026-09-18", action: "2026-09-30" },
+      "扑翼机": { concept: "2026-08-14", model: "2026-09-18", action: "2026-10-06", effect: "2026-09-28" },
+      "乌龟": { concept: "2026-08-14", model: "2026-09-18", action: "2026-10-14", effect: "2026-10-04" },
+      "螳螂 王虫": { concept: "2026-07-24", model: "2026-09-18", action: "2026-10-30", effect: "2026-09-18" },
+      "鸟 王虫": { concept: "2026-07-24", model: "2026-09-18", action: "2026-11-04" },
+      "野怪建筑——野怪据点（小）": { concept: "2026-07-15", model: "2026-09-25", action: "2026-09-25" },
+      "野怪建筑——野怪据点破损状态（小）": { concept: "2026-07-15", model: "2026-09-25", action: "2026-09-25" },
+      "野怪建筑——野怪据点（大）": { concept: "2026-07-15", model: "2026-09-25", action: "2026-09-25" },
+      "野怪建筑——野怪据点破损状态（大）": { concept: "2026-07-15", model: "2026-09-25", action: "2026-09-25" },
+      "城市建筑——联盟基地破损（大）": { concept: "2026-08-14", model: "2026-09-25", action: "2026-09-25" },
+      "城市建筑——联盟基地（小）": { concept: "2026-08-14", model: "2026-09-25", action: "2026-09-25" },
+      "城市建筑——联盟基地破损（小）": { concept: "2026-08-14", model: "2026-09-25", action: "2026-09-25" },
+      "建筑——矿点": { concept: "2026-08-14", model: "2026-09-25", action: "2026-09-25" },
+      "城市建筑——防御塔": { model: "2026-09-25", action: "2026-09-25" },
+      "联盟建筑——城墙": { model: "2026-09-25", action: "2026-09-25" },
+      "迫击炮": { concept: "2026-08-14", model: "2026-09-30", action: "2026-10-19", effect: "2026-10-19" }
+    };
+    unitProgressData.forEach(item => { item.functionDates = { ...(unitFunctionCompletionDates[item.name] || {}) }; });
+
     const unitProgressEdits = JSON.parse(localStorage.getItem("unitProgressEdits") || "{}");
     const unitEditingKeys = new Set();
     const unitCollapsedGroups = new Set();
@@ -1414,13 +1745,19 @@
       if (unitProgressEdits[item.key]?.delayReason !== undefined) item.delayReason = unitProgressEdits[item.key].delayReason;
       if (Array.isArray(unitProgressEdits[item.key]?.deadlineHistory)) item.deadlineHistory = unitProgressEdits[item.key].deadlineHistory;
       if (unitProgressEdits[item.key]?.milestoneCompletion) item.milestoneCompletion = unitProgressEdits[item.key].milestoneCompletion;
+      if (unitProgressEdits[item.key]?.releasePlan !== undefined) item.releasePlan = unitProgressEdits[item.key].releasePlan;
+      if (unitProgressEdits[item.key]?.functionDates) item.functionDates = { ...item.functionDates, ...unitProgressEdits[item.key].functionDates };
       ["review", "concept", "model", "action", "effect", "icon", "function", "accepted"].forEach(step => {
         if (unitProgressEdits[item.key]?.[step] !== undefined) item[step] = unitProgressEdits[item.key][step];
       });
     });
+    const upcomingReleaseUnitNames = new Set(["猫", "风行者", "扑翼机", "乌龟", "螳螂 王虫", "鸟 王虫", "迫击炮"]);
+    unitProgressData.forEach(item => {
+      if (upcomingReleaseUnitNames.has(item.name)) item.releasePlan = "待发包";
+    });
 
     function saveUnitEdit(item) {
-      unitProgressEdits[item.key] = { progress: item.progress, nextMilestone: item.nextMilestone, delayReason: item.delayReason || "", deadlineHistory: item.deadlineHistory || [], milestoneCompletion: item.milestoneCompletion || {}, review: item.review, concept: item.concept, model: item.model, action: item.action, effect: item.effect, icon: item.icon, function: item.function, accepted: item.accepted };
+      unitProgressEdits[item.key] = { progress: item.progress, nextMilestone: item.nextMilestone, delayReason: item.delayReason || "", deadlineHistory: item.deadlineHistory || [], milestoneCompletion: item.milestoneCompletion || {}, releasePlan: item.releasePlan || "", functionDates: item.functionDates || {}, review: item.review, concept: item.concept, model: item.model, action: item.action, effect: item.effect, icon: item.icon, function: item.function, accepted: item.accepted };
       localStorage.setItem("unitProgressEdits", JSON.stringify(unitProgressEdits));
       renderUnitBoard();
     }
@@ -1476,6 +1813,8 @@
         ]
       }
     };
+    const customUnitSkillRequirements = JSON.parse(localStorage.getItem("gvgUnitSkillRequirementsV1") || "[]");
+    let newUnitReferenceImages = [];
     const unitArtPaths = {
       "护盾机甲": "assets/unit-art/protector.jpg", "emp飞机": "assets/unit-art/blastship.jpg", "电锯哥": "assets/unit-art/sawman.jpg", "蝎子": "assets/unit-art/scorpion.jpg",
       "犀牛": "assets/unit-art/rhino.jpg", "锤哥": "assets/unit-art/hammerguy.jpg", "白求恩": "assets/unit-art/archon.png", "日蚀者": "assets/unit-art/eclipse.jpg",
@@ -1496,7 +1835,7 @@
     const riskFilter = document.querySelector("#riskFilter");
 
     const riskLabel = { low: "低风险", medium: "中风险", high: "高风险 / 延期" };
-    const escapeHtml = value => String(value).replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);
+    const escapeHtml = value => String(value).replaceAll("康俊花", "阿雪").replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);
     const progressUpdates = JSON.parse(localStorage.getItem("gvgProgressUpdates") || "{}");
     const progressTimers = new Map();
     const checkedValues = container => [...container.querySelectorAll('input:checked')].map(input => input.value);
@@ -1586,7 +1925,9 @@
     };
 
     let activeDetailTitle = "";
+    let activeDetailArtPath = "";
     let acceptancePreviewUrls = [];
+    const unitUploadedArtUrls = new Map();
     const acceptanceDb = new Promise((resolve, reject) => {
       const request = indexedDB.open("gvg-dashboard", 1);
       request.onupgradeneeded = () => {
@@ -1602,6 +1943,21 @@
       return db.transaction("acceptanceAttachments", mode).objectStore("acceptanceAttachments");
     }
 
+    async function refreshUnitUploadedArt() {
+      const store = await acceptanceStore();
+      const files = await requestResult(store.getAll());
+      unitUploadedArtUrls.forEach(URL.revokeObjectURL);
+      unitUploadedArtUrls.clear();
+      const latestImages = new Map();
+      files.filter(file => file.title?.startsWith("兵种：") && file.type?.startsWith("image/")).forEach(file => {
+        const name = file.title.slice(3);
+        const previous = latestImages.get(name);
+        if (!previous || (file.createdAt || 0) >= (previous.createdAt || 0)) latestImages.set(name, file);
+      });
+      latestImages.forEach((file, name) => unitUploadedArtUrls.set(name, URL.createObjectURL(file.blob)));
+      renderUnitSwimlanes();
+    }
+
     function requestResult(request) {
       return new Promise((resolve, reject) => {
         request.onsuccess = () => resolve(request.result);
@@ -1611,6 +1967,8 @@
 
     async function renderAcceptanceFiles(title) {
       const target = document.querySelector("#acceptanceFiles");
+      const artPath = activeDetailArtPath;
+      const builtInArt = artPath ? `<div class="acceptance-file"><div class="acceptance-preview"><a href="${escapeHtml(artPath)}" target="_blank" title="点击查看原图"><img src="${escapeHtml(artPath)}" alt="美术效果图" /></a></div><div class="acceptance-file-meta"><span class="acceptance-file-name">美术效果图</span></div></div>` : "";
       acceptancePreviewUrls.forEach(URL.revokeObjectURL);
       acceptancePreviewUrls = [];
       target.innerHTML = `<div class="acceptance-empty">正在读取附件…</div>`;
@@ -1619,10 +1977,10 @@
         const files = await requestResult(store.index("title").getAll(IDBKeyRange.only(title)));
         if (activeDetailTitle !== title) return;
         if (!files.length) {
-          target.innerHTML = `<div class="acceptance-empty">暂未上传验收效果附件</div>`;
+          target.innerHTML = builtInArt || `<div class="acceptance-empty">暂未上传附件图片或美术效果图</div>`;
           return;
         }
-        target.innerHTML = files.map(file => {
+        target.innerHTML = builtInArt + files.map(file => {
           const url = URL.createObjectURL(file.blob);
           acceptancePreviewUrls.push(url);
           const type = file.type || "";
@@ -1644,12 +2002,14 @@
       const store = await acceptanceStore("readwrite");
       await Promise.all([...files].map(file => requestResult(store.add({ title, name: file.name, type: file.type, blob: file, createdAt: Date.now() }))));
       if (activeDetailTitle === title) renderAcceptanceFiles(title);
+      if (title.startsWith("兵种：")) await refreshUnitUploadedArt();
     }
 
     async function removeAcceptanceFile(id) {
       const store = await acceptanceStore("readwrite");
       await requestResult(store.delete(Number(id)));
       renderAcceptanceFiles(activeDetailTitle);
+      if (activeDetailTitle.startsWith("兵种：")) await refreshUnitUploadedArt();
     }
 
     function renderGitCommits(title) {
@@ -1775,10 +2135,266 @@
       setLevel(panel.dataset.level);
     }
 
+    function timelineMilestonesFor(base) {
+      const stored = requirementStore?.getRequirement(base.title)?.timelineMilestones || {};
+      const deliverables = syncedData.requirements?.[base.title]?.deliverables || {};
+      const defaults = {
+        design: { documentUrl: base.docUrls?.[0] || "" },
+        ux: { documentUrl: deliverables.interaction || base.docUrls?.[1] || "" }
+      };
+      return Object.fromEntries(["design", "ux", "ui", "server", "client", "acceptance"].map(stage => [stage, { ...(defaults[stage] || {}), ...(stored[stage] || {}) }]));
+    }
+
+    function renderTimelineMilestoneEditor(base) {
+      const data = timelineMilestonesFor(base);
+      const order = ["design", "ux", "ui", "server", "client", "acceptance"];
+      const stageText = getItemStages(base).join(" ");
+      let currentIndex = /已完成/.test(stageText) ? order.length : /验收/.test(stageText) ? 5 : /开发/.test(stageText) ? (data.server?.completed ? 4 : 3) : /UI|美术|资产/.test(stageText) ? 2 : /UX/.test(stageText) ? 1 : 0;
+      while (currentIndex < order.length && data[order[currentIndex]]?.completed) currentIndex += 1;
+      const shortDate = value => {
+        const match = String(value || "").match(/^\d{4}-(\d{2})-(\d{2})$/);
+        return match ? `${Number(match[1])}.${Number(match[2])}` : String(value || "");
+      };
+      const delayHistoryFor = stage => {
+        const stageData = data[stage] || {};
+        if (Array.isArray(stageData.delayHistory) && stageData.delayHistory.length) return stageData.delayHistory;
+        const legacy = [];
+        if (stageData.delay1Date || stageData.delay1Reason) legacy.push({ date: stageData.delay1Date || "", reason: stageData.delay1Reason || "" });
+        if (stageData.delay2Date || stageData.delay2Reason) legacy.push({ date: stageData.delay2Date || "", reason: stageData.delay2Reason || "" });
+        if (!legacy.length && (stageData.delayDate || stageData.delayReason)) legacy.push({ date: stageData.delayDate || "", reason: stageData.delayReason || "" });
+        return legacy;
+      };
+      const field = (stage, key, label, type = "text", wide = false, delayed = false) => {
+        const latestDelay = delayHistoryFor(stage).at(-1) || {};
+        const legacyValue = stage === "ux" && key === "finalCompletionDate" ? data[stage]?.completionDate : "";
+        const value = key === "delayDate" ? latestDelay.date || "" : key === "delayReason" ? latestDelay.reason || "" : data[stage]?.[key] || legacyValue || "";
+        const wrapper = `class="timeline-milestone-field${wide ? " wide" : ""}"${delayed ? ` data-delay-detail${data[stage]?.needsDelay ? "" : " hidden"}` : ""}`;
+        if (type === "url" && value) return `<div ${wrapper}><a class="timeline-milestone-link" href="${escapeHtml(value)}" target="_blank" rel="noreferrer">${label} ↗</a></div>`;
+        return `<label ${wrapper}><span>${label}</span><input type="${type === "date" ? "text" : type}" data-timeline-stage="${stage}" data-timeline-field="${key}" value="${escapeHtml(type === "date" ? shortDate(value) : value)}"${type === "date" ? ` data-timeline-date data-date-value="${escapeHtml(value)}" inputmode="numeric" aria-label="选择日期"` : ""}${type === "url" ? ' placeholder="https://"' : ""}></label>`;
+      };
+      const complete = stage => `<label class="timeline-milestone-complete"><input type="checkbox" data-timeline-stage="${stage}" data-timeline-field="completed"${data[stage]?.completed ? " checked" : ""}>完成</label>`;
+      const delayToggle = stage => `<label class="timeline-milestone-delay-toggle"><input type="checkbox" data-timeline-stage="${stage}" data-timeline-field="needsDelay"${data[stage]?.needsDelay ? " checked" : ""}>需要延期</label>`;
+      const delayHistory = stage => {
+        const history = delayHistoryFor(stage);
+        if (!history.length) return "";
+        return `<span class="timeline-delay-history" tabindex="0">延期记录 (${history.length})<span class="timeline-delay-history-popover">${history.map((record, index) => `<span class="timeline-delay-history-item"><b>第 ${index + 1} 次延期 · ${escapeHtml(shortDate(record.date) || "未填写时间")}</b>${escapeHtml(record.reason || "未填写原因")}</span>`).join("")}</span></span>`;
+      };
+      const stage = (key, title, fields, hasDelay = false) => {
+        const index = order.indexOf(key);
+        const status = index < currentIndex || currentIndex >= order.length ? "completed" : index === currentIndex ? "active" : "pending";
+        const owners = stageOwnersFor(base, key);
+        return `<section class="timeline-milestone-stage is-${status}"><div class="timeline-milestone-stage-title"><span>${title}<span class="timeline-stage-owners">${owners.map(owner => `<span class="timeline-stage-owner">@${escapeHtml(owner)}</span>`).join("")}</span></span><span class="timeline-milestone-stage-actions">${hasDelay ? delayHistory(key) : ""}${status === "active" && hasDelay ? delayToggle(key) : ""}${status === "active" ? complete(key) : ""}</span></div><div class="timeline-milestone-fields">${fields.join("")}</div></section>`;
+      };
+      const requirementUrl = base.projectItems?.[0]?.url || "";
+      return `<div class="timeline-milestone-editor"><div class="timeline-milestone-heading"><div class="timeline-milestone-heading-main"><h3>阶段时间节点</h3>${requirementUrl ? `<a class="timeline-requirement-link" href="${escapeHtml(requirementUrl)}" target="_blank" rel="noreferrer">需求单 ↗</a>` : ""}</div><span>修改后自动保存</span></div><div class="timeline-milestone-stages">
+        ${stage("design", "设计中", [field("design", "completionDate", "完成时间", "date"), field("design", "documentUrl", "策划案链接", "url"), field("design", "delayDate", "延期时间", "date", false, true), field("design", "delayReason", "延期原因", "text", false, true)], true)}
+        ${stage("ux", "UX 制作中", [field("ux", "initialCompletionDate", "初版完成时间", "date"), field("ux", "finalCompletionDate", "终版完成时间", "date"), field("ux", "documentUrl", "交互文档链接", "url"), field("ux", "delayDate", "延期时间", "date", false, true), field("ux", "delayReason", "延期原因", "text", false, true)], true)}
+        ${stage("ui", "UI 制作中", [field("ui", "effectCompletionDate", "效果图完成时间", "date"), field("ui", "buildCompletionDate", "搭建完成时间", "date"), field("ui", "delayDate", "延期时间", "date", false, true), field("ui", "delayReason", "延期原因", "text", false, true)], true)}
+        ${stage("server", "服务器", [field("server", "protocolSubmissionDate", "提交协议时间", "date"), field("server", "integrationCompletionDate", "联调完成时间", "date")])}
+        ${stage("client", "客户端", [field("client", "integrationStartDate", "开始联调时间", "date"), field("client", "integrationCompletionDate", "联调完成时间", "date")])}
+        ${stage("acceptance", "验收", [field("acceptance", "completionDate", "验收完成时间", "date", true)])}
+      </div></div>`;
+    }
+
+    const currentOverviewUser = "黄静茹";
+    let requirementOverviewScope = "all";
+    const requirementOverviewPeople = new Set();
+    const knownProjectUsers = {
+      "7470563324720087059": "李辰扬", "7470563325416374275": "陈静",
+      "7470563325416439811": "王嘉西", "7470563325433184259": "张友福",
+      "7470563325433233411": "黄静茹", "7470563325613539332": "阿雪",
+      "7470563325739384836": "邬子亮", "7470563325756063763": "李承轩",
+      "7519328524239421441": "杨心权", "7527800925340139539": "王超",
+      "7537113510916980739": "刘洋", "7541883367285932060": "毛逸凡",
+      "7550129340739092484": "文支义", "7558989665794080772": "张泽臻",
+      "7612426105194073019": "王宇轩", "7613522372301294545": "仝夏瀛",
+      "7622759577934629833": "王蔚", "7633153806770900149": "李尧",
+      "7643315047875283917": "蔡耀康", "7651328591141080279": "梁洪诚-实习生",
+      "7654665900917935036": "姚金豆", "7670254574917225419": "张新雨"
+    };
+
+    // 2026-08-04 按飞书项目“人员角色”读取；角色优先级高于页面旧的手工负责人。
+    const projectRoleAssignments = {
+      "联盟系统": { planning: ["杨心权"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["康俊花", "黄静茹"], server: ["邬子亮"], client: ["陈静"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "要塞": { planning: ["王宇轩"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["康俊花", "黄静茹"], server: ["邬子亮"], client: ["毛逸凡", "李辰扬"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "关卡": { planning: ["王宇轩"], review: ["王嘉西", "李承轩"], ui: ["康俊花"], server: ["文支义"], client: ["张友福"], qa: ["蔡耀康"], artReview: ["王蔚"], effect: ["姚金豆"] },
+      "GVG": { planning: ["杨心权"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["康俊花"], server: ["文支义", "邬子亮"], client: ["毛逸凡", "陈静", "张友福"], qa: ["蔡耀康"], artReview: ["王蔚"], effect: ["姚金豆"] },
+      "联盟建筑": { planning: ["王嘉西"], review: ["王嘉西", "李承轩"], ui: ["康俊花"], server: ["邬子亮"], client: ["毛逸凡"], qa: ["蔡耀康"], artReview: ["王蔚"], effect: ["姚金豆", "王超"] },
+      "载具队列": { planning: ["王嘉西"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["黄静茹"], server: ["文支义"], client: ["李辰扬"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "抽奖二期优化": { planning: ["刘洋"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["康俊花"], server: ["邬子亮"], client: ["张友福", "陈静"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "战报*": { planning: ["张泽臻"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["黄静茹"], server: ["文支义"], client: ["李辰扬"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "聊天": { planning: ["王宇轩"], review: ["王嘉西", "李承轩"], ui: ["黄静茹"], server: ["邬子亮"], client: ["李辰扬"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "背包系统": { planning: ["梁洪诚-实习生"], review: ["王嘉西", "李承轩"], ui: ["黄静茹"], server: ["邬子亮"], client: ["陈静"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "地图LOD设计*": { planning: ["张泽臻"], review: ["王嘉西", "李承轩"], ui: ["康俊花"], server: ["文支义"], client: ["毛逸凡"], qa: ["蔡耀康"], artReview: ["王蔚"] },
+      "改装系统": { planning: ["刘洋", "仝夏瀛"], review: ["王嘉西", "李承轩"], ux: ["李尧"], ui: ["康俊花"], server: ["邬子亮"], client: ["李辰扬"], qa: ["蔡耀康"], artReview: ["王蔚", "张新雨"] }
+    };
+
+    function inferredFunctionalOwners(base, stageKey) {
+      const title = base.title || "";
+      if (stageKey === "design") return String(base.owner || "").split(/[、,，\n]+/).filter(Boolean);
+      if (stageKey === "ux") return ["李尧"];
+      if (stageKey === "ui") {
+        if (/王虫|新手|开拓者|生产线|章节任务/.test(title)) return ["黄静茹"];
+        if (/模组|地图|活动|抽奖/.test(title)) return ["康俊花"];
+        return ["康俊花", "黄静茹"];
+      }
+      if (stageKey === "server") return /模组/.test(title) ? ["文支义"] : /王虫/.test(title) ? ["邬子亮"] : ["文支义", "邬子亮"];
+      if (stageKey === "client") {
+        if (/地图/.test(title)) return ["张友福"];
+        if (/任务|活动/.test(title)) return ["李辰扬"];
+        if (/王虫|新手|生产线/.test(title)) return ["陈静"];
+        if (/载具|模组|战斗/.test(title)) return ["毛逸凡"];
+        return [];
+      }
+      if (stageKey === "acceptance") return String(base.owner || "").split(/[、,，\n]+/).filter(Boolean);
+      return [];
+    }
+
+    function overallRequirementOwners(base) {
+      const assigned = projectRoleAssignments[base.title]?.planning || [];
+      const fallback = String(base.owner || "").split(/[、,，\n]+/).filter(Boolean);
+      return [...new Set((assigned.length ? assigned : fallback).map(name => name.replace(/^@/, "").trim()).filter(Boolean))];
+    }
+
+    function stageOwnersFor(base, stageKey) {
+      const roles = projectRoleAssignments[base.title];
+      if (roles) {
+        // 设计验收人只参与评审，不在“设计中”节点展示为负责人。
+        const roleOwners = stageKey === "design" ? [...(roles.planning || [])]
+          : stageKey === "acceptance" ? String(base.owner || "").split(/[、,，\n]+/).filter(Boolean)
+          : stageKey === "ui" ? [...(roles.ui || []), ...(roles.effect || [])]
+          : [...(roles[stageKey] || [])];
+        if (roleOwners.length) return [...new Set(roleOwners)].slice(0, 4);
+      }
+      const aliases = {
+        design: /方案设计|设计评审|需求宣讲/, ux: /^UX$|交互/,
+        ui: /^UI$|UI验收|效果图|美术/, server: /服务器/, client: /客户端/,
+        acceptance: /验收|QA|测试用例/
+      };
+      const synced = syncedData.requirements?.[base.title] || {};
+      const names = [];
+      (synced.nodes || []).filter(node => aliases[stageKey].test(node.name || "")).forEach(node => (node.owners || []).forEach(owner => {
+        const name = owner.name || knownProjectUsers[owner.user_key];
+        if (name) names.push(name);
+      }));
+      if (stageKey === "ux" && synced.evidence?.ux?.sender) names.push(synced.evidence.ux.sender);
+      if (stageKey === "ui" && synced.evidence?.ui?.sender) names.push(synced.evidence.ui.sender);
+      if (stageKey === "server" || stageKey === "client") (synced.commits || []).filter(commit => String(commit.repo || "").toLowerCase().includes(stageKey)).forEach(commit => names.push(commit.author));
+      if (!names.length) names.push(...inferredFunctionalOwners(base, stageKey));
+      return [...new Set(names.map(name => String(name || "").replace(/^@/, "").trim()).filter(Boolean))].slice(0, 4);
+    }
+
+    function requirementParticipants(base) {
+      const synced = syncedData.requirements?.[base.title] || {};
+      const story = storyData.requirements?.[base.title] || [];
+      const names = [base.owner];
+      Object.values(projectRoleAssignments[base.title] || {}).forEach(members => names.push(...members));
+      (synced.nodes || []).forEach(node => (node.owners || []).forEach(owner => names.push(owner.name, knownProjectUsers[owner.user_key])));
+      Object.values(synced.evidence || {}).forEach(evidence => names.push(evidence?.sender));
+      (synced.commits || []).forEach(commit => names.push(commit.author));
+      (synced.timeline_phases || []).forEach(phase => (phase.details || []).forEach(detail => names.push(detail.person)));
+      story.forEach(day => (day.events || []).forEach(event => names.push(...(event.participants || []))));
+      return names.filter(Boolean).join("、");
+    }
+
     function switchPage(pageId) {
       document.querySelectorAll(".tab, .page").forEach(el => el.classList.remove("active"));
       document.querySelector(`[data-page="${pageId}"]`)?.classList.add("active");
       document.querySelector(`#${pageId}`)?.classList.add("active");
+      if (pageId === "unitSwimlanePage") renderUnitSwimlanes();
+      if (pageId === "unitHubPage") switchUnitHubPanel(document.querySelector(".unit-hub-tab.active")?.dataset.unitHubPanel || "unitProgressHubPanel");
+    }
+
+    function renderRequirementOverview() {
+      const keyword = (document.querySelector("#requirementOverviewSearch")?.value || "").trim().toLowerCase();
+      const ownerGroupsFor = base => ({
+        planning: overallRequirementOwners(base),
+        development: [...new Set([...stageOwnersFor(base, "client"), ...stageOwnersFor(base, "server")])],
+        visual: [...new Set([...stageOwnersFor(base, "ui"), ...stageOwnersFor(base, "ux")])]
+      });
+      const peopleRows = [
+        ["策划", "planning"],
+        ["客户端 / 服务器", "development"],
+        ["UI / UX", "visual"]
+      ];
+      const peopleFilter = document.querySelector("#requirementOverviewPeopleFilters");
+      peopleFilter.innerHTML = peopleRows.map(([label, key]) => {
+        const names = [...new Set(platformData.flatMap(base => ownerGroupsFor(base)[key]))].filter(Boolean).sort((a, b) => a.localeCompare(b, "zh-CN"));
+        return `<div class="overview-people-row"><div class="overview-people-label">${label}</div><div class="overview-people-options">${names.map(name => `<label class="overview-person-option"><input type="checkbox" data-overview-person="${escapeHtml(name)}"${requirementOverviewPeople.has(name) ? " checked" : ""}><span>${escapeHtml(name)}</span></label>`).join("")}</div></div>`;
+      }).join("");
+      peopleFilter.querySelectorAll("[data-overview-person]").forEach(input => input.addEventListener("change", () => {
+        if (input.checked) requirementOverviewPeople.add(input.dataset.overviewPerson);
+        else requirementOverviewPeople.delete(input.dataset.overviewPerson);
+        renderRequirementOverview();
+      }));
+      const overviewShortDate = value => {
+        const text = String(value || "");
+        const match = text.match(/^(?:20\d{2})-(\d{2})-(\d{2})$/);
+        return match ? `${Number(match[1])}.${Number(match[2])}` : text;
+      };
+      const stageNames = { design: "设计", ux: "UX", ui: "UI", server: "服务器", client: "客户端", acceptance: "验收" };
+      const stageFields = {
+        design: [["completionDate", "完成"]], ux: [["completionDate", "完成"]],
+        ui: [["effectCompletionDate", "效果图"], ["buildCompletionDate", "搭建"]],
+        server: [["protocolSubmissionDate", "协议"], ["integrationCompletionDate", "联调"]],
+        client: [["integrationStartDate", "开始联调"]], acceptance: [["completionDate", "完成"]]
+      };
+      const entries = platformData.filter(base => {
+        const ids = base.projectItems?.map(item => item.id).filter(Boolean).join(" ") || "";
+        const inScope = requirementOverviewScope === "all" || requirementParticipants(base).includes(currentOverviewUser);
+        const functionalOwners = Object.values(ownerGroupsFor(base)).flat();
+        const matchesPeople = !requirementOverviewPeople.size || functionalOwners.some(name => requirementOverviewPeople.has(name));
+        return inScope && matchesPeople && (!keyword || [base.title, ids, base.owner, getItemStages(base).join(" ")].join(" ").toLowerCase().includes(keyword));
+      });
+      const overviewStageFor = base => {
+        const labels = getItemStages(base);
+        if (labels.some(label => /完成|已验收/.test(label))) return "已完成";
+        if (labels.some(label => /验收/.test(label))) return "验收中";
+        if (labels.some(label => /开发/.test(label))) return "开发中";
+        if (labels.some(label => /其他资产/.test(label))) return "其他资产制作中";
+        if (labels.some(label => /UI/.test(label))) return "UI制作中";
+        if (labels.some(label => /UX/.test(label))) return "UX制作中";
+        if (labels.some(label => /美术/.test(label))) return "美术制作中";
+        if (labels.some(label => /设计|评审/.test(label))) return "设计中";
+        return "待规划";
+      };
+      const overviewLaneFor = base => {
+        const stage = overviewStageFor(base);
+        return ["UX制作中", "UI制作中", "其他资产制作中", "美术制作中"].includes(stage) ? "美术资源制作中" : stage;
+      };
+      const renderCard = base => {
+        const item = requirements.find(entry => entry.name === base.title);
+        const ids = base.projectItems?.map(work => work.id).filter(Boolean) || (item?.requirementId ? [item.requirementId] : []);
+        const milestones = timelineMilestonesFor(base);
+        const stage = overviewStageFor(base);
+        const stageOrder = ["design", "ux", "ui", "server", "client", "acceptance"];
+        const currentStageIndex = stage === "已完成" ? stageOrder.length
+          : stage === "验收中" ? 5
+          : stage === "开发中" ? (milestones.server?.completed ? 4 : 3)
+          : stage === "美术资源制作中" || stage === "UI制作中" || stage === "其他资产制作中" || stage === "美术制作中" ? 2
+          : stage === "UX制作中" ? 1 : 0;
+        const milestoneHtml = Object.keys(stageNames).map(key => {
+          const stageData = milestones[key] || {};
+          const completed = Boolean(stageData.completed || stageOrder.indexOf(key) < currentStageIndex);
+          const delayed = Boolean(stageData.needsDelay || stageData.delayDate || stageData.delayReason || stageData.delay1Date || stageData.delay1Reason || stageData.delay2Date || stageData.delay2Reason || (stageData.delayHistory || []).length);
+          const values = stageFields[key].map(([field, label]) => stageData[field] ? `<span class="overview-milestone-date${completed ? " completed" : ""}${delayed ? " delayed" : ""}">${escapeHtml(`${label}：${overviewShortDate(stageData[field])}`)}</span>` : "").filter(Boolean);
+          return `<div class="overview-milestone${values.length || completed ? "" : " pending"}"><div class="overview-milestone-title">${stageNames[key]}${completed ? " ✓" : ""}</div><div class="overview-milestone-value">${values.length ? values.join("") : "待补充"}</div></div>`;
+        }).join("");
+        return `<article class="overview-card ${boardStatusClass(stage)}">
+          <header class="overview-card-head"><div><h2 class="overview-card-title">${escapeHtml(base.title)}</h2><div class="overview-card-id">需求 ID：${escapeHtml(ids.join(" / ") || "待关联")}</div></div><button class="overview-open" type="button" data-overview-detail="${escapeHtml(base.title)}">查看完整详情</button></header>
+          <div class="overview-facts"><div class="overview-fact"><div class="overview-fact-label">负责人</div><div class="overview-fact-value">${escapeHtml(base.owner || item?.owner || "待补充")}</div></div><div class="overview-fact"><div class="overview-fact-label">需求阶段</div><div class="overview-fact-value">${renderStages(base)}</div></div></div>
+          <div class="overview-milestones">${milestoneHtml}</div>
+        </article>`;
+      };
+      const lanes = ["待规划", "设计中", "美术资源制作中", "开发中", "验收中", "已完成"];
+      document.querySelector("#requirementOverviewGrid").innerHTML = lanes.map(stage => {
+        const cards = entries.filter(base => overviewLaneFor(base) === stage);
+        if (!cards.length) return "";
+        return `<section class="overview-swimlane" data-overview-lane="${escapeHtml(stage)}"><header class="overview-swimlane-head"><span>${escapeHtml(stage)}</span><span class="overview-swimlane-count">${cards.length}</span></header><div class="overview-swimlane-cards">${cards.map(renderCard).join("")}</div></section>`;
+      }).join("");
+      document.querySelector("#requirementOverviewEmpty").textContent = requirementOverviewScope === "mine" ? `暂无${currentOverviewUser}参与的需求` : "没有符合条件的需求";
+      document.querySelector("#requirementOverviewEmpty").hidden = entries.length > 0;
+      document.querySelectorAll("[data-overview-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.overviewDetail)));
     }
 
     function safePmMarkup(node) {
@@ -1843,17 +2459,54 @@
     }
 
     function bindDetailEditors(title) {
-      document.querySelectorAll("[data-detail-next]").forEach(control => control.addEventListener("change", () => {
-        const current = nextMilestoneFor({ title });
-        current[control.dataset.detailNext] = control.value;
-        requirementStore?.updateRequirement(title, { nextMilestone: current }, { source: "detail-page" });
-      }));
-      document.querySelectorAll("[data-detail-pm-field]").forEach(cell => {
-        cell.addEventListener("keydown", event => {
-          if (event.key === "Enter") { event.preventDefault(); cell.blur(); }
+      document.querySelectorAll("[data-timeline-date]").forEach(control => {
+        control.addEventListener("focus", () => {
+          control.type = "date";
+          control.value = control.dataset.dateValue || "";
+          try { control.showPicker?.(); } catch (_) {}
         });
-        cell.addEventListener("blur", () => saveDetailPmField(title, cell.dataset.detailPmModule, cell.dataset.detailPmField, cell.innerText.trim()));
+        control.addEventListener("change", () => { control.dataset.dateValue = control.value; });
+        control.addEventListener("blur", () => {
+          const isoValue = control.value;
+          control.dataset.dateValue = isoValue;
+          control.type = "text";
+          const match = isoValue.match(/^\d{4}-(\d{2})-(\d{2})$/);
+          control.value = match ? `${Number(match[1])}.${Number(match[2])}` : isoValue;
+        });
       });
+      document.querySelectorAll("[data-timeline-stage][data-timeline-field]").forEach(control => control.addEventListener("change", () => {
+        const base = platformData.find(item => item.title === title) || { title, docUrls: [] };
+        const milestones = timelineMilestonesFor(base);
+        const stage = control.dataset.timelineStage;
+        const field = control.dataset.timelineField;
+        const nextValue = control.type === "checkbox" ? control.checked : control.value;
+        milestones[stage] = { ...(milestones[stage] || {}), [field]: nextValue };
+        if (field === "delayDate" || field === "delayReason") {
+          const stageData = milestones[stage];
+          const history = Array.isArray(stageData.delayHistory) ? [...stageData.delayHistory] : [
+            ...(stageData.delay1Date || stageData.delay1Reason ? [{ date: stageData.delay1Date || "", reason: stageData.delay1Reason || "" }] : []),
+            ...(stageData.delay2Date || stageData.delay2Reason ? [{ date: stageData.delay2Date || "", reason: stageData.delay2Reason || "" }] : []),
+            ...(!(stageData.delay1Date || stageData.delay1Reason || stageData.delay2Date || stageData.delay2Reason) && (stageData.delayDate || stageData.delayReason) ? [{ date: stageData.delayDate || "", reason: stageData.delayReason || "" }] : [])
+          ];
+          if (field === "delayDate") {
+            const latest = history.at(-1);
+            if (!latest || latest.date !== nextValue) history.push({ date: nextValue, reason: "" });
+          } else {
+            if (!history.length) history.push({ date: stageData.delayDate || "", reason: nextValue });
+            else history[history.length - 1] = { ...history.at(-1), reason: nextValue };
+          }
+          milestones[stage] = { ...stageData, delayHistory: history };
+        }
+        requirementStore?.updateRequirement(title, { timelineMilestones: milestones }, { source: "detail-timeline" });
+        if (field === "needsDelay") control.closest(".timeline-milestone-stage")?.querySelectorAll("[data-delay-detail]").forEach(element => { element.hidden = !control.checked; });
+        if (field === "completed" || field === "delayDate" || field === "delayReason") {
+          document.querySelector("#detailMilestones").innerHTML = renderTimelineMilestoneEditor(base);
+          bindDetailEditors(title);
+        }
+      }));
+      document.querySelectorAll('[data-timeline-field="delayReason"]').forEach(control => control.addEventListener("blur", () => {
+        control.dispatchEvent(new Event("change"));
+      }));
     }
 
     function openDetail(title) {
@@ -1862,20 +2515,24 @@
       const projectIds = base.projectItems.map(work => work.id).filter(Boolean);
       const latestChats = base.chats.map((chatId, index) => ({ chatId, index, ...(chatLatestData[chatId] || {}) }));
       document.querySelector(".acceptance-block").hidden = false;
+      document.querySelector("#detailId").insertAdjacentElement("afterend", document.querySelector(".acceptance-block"));
+      document.querySelector('[data-detail-panel="messages"]').hidden = false;
+      document.querySelector("#detailWorkspace").classList.remove("unit-detail");
       document.querySelector(".detail-heading .subtitle").textContent = "需求详情";
       document.querySelectorAll(".detail-column-title")[0].textContent = "时间线";
       document.querySelectorAll(".detail-column-title")[1].textContent = "飞书群聊 ↗";
       document.querySelectorAll(".detail-column-title")[2].textContent = "Git 提交记录";
       document.querySelector("#detailTitle").textContent = base.title;
       activeDetailTitle = base.title;
+      activeDetailArtPath = "";
       renderAcceptanceFiles(base.title);
       document.querySelector("#detailId").textContent = projectIds.length ? `需求 ID：${projectIds.join(" / ")}` : "暂未关联飞书项目单";
-      const nextMilestone = nextMilestoneFor(base);
+      document.querySelector("#detailKeyFacts").classList.add("feature-facts");
+      const detailOwners = overallRequirementOwners(base);
       document.querySelector("#detailKeyFacts").innerHTML = `
-        <article class="detail-card"><div class="detail-label">负责人</div><div class="detail-value">${escapeHtml(base.owner || item?.owner || "待补充")}</div></article>
-        <article class="detail-card fact-stage"><div class="detail-label">需求阶段</div><div class="fact-stage-value">${renderStages(base)}</div></article>
-        <article class="detail-card fact-next"><div class="detail-label">下一时间节点</div><div class="fact-next-edit"><select data-detail-next="nextstatus" aria-label="下一状态">${renderNextStatusOptions(nextMilestone.nextstatus)}</select><input type="date" data-detail-next="date" value="${escapeHtml(nextMilestone.date)}" aria-label="下一节点日期"><input type="text" data-detail-next="note" value="${escapeHtml(nextMilestone.note)}" placeholder="填写节点备注" aria-label="下一节点备注"></div></article>
-        ${renderPmSchedule(base.title)}`;
+        <article class="detail-card"><div class="detail-label">负责人（策划）</div><div class="detail-value">${detailOwners.length ? detailOwners.map(owner => `@${escapeHtml(owner)}`).join("、") : escapeHtml(item?.owner || "待补充")}</div></article>
+        <article class="detail-card fact-stage"><div class="detail-label">需求阶段</div><div class="fact-stage-value">${renderStages(base)}</div></article>`;
+      document.querySelector("#detailMilestones").innerHTML = renderTimelineMilestoneEditor(base);
       document.querySelector("#detailSummary").innerHTML = `
         <article class="detail-card wide">${renderDevelopmentTimeline(base.title)}</article>
         <article class="detail-card"><div class="detail-label">优先级</div><div class="detail-value">${escapeHtml(base.priority || "待补充")}</div></article>
@@ -1931,14 +2588,22 @@
       const documentUrl = unitDocumentUrls[item.name] || "";
       const artPath = unitArtPaths[item.name] || "";
       const steps = [["需求评审", item.review], ["概念设计", item.concept], ["模型", item.model], ["动作", item.action], ["特效", item.effect], ["技能图标", item.icon], ["功能", item.function], ["验收", item.accepted]];
-      document.querySelector(".acceptance-block").hidden = true;
+      document.querySelector(".acceptance-block").hidden = false;
       document.querySelector(".detail-heading .subtitle").textContent = `${group}制作详情`;
       const columnTitles = document.querySelectorAll(".detail-column-title");
       columnTitles[0].textContent = "制作详情";
-      columnTitles[1].textContent = "美术效果图";
+      columnTitles[1].textContent = "附件图片 / 美术效果图";
       columnTitles[2].textContent = "相关资料";
       document.querySelector("#detailTitle").textContent = item.name;
+      activeDetailTitle = `兵种：${item.name}`;
+      activeDetailArtPath = artPath;
+      document.querySelector("#detailId").insertAdjacentElement("afterend", document.querySelector(".acceptance-block"));
+      document.querySelector('[data-detail-panel="messages"]').hidden = true;
+      document.querySelector("#detailWorkspace").classList.add("unit-detail");
+      renderAcceptanceFiles(activeDetailTitle);
       document.querySelector("#detailId").textContent = item.code ? `英文代号：${item.code}` : `分类：${group}`;
+      document.querySelector("#detailMilestones").innerHTML = "";
+      document.querySelector("#detailKeyFacts").classList.remove("feature-facts");
       document.querySelector("#detailKeyFacts").innerHTML = `
         <article class="detail-card"><div class="detail-label">分类</div><div class="detail-value">${escapeHtml(group)}</div></article>
         <article class="detail-card"><div class="detail-label">阵营 / 类型</div><div class="detail-value">${escapeHtml([item.faction, item.type].filter(Boolean).join(" · ") || "待补充")}</div></article>
@@ -1947,27 +2612,27 @@
         <article class="detail-card full"><div class="detail-label">需求文档</div>${renderUnitRequirement(item, documentUrl)}</article>
         <article class="detail-card full"><div class="detail-label">制作环节</div><div class="unit-detail-steps">${steps.map(([label, done]) => `<span class="unit-detail-step${done ? " done" : ""}">${escapeHtml(label)}</span>`).join("")}</div></article>
         <article class="detail-card full"><div class="detail-label">备注</div><div class="detail-value">${escapeHtml(item.note || "暂无备注")}</div></article>`;
-      document.querySelector("#detailMessages").innerHTML = `<article class="detail-card full"><div class="detail-label">美术效果图</div>${artPath ? `<div class="unit-art-frame"><a href="${escapeHtml(artPath)}" target="_blank" title="点击查看原图"><img class="unit-art-image" src="${escapeHtml(artPath)}" alt="${escapeHtml(item.name)}美术效果图"></a></div>` : `<div class="unit-detail-empty">飞书表中暂未提供美术效果图</div>`}</article>`;
+      document.querySelector("#detailMessages").innerHTML = "";
       document.querySelector("#detailGit").innerHTML = `
         <article class="detail-card full"><div class="detail-label">需求文档</div><div class="work-links">${documentUrl ? `<a class="link" href="${escapeHtml(documentUrl)}" target="_blank" rel="noreferrer">打开需求文档 ↗</a>` : "飞书表中暂未提供需求文档"}</div></article>
         <article class="detail-card full"><div class="detail-label">飞书项目单</div><div class="work-links">${item.project?.url ? `<a class="link" href="${escapeHtml(item.project.url)}" target="_blank" rel="noreferrer">打开飞书项目单 ↗</a>` : "暂未关联飞书项目单"}</div></article>
         <article class="detail-card full"><div class="detail-label">数据来源</div><a class="link" href="https://centurygames.feishu.cn/wiki/FalAwEVCei6K5TkHw6ncDpJInBb?table=tblfhxlO3HGASOuv&view=vew4XUv5Nk" target="_blank" rel="noreferrer">载具/王虫制作进度追踪 ↗</a></article>`;
       const workspace = document.querySelector("#detailWorkspace");
-      workspace.dataset.focused = "";
-      workspace.classList.remove("focused");
-      document.querySelectorAll("[data-detail-panel]").forEach(panel => panel.classList.remove("focused"));
-      activeDetailTitle = "";
+      switchDetailTab();
       document.querySelector("#detailOverlay").hidden = false;
       document.body.style.overflow = "hidden";
     }
 
     function switchDetailTab(tabName) {
       const workspace = document.querySelector("#detailWorkspace");
-      const current = workspace.dataset.focused || "";
+      const current = workspace.dataset.expanded || "";
       const next = tabName && current !== tabName ? tabName : "";
-      workspace.dataset.focused = next;
-      workspace.classList.toggle("focused", Boolean(next));
-      document.querySelectorAll("[data-detail-panel]").forEach(panel => panel.classList.toggle("focused", panel.dataset.detailPanel === next));
+      workspace.dataset.expanded = next;
+      document.querySelectorAll("[data-detail-panel]").forEach(panel => {
+        const expanded = panel.dataset.detailPanel === next;
+        panel.classList.toggle("expanded", expanded);
+        panel.querySelector("[data-detail-tab]")?.setAttribute("aria-expanded", expanded ? "true" : "false");
+      });
     }
 
     function renderBase() {
@@ -2071,6 +2736,202 @@
         else unitCollapsedGroups.add(group);
         renderUnits();
       }));
+    }
+
+    function unitSkillRecords() {
+      return unitProgressData.flatMap(item => {
+        const documented = unitRequirementContent[item.name]?.skills || [];
+        const skills = documented.length ? documented : [1, 2, 3].map(index => ({ name: `技能 ${index}`, kind: "待补充", body: "技能方案待录入" }));
+        return skills.map((skill, index) => ({
+          item,
+          slot: index + 1,
+          name: skill.name || `技能 ${index + 1}`,
+          kind: skill.kind || "待补充",
+          body: skill.body || "技能方案待录入",
+          documented: Boolean(documented.length),
+          modified: /改造|改型/.test([skill.name, skill.kind].join(" ")),
+          priority: "—",
+          productionTypes: [],
+          images: []
+        }));
+      }).concat(customUnitSkillRequirements.map(requirement => {
+        const item = unitProgressData.find(entry => entry.name === requirement.vehicle) || { key: "", name: requirement.vehicle, code: "", faction: "", type: "载具" };
+        return { item, slot: Number(requirement.skillSlot), name: `技能 ${requirement.skillSlot} · 新需求`, kind: "需求", body: requirement.description, documented: true, modified: false, priority: requirement.priority, productionTypes: requirement.productionTypes || [], images: requirement.images || [] };
+      }));
+    }
+
+    function renderUnitSkillBoard() {
+      const search = document.querySelector("#unitSkillSearch");
+      if (!search) return;
+      const keyword = search.value.trim().toLowerCase();
+      const groupFilter = document.querySelector("#unitSkillGroup").value;
+      const statusFilter = document.querySelector("#unitSkillStatus").value;
+      const groupFor = item => item.type === "王虫" ? "王虫" : item.type === "建筑" ? "建筑" : "载具";
+      const data = unitSkillRecords().filter(record => {
+        const text = [record.item.name, record.item.code, record.item.faction, record.item.type, record.name, record.kind, record.body].join(" ").toLowerCase();
+        return (!keyword || text.includes(keyword)) && (!groupFilter || groupFor(record.item) === groupFilter) && (!statusFilter || (statusFilter === "documented") === record.documented);
+      });
+      document.querySelector("#unitSkillCount").textContent = data.length;
+      document.querySelector("#unitSkillRows").innerHTML = data.map(record => `<tr>
+        <td>${record.item.key ? `<button class="unit-title-button skill-unit" type="button" data-unit-detail="${escapeHtml(record.item.key)}">${escapeHtml(record.item.name)}</button>` : `<span class="skill-unit">${escapeHtml(record.item.name)}</span>`}${record.item.code ? `<div class="unit-code">${escapeHtml(record.item.code)}</div>` : ""}</td>
+        <td>${record.item.faction ? `<span class="tag">${escapeHtml(record.item.faction)}</span>` : ""}<span class="tag">${escapeHtml(groupFor(record.item))}</span></td>
+        <td><span class="skill-slot${record.modified ? " modified" : ""}">${record.modified ? "改" : record.slot}</span></td>
+        <td class="skill-name">${escapeHtml(record.name)}</td>
+        <td>${escapeHtml(record.kind)}</td>
+        <td class="skill-description">${escapeHtml(record.body)}</td>
+        <td><span class="stage-tag stage-dev">${escapeHtml(record.priority)}</span></td>
+        <td>${record.productionTypes.length ? record.productionTypes.map(type => `<span class="tag">${escapeHtml(type)}</span>`).join("") : "—"}</td>
+        <td>${record.images.length ? `<span class="tag ok">${record.images.length} 张</span>` : "—"}</td>
+        <td><span class="skill-status${record.documented ? " documented" : ""}">${record.documented ? "已录入" : "待补充"}</span></td>
+      </tr>`).join("");
+      document.querySelector("#unitSkillEmpty").style.display = data.length ? "none" : "block";
+      document.querySelectorAll("#unitSkillRows [data-unit-detail]").forEach(button => button.addEventListener("click", () => openUnitDetail(button.dataset.unitDetail)));
+    }
+
+    function switchUnitHubPanel(panelId) {
+      document.querySelectorAll(".unit-hub-tab, .unit-hub-panel").forEach(element => element.classList.remove("active"));
+      document.querySelector(`[data-unit-hub-panel="${panelId}"]`)?.classList.add("active");
+      document.querySelector(`#${panelId}`)?.classList.add("active");
+      if (panelId === "unitSkillBoardPanel") renderUnitSkillBoard();
+      if (panelId === "unitProgressHubPanel") renderUnitSwimlanes();
+    }
+
+    function renderNewUnitImagePreview() {
+      document.querySelector("#newUnitImagePreview").innerHTML = newUnitReferenceImages.map(image => `<img src="${image}" alt="参考图预览" />`).join("");
+    }
+
+    function addNewUnitReferenceImages(files) {
+      const images = [...files].filter(file => file.type.startsWith("image/")).slice(0, Math.max(0, 6 - newUnitReferenceImages.length));
+      const valid = images.filter(file => file.size <= 2 * 1024 * 1024);
+      if (valid.length !== images.length) alert("单张参考图不能超过 2MB");
+      Promise.all(valid.map(file => new Promise(resolve => { const reader = new FileReader(); reader.onload = () => resolve(reader.result); reader.readAsDataURL(file); }))).then(results => {
+        newUnitReferenceImages.push(...results);
+        renderNewUnitImagePreview();
+      });
+    }
+
+    function openNewUnitRequirementDialog() {
+      document.querySelector("#unitVehicleOptions").innerHTML = unitProgressData.filter(item => item.type !== "建筑").map(item => `<option value="${escapeHtml(item.name)}"></option>`).join("");
+      document.querySelector("#newUnitRequirementOverlay").hidden = false;
+      document.querySelector("#newUnitVehicle").focus();
+    }
+
+    function closeNewUnitRequirementDialog() {
+      document.querySelector("#newUnitRequirementOverlay").hidden = true;
+      document.querySelector("#newUnitRequirementForm").reset();
+      newUnitReferenceImages = [];
+      renderNewUnitImagePreview();
+    }
+
+    function renderUnitSwimlanes() {
+      const search = document.querySelector("#unitSwimlaneSearch");
+      const typeFilters = document.querySelector("#unitSwimlaneTypeFilters");
+      const statusFilters = document.querySelector("#unitSwimlaneStatusFilters");
+      if (!search || !typeFilters || !statusFilters) return;
+      const keyword = search.value.trim().toLowerCase();
+      const selectedTypes = [...typeFilters.querySelectorAll("input:checked")].map(input => input.value);
+      const selectedStatuses = [...statusFilters.querySelectorAll("input:checked")].map(input => input.value);
+      const groupFor = item => item.type === "王虫" ? "王虫" : item.type === "建筑" ? "建筑" : "载具";
+      const stages = [["设计中", "review", "design"], ["原画", "concept", "concept"], ["模型", "model", "model"], ["动作", "action", "action"], ["特效", "effect", "effect"], ["程序", "function", "program"], ["配置", "icon", "config"], ["验收", "accepted", "acceptance"]];
+      const data = unitProgressData.filter(item => {
+        const matchesKeyword = !keyword || [item.name, item.code, item.faction, item.type].join(" ").toLowerCase().includes(keyword);
+        const isComplete = stages.every(([, key]) => Boolean(item[key])) || item.progress === "完成";
+        const itemStatus = isComplete ? "done" : "doing";
+        const matchesStatus = !selectedStatuses.length || selectedStatuses.includes(itemStatus);
+        const matchesType = !selectedTypes.length || selectedTypes.includes(groupFor(item));
+        return matchesKeyword && matchesType && matchesStatus;
+      });
+      const stageColors = ["#d89b1d", "#9a62c7", "#3278d4", "#e06b42", "#c44da1", "#268a91", "#6472c9", "#2f9b6d"];
+      const placed = stages.map(() => []);
+      data.forEach(item => {
+        const isComplete = stages.every(([, key]) => Boolean(item[key])) || item.progress === "完成";
+        const firstPending = stages.findIndex(([, key]) => !item[key]);
+        const columnIndex = item.releasePlan === "待发包" ? 2 : isComplete || firstPending < 0 ? stages.length - 1 : firstPending;
+        placed[columnIndex].push({ item, isComplete });
+      });
+      const renderStageCard = ({ item }, columnIndex) => {
+        const stageKey = stages[columnIndex][1];
+        const hasFunctionSchedule = Object.keys(item.functionDates || {}).length > 0;
+        const mappedDate = item.functionDates?.[stageKey] || (stageKey === "review" || hasFunctionSchedule ? "" : item.nextMilestone || "");
+        const stageDate = /^20\d{2}-\d{2}-\d{2}$/.test(mappedDate) ? mappedDate : "";
+        const dateText = stageDate ? String(stageDate).replace(/^\d{4}-/, "").replace("-", ".") : "日期待定";
+        const artPath = unitUploadedArtUrls.get(item.name) || unitArtPaths[item.name] || "";
+        return `<article class="unit-stage-card" draggable="true" data-unit-stage-card="${escapeHtml(item.key)}"><div class="unit-stage-card-image">${artPath ? `<img src="${escapeHtml(artPath)}" alt="${escapeHtml(item.name)}效果图" loading="lazy" />` : `<span>暂无效果图</span>`}</div><button class="unit-stage-card-title" type="button" data-unit-detail="${escapeHtml(item.key)}">${escapeHtml(item.name)}</button><button class="unit-stage-card-date" type="button" data-swimlane-date-trigger="${escapeHtml(item.key)}" title="双击选择日期">${escapeHtml(dateText)}</button><input class="unit-stage-date-input" type="date" data-swimlane-date-input="${escapeHtml(item.key)}" data-swimlane-stage-key="${stageKey}" value="${escapeHtml(stageDate)}" hidden /></article>`;
+      };
+      document.querySelector("#unitSwimlaneGrid").innerHTML = stages.map(([label], columnIndex) => `
+        <section class="unit-stage-column" ${columnIndex === 2 ? 'data-unit-stage-lane="2" data-model-source="内部"' : `data-unit-stage-lane="${columnIndex}"`} style="--stage-color:${stageColors[columnIndex]}">
+          <header class="unit-stage-column-head"><span>${label}</span><span class="unit-stage-column-count">${placed[columnIndex].length}</span></header>
+          ${columnIndex === 2 ? [
+            ["内部", placed[columnIndex].filter(({ item }) => !/外包|发包/.test(item.releasePlan || ""))],
+            ["外包", placed[columnIndex].filter(({ item }) => /外包/.test(item.releasePlan || ""))],
+            ["待发包", placed[columnIndex].filter(({ item }) => /待发包|发包/.test(item.releasePlan || ""))]
+          ].map(([source, entries]) => `<details class="unit-model-sublane" data-unit-stage-lane="2" data-model-source="${source}"><summary class="unit-model-sublane-head"><span>${source}</span><span>${entries.length}</span></summary><div class="unit-stage-column-body">${entries.map(entry => renderStageCard(entry, columnIndex)).join("")}</div></details>`).join("") : `<div class="unit-stage-column-body">${placed[columnIndex].map(entry => renderStageCard(entry, columnIndex)).join("")}</div>`}
+        </section>`).join("");
+      document.querySelector("#unitSwimlaneEmpty").style.display = data.length ? "none" : "block";
+      document.querySelectorAll("#unitSwimlaneGrid [data-unit-detail]").forEach(button => button.addEventListener("click", () => openUnitDetail(button.dataset.unitDetail)));
+      document.querySelectorAll("#unitSwimlaneGrid [data-unit-stage-card]").forEach(card => {
+        card.addEventListener("dragstart", event => {
+          event.dataTransfer.effectAllowed = "move";
+          event.dataTransfer.setData("text/plain", card.dataset.unitStageCard);
+          card.classList.add("dragging");
+        });
+        card.addEventListener("dragend", () => {
+          card.classList.remove("dragging");
+          document.querySelectorAll("[data-unit-stage-lane]").forEach(lane => lane.classList.remove("drag-over"));
+        });
+      });
+      document.querySelectorAll("#unitSwimlaneGrid [data-unit-stage-lane]").forEach(lane => {
+        lane.addEventListener("dragover", event => {
+          event.preventDefault();
+          event.stopPropagation();
+          event.dataTransfer.dropEffect = "move";
+          document.querySelectorAll("#unitSwimlaneGrid .drag-over").forEach(target => target.classList.remove("drag-over"));
+          const highlightedLane = lane.matches('.unit-stage-column[data-model-source="内部"]')
+            ? lane.querySelector('.unit-model-sublane[data-model-source="内部"]')
+            : lane;
+          highlightedLane?.classList.add("drag-over");
+        });
+        lane.addEventListener("dragleave", event => {
+          event.stopPropagation();
+          if (!lane.contains(event.relatedTarget)) {
+            lane.classList.remove("drag-over");
+            if (lane.matches('.unit-stage-column[data-model-source="内部"]')) lane.querySelector('.unit-model-sublane[data-model-source="内部"]')?.classList.remove("drag-over");
+          }
+        });
+        lane.addEventListener("drop", event => {
+          event.preventDefault();
+          event.stopPropagation();
+          document.querySelectorAll("#unitSwimlaneGrid .drag-over").forEach(target => target.classList.remove("drag-over"));
+          const item = unitProgressData.find(entry => entry.key === event.dataTransfer.getData("text/plain"));
+          const targetIndex = Number(lane.dataset.unitStageLane);
+          if (!item || !Number.isInteger(targetIndex)) return;
+          stages.forEach(([, key], index) => { item[key] = index < targetIndex; });
+          if (targetIndex === 2 && lane.dataset.modelSource) item.releasePlan = lane.dataset.modelSource;
+          item.progress = targetIndex === stages.length - 1 ? "验收中" : "制作中";
+          saveUnitEdit(item);
+          renderUnits();
+          renderUnitSwimlanes();
+        });
+      });
+      document.querySelectorAll("#unitSwimlaneGrid [data-swimlane-date-trigger]").forEach(button => button.addEventListener("dblclick", () => {
+        const input = document.querySelector(`[data-swimlane-date-input="${button.dataset.swimlaneDateTrigger}"]`);
+        button.hidden = true;
+        input.hidden = false;
+        input.focus();
+        try { input.showPicker?.(); } catch (_) {}
+      }));
+      document.querySelectorAll("#unitSwimlaneGrid [data-swimlane-date-input]").forEach(input => {
+        input.addEventListener("change", () => {
+          const item = unitProgressData.find(entry => entry.key === input.dataset.swimlaneDateInput);
+          if (!item) return;
+          item.functionDates ||= {};
+          item.functionDates[input.dataset.swimlaneStageKey] = input.value;
+          item.nextMilestone = input.value;
+          saveUnitEdit(item);
+          renderUnitSwimlanes();
+        });
+        input.addEventListener("blur", () => { if (!input.value) renderUnitSwimlanes(); });
+      });
     }
 
     function switchBoardPanel(panelId) {
@@ -2189,6 +3050,22 @@
       const rows = rawPmRowsForTitle(item.title);
       const field = stage === "验收中" || stage === "已完成" ? "acceptance" : stage === "开发中" || /UX|UI|美术|资产/.test(stage) ? "development" : "design";
       const storedRequirement = requirementStore?.getRequirement(item.title) || {};
+      const milestones = storedRequirement.timelineMilestones || {};
+      const milestoneValues = field === "acceptance"
+        ? [milestones.acceptance?.completionDate]
+        : field === "design"
+          ? [milestones.design?.completionDate]
+          : /UX/.test(stage)
+            ? [milestones.ux?.finalCompletionDate, milestones.ux?.initialCompletionDate, milestones.ux?.completionDate]
+            : /UI|美术|资产/.test(stage)
+              ? [milestones.ui?.buildCompletionDate, milestones.ui?.effectCompletionDate]
+              : [
+                  milestones.client?.integrationCompletionDate,
+                  milestones.server?.integrationCompletionDate,
+                  milestones.client?.integrationStartDate,
+                  milestones.server?.protocolSubmissionDate
+                ];
+      const milestoneDate = milestoneValues.map(parseBoardDate).find(Boolean);
       const reason = storedRequirement.delayReason || "";
       const completion = storedRequirement.deadlineCompletions?.[field] || {};
       const storedHistory = storedRequirement.deadlineHistories?.[field];
@@ -2201,7 +3078,7 @@
       const fallback = parseBoardDate(nextDateFor(item));
       const complete = completion.status === "completed" || stage === "已完成";
       const completedDate = parseBoardDate(completion.completedAt);
-      const info = boardDeadlineInfo(currentDates[0] || fallback, complete, completedDate);
+      const info = boardDeadlineInfo(milestoneDate || currentDates.at(-1) || fallback, complete, completedDate);
       if (storedRequirement.delaySuppressed) {
         info.overdue = false;
         info.delayDays = 0;
@@ -2209,7 +3086,9 @@
       info.completedAt = completion.completedAt || "";
       info.history = histories.flatMap(entry => entry.records);
       info.field = field;
-      if (!info.history.length && fallback) info.history = [{ sequence: 0, dateLabel: `${fallback.getMonth() + 1}/${fallback.getDate()}`, date: fallback, reason }];
+      if (milestoneDate) {
+        info.history = [{ sequence: 0, dateLabel: `${milestoneDate.getMonth() + 1}/${milestoneDate.getDate()}`, date: milestoneDate, reason, source: "timelineMilestones" }];
+      } else if (!info.history.length && fallback) info.history = [{ sequence: 0, dateLabel: `${fallback.getMonth() + 1}/${fallback.getDate()}`, date: fallback, reason }];
       return info;
     }
 
@@ -2843,6 +3722,7 @@
         renderPlanning();
         renderFeatureBoard();
         renderMilestoneCalendar();
+        renderRequirementOverview();
       }
       if (event.type === "pmRows.replaced") {
         if (event.source !== "pm-page") {
@@ -2915,7 +3795,39 @@
       renderUnits();
     }));
     document.querySelector("#unitReset").addEventListener("click", () => { document.querySelector("#unitSearch").value = ""; document.querySelector("#unitType").value = ""; unitCompletionFilter = "all"; renderUnits(); });
+    document.querySelector("#unitSwimlaneSearch").addEventListener("input", renderUnitSwimlanes);
+    document.querySelectorAll("#unitSwimlaneTypeFilters input, #unitSwimlaneStatusFilters input").forEach(input => input.addEventListener("change", renderUnitSwimlanes));
+    document.querySelector("#unitSwimlaneReset").addEventListener("click", () => { document.querySelector("#unitSwimlaneSearch").value = ""; document.querySelectorAll("#unitSwimlaneTypeFilters input, #unitSwimlaneStatusFilters input").forEach(input => { input.checked = false; }); renderUnitSwimlanes(); });
     document.querySelectorAll(".board-tab").forEach(tab => tab.addEventListener("click", () => switchBoardPanel(tab.dataset.boardPanel)));
+    document.querySelectorAll(".unit-hub-tab").forEach(tab => tab.addEventListener("click", () => switchUnitHubPanel(tab.dataset.unitHubPanel)));
+    document.querySelector("#unitSkillSearch").addEventListener("input", renderUnitSkillBoard);
+    document.querySelector("#unitSkillGroup").addEventListener("change", renderUnitSkillBoard);
+    document.querySelector("#unitSkillStatus").addEventListener("change", renderUnitSkillBoard);
+    document.querySelector("#unitSkillReset").addEventListener("click", () => { document.querySelector("#unitSkillSearch").value = ""; document.querySelector("#unitSkillGroup").value = ""; document.querySelector("#unitSkillStatus").value = ""; renderUnitSkillBoard(); });
+    document.querySelector("#newUnitRequirement").addEventListener("click", openNewUnitRequirementDialog);
+    document.querySelector("#closeNewUnitRequirement").addEventListener("click", closeNewUnitRequirementDialog);
+    document.querySelector("#cancelNewUnitRequirement").addEventListener("click", closeNewUnitRequirementDialog);
+    document.querySelector("#newUnitRequirementOverlay").addEventListener("click", event => { if (event.target.id === "newUnitRequirementOverlay") closeNewUnitRequirementDialog(); });
+    document.querySelector("#newUnitReferenceImages").addEventListener("change", event => { addNewUnitReferenceImages(event.target.files); event.target.value = ""; });
+    const newUnitUploadZone = document.querySelector("#newUnitUploadZone");
+    ["dragenter", "dragover"].forEach(type => newUnitUploadZone.addEventListener(type, event => { event.preventDefault(); newUnitUploadZone.classList.add("dragging"); }));
+    ["dragleave", "drop"].forEach(type => newUnitUploadZone.addEventListener(type, event => { event.preventDefault(); newUnitUploadZone.classList.remove("dragging"); }));
+    newUnitUploadZone.addEventListener("drop", event => addNewUnitReferenceImages(event.dataTransfer.files));
+    document.addEventListener("paste", event => {
+      if (document.querySelector("#newUnitRequirementOverlay").hidden) return;
+      const files = [...(event.clipboardData?.items || [])].filter(item => item.kind === "file" && item.type.startsWith("image/")).map(item => item.getAsFile()).filter(Boolean);
+      if (files.length) addNewUnitReferenceImages(files);
+    });
+    document.querySelector("#newUnitRequirementForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const productionTypes = [...document.querySelectorAll("#newUnitProductionTypes input:checked")].map(input => input.value);
+      if (!productionTypes.length) return alert("请至少选择一个制作类型");
+      customUnitSkillRequirements.push({ id: `unit-skill-${Date.now()}`, vehicle: document.querySelector("#newUnitVehicle").value.trim(), skillSlot: document.querySelector("#newUnitSkillSlot").value, description: document.querySelector("#newUnitDescription").value.trim(), priority: document.querySelector("#newUnitPriority").value, productionTypes, images: [...newUnitReferenceImages], createdAt: new Date().toISOString() });
+      try { localStorage.setItem("gvgUnitSkillRequirementsV1", JSON.stringify(customUnitSkillRequirements)); }
+      catch (_) { customUnitSkillRequirements.pop(); return alert("参考图占用空间过大，请减少图片后重试"); }
+      closeNewUnitRequirementDialog();
+      switchUnitHubPanel("unitSkillBoardPanel");
+    });
     document.querySelector("#boardFeatureSearch").addEventListener("input", renderFeatureBoard);
     document.querySelector("#boardFeaturePriority").addEventListener("change", renderFeatureBoard);
     document.querySelector("#boardFeatureReset").addEventListener("click", () => { document.querySelector("#boardFeatureSearch").value = ""; document.querySelector("#boardFeaturePriority").value = ""; renderFeatureBoard(); });
@@ -2997,6 +3909,13 @@
       closeDelayDialog();
     });
     document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => switchPage(tab.dataset.page)));
+    document.querySelector("#requirementOverviewSearch").addEventListener("input", renderRequirementOverview);
+    document.querySelector("#requirementOverviewReset").addEventListener("click", () => { document.querySelector("#requirementOverviewSearch").value = ""; requirementOverviewPeople.clear(); renderRequirementOverview(); });
+    document.querySelectorAll("[data-overview-scope]").forEach(button => button.addEventListener("click", () => {
+      requirementOverviewScope = button.dataset.overviewScope;
+      document.querySelectorAll("[data-overview-scope]").forEach(tab => tab.classList.toggle("active", tab === button));
+      renderRequirementOverview();
+    }));
     document.querySelector("#acceptanceInput").addEventListener("change", event => {
       addAcceptanceFiles(event.target.files).catch(() => {
         document.querySelector("#acceptanceFiles").innerHTML = `<div class="acceptance-empty">上传失败，请重试</div>`;
@@ -3031,6 +3950,7 @@
       acceptancePreviewUrls.forEach(URL.revokeObjectURL);
       acceptancePreviewUrls = [];
       activeDetailTitle = "";
+      activeDetailArtPath = "";
     }
     document.querySelector("#closeDetail").addEventListener("click", closeDetail);
     document.querySelector("#detailOverlay").addEventListener("click", event => { if (event.target.id === "detailOverlay") closeDetail(); });
@@ -3046,8 +3966,12 @@
     renderPlanning();
     renderMilestoneCalendar();
     renderUnits();
+    renderUnitSwimlanes();
+    renderUnitSkillBoard();
+    refreshUnitUploadedArt().catch(() => {});
     renderFeatureBoard();
     renderUnitBoard();
+    renderRequirementOverview();
     renderWarehouse();
     renderUnmatched();
   </script>

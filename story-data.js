@@ -1,5 +1,5 @@
 window.GVG_STORY_DATA = {
-  "generated_at": "2026-07-31T15:54:44+08:00",
+  "generated_at": "2026-08-06T09:40:06+08:00",
   "requirements": {
     "战报*": [
       {
@@ -1098,6 +1098,58 @@ window.GVG_STORY_DATA = {
             "attachments": [],
             "confirmed": false,
             "stage": "待发布"
+          },
+          {
+            "event_id": "NO.232",
+            "time": "2026-07-31 11:14:13",
+            "type": "Review反馈",
+            "summary": "新建Review单「战报列表拖拽功能有时不灵敏」；分配处理人：李辰扬",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.233",
+            "time": "2026-07-31 11:59:09",
+            "type": "Review反馈",
+            "summary": "蔡耀康：新建Review单「PVE打了瓦斯关卡，但战报中显示的是水晶的王虫」",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.242",
+            "time": "2026-07-31 15:35:53",
+            "type": "Review反馈",
+            "summary": "蔡耀康新建Review单：战报生成后已有的数据丢失",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.243",
+            "time": "2026-07-31 15:45:24",
+            "type": "Review反馈",
+            "summary": "蔡耀康新建Review单：护罩内的玩家击杀王虫后的战报里没有体现护罩数据",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
           }
         ],
         "title": "提出Review"
@@ -1121,6 +1173,551 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "黄静茹 提交：调整战报图标位置"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:03:48",
+        "events": [
+          {
+            "event_id": "NO.285",
+            "time": "2026-08-03 10:03:48",
+            "type": "Review反馈",
+            "summary": "文支义状态从「处理中」变更为「验收中」；张泽臻状态从「验收中」变更为「验收通过」",
+            "participants": [
+              "文支义",
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.286",
+            "time": "2026-08-03 10:06:56",
+            "type": "Review反馈",
+            "summary": "文支义状态从「处理中」变更为「验收中」；张泽臻状态从「验收中」变更为「验收通过」",
+            "participants": [
+              "文支义",
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.287",
+            "time": "2026-08-03 10:08:20",
+            "type": "Review反馈",
+            "summary": "文支义角色人员调整：增加张泽臻；张泽臻状态从「处理中」变更为「验收中」",
+            "participants": [
+              "文支义",
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.288",
+            "time": "2026-08-03 10:12:02",
+            "type": "Review反馈",
+            "summary": "文支义状态从「处理中」变更为「验收中」",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.289",
+            "time": "2026-08-03 10:21:51",
+            "type": "Review反馈",
+            "summary": "文支义状态从「处理中」变更为「验收中」",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.290",
+            "time": "2026-08-03 10:26:39",
+            "type": "Review反馈",
+            "summary": "文支义角色人员调整：增加李辰扬；文支义角色人员调整：增加张泽臻",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.291",
+            "time": "2026-08-03 10:32:41",
+            "type": "Review反馈",
+            "summary": "文支义角色人员调整：增加李辰扬；移除文支义",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.292",
+            "time": "2026-08-03 10:51:20",
+            "type": "Review反馈",
+            "summary": "张泽臻新建工作项",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.312",
+            "time": "2026-08-03 15:54:08",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：新建Review单（共2条相关记录）",
+            "participants": [
+              "蔡耀康",
+              "未知用户"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.314",
+            "time": "2026-08-03 16:35:26",
+            "type": "Review反馈",
+            "summary": "文支义Review反馈：新建Review单（共3条相关记录）",
+            "participants": [
+              "文支义",
+              "蔡耀康",
+              "未知用户"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:31:00",
+        "events": [
+          {
+            "event_id": "NO.298",
+            "time": "2026-08-03 10:31:00",
+            "type": "Review反馈",
+            "summary": "李辰扬,张泽臻,黄静茹：建筑icon资源缺失需提需求单：李辰扬询问战报中建筑的图片资源，张泽臻反馈目前没有建筑icon资源，...；文支义,张泽臻,李辰扬：战报新增建筑与基地独立数据字段：文支义同步战报数据结构更新：建筑数据和基地数据已新增独立字段。张泽臻...；李辰扬,蔡耀康,文支义,张泽臻：PVE战报显示异常与头像配错问题：蔡耀康反馈PVE战报记录缺失问题，外城PVE（战场交锋）和内城PV...",
+            "participants": [
+              "李辰扬",
+              "张泽臻",
+              "黄静茹",
+              "文支义",
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.299",
+            "time": "2026-08-03 11:01:22",
+            "type": "Review反馈",
+            "summary": "负责人调整",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.301",
+            "time": "2026-08-03 11:13:11",
+            "type": "Review反馈",
+            "summary": "张泽臻：状态: IN PROGRESS → RESOLVED；蔡耀康：状态: RESOLVED → CLOSED；蔡耀康：新建工作项",
+            "participants": [
+              "张泽臻",
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.305",
+            "time": "2026-08-03 11:41:48",
+            "type": "Review反馈",
+            "summary": "新建工作项",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.306",
+            "time": "2026-08-03 11:56:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康,张泽臻：自损伤害触发战报规则确认：蔡耀康反馈只有自损伤害也会触发战报的问题，需要提需求单优化。询问若不触发战...；蔡耀康、张泽臻：载具战报自损伤害触发机制讨论：蔡耀康反馈当前只有自损伤害也会触发战报，需提需求单修改；询问若不触发战...",
+            "participants": [
+              "蔡耀康",
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:40:21",
+        "events": [
+          {
+            "event_id": "NO.297",
+            "time": "2026-08-03 10:40:21",
+            "type": "代码提交",
+            "summary": "文支义战报增加玩家基地数据",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 14:40:33",
+        "events": [
+          {
+            "event_id": "NO.350",
+            "time": "2026-08-04 14:40:33",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：创建了工作项",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.351",
+            "time": "2026-08-04 15:16:01",
+            "type": "Review反馈",
+            "summary": "黄静茹、张泽臻进行Review单操作：黄静茹状态变更: IN PROGRESS → RESOLVED；张泽臻状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "黄静茹、张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.352",
+            "time": "2026-08-04 15:38:32",
+            "type": "Review反馈",
+            "summary": "张泽臻进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.353",
+            "time": "2026-08-04 15:47:21",
+            "type": "Review反馈",
+            "summary": "黄静茹进行Review单操作：状态变更: RESOLVED → CLOSED；状态变更: IN PROGRESS → RESOLVED",
+            "participants": [
+              "黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.354",
+            "time": "2026-08-04 15:59:28",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：创建了工作项",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.360",
+            "time": "2026-08-04 15:28:00",
+            "type": "Review反馈",
+            "summary": "张泽臻反馈模组满级表现和技能满级表现不一致，附截图说明问题；黄静茹确认已修复并请张泽臻复查。",
+            "participants": [
+              "张泽臻、黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.362",
+            "time": "2026-08-04 16:24:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康反馈护盾护罩数据不计算进战报问题，怀疑某次提交后改坏；文支义配合排查，确认友方开盾场景下战报中护盾数据缺失。",
+            "participants": [
+              "蔡耀康、文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 15:28:00",
+        "events": [
+          {
+            "event_id": "NO.341",
+            "time": "2026-08-04 15:28:00",
+            "type": "需求讨论",
+            "summary": "张泽臻载具战报模组与技能满级表现不一致：张泽臻反馈模组满级的表现和技能满级的表现不一致，附带2张截图，@黄",
+            "participants": [
+              "张泽臻",
+              "黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 16:08:00",
+        "events": [
+          {
+            "event_id": "NO.361",
+            "time": "2026-08-04 16:08:00",
+            "type": "需求讨论",
+            "summary": "张泽臻与李辰扬讨论基地建筑icon配置位置，确认在unitbase表增加一列配置icon；联盟建筑暂不考虑。",
+            "participants": [
+              "张泽臻、李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.363",
+            "time": "2026-08-04 18:21:00",
+            "type": "需求讨论",
+            "summary": "李辰扬与张泽臻、文支义讨论基地头像和等级数据获取问题：基地头像复用玩家头像，但战报时拿不到玩家等级数据；文支义确认namecard中有等级和头像数据，基地没有namecard，需要调整结构。",
+            "participants": [
+              "李辰扬、张泽臻、文支义、黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 11:17:13",
+        "events": [
+          {
+            "event_id": "NO.383",
+            "time": "2026-08-05 11:17:13",
+            "type": "代码提交",
+            "summary": "战报基地显示",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.393",
+            "time": "2026-08-05 11:17:13",
+            "type": "代码提交",
+            "summary": "战报基地显示",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.398",
+            "time": "2026-08-05 14:57:00",
+            "type": "代码提交",
+            "summary": "李辰扬提交战报maindata显示删除代码",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 14:56:00",
+        "events": [
+          {
+            "event_id": "NO.384",
+            "time": "2026-08-05 14:56:00",
+            "type": "需求讨论",
+            "summary": "载具战报友方数据来源修改：文支义@李辰扬，要求友方护盾和加血数据从friend_datas取，不再从main_data取；李辰扬已修改并提交",
+            "participants": [
+              "文支义、李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          },
+          {
+            "event_id": "NO.394",
+            "time": "2026-08-05 14:56:00",
+            "type": "需求讨论",
+            "summary": "载具战报友方数据来源修改：文支义@李辰扬，要求友方护盾和加血数据从friend_datas取，不再从main_data取；李辰扬已修改并提交",
+            "participants": [
+              "文支义、李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:04:00",
+        "events": [
+          {
+            "event_id": "NO.410",
+            "time": "2026-08-05 16:04:00",
+            "type": "需求讨论",
+            "summary": "载具战报击杀信息与协议开发：围绕载具战报功能进行开发讨论，确认基地击杀信息展示需求，讨论治疗数据显示问题，确认技能ID映射关系。参与人员包括李辰扬、文支义、张泽臻等3人。（共2条相关讨论）",
+            "participants": [
+              "张泽臻、文支义、李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:21:00",
+        "events": [
+          {
+            "event_id": "NO.396",
+            "time": "2026-08-05 16:21:00",
+            "type": "协议变更",
+            "summary": "文支义提交战报协议修改",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:21:45",
+        "events": [
+          {
+            "event_id": "NO.406",
+            "time": "2026-08-05 16:22:00",
+            "type": "Review反馈",
+            "summary": "文支义更新载具战报Review单（7067307989）状态至验收中，并调整负责人",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.407",
+            "time": "2026-08-05 16:21:45",
+            "type": "Review反馈",
+            "summary": "文支义更新载具战报Review单（7067314459）状态至验收中，并调整负责人",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
       }
     ],
     "GVG": [
@@ -1785,6 +2382,26 @@ window.GVG_STORY_DATA = {
       },
       {
         "day": "2026-07-31",
+        "time": "2026-07-31 10:20:42",
+        "events": [
+          {
+            "event_id": "NO.247",
+            "time": "2026-07-31 10:20:42",
+            "type": "Review反馈",
+            "summary": "GVG功能多语言配置问题：陈静反馈GVG功能中多语言配置找不到，杨心权提供了时间相关的多语言配置内容，包括月份、星期等多语言key-value映射。",
+            "participants": [
+              "陈静、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-07-31",
         "time": "2026-07-31 10:52:04",
         "events": [
           {
@@ -1842,6 +2459,284 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交协议：协议：抽卡errorcode"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 09:57:10",
+        "events": [
+          {
+            "event_id": "NO.293",
+            "time": "2026-08-03 09:57:10",
+            "type": "节点流转",
+            "summary": "杨心权状态从「未完成」变更为「已完成」；杨心权子任务完成；杨心权节点完成",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.307",
+            "time": "2026-08-03 11:56:24",
+            "type": "节点流转",
+            "summary": "文支义进行节点流转：任务完成",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:15:59",
+        "events": [
+          {
+            "event_id": "NO.295",
+            "time": "2026-08-03 10:15:59",
+            "type": "协议变更",
+            "summary": "邬子亮协议：gvg状态",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 11:35:38",
+        "events": [
+          {
+            "event_id": "NO.303",
+            "time": "2026-08-03 11:35:38",
+            "type": "人员分配",
+            "summary": "李辰扬进行人员分配：负责人调整",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "分配研发人员"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 11:58:27",
+        "events": [
+          {
+            "event_id": "NO.308",
+            "time": "2026-08-03 11:58:27",
+            "type": "排期变更",
+            "summary": "文支义：排期调整；文支义：排期调整",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 15:51:49",
+        "events": [
+          {
+            "event_id": "NO.316",
+            "time": "2026-08-03 15:51:49",
+            "type": "代码提交",
+            "summary": "陈静提交代码：GvG_InBattle [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.317",
+            "time": "2026-08-03 16:36:50",
+            "type": "代码提交",
+            "summary": "杨心权提交代码：GVG的常量配置",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 16:07:00",
+        "events": [
+          {
+            "event_id": "NO.323",
+            "time": "2026-08-03 16:07:00",
+            "type": "需求创建",
+            "summary": "陈静询问GVG排行榜多久刷新一次，杨心权回复配置在GVGRule表的gvg_data_refresh_cd字段里，待后续确认具体刷新周期。",
+            "participants": [
+              "陈静、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "创建需求"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 16:51:33",
+        "events": [
+          {
+            "event_id": "NO.356",
+            "time": "2026-08-04 16:51:33",
+            "type": "需求创建",
+            "summary": "仝夏瀛创建需求并进行后续操作：GVG",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "创建需求"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 19:06:00",
+        "events": [
+          {
+            "event_id": "NO.359",
+            "time": "2026-08-04 19:06:00",
+            "type": "效果图提交",
+            "summary": "康俊花在GVG需求同步群提交设计图片并@杨心权、毛逸凡，用于需求讨论和确认。",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 11:54:44",
+        "events": [
+          {
+            "event_id": "NO.381",
+            "time": "2026-08-05 11:54:44",
+            "type": "代码提交",
+            "summary": "GvGRank [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.391",
+            "time": "2026-08-05 11:54:44",
+            "type": "代码提交",
+            "summary": "GvGRank [需求单:GVG][链接:https://project.feishu.cn/t0k6tk/story/detail/7042536066]",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.397",
+            "time": "2026-08-05 15:44:00",
+            "type": "代码提交",
+            "summary": "陈静提交GVG相关代码，含宣战迎战和备战功能",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.399",
+            "time": "2026-08-05 14:45:00",
+            "type": "代码提交",
+            "summary": "杨心权提交GVG资源名字配置",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 14:22:00",
+        "events": [
+          {
+            "event_id": "NO.382",
+            "time": "2026-08-05 14:22:00",
+            "type": "需求讨论",
+            "summary": "GVG资源图标配置修复：陈静反馈联盟宣战令itemIcon找不到配置（icon_recourse_declaration_war），以及gvg_img_initiate_01也未配置到ResourceImage中；杨心权修复后提交，两个问题均已解决",
+            "participants": [
+              "陈静、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          },
+          {
+            "event_id": "NO.392",
+            "time": "2026-08-05 14:22:00",
+            "type": "需求讨论",
+            "summary": "GVG资源图标配置修复：陈静反馈联盟宣战令itemIcon找不到配置（icon_recourse_declaration_war），以及gvg_img_initiate_01也未配置到ResourceImage中；杨心权修复后提交，两个问题均已解决",
+            "participants": [
+              "陈静、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
       }
     ],
     "【联邦】挂机射手-加特林": [
@@ -1876,6 +2771,26 @@ window.GVG_STORY_DATA = {
             "summary": "仝夏瀛调整排期：字段变更(field_efa3d4)：【联邦】挂机射手-加特林",
             "participants": [
               "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 10:22:20",
+        "events": [
+          {
+            "event_id": "NO.374",
+            "time": "2026-08-05 10:22:20",
+            "type": "排期变更",
+            "summary": "毛逸凡调整排期：工时调整、排期调整",
+            "participants": [
+              "毛逸凡"
             ],
             "link": "",
             "attachments": [],
@@ -2700,6 +3615,65 @@ window.GVG_STORY_DATA = {
       },
       {
         "day": "2026-07-31",
+        "time": "2026-07-31 11:12:31",
+        "events": [
+          {
+            "event_id": "NO.231",
+            "time": "2026-07-31 11:12:31",
+            "type": "Review反馈",
+            "summary": "处理人变更：邬子亮 → 陈静；陈静提交代码；状态从「处理中」变为「验收中」，修复方式：服务器新增数据",
+            "participants": [
+              "邬子亮、陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.240",
+            "time": "2026-07-31 15:08:42",
+            "type": "Review反馈",
+            "summary": "邬子亮将Review单状态从「处理中」变为「验收中」，修复方式：读表逻辑问题",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.241",
+            "time": "2026-07-31 15:08:52",
+            "type": "Review反馈",
+            "summary": "邬子亮将Review单状态从「处理中」变为「验收中」",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.244",
+            "time": "2026-07-31 16:22:55",
+            "type": "Review反馈",
+            "summary": "邬子亮将Review单状态从「处理中」变为「验收中」，修复方式：不用处理",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-07-31",
         "time": "2026-07-31 11:23:38",
         "events": [
           {
@@ -2717,6 +3691,190 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "李辰扬 提交：联盟入住接入 [需求单:迁城][链接:https://project.feishu.cn/t0k6tk/story/detail/7058813425] RTM逻辑迁移"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 11:41:38",
+        "events": [
+          {
+            "event_id": "NO.304",
+            "time": "2026-08-03 11:41:38",
+            "type": "代码提交",
+            "summary": "李辰扬提交移除联盟界面预加载代码",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 11:26:02",
+        "events": [
+          {
+            "event_id": "NO.337",
+            "time": "2026-08-04 11:26:02",
+            "type": "代码提交",
+            "summary": "李辰扬入驻申请信息提交",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 11:28:02",
+        "events": [
+          {
+            "event_id": "NO.338",
+            "time": "2026-08-04 11:28:02",
+            "type": "Review反馈",
+            "summary": "蔡耀康状态从验收中变为验收通过；蔡耀康状态从验收中变为验收通过；蔡耀康状态从验收中变为验收通过；蔡耀康状态从验收中变为验收通过",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.342",
+            "time": "2026-08-04 14:04:33",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.343",
+            "time": "2026-08-04 14:05:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.344",
+            "time": "2026-08-04 14:06:36",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.345",
+            "time": "2026-08-04 14:07:15",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.346",
+            "time": "2026-08-04 14:08:08",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.347",
+            "time": "2026-08-04 14:08:39",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.348",
+            "time": "2026-08-04 14:18:07",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → REOPENED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
+            "event_id": "NO.349",
+            "time": "2026-08-04 14:20:25",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：状态变更: RESOLVED → CLOSED",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 18:05:00",
+        "events": [
+          {
+            "event_id": "NO.367",
+            "time": "2026-08-04 18:05:00",
+            "type": "效果图提交",
+            "summary": "黄静茹在联盟系统需求同步群提交联盟列表界面优化设计图，@杨心权请其查看。",
+            "participants": [
+              "黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "UI提交效果图"
       }
     ],
     "抽奖二期优化": [
@@ -3173,6 +4331,72 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提出Review"
+      },
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 15:08:25",
+        "events": [
+          {
+            "event_id": "NO.239",
+            "time": "2026-07-31 15:08:25",
+            "type": "Review反馈",
+            "summary": "邬子亮将Review单状态从「处理中」变为「验收中」，修复方式：逻辑遗漏",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "已完成"
+          },
+          {
+            "event_id": "NO.245",
+            "time": "2026-07-31 16:35:10",
+            "type": "Review反馈",
+            "summary": "邬子亮修改缺陷描述：修改缺陷描述：特殊卡保底时心愿正好是99/100，会优先出保底心愿变成100/100。策划表示优先出心愿，保底次数也不清空。",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "已完成"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 16:06:27",
+        "events": [
+          {
+            "event_id": "NO.313",
+            "time": "2026-08-03 16:51:38",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：状态变更为已关闭",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "已完成"
+          },
+          {
+            "event_id": "NO.315",
+            "time": "2026-08-03 16:06:27",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：状态变更为已关闭",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "已完成"
+          }
+        ],
+        "title": "提出Review"
       }
     ],
     "聊天": [
@@ -3619,6 +4843,103 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 09:56:49",
+        "events": [
+          {
+            "event_id": "NO.330",
+            "time": "2026-08-04 09:56:49",
+            "type": "人员分配",
+            "summary": "仝夏瀛测试移除: 李尧；仝夏瀛移除节点state_7(不满足启用条件)；毛逸凡验收人: 毛逸凡, 李辰扬 → 毛逸凡, 陈静等6项变更",
+            "participants": [
+              "仝夏瀛",
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "分配研发人员"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 10:04:00",
+        "events": [
+          {
+            "event_id": "NO.333",
+            "time": "2026-08-04 10:04:00",
+            "type": "需求讨论",
+            "summary": "仝夏瀛新手期系统宣讲会安排 | 仝夏瀛发起新手期宣讲会（11:00-11:30），分享需求文档链接，邀请邬",
+            "participants": [
+              "仝夏瀛",
+              "王嘉西",
+              "邬子亮",
+              "黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.358",
+            "time": "2026-08-04 18:54:00",
+            "type": "需求讨论",
+            "summary": "邬子亮分享新手期配置修改建议文档，@梁洪诚-实习生帮忙配置，有问题可找邬子亮沟通。",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 15:53:00",
+        "events": [
+          {
+            "event_id": "NO.408",
+            "time": "2026-08-05 15:53:00",
+            "type": "效果图提交",
+            "summary": "新手期系统UI与立绘更新讨论：在新手期系统 - [需求同步群]群中，讨论了新手期UI设计与角色立绘更新，对部分图片内容进行了调整。参与人员包括黄静茹、王蔚等2人。（共2条相关讨论）",
+            "participants": [
+              "李尧、梁洪诚-实习生、王蔚、黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 18:50:00",
+        "events": [
+          {
+            "event_id": "NO.414",
+            "time": "2026-08-05 18:50:00",
+            "type": "需求讨论",
+            "summary": "新手期系统需求讨论：在新手期系统 - [需求同步群]群中，围绕新手期系统进行讨论。参与人员包括黄静茹、梁洪诚-实习生等2人。",
+            "participants": [
+              "梁洪诚-实习生、黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "需求讨论"
       }
     ],
     "美术效果预览": [
@@ -3855,6 +5176,46 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 19:04:00",
+        "events": [
+          {
+            "event_id": "NO.357",
+            "time": "2026-08-04 19:04:00",
+            "type": "需求讨论",
+            "summary": "王超提交桥动画效果视频文件，用于美术效果预览审核。",
+            "participants": [
+              "王超"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:23:00",
+        "events": [
+          {
+            "event_id": "NO.411",
+            "time": "2026-08-05 16:23:00",
+            "type": "需求讨论",
+            "summary": "联邦迫击炮效果图预览：在【美术效果预览】群中，上传了1张效果图进行预览，主要为联邦迫击炮相关美术资源。参与人员包括武馨博等1人。",
+            "participants": [
+              "武馨博"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
       }
     ],
     "联盟建筑": [
@@ -4743,6 +6104,538 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 14:05:00",
+        "events": [
+          {
+            "event_id": "NO.248",
+            "time": "2026-07-31 14:05:00",
+            "type": "Review反馈",
+            "summary": "要塞排行榜UI对齐与榜单类型确认：讨论要塞排行榜UI对齐问题，李承轩反馈排行榜文字未对齐，康俊花确认是bug（同一组件跑偏）。同时确认了五种榜单类型：输出榜、击杀榜、治疗榜、护盾榜、拆迁榜。讨论了第三名形状简化和居中对齐的设计细节。",
+            "participants": [
+              "黄静茹、李承轩、康俊花、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.249",
+            "time": "2026-07-31 15:16:00",
+            "type": "Review反馈",
+            "summary": "要塞地图交互UI与历史荣耀榜设计讨论：黄静茹上传要塞地图交互UI设计，团队讨论历史荣耀榜弹窗合理性、环形菜单布局（4个按钮是否拥挤）、城市名位置布局等问题。李承轩认为历史荣耀榜界面弹出方式不合理，应是信息记录而非即时弹出。王宇轩提出攻城排行的目的是给玩家战斗反馈和常驻曝光入口，而非历任城主展示。",
+            "participants": [
+              "黄静茹、王宇轩、李承轩、李尧"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:24:03",
+        "events": [
+          {
+            "event_id": "NO.296",
+            "time": "2026-08-03 10:24:03",
+            "type": "排期变更",
+            "summary": "飞书任务排期从07-30~07-31调整为07-30~08-04",
+            "participants": [
+              "飞书任务"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 14:38:00",
+        "events": [
+          {
+            "event_id": "NO.310",
+            "time": "2026-08-03 14:38:00",
+            "type": "Review反馈",
+            "summary": "要塞入驻审批规则与阻挡位置调整：文支义提出要塞入驻（迁城SettleFortressReq）准备改成默认不审批；同时指出要塞位置应与阻挡位置对应，当前迁城后不在阻挡范围内。杨心权表示将研究调整。毛逸凡反馈阻挡已调过一版，范围缩小一圈并附截图。",
+            "participants": [
+              "毛逸凡",
+              "文支义",
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 15:19:00",
+        "events": [
+          {
+            "event_id": "NO.311",
+            "time": "2026-08-03 15:19:00",
+            "type": "效果图提交",
+            "summary": "黄静茹、杨心权提交要塞面板历史荣耀榜UI调整：黄静茹反馈要塞面板的历史荣耀榜UI已调整，改为点开后向上弹出榜单形式，请杨心权查看确认。",
+            "participants": [
+              "黄静茹",
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          },
+          {
+            "event_id": "NO.324",
+            "time": "2026-08-03 15:19:00",
+            "type": "效果图提交",
+            "summary": "黄静茹调整要塞面板历史荣耀榜UI（点开向上弹出榜单）并请杨心权确认；杨心权上传2张界面截图；飞书项目通知要塞需求新增评论，要塞面板入口图标UI已上传。",
+            "participants": [
+              "黄静茹、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 15:53:59",
+        "events": [
+          {
+            "event_id": "NO.319",
+            "time": "2026-08-03 15:53:59",
+            "type": "协议变更",
+            "summary": "文支义变更协议：要塞新曾协议",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 16:31:01",
+        "events": [
+          {
+            "event_id": "NO.318",
+            "time": "2026-08-03 16:31:01",
+            "type": "代码提交",
+            "summary": "文支义提交代码：要塞战斗排行榜数据",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 17:47:00",
+        "events": [
+          {
+            "event_id": "NO.325",
+            "time": "2026-08-03 17:47:00",
+            "type": "需求创建",
+            "summary": "文支义要求CityLevel表增加一列要塞被占领后释放的护盾技能ID；张泽臻表示表已锁定，让杨心权帮忙添加，护盾技能ID暂用9990010。",
+            "participants": [
+              "文支义、张泽臻、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "创建需求"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 10:18:00",
+        "events": [
+          {
+            "event_id": "NO.334",
+            "time": "2026-08-04 10:18:00",
+            "type": "需求讨论",
+            "summary": "文支义要塞后方坑位遮挡问题讨论 | 文支义反馈要塞后方基地坑位被遮挡，看不见且难以选中。团队讨论了多种解决；李承轩要塞摄像机角度调整讨论 | 李承轩询问摄像机角度是否已调整（毛老板提到从45度调到60~70度）。王",
+            "participants": [
+              "文支义",
+              "李尧",
+              "李承轩",
+              "杨心权",
+              "王嘉西",
+              "王超"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 11:20:00",
+        "events": [
+          {
+            "event_id": "NO.335",
+            "time": "2026-08-04 11:20:00",
+            "type": "效果图提交",
+            "summary": "康俊花要塞后半部分效果图上传 | 康俊花上传要塞后半部分效果图，@王宇轩、李尧、王蔚、杨心权请他们查看评审",
+            "participants": [
+              "康俊花",
+              "李尧",
+              "杨心权",
+              "王宇轩",
+              "王蔚"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          },
+          {
+            "event_id": "NO.340",
+            "time": "2026-08-04 14:46:00",
+            "type": "效果图提交",
+            "summary": "黄静茹要塞面板效果图确认与细节调整：[图片] [图片] 面板展示信息是以哪个为准的；[Image: img",
+            "participants": [
+              "李尧",
+              "李辰扬",
+              "杨心权",
+              "黄静茹"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 13:30:00",
+        "events": [
+          {
+            "event_id": "NO.339",
+            "time": "2026-08-04 13:30:00",
+            "type": "需求讨论",
+            "summary": "王宇轩要塞总览页签UI布局调整：昨天我跟李尧对过，要塞总览页签有一点微调，把设施数量和总设施等级这两个合并",
+            "participants": [
+              "李尧",
+              "王宇轩"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 15:11:00",
+        "events": [
+          {
+            "event_id": "NO.364",
+            "time": "2026-08-04 15:11:00",
+            "type": "效果图提交",
+            "summary": "李辰扬与李尧、黄静茹、杨心权讨论要塞UI样式：槽位最多5个高度自适应、颜色值#00EEFF、缺少旗帜图标需补充、以效果图为准。",
+            "participants": [
+              "李辰扬、李尧、黄静茹、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 16:08:00",
+        "events": [
+          {
+            "event_id": "NO.365",
+            "time": "2026-08-04 16:08:00",
+            "type": "需求讨论",
+            "summary": "李辰扬与邬子亮、文支义讨论要塞面板数据来源：免战/排行榜/血量数据从PBCityBuildingInfo取；已入住人数需打开界面时请求；点击空迁城槽位不打开要塞UI面板。",
+            "participants": [
+              "李辰扬、邬子亮、文支义、杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.366",
+            "time": "2026-08-04 17:38:00",
+            "type": "需求讨论",
+            "summary": "李辰扬与杨心权、李尧对齐要塞需求：免战CD暂不接；要塞中立/王虫占领状态需等GVE策划文档出来后补充，形态类似敌对建筑+面板+环形菜单。",
+            "participants": [
+              "李辰扬、杨心权、李尧"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 11:38:00",
+        "events": [
+          {
+            "event_id": "NO.378",
+            "time": "2026-08-05 11:38:00",
+            "type": "效果图提交",
+            "summary": "要塞美术效果图更新：康俊花发布要塞总览/设施/居民效果图以及要塞界面更新的最终效果图，@王宇轩、李尧、王蔚查看确认",
+            "participants": [
+              "康俊花、王宇轩、李尧、王蔚"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          },
+          {
+            "event_id": "NO.388",
+            "time": "2026-08-05 11:38:00",
+            "type": "效果图提交",
+            "summary": "要塞美术效果图更新：康俊花发布要塞总览/设施/居民效果图以及要塞界面更新的最终效果图，@王宇轩、李尧、王蔚查看确认",
+            "participants": [
+              "康俊花、王宇轩、李尧、王蔚"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "UI提交效果图"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 12:00:06",
+        "events": [
+          {
+            "event_id": "NO.379",
+            "time": "2026-08-05 12:00:06",
+            "type": "代码提交",
+            "summary": "要塞修改",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.389",
+            "time": "2026-08-05 12:00:06",
+            "type": "代码提交",
+            "summary": "要塞修改",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.395",
+            "time": "2026-08-05 16:50:00",
+            "type": "代码提交",
+            "summary": "王宇轩（实习）提交要塞图片相关配置代码（config+client双仓库）",
+            "participants": [
+              "王宇轩（实习）"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 14:09:28",
+        "events": [
+          {
+            "event_id": "NO.402",
+            "time": "2026-08-05 15:08:14",
+            "type": "Review反馈",
+            "summary": "王宇轩创建要塞相关Review单（7067493529）",
+            "participants": [
+              "王宇轩"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.403",
+            "time": "2026-08-05 14:09:28",
+            "type": "Review反馈",
+            "summary": "王宇轩创建要塞相关Review单（7067288081）",
+            "participants": [
+              "王宇轩"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.405",
+            "time": "2026-08-05 16:26:57",
+            "type": "Review反馈",
+            "summary": "蔡耀康更新要塞Review单（7054657359）状态至处理中，并调整负责人",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 14:45:00",
+        "events": [
+          {
+            "event_id": "NO.380",
+            "time": "2026-08-05 14:45:00",
+            "type": "需求讨论",
+            "summary": "要塞传送特效资源问题：张泽臻询问传送的特效资源，杨心权@姚金豆索要临时开发资源，姚金豆回复将整理提交临时资源",
+            "participants": [
+              "张泽臻、杨心权、姚金豆"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          },
+          {
+            "event_id": "NO.390",
+            "time": "2026-08-05 14:45:00",
+            "type": "需求讨论",
+            "summary": "要塞传送特效资源问题：张泽臻询问传送的特效资源，杨心权@姚金豆索要临时开发资源，姚金豆回复将整理提交临时资源",
+            "participants": [
+              "张泽臻、杨心权、姚金豆"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 15:38:29",
+        "events": [
+          {
+            "event_id": "NO.401",
+            "time": "2026-08-05 15:38:29",
+            "type": "排期变更",
+            "summary": "李辰扬调整要塞和关卡需求排期，多节点排期延后至08-07",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 15:58:00",
+        "events": [
+          {
+            "event_id": "NO.409",
+            "time": "2026-08-05 15:58:00",
+            "type": "需求讨论",
+            "summary": "要塞传送特效资源同步：在要塞 - [需求同步群]群中，同步要塞传送特效资源路径，包含开始传送、循环、传送到达等多种状态。参与人员包括杨心权等1人。",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.412",
+            "time": "2026-08-05 17:10:00",
+            "type": "需求讨论",
+            "summary": "要塞升级箭头规则与文档更新：在要塞 - [需求同步群]群中，确认要塞升级箭头显示规则，显示条件：未满级且材料足够。参与人员包括李辰扬、王宇轩等2人。",
+            "participants": [
+              "李辰扬、王宇轩"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.413",
+            "time": "2026-08-05 17:48:00",
+            "type": "需求讨论",
+            "summary": "要塞功能需求讨论：在要塞 - [需求同步群]群中，提醒更新文档和补充多语言。参与人员包括李辰扬、王宇轩等2人。",
+            "participants": [
+              "李辰扬、王宇轩"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "需求讨论"
       }
     ],
     "载具队列": [
@@ -5360,6 +7253,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 11:34:17",
+        "events": [
+          {
+            "event_id": "NO.237",
+            "time": "2026-07-31 11:34:17",
+            "type": "代码提交",
+            "summary": "张友福提交代码：底图加载地块和空地改为instance方式",
+            "participants": [
+              "张友福"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "载具+模组系统": [
@@ -5478,6 +7391,88 @@ window.GVG_STORY_DATA = {
             "summary": "仝夏瀛调整排期：设置排期: 2026-08-03~2026-08-05; 设置预估工时: 3",
             "participants": [
               "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 11:20:50",
+        "events": [
+          {
+            "event_id": "NO.238",
+            "time": "2026-07-31 11:20:50",
+            "type": "排期变更",
+            "summary": "仝夏瀛调整排期：节点排期调整：预估工时2天→3天，结束时间8月3日→8月4日",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 10:00:43",
+        "events": [
+          {
+            "event_id": "NO.331",
+            "time": "2026-08-04 10:00:43",
+            "type": "人员分配",
+            "summary": "仝夏瀛程序: 康俊花, 黄静茹 → 康俊花；仝夏瀛state_5: 王蔚, 康俊花, 黄静茹 → 康俊花, 王蔚；仝夏瀛state_3: 康俊花, 黄静茹 → 康俊花等5项变更",
+            "participants": [
+              "仝夏瀛",
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "分配研发人员"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:03:14",
+        "events": [
+          {
+            "event_id": "NO.400",
+            "time": "2026-08-05 16:03:14",
+            "type": "人员分配",
+            "summary": "仝夏瀛调整改装系统需求的节点负责人与角色人员分配",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "分配研发人员"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 16:34:42",
+        "events": [
+          {
+            "event_id": "NO.404",
+            "time": "2026-08-05 16:34:42",
+            "type": "排期变更",
+            "summary": "改装系统需求排期与估分调整，估分调整为3",
+            "participants": [
+              "测试用户",
+              "未知用户2"
             ],
             "link": "",
             "attachments": [],
@@ -5875,6 +7870,26 @@ window.GVG_STORY_DATA = {
       },
       {
         "day": "2026-07-31",
+        "time": "2026-07-31 10:06:41",
+        "events": [
+          {
+            "event_id": "NO.246",
+            "time": "2026-07-31 10:06:41",
+            "type": "Review反馈",
+            "summary": "背包功能配置生效确认：梁洪诚确认背包功能的某个配置需要生效，蔡耀康回复好的并补单跟进处理。",
+            "participants": [
+              "梁洪诚-实习生、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-07-31",
         "time": "2026-07-31 10:23:06",
         "events": [
           {
@@ -5954,6 +7969,125 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 12:13:32",
+        "events": [
+          {
+            "event_id": "NO.234",
+            "time": "2026-07-31 12:13:32",
+            "type": "代码提交",
+            "summary": "李辰扬提交代码：入驻修改 [需求单:迁城][链接:https://project.feishu.cn/t0k6tk/story/detail/7058813425]",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.250",
+            "time": "2026-07-31 16:31:07",
+            "type": "代码提交",
+            "summary": "李辰扬提交代码：CityData FortressSettle信息",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 11:33:15",
+        "events": [
+          {
+            "event_id": "NO.302",
+            "time": "2026-08-03 11:33:15",
+            "type": "代码提交",
+            "summary": "文支义提交迁城增加入驻日志代码",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.321",
+            "time": "2026-08-03 15:04:19",
+            "type": "代码提交",
+            "summary": "李辰扬提交代码：联盟日志 [需求单:迁城][链接:https://project.feishu.cn/t0k6tk/story/detail/7058813425]",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 12:03:39",
+        "events": [
+          {
+            "event_id": "NO.309",
+            "time": "2026-08-03 12:03:39",
+            "type": "协议变更",
+            "summary": "文支义提交要塞迁城协议修改",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.322",
+            "time": "2026-08-03 14:50:36",
+            "type": "协议变更",
+            "summary": "李辰扬变更协议：迁城协议修改\n\n# Conflicts:\n#\tproject/Assets/Scripts/Game/GameHotfix/GameLogic/Runtime/UI/Main/ReuseItemUnitMenu.cs",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 10:00:00",
+        "events": [
+          {
+            "event_id": "NO.373",
+            "time": "2026-08-05 10:00:00",
+            "type": "节点流转",
+            "summary": "迁城子任务完成，节点流转：测试内容；子任务完成；状态变更：未完成 → 已完成；设置完成时间",
+            "participants": [
+              "测试人、飞书任务"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "推进项目节点"
       }
     ],
     "悬浮坦克": [
@@ -5976,6 +8110,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 15:19:36",
+        "events": [
+          {
+            "event_id": "NO.320",
+            "time": "2026-08-03 15:19:36",
+            "type": "代码提交",
+            "summary": "huayao.zeng提交代码：悬浮坦克攻击动作更新",
+            "participants": [
+              "huayao.zeng"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "地图染色方案": [
@@ -6104,6 +8258,332 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      }
+    ],
+    "玩家基地（大地图）": [
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 11:40:17",
+        "events": [
+          {
+            "event_id": "NO.235",
+            "time": "2026-07-31 11:40:17",
+            "type": "代码提交",
+            "summary": "张友福提交代码：城市模型读取表格改为CityLevel",
+            "participants": [
+              "张友福"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.236",
+            "time": "2026-07-31 11:46:31",
+            "type": "代码提交",
+            "summary": "毛逸凡提交代码：新增城市HUD",
+            "participants": [
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      }
+    ],
+    "要塞 -": [
+      {
+        "day": "2026-07-31",
+        "time": "2026-07-31 15:16:00",
+        "events": [
+          {
+            "event_id": "NO.256",
+            "time": "2026-07-31 15:16:00",
+            "type": "效果图提交",
+            "summary": "黄静茹展示要塞地图交互UI设计稿，王宇轩询问历史荣耀榜弹窗和要塞界面入口位置，李承轩指出弹窗界面设计不合理；王宇轩、李辰扬、杨心权讨论要塞交互功能设计，包括环形菜单布局、回城操作方式等",
+            "participants": [
+              "黄静茹",
+              "王宇轩",
+              "李承轩",
+              "李尧",
+              "杨心权",
+              "李辰扬",
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          },
+          {
+            "event_id": "NO.257",
+            "time": "2026-07-31 16:05:00",
+            "type": "效果图提交",
+            "summary": "杨心权、李辰扬、王嘉西讨论HUD空间布局优化：杨心权说明回城按钮三个位置方案（主HUD右下角、基地主界面返回、载具详情界面），李辰扬参考文明6单位交互面板提出优化建议，王嘉西对比PC屏幕空间布局方案",
+            "participants": [
+              "杨心权",
+              "李辰扬",
+              "王嘉西"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "UI提交效果图"
+      }
+    ],
+    "技能系统": [
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 10:14:03",
+        "events": [
+          {
+            "event_id": "NO.294",
+            "time": "2026-08-03 10:14:03",
+            "type": "代码提交",
+            "summary": "张泽臻召唤物效果映射到对应主技能",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 16:18:53",
+        "events": [
+          {
+            "event_id": "NO.355",
+            "time": "2026-08-04 16:18:53",
+            "type": "Review反馈",
+            "summary": "蔡耀康进行Review单操作：创建了工作项",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      }
+    ],
+    "王虫设计（3-6个）": [
+      {
+        "day": "2026-08-03",
+        "time": "2026-08-03 11:12:45",
+        "events": [
+          {
+            "event_id": "NO.300",
+            "time": "2026-08-03 11:12:45",
+            "type": "代码提交",
+            "summary": "张泽臻提交王虫头像资源配置代码",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      }
+    ],
+    "【流浪者】狼蛛 - tarantula": [
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 10:11:44",
+        "events": [
+          {
+            "event_id": "NO.332",
+            "time": "2026-08-04 10:11:44",
+            "type": "节点流转",
+            "summary": "毛逸凡state_2预估: 5→0人天; state_2清除排期: 07-27~07-31；仝夏瀛state_3预估: 0→1人天; state_3设置排期: 08-04~08-04；仝夏瀛完成节点state_3等9项变更",
+            "participants": [
+              "仝夏瀛",
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "推进项目节点"
+      }
+    ],
+    "要塞和关卡": [
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 11:54:24",
+        "events": [
+          {
+            "event_id": "NO.336",
+            "time": "2026-08-04 11:54:24",
+            "type": "代码提交",
+            "summary": "杨心权提交citylevel表；杨心权提交citylevel表；杨心权提交citylevel表；杨心权提交citylevel表字段",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      }
+    ],
+    "未关联需求": [
+      {
+        "day": "2026-08-04",
+        "time": "2026-08-04 10:09:57",
+        "events": [
+          {
+            "event_id": "NO.368",
+            "time": "2026-08-04 10:09:57",
+            "type": "Review反馈",
+            "summary": "蔡耀康创建Review单「单位位置改变时UI环没有跟随移动」，毛逸凡将状态从IN PROGRESS流转至RESOLVED(验收中)并调整负责人",
+            "participants": [
+              "蔡耀康",
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      }
+    ],
+    "地编根据类型配置加载/卸载LOD，收束统一": [
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 10:31:32",
+        "events": [
+          {
+            "event_id": "NO.372",
+            "time": "2026-08-05 10:31:32",
+            "type": "代码提交",
+            "summary": "张泽臻提交代码：地编优化",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.377",
+            "time": "2026-08-05 12:35:47",
+            "type": "代码提交",
+            "summary": "地编优化",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.387",
+            "time": "2026-08-05 12:35:47",
+            "type": "代码提交",
+            "summary": "地编优化",
+            "participants": [
+              "张泽臻"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      }
+    ],
+    "传送": [
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 11:41:49",
+        "events": [
+          {
+            "event_id": "NO.375",
+            "time": "2026-08-05 11:41:49",
+            "type": "代码提交",
+            "summary": "接入单位传送",
+            "participants": [
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.385",
+            "time": "2026-08-05 11:41:49",
+            "type": "代码提交",
+            "summary": "接入单位传送",
+            "participants": [
+              "毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-05",
+        "time": "2026-08-05 14:01:22",
+        "events": [
+          {
+            "event_id": "NO.376",
+            "time": "2026-08-05 14:01:22",
+            "type": "协议变更",
+            "summary": "传送协议修改；传送数据更新",
+            "participants": [
+              "文支义、毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.386",
+            "time": "2026-08-05 14:01:22",
+            "type": "协议变更",
+            "summary": "传送协议修改；传送数据更新",
+            "participants": [
+              "文支义、毛逸凡"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
       }
     ],
     "关卡": [

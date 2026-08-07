@@ -9,6 +9,7 @@
 ## 主要文件
 
 - `index.html`：页面、视图与交互
+- `skill-art-requirements.html`：技能美术需求与排期管理页
 - `generated-data.js`：同步生成的需求数据
 - `requirement-store.js`：统一需求数据仓库与本地持久化
 
