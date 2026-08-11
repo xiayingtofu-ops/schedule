@@ -1,8 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="server-persistence.js"></script>
   <script>
     if (new URLSearchParams(location.search).get("workspace") === "2.0") {
       document.documentElement.classList.add("workspace-2-0");
@@ -589,6 +590,18 @@
     .calendar-event.acceptance { color: #17689a; background: #dff3fb; }
     .calendar-event.proposal { color: #7a4caf; background: #f0e8fb; }
     .calendar-event.meeting { color: #17623a; background: #e2f6e9; }
+    .calendar-day { cursor: pointer; }
+    .calendar-day:hover { background: #fbfdff; }
+    .calendar-event[draggable="true"] { cursor: grab; }
+    .calendar-event[draggable="true"]:active { cursor: grabbing; }
+    .calendar-create-dialog { position: fixed; z-index: 220; inset: 0; display: grid; place-items: center; padding: 18px; background: rgba(24,32,42,.28); backdrop-filter: blur(2px); }
+    .calendar-create-dialog[hidden] { display: none; }
+    .calendar-create-card { width: min(360px, 100%); padding: 18px; border: 1px solid #d7dfec; border-radius: 14px; background: #fff; box-shadow: 0 18px 48px rgba(24,32,42,.2); }
+    .calendar-create-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .calendar-create-head h3 { margin: 0; font-size: 16px; }
+    .calendar-create-card label { display: grid; gap: 6px; margin-bottom: 12px; color: #566277; font-size: 12px; font-weight: 700; }
+    .calendar-create-card input { width: 100%; box-sizing: border-box; padding: 9px 10px; border: 1px solid #dce2eb; border-radius: 8px; font: inherit; }
+    .calendar-create-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
     @media (max-width: 1100px) {
       .milestone-calendar { overflow-x: auto; }
       .calendar-head, .calendar-weekdays, .calendar-grid { min-width: 900px; }
@@ -1059,7 +1072,7 @@
         </div>
         <div class="toolbar">
           <input id="warehouseSearch" class="control search" type="search" placeholder="搜索需求、负责人或仓库键…" />
-          <select id="warehouseStage" class="control"><option value="">全部阶段</option><option>设计中</option><option>UX制作中</option><option>UI制作中</option><option>其他资产制作中</option><option>美术制作中</option><option>开发中</option><option>验收中</option><option>已完成</option></select>
+          <select id="warehouseStage" class="control"><option value="">全部阶段</option><option>设计中</option><option>UX制作中</option><option>UI制作中</option><option>其他美术资产制作中</option><option>美术制作中</option><option>开发中</option><option>验收中</option><option>已完成</option></select>
           <button id="warehouseReset" class="control button" type="button">重置筛选</button>
         </div>
         <div class="table-wrap">
@@ -1161,12 +1174,21 @@
 
     <script>
       if (document.documentElement.classList.contains("workspace-2-0")) {
-        const unitBoardPanel = document.querySelector("#unitBoardPanel");
         const unitSwimlanePage = document.querySelector("#unitSwimlanePage");
-        while (unitSwimlanePage?.firstChild) unitBoardPanel?.appendChild(unitSwimlanePage.firstChild);
-        document.querySelector("#unitProgressHubPanel")?.appendChild(unitBoardPanel);
+        const unitProgressHubPanel = document.querySelector("#unitProgressHubPanel");
+        while (unitSwimlanePage?.firstChild) unitProgressHubPanel?.appendChild(unitSwimlanePage.firstChild);
+        unitSwimlanePage?.remove();
       }
     </script>
+
+    <div id="calendarCreateDialog" class="calendar-create-dialog" hidden>
+      <section class="calendar-create-card" role="dialog" aria-modal="true" aria-labelledby="calendarCreateTitle">
+        <header class="calendar-create-head"><h3 id="calendarCreateTitle">新建日程</h3><button id="calendarCreateClose" class="detail-close" type="button" aria-label="关闭">×</button></header>
+        <label>日程标题<input id="calendarCreateName" type="text" maxlength="80" placeholder="输入日程标题" /></label>
+        <label>日期<input id="calendarCreateDate" type="date" /></label>
+        <div class="calendar-create-actions"><button id="calendarCreateCancel" class="control" type="button">取消</button><button id="calendarCreateSave" class="control button" type="button">保存日程</button></div>
+      </section>
+    </div>
 
     <div id="delayDialog" class="delay-dialog" hidden>
       <section class="delay-dialog-card" role="dialog" aria-labelledby="delayDialogTitle">
@@ -1342,7 +1364,7 @@
       "联盟建筑": "2026-07-21", "载具队列": "2026-07-15", "抽奖二期优化": "2026-07-29",
       "战报*": "2026-07-23", "聊天": "未排期", "背包系统": "未排期", "地图LOD设计*": "未排期"
     };
-    const nextStatusOptions = ["设计中", "UX制作中", "UI制作中", "其他资产制作中", "美术制作中", "开发中", "验收中", "已完成"];
+    const nextStatusOptions = ["设计中", "UX制作中", "UI制作中", "其他美术资产制作中", "美术制作中", "开发中", "验收中", "已完成"];
 
     function normalizeNextMilestone(value, fallback = "") {
       if (value && typeof value === "object" && !Array.isArray(value)) return {
@@ -1390,6 +1412,40 @@
       return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
     }
 
+    const calendarCustomEventsKey = "gvgCalendarEventsV1";
+    let calendarCustomEvents = (() => {
+      try {
+        const value = JSON.parse(localStorage.getItem(calendarCustomEventsKey) || "[]");
+        return Array.isArray(value) ? value.filter(event => event && event.id && event.title && event.date) : [];
+      } catch (_) { return []; }
+    })();
+    function saveCalendarCustomEvents() {
+      localStorage.setItem(calendarCustomEventsKey, JSON.stringify(calendarCustomEvents));
+    }
+    function openCalendarCreate(dateValue = localDateKey(new Date())) {
+      document.querySelector("#calendarCreateDate").value = dateValue;
+      document.querySelector("#calendarCreateName").value = "";
+      document.querySelector("#calendarCreateDialog").hidden = false;
+      document.querySelector("#calendarCreateName").focus();
+    }
+    function closeCalendarCreate() { document.querySelector("#calendarCreateDialog").hidden = true; }
+    function createCalendarEvent() {
+      const title = document.querySelector("#calendarCreateName").value.trim();
+      const date = document.querySelector("#calendarCreateDate").value;
+      if (!title || !date) return;
+      calendarCustomEvents.push({ id: `calendar-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, title, date, type: "meeting", allDay: true });
+      saveCalendarCustomEvents();
+      closeCalendarCreate();
+      renderMilestoneCalendar();
+    }
+    function moveCalendarEvent(eventId, date) {
+      const event = calendarCustomEvents.find(item => item.id === eventId);
+      if (!event || !date) return;
+      event.date = date;
+      saveCalendarCustomEvents();
+      renderMilestoneCalendar();
+    }
+
     function milestoneNodeDate(node) {
       const timestamp = node.estimate_finish_time || node.actual_finish_time || node.estimate_start_time || node.actual_begin_time;
       return timestamp ? new Date(Number(timestamp)) : null;
@@ -1413,7 +1469,7 @@
         return [
           design && { value: design, type: "proposal", label: `${row.module} · 设计案讨论` },
           acceptance && { value: acceptance, type: "acceptance", label: `${row.module} · 验收` }
-        ].filter(Boolean);
+        ].filter(Boolean).filter(event => !(row.module === "地图LOD" && event.type === "proposal" && event.value === "8/11"));
       }).map(event => {
         const [month, day] = event.value.split(/[./]/).map(Number);
         return { ...event, date: new Date(calendarCursor.getFullYear(), month - 1, day) };
@@ -1446,16 +1502,20 @@
       const eventsByDate = {};
       platformData.forEach(item => {
         calendarMilestones(item).forEach(event => {
+          if (event.type === "proposal" && /地图LOD/.test(event.label || "") && event.date.getMonth() === 7 && event.date.getDate() === 11) return;
           const key = localDateKey(event.date);
           (eventsByDate[key] ||= []).push({ item, ...event });
         });
       });
-      const customEvents = window.GVG_PUBLISHED_SNAPSHOT?.data?.dashboardCalendarEvents || [];
+      const customEvents = [
+        ...(window.GVG_PUBLISHED_SNAPSHOT?.data?.dashboardCalendarEvents || []),
+        ...calendarCustomEvents
+      ];
       customEvents.forEach(event => {
         const date = new Date(`${event.date}T00:00:00`);
         if (Number.isNaN(date.getTime())) return;
         const key = localDateKey(date);
-        (eventsByDate[key] ||= []).push({ item: null, date, type: event.type || "meeting", label: event.title });
+        (eventsByDate[key] ||= []).push({ item: null, date, type: event.type || "meeting", label: event.title, customId: calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : "" });
       });
       const todayKey = localDateKey(new Date());
       document.querySelector("#milestoneCalendarGrid").innerHTML = Array.from({ length: 21 }, (_, index) => {
@@ -1463,9 +1523,16 @@
         const key = localDateKey(date);
         const events = eventsByDate[key] || [];
         const outside = index < 7 || index >= 14;
-        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type }) => `<button class="calendar-event ${type}" type="button"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
+        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, customId }) => `<button class="calendar-event ${type}" type="button"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""}${customId ? ` draggable="true" data-calendar-custom-id="${escapeHtml(customId)}"` : ""} title="${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
       }).join("");
       document.querySelectorAll("[data-calendar-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.calendarDetail)));
+      document.querySelectorAll("[data-calendar-date]").forEach(day => {
+        day.addEventListener("click", event => { if (!event.target.closest(".calendar-event")) openCalendarCreate(day.dataset.calendarDate); });
+        day.addEventListener("dragover", event => { if (event.dataTransfer.types.includes("text/calendar-custom")) { event.preventDefault(); day.classList.add("today"); } });
+        day.addEventListener("dragleave", () => day.classList.remove("today"));
+        day.addEventListener("drop", event => { const id = event.dataTransfer.getData("text/calendar-custom"); if (!id) return; event.preventDefault(); day.classList.remove("today"); moveCalendarEvent(id, day.dataset.calendarDate); });
+      });
+      document.querySelectorAll("[data-calendar-custom-id]").forEach(button => button.addEventListener("dragstart", event => { event.dataTransfer.setData("text/calendar-custom", button.dataset.calendarCustomId); event.dataTransfer.effectAllowed = "move"; }));
     }
 
     const chatLatestData = {
@@ -1583,7 +1650,7 @@
       return stages.length ? stages : [item.projectItems.length ? "待识别" : "未建项目单"];
     }
 
-    const stageFilterOrder = ["设计评审", "UX制作中", "UI制作中", "其他资产制作中", "美术制作中", "开发中", "验收中", "验收完成", "已完成", "待识别", "未建项目单"];
+    const stageFilterOrder = ["设计评审", "UX制作中", "UI制作中", "其他美术资产制作中", "美术制作中", "开发中", "验收中", "验收完成", "已完成", "待识别", "未建项目单"];
 
     function buildStageFilters(containerId, onChange) {
       const container = document.querySelector(`#${containerId}`);
@@ -2357,7 +2424,7 @@
         if (labels.some(label => /完成|已验收/.test(label))) return "已完成";
         if (labels.some(label => /验收/.test(label))) return "验收中";
         if (labels.some(label => /开发/.test(label))) return "开发中";
-        if (labels.some(label => /其他资产/.test(label))) return "其他资产制作中";
+        if (labels.some(label => /其他资产/.test(label))) return "其他美术资产制作中";
         if (labels.some(label => /UI/.test(label))) return "UI制作中";
         if (labels.some(label => /UX/.test(label))) return "UX制作中";
         if (labels.some(label => /美术/.test(label))) return "美术制作中";
@@ -2366,7 +2433,7 @@
       };
       const overviewLaneFor = base => {
         const stage = overviewStageFor(base);
-        return ["UX制作中", "UI制作中", "其他资产制作中", "美术制作中"].includes(stage) ? "美术资源制作中" : stage;
+        return ["UX制作中", "UI制作中", "其他美术资产制作中", "美术制作中"].includes(stage) ? "美术资源制作中" : stage;
       };
       const renderCard = base => {
         const item = requirements.find(entry => entry.name === base.title);
@@ -2377,7 +2444,7 @@
         const currentStageIndex = stage === "已完成" ? stageOrder.length
           : stage === "验收中" ? 5
           : stage === "开发中" ? (milestones.server?.completed ? 4 : 3)
-          : stage === "美术资源制作中" || stage === "UI制作中" || stage === "其他资产制作中" || stage === "美术制作中" ? 2
+          : stage === "美术资源制作中" || stage === "UI制作中" || stage === "其他美术资产制作中" || stage === "美术制作中" ? 2
           : stage === "UX制作中" ? 1 : 0;
         const milestoneHtml = Object.keys(stageNames).map(key => {
           const stageData = milestones[key] || {};
@@ -3125,7 +3192,7 @@
         if (labels.some(label => /开发/.test(label))) return "开发中";
         if (labels.some(label => /UX/.test(label))) return "UX制作中";
         if (labels.some(label => /UI/.test(label))) return "UI制作中";
-        if (labels.some(label => /其他资产/.test(label))) return "其他资产制作中";
+        if (labels.some(label => /其他资产/.test(label))) return "其他美术资产制作中";
         if (labels.some(label => /美术/.test(label))) {
           const states = planningStatesFor(item);
           return states[1] === "doing" || (states[1] !== "done" && states[1] !== "skipped") ? "UX制作中" : "UI制作中";
@@ -3146,8 +3213,8 @@
         if (group === "美术制作中") {
           const uxItems = sortedItems("UX制作中", data.filter(item => stageFor(item) === "UX制作中"));
           const uiItems = sortedItems("UI制作中", data.filter(item => stageFor(item) === "UI制作中"));
-          const assetItems = sortedItems("其他资产制作中", data.filter(item => stageFor(item) === "其他资产制作中"));
-          return `<section class="kanban-column kanban-art-column"><div class="kanban-column-head"><span>美术制作中</span><span class="kanban-count">${uxItems.length + uiItems.length + assetItems.length}</span></div><div class="kanban-sub-lane" data-feature-lane="UX制作中"><div class="kanban-sub-lane-head"><span>UX制作中</span><span class="kanban-count">${uxItems.length}</span></div><div class="kanban-list">${uxItems.length ? uxItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div><div class="kanban-sub-lane ui" data-feature-lane="UI制作中"><div class="kanban-sub-lane-head"><span>UI制作中</span><span class="kanban-count">${uiItems.length}</span></div><div class="kanban-list">${uiItems.length ? uiItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div><div class="kanban-sub-lane asset" data-feature-lane="其他资产制作中"><div class="kanban-sub-lane-head"><span>其他资产制作中</span><span class="kanban-count">${assetItems.length}</span></div><div class="kanban-list">${assetItems.length ? assetItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div></section>`;
+          const assetItems = sortedItems("其他美术资产制作中", data.filter(item => stageFor(item) === "其他美术资产制作中"));
+          return `<section class="kanban-column kanban-art-column"><div class="kanban-column-head"><span>美术制作中</span><span class="kanban-count">${uxItems.length + uiItems.length + assetItems.length}</span></div><div class="kanban-sub-lane" data-feature-lane="UX制作中"><div class="kanban-sub-lane-head"><span>UX制作中</span><span class="kanban-count">${uxItems.length}</span></div><div class="kanban-list">${uxItems.length ? uxItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div><div class="kanban-sub-lane ui" data-feature-lane="UI制作中"><div class="kanban-sub-lane-head"><span>UI制作中</span><span class="kanban-count">${uiItems.length}</span></div><div class="kanban-list">${uiItems.length ? uiItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div><div class="kanban-sub-lane asset" data-feature-lane="其他美术资产制作中"><div class="kanban-sub-lane-head"><span>其他美术资产制作中</span><span class="kanban-count">${assetItems.length}</span></div><div class="kanban-list">${assetItems.length ? assetItems.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></div></section>`;
         }
         const items = sortedItems(group, data.filter(item => stageFor(item) === group));
         return `<section class="kanban-column" data-feature-lane="${group}"><div class="kanban-column-head"><span>${group}</span><span class="kanban-count">${items.length}</span></div><div class="kanban-list">${items.length ? items.map(renderCard).join("") : `<div class="kanban-empty">暂无功能</div>`}</div></section>`;
@@ -3791,6 +3858,11 @@
     document.querySelector("#calendarPrev").addEventListener("click", () => { calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), calendarCursor.getDate() - 7); renderMilestoneCalendar(); });
     document.querySelector("#calendarNext").addEventListener("click", () => { calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), calendarCursor.getDate() + 7); renderMilestoneCalendar(); });
     document.querySelector("#calendarToday").addEventListener("click", () => { calendarCursor = new Date(); renderMilestoneCalendar(); });
+    document.querySelector("#calendarCreateSave").addEventListener("click", createCalendarEvent);
+    document.querySelector("#calendarCreateCancel").addEventListener("click", closeCalendarCreate);
+    document.querySelector("#calendarCreateClose").addEventListener("click", closeCalendarCreate);
+    document.querySelector("#calendarCreateDialog").addEventListener("click", event => { if (event.target.id === "calendarCreateDialog") closeCalendarCreate(); });
+    document.querySelector("#calendarCreateName").addEventListener("keydown", event => { if (event.key === "Enter") { event.preventDefault(); createCalendarEvent(); } });
     document.querySelector("#unitSearch").addEventListener("input", renderUnits);
     document.querySelector("#unitType").addEventListener("change", () => { unitCompletionFilter = "all"; renderUnits(); });
     document.querySelectorAll("[data-unit-stat-filter]").forEach(metric => metric.addEventListener("click", () => {
@@ -3983,3 +4055,4 @@
   </script>
 </body>
 </html>
+
