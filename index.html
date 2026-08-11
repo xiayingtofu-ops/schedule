@@ -3916,7 +3916,7 @@
     document.querySelector("#warehouseStage").addEventListener("change", renderWarehouse);
     document.querySelector("#warehouseReset").addEventListener("click", () => { document.querySelector("#warehouseSearch").value = ""; document.querySelector("#warehouseStage").value = ""; renderWarehouse(); });
     document.querySelector("#exportLocalData").addEventListener("click", () => {
-      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
+      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "gvgCalendarEventsV1", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
       const data = {};
       projectKeys.forEach(key => {
         const value = localStorage.getItem(key);
