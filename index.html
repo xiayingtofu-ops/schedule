@@ -1191,7 +1191,7 @@
         <label>日程标题<input id="calendarCreateName" type="text" maxlength="80" placeholder="输入日程标题" /></label>
         <label>日期<input id="calendarCreateDate" type="date" /></label>
         <label>日程颜色<select id="calendarCreateColor"><option value="meeting">绿色</option><option value="acceptance">蓝色</option><option value="proposal">紫色</option><option value="p0">红色</option></select></label>
-        <div class="calendar-create-actions"><button id="calendarCreateCancel" class="control" type="button">取消</button><button id="calendarCreateSave" class="control button" type="button">保存日程</button></div>
+        <div class="calendar-create-actions"><button id="calendarCreateDelete" class="control" type="button" style="margin-right:auto;color:#b33b4b" hidden>删除日程</button><button id="calendarCreateCancel" class="control" type="button">取消</button><button id="calendarCreateSave" class="control button" type="button">保存日程</button></div>
       </section>
     </div>
 
@@ -1449,6 +1449,7 @@
       document.querySelector("#calendarCreateName").value = editing?.title || "";
       document.querySelector("#calendarCreateColor").value = editing?.type || "meeting";
       document.querySelector("#calendarCreateTitle").textContent = editing ? "编辑日程" : "新建日程";
+      document.querySelector("#calendarCreateDelete").hidden = !editing;
       document.querySelector("#calendarCreateDialog").hidden = false;
       document.querySelector("#calendarCreateName").focus();
     }
@@ -1578,7 +1579,7 @@
         const key = localDateKey(date);
         const events = eventsByDate[key] || [];
         const outside = index < 7 || index >= 14;
-        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, eventKey, customId }) => `<span class="calendar-event-wrap"><button class="calendar-event ${type}" type="button" draggable="true" data-calendar-event-key="${escapeHtml(eventKey)}"${customId ? ` data-calendar-custom-id="${escapeHtml(customId)}"` : ""}${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="拖拽改期：${escapeHtml(label)}">${escapeHtml(label)}</button><button class="calendar-event-delete" type="button" data-calendar-delete="${escapeHtml(eventKey)}" aria-label="删除日程">×</button></span>`).join("")}</div></div>`;
+        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, eventKey, customId }) => `<span class="calendar-event-wrap"><button class="calendar-event ${type}" type="button" draggable="true" data-calendar-event-key="${escapeHtml(eventKey)}"${customId ? ` data-calendar-custom-id="${escapeHtml(customId)}"` : ""}${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="拖拽改期：${escapeHtml(label)}">${escapeHtml(label)}</button></span>`).join("")}</div></div>`;
       }).join("");
       document.querySelectorAll("[data-calendar-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.calendarDetail)));
       document.querySelectorAll("[data-calendar-custom-id]").forEach(button => button.addEventListener("click", event => { event.stopPropagation(); openCalendarCreate(button.closest("[data-calendar-date]")?.dataset.calendarDate || localDateKey(new Date()), button.dataset.calendarCustomId); }));
@@ -1589,7 +1590,6 @@
         day.addEventListener("drop", event => { const id = event.dataTransfer.getData("text/calendar-event"); if (!id) return; event.preventDefault(); day.classList.remove("today"); moveCalendarEvent(id, day.dataset.calendarDate); });
       });
       document.querySelectorAll("[data-calendar-event-key]").forEach(button => button.addEventListener("dragstart", event => { event.dataTransfer.setData("text/calendar-event", button.dataset.calendarEventKey); event.dataTransfer.effectAllowed = "move"; }));
-      document.querySelectorAll("[data-calendar-delete]").forEach(button => button.addEventListener("click", event => { event.stopPropagation(); deleteCalendarEvent(button.dataset.calendarDelete); }));
     }
 
     const chatLatestData = {
@@ -3936,6 +3936,7 @@
     document.querySelector("#calendarNext").addEventListener("click", () => { calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), calendarCursor.getDate() + 7); renderMilestoneCalendar(); });
     document.querySelector("#calendarToday").addEventListener("click", () => { calendarCursor = new Date(); renderMilestoneCalendar(); });
     document.querySelector("#calendarCreateSave").addEventListener("click", createCalendarEvent);
+    document.querySelector("#calendarCreateDelete").addEventListener("click", () => { if (calendarEditingEventId) { deleteCalendarEvent(calendarEditingEventId); closeCalendarCreate(); } });
     document.querySelector("#calendarCreateCancel").addEventListener("click", closeCalendarCreate);
     document.querySelector("#calendarCreateClose").addEventListener("click", closeCalendarCreate);
     document.querySelector("#calendarCreateDialog").addEventListener("click", event => { if (event.target.id === "calendarCreateDialog") closeCalendarCreate(); });
