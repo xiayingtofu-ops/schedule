@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-07T02:39:47.722Z",
+  "exportedAt": "2026-08-11T08:18:18.800Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
       "version": 1,
-      "revision": 144,
+      "revision": 152,
       "requirements": {
         "联盟系统": {
           "project_stage": "验收中",
@@ -4050,11 +4050,11 @@
           "projectItems": [],
           "docUrls": [],
           "chats": [],
-          "stage": "设计中",
+          "stage": "UX制作中",
           "pmMilestones": {
             "要塞王虫": {
-              "design": "7/31",
-              "development": "",
+              "design": "7/24 7/31",
+              "development": "7/24 7/31 8/12",
               "acceptance": "",
               "note": "",
               "status": "设计中",
@@ -4068,16 +4068,54 @@
                 "sequence": 0,
                 "dateLabel": "7/24",
                 "date": "2026-07-23T16:00:00.000Z",
-                "reason": ""
+                "reason": "",
+                "status": "设计中"
               },
               {
                 "sequence": 1,
                 "module": "要塞王虫",
                 "dateLabel": "7/31",
                 "reason": "",
-                "date": "2026-07-30T16:00:00.000Z"
+                "date": "2026-07-30T16:00:00.000Z",
+                "status": "设计中"
+              }
+            ],
+            "development": [
+              {
+                "module": "要塞王虫",
+                "sequence": 0,
+                "dateLabel": "7/24",
+                "date": "2026-07-23T16:00:00.000Z",
+                "reason": "",
+                "status": "设计中"
+              },
+              {
+                "module": "要塞王虫",
+                "sequence": 1,
+                "dateLabel": "7/31",
+                "date": "2026-07-30T16:00:00.000Z",
+                "reason": "",
+                "status": "设计中"
+              },
+              {
+                "sequence": 2,
+                "module": "要塞王虫",
+                "dateLabel": "8/12",
+                "status": "美术中",
+                "reason": ""
               }
             ]
+          },
+          "delayReason": "",
+          "deadlineCompletions": {
+            "design": {
+              "status": "completed",
+              "completedAt": "2026-08-07"
+            },
+            "development": {
+              "status": "active",
+              "completedAt": ""
+            }
           }
         },
         "联盟矿点": {
@@ -4688,52 +4726,6 @@
               }
             ]
           }
-        },
-        "PVE（城内王虫）重构": {
-          "key": "PVE（城内王虫）重构",
-          "title": "PVE（城内王虫）重构",
-          "priority": "",
-          "owner": "",
-          "planningSteps": [
-            "todo",
-            "skipped",
-            "todo",
-            "todo",
-            "todo",
-            "todo",
-            "todo"
-          ],
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
-          },
-          "projectItems": [],
-          "docUrls": [],
-          "chats": []
-        },
-        "对标韬略的成长线": {
-          "key": "对标韬略的成长线",
-          "title": "对标韬略的成长线",
-          "priority": "",
-          "owner": "",
-          "planningSteps": [
-            "todo",
-            "skipped",
-            "todo",
-            "todo",
-            "todo",
-            "todo",
-            "todo"
-          ],
-          "nextMilestone": {
-            "nextstatus": "",
-            "date": "",
-            "note": ""
-          },
-          "projectItems": [],
-          "docUrls": [],
-          "chats": []
         },
         "场景化内城初步方案": {
           "key": "场景化内城初步方案",
@@ -6611,7 +6603,7 @@
                 "module": "地图LOD",
                 "sequence": 0,
                 "dateLabel": "8/11",
-                "date": "2026-06-28T16:00:00.000Z",
+                "date": "2026-08-10T16:00:00.000Z",
                 "reason": "",
                 "status": "设计中"
               }
@@ -6620,8 +6612,8 @@
           "delayReason": "",
           "deadlineCompletions": {
             "design": {
-              "status": "active",
-              "completedAt": ""
+              "status": "completed",
+              "completedAt": "2026-08-07"
             }
           }
         },
@@ -7563,10 +7555,10 @@
           "moduleMarkup": "要塞王虫",
           "owner": "@杨心权",
           "ownerMarkup": "@杨心权",
-          "design": "7/31",
-          "designMarkup": "7/31",
-          "development": "",
-          "developmentMarkup": "",
+          "design": "7/24 7/31",
+          "designMarkup": "7/24 7/31",
+          "development": "7/24 7/31 8/12",
+          "developmentMarkup": "7/24 7/31 8/12",
           "acceptance": "",
           "acceptanceMarkup": "",
           "note": "",
@@ -7711,7 +7703,7 @@
         ],
         "collectionWarnings": []
       },
-      "updatedAt": "2026-08-07T02:39:44.565Z"
+      "updatedAt": "2026-08-07T03:39:57.515Z"
     },
     "pmManagementTableV2": [
       "模块",
@@ -8551,18 +8543,41 @@
       "聊天": "",
       "战报*": ""
     },
-    "dismissedUnmatchedIds": [
-      "7039184166"
-    ],
-    "dashboardCalendarEvents": [
+    "gvgCalendarEventsV1": [
       {
-        "id": "vehicle-resource-review-2026-08-04",
-        "title": "载具资源验收会",
-        "date": "2026-08-04",
+        "id": "calendar-1786434973398-38qs0",
+        "title": "要塞王虫【宣讲】",
+        "date": "2026-08-12",
         "type": "meeting",
+        "allDay": true
+      },
+      {
+        "id": "calendar-1786434995397-3plj1",
+        "title": "PVE 设计案",
+        "date": "2026-08-12",
+        "type": "meeting",
+        "allDay": true
+      },
+      {
+        "id": "calendar-1786435019742-f3vmo",
+        "title": "载具战斗【效果验收】",
+        "date": "2026-08-13",
+        "type": "acceptance",
+        "allDay": true
+      },
+      {
+        "id": "calendar-1786435115655-rz73l",
+        "title": "GVG【验收】",
+        "date": "2026-08-21",
+        "type": "acceptance",
         "allDay": true
       }
     ],
-    "delayCalculationRule": "latest-ddl"
+    "gvgCalendarEventMovesV1": {
+      "source:%E8%81%94%E7%9B%9F%E5%BB%BA%E7%AD%91%7Cacceptance%7C%E8%81%94%E7%9B%9F%E5%BB%BA%E7%AD%91%20%C2%B7%20%E9%AA%8C%E6%94%B6": "2026-08-21"
+    },
+    "dismissedUnmatchedIds": [
+      "7039184166"
+    ]
   }
 }
