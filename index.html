@@ -594,6 +594,10 @@
     .calendar-day:hover { background: #fbfdff; }
     .calendar-event[draggable="true"] { cursor: grab; }
     .calendar-event[draggable="true"]:active { cursor: grabbing; }
+    .calendar-event-wrap { display: flex; gap: 3px; min-width: 0; }
+    .calendar-event-wrap .calendar-event { flex: 1; min-width: 0; }
+    .calendar-event-delete { flex: 0 0 20px; padding: 0; border: 0; border-radius: 4px; color: #8a5b66; background: #f9e8eb; font: inherit; font-size: 14px; line-height: 1; cursor: pointer; }
+    .calendar-event-delete:hover { color: #fff; background: #c94b5b; }
     .calendar-create-dialog { position: fixed; z-index: 220; inset: 0; display: grid; place-items: center; padding: 18px; background: rgba(24,32,42,.28); backdrop-filter: blur(2px); }
     .calendar-create-dialog[hidden] { display: none; }
     .calendar-create-card { width: min(360px, 100%); padding: 18px; border: 1px solid #d7dfec; border-radius: 14px; background: #fff; box-shadow: 0 18px 48px rgba(24,32,42,.2); }
@@ -1414,6 +1418,7 @@
 
     const calendarCustomEventsKey = "gvgCalendarEventsV1";
     const calendarEventMovesKey = "gvgCalendarEventMovesV1";
+    const calendarEventDeletesKey = "gvgCalendarEventDeletesV1";
     let calendarCustomEvents = (() => {
       try {
         const value = JSON.parse(localStorage.getItem(calendarCustomEventsKey) || "[]");
@@ -1423,6 +1428,12 @@
     let calendarEventMoves = (() => {
       try {
         const value = JSON.parse(localStorage.getItem(calendarEventMovesKey) || "{}");
+        return value && typeof value === "object" ? value : {};
+      } catch (_) { return {}; }
+    })();
+    let calendarEventDeletes = (() => {
+      try {
+        const value = JSON.parse(localStorage.getItem(calendarEventDeletesKey) || "{}");
         return value && typeof value === "object" ? value : {};
       } catch (_) { return {}; }
     })();
@@ -1454,6 +1465,18 @@
       } else {
         calendarEventMoves[eventKey] = date;
         localStorage.setItem(calendarEventMovesKey, JSON.stringify(calendarEventMoves));
+      }
+      renderMilestoneCalendar();
+    }
+    function deleteCalendarEvent(eventKey) {
+      if (!eventKey) return;
+      const customIndex = calendarCustomEvents.findIndex(item => item.id === eventKey);
+      if (customIndex >= 0) {
+        calendarCustomEvents.splice(customIndex, 1);
+        saveCalendarCustomEvents();
+      } else {
+        calendarEventDeletes[eventKey] = true;
+        localStorage.setItem(calendarEventDeletesKey, JSON.stringify(calendarEventDeletes));
       }
       renderMilestoneCalendar();
     }
@@ -1516,6 +1539,7 @@
         calendarMilestones(item).forEach(event => {
           if (event.type === "proposal" && /地图LOD/.test(event.label || "") && event.date.getMonth() === 7 && event.date.getDate() === 11) return;
           const eventKey = `source:${encodeURIComponent([item.title, event.type, event.label].join("|"))}`;
+          if (calendarEventDeletes[eventKey]) return;
           const movedDate = calendarEventMoves[eventKey] ? new Date(`${calendarEventMoves[eventKey]}T00:00:00`) : event.date;
           const key = localDateKey(movedDate);
           (eventsByDate[key] ||= []).push({ item, ...event, date: movedDate, eventKey });
@@ -1530,6 +1554,7 @@
         if (Number.isNaN(date.getTime())) return;
         const key = localDateKey(date);
         const eventKey = calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : `source:${encodeURIComponent([event.title, event.type || "meeting", event.title].join("|"))}`;
+        if (calendarEventDeletes[eventKey]) return;
         const movedDate = calendarEventMoves[eventKey] ? new Date(`${calendarEventMoves[eventKey]}T00:00:00`) : date;
         const movedKey = localDateKey(movedDate);
         (eventsByDate[movedKey] ||= []).push({ item: null, date: movedDate, type: event.type || "meeting", label: event.title, customId: calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : "", eventKey });
@@ -1540,7 +1565,7 @@
         const key = localDateKey(date);
         const events = eventsByDate[key] || [];
         const outside = index < 7 || index >= 14;
-        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, eventKey }) => `<button class="calendar-event ${type}" type="button" draggable="true" data-calendar-event-key="${escapeHtml(eventKey)}"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="拖拽改期：${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
+        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, eventKey }) => `<span class="calendar-event-wrap"><button class="calendar-event ${type}" type="button" draggable="true" data-calendar-event-key="${escapeHtml(eventKey)}"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="拖拽改期：${escapeHtml(label)}">${escapeHtml(label)}</button><button class="calendar-event-delete" type="button" data-calendar-delete="${escapeHtml(eventKey)}" aria-label="删除日程">×</button></span>`).join("")}</div></div>`;
       }).join("");
       document.querySelectorAll("[data-calendar-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.calendarDetail)));
       document.querySelectorAll("[data-calendar-date]").forEach(day => {
@@ -1550,6 +1575,7 @@
         day.addEventListener("drop", event => { const id = event.dataTransfer.getData("text/calendar-event"); if (!id) return; event.preventDefault(); day.classList.remove("today"); moveCalendarEvent(id, day.dataset.calendarDate); });
       });
       document.querySelectorAll("[data-calendar-event-key]").forEach(button => button.addEventListener("dragstart", event => { event.dataTransfer.setData("text/calendar-event", button.dataset.calendarEventKey); event.dataTransfer.effectAllowed = "move"; }));
+      document.querySelectorAll("[data-calendar-delete]").forEach(button => button.addEventListener("click", event => { event.stopPropagation(); deleteCalendarEvent(button.dataset.calendarDelete); }));
     }
 
     const chatLatestData = {
@@ -3953,7 +3979,7 @@
     document.querySelector("#warehouseStage").addEventListener("change", renderWarehouse);
     document.querySelector("#warehouseReset").addEventListener("click", () => { document.querySelector("#warehouseSearch").value = ""; document.querySelector("#warehouseStage").value = ""; renderWarehouse(); });
     document.querySelector("#exportLocalData").addEventListener("click", () => {
-      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "gvgCalendarEventsV1", "gvgCalendarEventMovesV1", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
+      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "gvgCalendarEventsV1", "gvgCalendarEventMovesV1", "gvgCalendarEventDeletesV1", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
       const data = {};
       projectKeys.forEach(key => {
         const value = localStorage.getItem(key);
