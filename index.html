@@ -1311,7 +1311,7 @@
     const planningUxRequired = {
       "联盟系统": true, "要塞": true, "关卡": true, "GVE": true, "GVG": true,
       "联盟建筑": false, "载具队列": true, "要塞王虫": false, "联盟矿点": false,
-      "抽奖二期优化": true, "PVE（城内王虫）重构": false,
+      "抽奖二期优化": true,
       "场景化内城初步方案": false, "载具模组系统迭代": false, "新手迭代": false, "天下大势": false,
       "联盟阵营色规则": false, "联盟资源整体设计": false, "debuff展示": true,
       "技能自动释放": true, "邮件二期": true, "战报*": true, "迁城": false,
@@ -1587,7 +1587,7 @@
 
     const platformData = [
       "联盟系统", "要塞", "关卡", "改装系统", "GVE", "GVG", "新PVE", "联盟建筑", "载具队列", "要塞王虫", "联盟矿点",
-      "抽奖二期优化", "PVE（城内王虫）重构", "场景化内城初步方案", "载具模组系统迭代",
+      "抽奖二期优化", "场景化内城初步方案", "载具模组系统迭代",
       "新手迭代", "天下大势", "联盟阵营色规则", "联盟资源整体设计", "debuff展示", "技能自动释放", "邮件二期",
       "战报*", "迁城", "功能开启", "邮件系统", "聊天", "地图LOD设计*", "背包系统", "新手期", "地图元素分享",
       "充值", "云游", "月卡", "商店", "战功"
@@ -1702,17 +1702,23 @@
       if (row) Object.assign(row, { priority: detail.priority || "", owner: detail.owner || "", docUrls: detail.docs || [], chats: detail.chats || [] });
     });
     JSON.parse(localStorage.getItem("gvgPlatformRows") || "[]").forEach(item => platformData.push(item));
-    const removedDuplicateRequirementTitle = "对标韬略的成长线";
+    const removedDuplicateRequirementTitles = new Set(["对标韬略的成长线", "PVE（城内王虫）重构"]);
     for (let index = platformData.length - 1; index >= 0; index -= 1) {
-      if (platformData[index]?.title === removedDuplicateRequirementTitle) platformData.splice(index, 1);
+      if (removedDuplicateRequirementTitles.has(platformData[index]?.title)) platformData.splice(index, 1);
     }
     try {
       const storedRows = JSON.parse(localStorage.getItem("gvgPlatformRows") || "[]");
-      const filteredRows = storedRows.filter(item => item?.title !== removedDuplicateRequirementTitle);
+      const filteredRows = storedRows.filter(item => !removedDuplicateRequirementTitles.has(item?.title));
       if (filteredRows.length !== storedRows.length) localStorage.setItem("gvgPlatformRows", JSON.stringify(filteredRows));
       const storedStore = JSON.parse(localStorage.getItem("gvgUnifiedRequirementStoreV1") || "null");
-      if (storedStore?.requirements?.[removedDuplicateRequirementTitle]) {
-        delete storedStore.requirements[removedDuplicateRequirementTitle];
+      let storeChanged = false;
+      removedDuplicateRequirementTitles.forEach(title => {
+        if (storedStore?.requirements?.[title]) {
+          delete storedStore.requirements[title];
+          storeChanged = true;
+        }
+      });
+      if (storeChanged) {
         localStorage.setItem("gvgUnifiedRequirementStoreV1", JSON.stringify(storedStore));
       }
     } catch (_) { /* ignore malformed legacy storage */ }
