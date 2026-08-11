@@ -1413,11 +1413,18 @@
     }
 
     const calendarCustomEventsKey = "gvgCalendarEventsV1";
+    const calendarEventMovesKey = "gvgCalendarEventMovesV1";
     let calendarCustomEvents = (() => {
       try {
         const value = JSON.parse(localStorage.getItem(calendarCustomEventsKey) || "[]");
         return Array.isArray(value) ? value.filter(event => event && event.id && event.title && event.date) : [];
       } catch (_) { return []; }
+    })();
+    let calendarEventMoves = (() => {
+      try {
+        const value = JSON.parse(localStorage.getItem(calendarEventMovesKey) || "{}");
+        return value && typeof value === "object" ? value : {};
+      } catch (_) { return {}; }
     })();
     function saveCalendarCustomEvents() {
       localStorage.setItem(calendarCustomEventsKey, JSON.stringify(calendarCustomEvents));
@@ -1438,11 +1445,16 @@
       closeCalendarCreate();
       renderMilestoneCalendar();
     }
-    function moveCalendarEvent(eventId, date) {
-      const event = calendarCustomEvents.find(item => item.id === eventId);
-      if (!event || !date) return;
-      event.date = date;
-      saveCalendarCustomEvents();
+    function moveCalendarEvent(eventKey, date) {
+      if (!eventKey || !date) return;
+      const event = calendarCustomEvents.find(item => item.id === eventKey);
+      if (event) {
+        event.date = date;
+        saveCalendarCustomEvents();
+      } else {
+        calendarEventMoves[eventKey] = date;
+        localStorage.setItem(calendarEventMovesKey, JSON.stringify(calendarEventMoves));
+      }
       renderMilestoneCalendar();
     }
 
@@ -1503,8 +1515,10 @@
       platformData.forEach(item => {
         calendarMilestones(item).forEach(event => {
           if (event.type === "proposal" && /地图LOD/.test(event.label || "") && event.date.getMonth() === 7 && event.date.getDate() === 11) return;
-          const key = localDateKey(event.date);
-          (eventsByDate[key] ||= []).push({ item, ...event });
+          const eventKey = `source:${encodeURIComponent([item.title, event.type, event.label].join("|"))}`;
+          const movedDate = calendarEventMoves[eventKey] ? new Date(`${calendarEventMoves[eventKey]}T00:00:00`) : event.date;
+          const key = localDateKey(movedDate);
+          (eventsByDate[key] ||= []).push({ item, ...event, date: movedDate, eventKey });
         });
       });
       const customEvents = [
@@ -1515,7 +1529,10 @@
         const date = new Date(`${event.date}T00:00:00`);
         if (Number.isNaN(date.getTime())) return;
         const key = localDateKey(date);
-        (eventsByDate[key] ||= []).push({ item: null, date, type: event.type || "meeting", label: event.title, customId: calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : "" });
+        const eventKey = calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : `source:${encodeURIComponent([event.title, event.type || "meeting", event.title].join("|"))}`;
+        const movedDate = calendarEventMoves[eventKey] ? new Date(`${calendarEventMoves[eventKey]}T00:00:00`) : date;
+        const movedKey = localDateKey(movedDate);
+        (eventsByDate[movedKey] ||= []).push({ item: null, date: movedDate, type: event.type || "meeting", label: event.title, customId: calendarCustomEvents.some(saved => saved.id === event.id) ? event.id : "", eventKey });
       });
       const todayKey = localDateKey(new Date());
       document.querySelector("#milestoneCalendarGrid").innerHTML = Array.from({ length: 21 }, (_, index) => {
@@ -1523,16 +1540,16 @@
         const key = localDateKey(date);
         const events = eventsByDate[key] || [];
         const outside = index < 7 || index >= 14;
-        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, customId }) => `<button class="calendar-event ${type}" type="button"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""}${customId ? ` draggable="true" data-calendar-custom-id="${escapeHtml(customId)}"` : ""} title="${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
+        return `<div class="calendar-day${outside ? " outside" : ""}${key === todayKey ? " today" : ""}" data-calendar-date="${key}"><span class="calendar-date">${date.getMonth() + 1}/${date.getDate()}</span><div class="calendar-events">${events.map(({ item, label, type, eventKey }) => `<button class="calendar-event ${type}" type="button" draggable="true" data-calendar-event-key="${escapeHtml(eventKey)}"${item ? ` data-calendar-detail="${escapeHtml(item.title)}"` : ""} title="拖拽改期：${escapeHtml(label)}">${escapeHtml(label)}</button>`).join("")}</div></div>`;
       }).join("");
       document.querySelectorAll("[data-calendar-detail]").forEach(button => button.addEventListener("click", () => openDetail(button.dataset.calendarDetail)));
       document.querySelectorAll("[data-calendar-date]").forEach(day => {
         day.addEventListener("click", event => { if (!event.target.closest(".calendar-event")) openCalendarCreate(day.dataset.calendarDate); });
-        day.addEventListener("dragover", event => { if (event.dataTransfer.types.includes("text/calendar-custom")) { event.preventDefault(); day.classList.add("today"); } });
+        day.addEventListener("dragover", event => { if (event.dataTransfer.types.includes("text/calendar-event")) { event.preventDefault(); day.classList.add("today"); } });
         day.addEventListener("dragleave", () => day.classList.remove("today"));
-        day.addEventListener("drop", event => { const id = event.dataTransfer.getData("text/calendar-custom"); if (!id) return; event.preventDefault(); day.classList.remove("today"); moveCalendarEvent(id, day.dataset.calendarDate); });
+        day.addEventListener("drop", event => { const id = event.dataTransfer.getData("text/calendar-event"); if (!id) return; event.preventDefault(); day.classList.remove("today"); moveCalendarEvent(id, day.dataset.calendarDate); });
       });
-      document.querySelectorAll("[data-calendar-custom-id]").forEach(button => button.addEventListener("dragstart", event => { event.dataTransfer.setData("text/calendar-custom", button.dataset.calendarCustomId); event.dataTransfer.effectAllowed = "move"; }));
+      document.querySelectorAll("[data-calendar-event-key]").forEach(button => button.addEventListener("dragstart", event => { event.dataTransfer.setData("text/calendar-event", button.dataset.calendarEventKey); event.dataTransfer.effectAllowed = "move"; }));
     }
 
     const chatLatestData = {
@@ -3930,7 +3947,7 @@
     document.querySelector("#warehouseStage").addEventListener("change", renderWarehouse);
     document.querySelector("#warehouseReset").addEventListener("click", () => { document.querySelector("#warehouseSearch").value = ""; document.querySelector("#warehouseStage").value = ""; renderWarehouse(); });
     document.querySelector("#exportLocalData").addEventListener("click", () => {
-      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "gvgCalendarEventsV1", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
+      const projectKeys = ["gvgUnifiedRequirementStoreV1", "pmManagementTableV2", "pmManagementTableV1", "pmStatusPresetVersion", "gvgCalendarEventsV1", "gvgCalendarEventMovesV1", "unitProgressEdits", "planningStepEdits", "planningNextDates", "planningPriorityEdits", "gvgPlatformRows", "gvgProgressUpdates", "dismissedUnmatchedIds"];
       const data = {};
       projectKeys.forEach(key => {
         const value = localStorage.getItem(key);
