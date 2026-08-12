@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-11T08:18:18.800Z",
+  "exportedAt": "2026-08-12T03:16:40.301Z",
   "source": "GVG Schedule Dashboard",
   "data": {
     "gvgUnifiedRequirementStoreV1": {
@@ -8132,9 +8132,18 @@
         "accepted": false
       },
       "unit-5": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-07-15",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8144,9 +8153,18 @@
         "accepted": false
       },
       "unit-6": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-07-15",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8156,9 +8174,18 @@
         "accepted": false
       },
       "unit-7": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-07-15",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8168,9 +8195,18 @@
         "accepted": false
       },
       "unit-8": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-07-15",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8180,9 +8216,17 @@
         "accepted": false
       },
       "unit-28": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-08-14"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8192,9 +8236,18 @@
         "accepted": false
       },
       "unit-29": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8204,9 +8257,18 @@
         "accepted": false
       },
       "unit-30": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8216,9 +8278,18 @@
         "accepted": false
       },
       "unit-31": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8228,9 +8299,17 @@
         "accepted": false
       },
       "unit-32": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "待发包",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-08-14"
+        },
+        "review": true,
         "concept": true,
         "model": false,
         "action": false,
@@ -8240,9 +8319,18 @@
         "accepted": false
       },
       "unit-33": {
-        "progress": "",
+        "progress": "制作中",
         "nextMilestone": "",
-        "review": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "",
+        "functionDates": {
+          "concept": "2026-08-14",
+          "model": "2026-09-25",
+          "action": "2026-09-25"
+        },
+        "review": true,
         "concept": false,
         "model": false,
         "action": false,
@@ -8252,15 +8340,20 @@
         "accepted": false
       },
       "unit-39": {
-        "progress": "",
+        "progress": "验收中",
         "nextMilestone": "",
-        "review": false,
-        "concept": false,
-        "model": false,
-        "action": false,
-        "effect": false,
-        "icon": false,
-        "function": false,
+        "delayReason": "",
+        "deadlineHistory": [],
+        "milestoneCompletion": {},
+        "releasePlan": "",
+        "functionDates": {},
+        "review": true,
+        "concept": true,
+        "model": true,
+        "action": true,
+        "effect": true,
+        "icon": true,
+        "function": true,
         "accepted": false
       },
       "unit-10": {
