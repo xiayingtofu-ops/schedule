@@ -482,7 +482,7 @@
     .unit-card-stage.doing { color: #fff; background: #3976e8; box-shadow: 0 0 0 2px rgba(159,190,255,.28); }
     @media (min-width: 1500px) { .unit-swimlane-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .swimlane-card-group { grid-column: 1 / -1; } }
     @media (max-width: 760px) { .unit-swimlane-card { grid-template-columns: 1fr; gap: 18px; padding: 20px; } .unit-card-art { height: 130px; } }
-    .unit-stage-board { display: grid; grid-template-columns: repeat(8, minmax(230px, 1fr)); gap: 12px; min-width: 1930px; padding: 16px; background: #eef1f5; }
+    .unit-stage-board { display: grid; grid-template-columns: repeat(7, minmax(230px, 1fr)); gap: 12px; min-width: 1680px; padding: 16px; background: #eef1f5; }
     .unit-stage-column { min-height: 520px; overflow: hidden; border: 1px solid #dce2eb; border-radius: 12px; background: #f8fafc; }
     .unit-stage-column.drag-over { border-color: var(--stage-color); background: color-mix(in srgb, var(--stage-color) 8%, white); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--stage-color) 28%, transparent); }
     .unit-stage-column-head { position: sticky; z-index: 3; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 12px 13px; border-top: 4px solid var(--stage-color); border-bottom: 1px solid #dce2eb; color: #334157; background: #fff; font-size: 14px; font-weight: 850; }
@@ -2982,21 +2982,26 @@
       const selectedTypes = [...typeFilters.querySelectorAll("input:checked")].map(input => input.value);
       const selectedStatuses = [...statusFilters.querySelectorAll("input:checked")].map(input => input.value);
       const groupFor = item => item.type === "王虫" ? "王虫" : item.type === "建筑" ? "建筑" : "载具";
-      const stages = [["设计中", "review", "design"], ["原画", "concept", "concept"], ["模型", "model", "model"], ["动作", "action", "action"], ["特效", "effect", "effect"], ["程序", "function", "program"], ["配置", "icon", "config"], ["验收", "accepted", "acceptance"]];
+      // 泳道只展示实际需要跟踪的制作阶段，以及两个汇总阶段。
+      // function/icon 仍保留在数据中，用于判断“制作完成”，但不再单独占列。
+      const productionSteps = ["review", "concept", "model", "action", "effect", "function", "icon"];
+      const stages = [["设计中", "review", "design"], ["原画", "concept", "concept"], ["模型", "model", "model"], ["动作", "action", "action"], ["特效", "effect", "effect"], ["制作完成", "productionComplete", "productionComplete"], ["验收完成", "accepted", "acceptance"]];
+      const isProductionComplete = item => productionSteps.every(key => Boolean(item[key])) || item.progress === "完成";
+      const isAccepted = item => Boolean(item.accepted) || item.progress === "完成";
       const data = unitProgressData.filter(item => {
         const matchesKeyword = !keyword || [item.name, item.code, item.faction, item.type].join(" ").toLowerCase().includes(keyword);
-        const isComplete = stages.every(([, key]) => Boolean(item[key])) || item.progress === "完成";
+        const isComplete = isAccepted(item);
         const itemStatus = isComplete ? "done" : "doing";
         const matchesStatus = !selectedStatuses.length || selectedStatuses.includes(itemStatus);
         const matchesType = !selectedTypes.length || selectedTypes.includes(groupFor(item));
         return matchesKeyword && matchesType && matchesStatus;
       });
-      const stageColors = ["#d89b1d", "#9a62c7", "#3278d4", "#e06b42", "#c44da1", "#268a91", "#6472c9", "#2f9b6d"];
+      const stageColors = ["#d89b1d", "#9a62c7", "#3278d4", "#e06b42", "#c44da1", "#268a91", "#2f9b6d"];
       const placed = stages.map(() => []);
       data.forEach(item => {
-        const isComplete = stages.every(([, key]) => Boolean(item[key])) || item.progress === "完成";
-        const firstPending = stages.findIndex(([, key]) => !item[key]);
-        const columnIndex = item.releasePlan === "待发包" ? 2 : isComplete || firstPending < 0 ? stages.length - 1 : firstPending;
+        const isComplete = isAccepted(item);
+        const firstPending = productionSteps.findIndex(key => !item[key]);
+        const columnIndex = item.releasePlan === "待发包" ? 2 : isComplete ? stages.length - 1 : isProductionComplete(item) || firstPending < 0 ? stages.length - 2 : firstPending;
         placed[columnIndex].push({ item, isComplete });
       });
       const renderStageCard = ({ item }, columnIndex) => {
@@ -3055,9 +3060,20 @@
           const item = unitProgressData.find(entry => entry.key === event.dataTransfer.getData("text/plain"));
           const targetIndex = Number(lane.dataset.unitStageLane);
           if (!item || !Number.isInteger(targetIndex)) return;
-          stages.forEach(([, key], index) => { item[key] = index < targetIndex; });
+          if (targetIndex < productionSteps.length) {
+            // 拖回任一制作阶段：该阶段之前视为完成，之后视为未完成。
+            productionSteps.forEach((key, index) => { item[key] = index < targetIndex; });
+            item.accepted = false;
+          } else if (targetIndex === stages.length - 2) {
+            // “制作完成”是汇总列，完成所有制作节点但不自动验收。
+            productionSteps.forEach(key => { item[key] = true; });
+            item.accepted = false;
+          } else if (targetIndex === stages.length - 1) {
+            // “验收完成”只更新验收状态，保留各制作节点原始记录。
+            item.accepted = true;
+          }
           if (targetIndex === 2 && lane.dataset.modelSource) item.releasePlan = lane.dataset.modelSource;
-          item.progress = targetIndex === stages.length - 1 ? "验收中" : "制作中";
+          item.progress = targetIndex === stages.length - 1 ? "完成" : "制作中";
           saveUnitEdit(item);
           renderUnits();
           renderUnitSwimlanes();
