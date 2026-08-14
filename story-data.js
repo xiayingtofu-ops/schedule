@@ -1,5 +1,5 @@
 window.GVG_STORY_DATA = {
-  "generated_at": "2026-08-12T09:01:57+08:00",
+  "generated_at": "2026-08-14T09:02:17+08:00",
   "requirements": {
     "战报*": [
       {
@@ -22,7 +22,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           }
         ],
         "title": "提出Review"
@@ -131,7 +131,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           }
         ],
         "title": "提出Review"
@@ -238,7 +238,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.012",
@@ -251,7 +251,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.013",
@@ -265,7 +265,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.014",
@@ -280,7 +280,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.015",
@@ -294,7 +294,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.016",
@@ -308,7 +308,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.040",
@@ -324,7 +324,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.093",
@@ -338,7 +338,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "已完成"
+            "stage": "待发布"
           }
         ],
         "title": "提出Review"
@@ -2092,6 +2092,19 @@ window.GVG_STORY_DATA = {
             "attachments": [],
             "confirmed": false,
             "stage": "开发中"
+          },
+          {
+            "event_id": "NO.148",
+            "time": "2026-07-28T15:31:00.000+08:00",
+            "type": "效果图提交",
+            "summary": "康俊花提交效果图：GVG后半部分效果图优化更新：康俊花发布GVG后半部分效果图优化更新，附带效果图截图，通知杨心权、王蔚、李尧查看确认，确认无误后开始搭建工作。",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
           }
         ],
         "title": "UI提交效果图"
@@ -2128,26 +2141,6 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "推进项目节点"
-      },
-      {
-        "day": "2026-07-28",
-        "time": "2026-07-28T15:31:00.000+08:00",
-        "events": [
-          {
-            "event_id": "NO.148",
-            "time": "2026-07-28T15:31:00.000+08:00",
-            "type": "效果图提交",
-            "summary": "康俊花提交效果图：GVG后半部分效果图优化更新：康俊花发布GVG后半部分效果图优化更新，附带效果图截图，通知杨心权、王蔚、李尧查看确认，确认无误后开始搭建工作。",
-            "participants": [
-              "康俊花"
-            ],
-            "link": "",
-            "attachments": [],
-            "confirmed": false,
-            "stage": "设计中"
-          }
-        ],
-        "title": "UI提交效果图"
       },
       {
         "day": "2026-07-29",
@@ -2197,7 +2190,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           },
           {
             "event_id": "NO.152",
@@ -2210,7 +2203,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           }
         ],
         "title": "UI提交效果图"
@@ -3214,6 +3207,770 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提出Review"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T10:00:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.602",
+            "time": "2026-08-12T10:00:00.000+08:00",
+            "type": "节点流转",
+            "summary": "测试、文支义、蔡耀康节点流转：测试关联需求；子任务操作: complete; 状态变更: 未完成 -> 已完成; finish_time: 1786501038229等",
+            "participants": [
+              "测试、文支义、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          }
+        ],
+        "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T10:25:53.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.603",
+            "time": "2026-08-12T10:25:53.000+08:00",
+            "type": "Review反馈",
+            "summary": "文支义Review反馈：状态变更: IN PROGRESS -> RESOLVED; current_status_operator_role: role_693a5f3c55a59ec79cc8f589_ -> role_",
+            "participants": [
+              "文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.604",
+            "time": "2026-08-12T10:35:03.000+08:00",
+            "type": "Review反馈",
+            "summary": "文支义、蔡耀康Review反馈：状态变更: IN PROGRESS -> RESOLVED; current_status_operator_role: role_693a5f3c55a59ec79cc8f589_ -> role_",
+            "participants": [
+              "文支义、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.605",
+            "time": "2026-08-12T10:38:59.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：name: 【迁城】传送被取消后 要塞处仍然播放成功的动画 -> 【传送】传送被取消后 要塞处仍然播放成功的动画",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.606",
+            "time": "2026-08-12T10:39:19.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：name: 【迁城】战斗过程中可以使用传送 -> 【传送】战斗过程中可以使用传送",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.607",
+            "time": "2026-08-12T10:39:31.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康Review反馈：name: 【迁城】载具已经在要塞中了仍然可以点击传送 -> 【传送】载具已经在要塞中了仍然可以点击传送",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.608",
+            "time": "2026-08-12T10:38:47.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康、文支义Review反馈：无详细内容；测试2等",
+            "participants": [
+              "文支义、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          },
+          {
+            "event_id": "NO.609",
+            "time": "2026-08-12T10:38:47.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康、文支义Review反馈：无详细内容；测试2等",
+            "participants": [
+              "文支义、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "查询失败: invalid json"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T10:34:57.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.610",
+            "time": "2026-08-12T10:34:57.000+08:00",
+            "type": "协议变更",
+            "summary": "邬子亮提交协议变更：协议：gvg优化",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T10:46:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.612",
+            "time": "2026-08-12T10:46:00.000+08:00",
+            "type": "需求讨论",
+            "summary": "载具迁城限制讨论 | 蔡耀康询问载具在外城是否不能迁城，文支义和杨心权确认当前无限制但需载具返回基地才能迁城，并附截图和地图文件参考。",
+            "participants": [
+              "文支义、杨心权、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.613",
+            "time": "2026-08-12T11:37:33.000+08:00",
+            "type": "需求讨论",
+            "summary": "关联BUG列表新增 1 个（共2条讨论）",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.615",
+            "time": "2026-08-12T11:47:36.000+08:00",
+            "type": "需求讨论",
+            "summary": "关联BUG列表新增 1 个",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.617",
+            "time": "2026-08-12T14:00:56.000+08:00",
+            "type": "需求讨论",
+            "summary": "关联BUG列表新增 1 个",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.619",
+            "time": "2026-08-12T14:15:11.000+08:00",
+            "type": "需求讨论",
+            "summary": "节点 state_11 估分: ['2']（共2条讨论）",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.620",
+            "time": "2026-08-12T14:16:06.000+08:00",
+            "type": "需求讨论",
+            "summary": "field_mod/modify/template/template_version",
+            "participants": [
+              "7613522372301294545"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.622",
+            "time": "2026-08-12T14:33:04.000+08:00",
+            "type": "需求讨论",
+            "summary": "关联BUG列表新增 1 个",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.726",
+            "time": "2026-08-12T17:47:00.000+08:00",
+            "type": "需求讨论",
+            "summary": "蔡耀康, 杨心权讨论了要塞传送与回基地载具切换逻辑讨论：蔡耀康提出关于传送回入驻要塞是否算回基地的3个问题：1)传送回自己入驻的要塞算不算回基地；2)如果算，是否可直接在要塞切换出战载具；3)如果不算，是否取消从要塞拖拽到基地的操作。附2个问题演示视频。杨心权回复将跟进查看。",
+            "participants": [
+              "杨心权、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T11:39:17.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.614",
+            "time": "2026-08-12T11:39:17.000+08:00",
+            "type": "Review反馈",
+            "summary": "7643315047875283917、7626217309954133195Review反馈：创建issue：【战斗阶段】载具从护盾内向外攻击伤害不会被护盾抵挡",
+            "participants": [
+              "7626217309954133195、7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.616",
+            "time": "2026-08-12T11:47:36.000+08:00",
+            "type": "Review反馈",
+            "summary": "7550129340739092484、7643315047875283917、7626217309954133195Review反馈：创建issue：【战斗阶段】点击玩家基地的进攻ui可以攻击玩家基地",
+            "participants": [
+              "7550129340739092484、7626217309954133195、7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.618",
+            "time": "2026-08-12T14:00:56.000+08:00",
+            "type": "Review反馈",
+            "summary": "7643315047875283917、7626217309954133195Review反馈：创建issue：【宣战】没有权限的成员，点击宣战没有tips",
+            "participants": [
+              "7626217309954133195、7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.621",
+            "time": "2026-08-12T14:33:03.000+08:00",
+            "type": "Review反馈",
+            "summary": "7643315047875283917Review反馈：创建issue：【宣战】向两个相邻的市宣战，后宣的市收不到宣战信息",
+            "participants": [
+              "7643315047875283917"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.623",
+            "time": "2026-08-12T14:33:06.000+08:00",
+            "type": "Review反馈",
+            "summary": "7626217309954133195Review反馈：模块调整 (新增1, 移除0)",
+            "participants": [
+              "7626217309954133195"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.714",
+            "time": "2026-08-12T16:13:19.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、系统账号反馈了work_item修改；修改字段；添加角色成员: 1人等",
+            "participants": [
+              "杨心权、系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.715",
+            "time": "2026-08-12T16:27:04.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、系统账号反馈了work_item修改；修改字段；角色人员变更",
+            "participants": [
+              "杨心权、系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.717",
+            "time": "2026-08-12T16:47:26.000+08:00",
+            "type": "Review反馈",
+            "summary": "李辰扬、杨心权、系统账号反馈了work_item修改；修改字段；添加评论等",
+            "participants": [
+              "李辰扬、杨心权、系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.718",
+            "time": "2026-08-12T16:52:14.000+08:00",
+            "type": "Review反馈",
+            "summary": "康俊花、系统账号反馈了work_item修改；修改字段",
+            "participants": [
+              "康俊花、系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.720",
+            "time": "2026-08-12T17:03:24.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、系统账号、陈静反馈了work_item修改；修改字段；角色人员变更",
+            "participants": [
+              "杨心权、系统账号、陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.721",
+            "time": "2026-08-12T17:10:10.000+08:00",
+            "type": "Review反馈",
+            "summary": "系统账号、蔡耀康反馈了修改字段",
+            "participants": [
+              "系统账号、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.722",
+            "time": "2026-08-12T17:13:23.000+08:00",
+            "type": "Review反馈",
+            "summary": "系统账号反馈了修改字段",
+            "participants": [
+              "系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.723",
+            "time": "2026-08-12T17:13:38.000+08:00",
+            "type": "Review反馈",
+            "summary": "系统账号、蔡耀康反馈了work_item修改；修改字段",
+            "participants": [
+              "系统账号、蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.724",
+            "time": "2026-08-12T17:19:56.000+08:00",
+            "type": "Review反馈",
+            "summary": "系统账号反馈了修改字段",
+            "participants": [
+              "系统账号"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.725",
+            "time": "2026-08-12T17:23:47.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康反馈了work_item修改",
+            "participants": [
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T14:37:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.624",
+            "time": "2026-08-12T14:37:00.000+08:00",
+            "type": "需求讨论",
+            "summary": "GVG邮件配置补充提交：杨心权在GVG需求同步群中告知文支义，GVG相关邮件配置已补好提交，对应参数在配置表的括号里已说明，请文支义有空查阅处理。",
+            "participants": [
+              "杨心权、文支义"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "需求评审"
+          }
+        ],
+        "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T10:10:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.747",
+            "time": "2026-08-13T10:10:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "康俊花 - modify操作",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.748",
+            "time": "2026-08-13T10:13:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 7550129340739092484, 毛逸凡 → 7550129340739092484, 毛逸凡, 杨心权；字段修改: 需要服务器限制下，客户端隐藏下ui → 当载具已经在目标要塞中后，再次点击目标要塞进行传送，希望不进行此次传送行为，并弹出tips提示：“载...等7条",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.749",
+            "time": "2026-08-13T10:24:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 7550129340739092484 → 7550129340739092484, 杨心权；字段修改: 正在打架时可以传送，最后会被战斗状态拦住，但非逻辑自洽 → 传送仅仅会在三种情况下被打断：载具死亡、载具被玩家主动移动/放技能、载具被眩晕/沉默等控制技能击中。...",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.750",
+            "time": "2026-08-13T10:31:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 7550129340739092484, 邬子亮, 毛逸凡 → 杨心权",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.751",
+            "time": "2026-08-13T10:36:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、蔡耀康 - 负责人变更: 毛逸凡 → 毛逸凡, 杨心权；modify操作等3条",
+            "participants": [
+              "杨心权",
+              "蔡耀康"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.752",
+            "time": "2026-08-13T10:38:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "康俊花 - modify操作",
+            "participants": [
+              "康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.753",
+            "time": "2026-08-13T10:42:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 7550129340739092484 → 杨心权",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.754",
+            "time": "2026-08-13T10:43:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 杨心权 → 杨心权, 7550129340739092484；负责人变更: 杨心权, 7550129340739092484 → 杨心权",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.755",
+            "time": "2026-08-13T10:48:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 毛逸凡 → 邬子亮",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.756",
+            "time": "2026-08-13T10:51:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 字段修改: 【联盟宣战】宣战按钮的底板应该是红色的 → 【联盟宣战】宣战按钮的底板应该是红色的，现在UI或策划无法更改这个按钮的颜色",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.757",
+            "time": "2026-08-13T10:58:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权 - 负责人变更: 邬子亮 → 杨心权",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.758",
+            "time": "2026-08-13T11:01:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康、7626217309954133195 - 创建Review单；modify操作",
+            "participants": [
+              "蔡耀康",
+              "7626217309954133195"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.759",
+            "time": "2026-08-13T11:59:48.000+08:00",
+            "type": "Review反馈",
+            "summary": "陈静、杨心权、康俊花等3人Review反馈（1个Review单）：7072660498.workitem_status变更; field:current_status_operator_role修改; work_item_status.workitem_status变更 等4项变更",
+            "participants": [
+              "康俊花",
+              "杨心权",
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.760",
+            "time": "2026-08-13T11:59:53.000+08:00",
+            "type": "Review反馈",
+            "summary": "陈静、杨心权、康俊花等3人Review反馈（1个Review单）：work_item_status.workitem_status变更; field:current_status_operator_role修改; 7072741687.workitem_status变更 等4项变更",
+            "participants": [
+              "康俊花",
+              "杨心权",
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.762",
+            "time": "2026-08-13T14:19:10.000+08:00",
+            "type": "Review反馈",
+            "summary": "jing.chen、陈静提交Review反馈（Review单: 7072741687）：联盟旗帜 [Review单:【GVG主UI】希望在联盟名字面前加上联...][链接:https://project.feishu.cn/t0k6tk/issue",
+            "participants": [
+              "jing.chen、陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.763",
+            "time": "2026-08-13T14:19:32.000+08:00",
+            "type": "Review反馈",
+            "summary": "陈静提交Review反馈（Review单: 7072660498）：更新了工作项状态",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.764",
+            "time": "2026-08-13T14:24:05.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、自动化规则提交Review反馈（Review单: 7072910746）：创建了【选择迎战时间】当防守方联盟在选择迎战时间时，需要检查所选时间，攻守双方是否有其它GVG战斗。规则见下面描述：",
+            "participants": [
+              "杨心权、自动化规则"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.765",
+            "time": "2026-08-13T14:43:29.000+08:00",
+            "type": "Review反馈",
+            "summary": "杨心权、自动化规则提交Review反馈（Review单: 7073022689）：创建了【边界情况】当GVG开始后，若攻守双方有联盟解散了，或者有联盟的连接中断了，需要中止GVG并发邮件",
+            "participants": [
+              "杨心权、自动化规则"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.767",
+            "time": "2026-08-13T15:10:47.000+08:00",
+            "type": "Review反馈",
+            "summary": "蔡耀康、自动化规则提交Review反馈（Review单: 7073109778）：创建了【要塞】选中基地后不再展示血条",
+            "participants": [
+              "蔡耀康、自动化规则"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提出Review"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T14:24:05.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.761",
+            "time": "2026-08-13T14:24:05.000+08:00",
+            "type": "节点流转",
+            "summary": "杨心权提交节点流转：field:field_2bb40c修改 等2项变更",
+            "participants": [
+              "杨心权"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.766",
+            "time": "2026-08-13T14:43:29.000+08:00",
+            "type": "节点流转",
+            "summary": "计算字段更新节点状态：更新了待处理BUG列表",
+            "participants": [
+              "计算字段"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "推进项目节点"
       }
     ],
     "【联邦】挂机射手-加特林": [
@@ -3276,6 +4033,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "更新需求与排期"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T12:59:31.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.626",
+            "time": "2026-08-12T12:59:31.000+08:00",
+            "type": "代码提交",
+            "summary": "huayao.zeng提交2次代码：上传加特林修复后的低模和高模子弹带；调整加特林朝向",
+            "participants": [
+              "huayao.zeng"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "联盟系统": [
@@ -3365,6 +4142,19 @@ window.GVG_STORY_DATA = {
             "stage": "待发布"
           },
           {
+            "event_id": "NO.048",
+            "time": "2026-07-24T19:16:09.000+08:00",
+            "type": "Review反馈",
+            "summary": "关联Review单【联盟升级】(7057618687)，提交: 优化; 满级颜色变化",
+            "participants": [
+              "陈静"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          },
+          {
             "event_id": "NO.049",
             "time": "2026-07-24T17:13:56.000+08:00",
             "type": "Review反馈",
@@ -3389,26 +4179,6 @@ window.GVG_STORY_DATA = {
             "attachments": [],
             "confirmed": false,
             "stage": "待发布"
-          }
-        ],
-        "title": "提出Review"
-      },
-      {
-        "day": "2026-07-24",
-        "time": "2026-07-24T19:16:09.000+08:00",
-        "events": [
-          {
-            "event_id": "NO.048",
-            "time": "2026-07-24T19:16:09.000+08:00",
-            "type": "Review反馈",
-            "summary": "关联Review单【联盟升级】(7057618687)，提交: 优化; 满级颜色变化",
-            "participants": [
-              "陈静"
-            ],
-            "link": "",
-            "attachments": [],
-            "confirmed": false,
-            "stage": "开发中"
           }
         ],
         "title": "提出Review"
@@ -5470,6 +6240,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提出Review"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T14:48:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.708",
+            "time": "2026-08-12T14:48:00.000+08:00",
+            "type": "代码提交",
+            "summary": "jingru.huang提交了缩略图二期UI",
+            "participants": [
+              "jingru.huang"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "聊天": [
@@ -5912,7 +6702,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "待发布"
           }
         ],
         "title": "推进项目节点"
@@ -6591,6 +7381,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "需求讨论"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T09:54:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.611",
+            "time": "2026-08-12T09:54:00.000+08:00",
+            "type": "效果图提交",
+            "summary": "刘洋、康俊花上传美术效果预览相关效果图",
+            "participants": [
+              "刘洋、康俊花"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "UI提交效果图"
       }
     ],
     "联盟建筑": [
@@ -7019,6 +7829,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T13:14:37.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.625",
+            "time": "2026-08-12T13:14:37.000+08:00",
+            "type": "代码提交",
+            "summary": "王超提交代码：更新建筑资源",
+            "participants": [
+              "王超"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "要塞": [
@@ -7041,7 +7871,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "开发中"
+            "stage": "待发布"
           }
         ],
         "title": "提出Review"
@@ -7152,7 +7982,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "开发中"
+            "stage": "待发布"
           }
         ],
         "title": "更新需求与排期"
@@ -7172,7 +8002,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "开发中"
+            "stage": "待发布"
           },
           {
             "event_id": "NO.203",
@@ -7185,8 +8015,15 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "开发中"
-          },
+            "stage": "待发布"
+          }
+        ],
+        "title": "推进项目节点"
+      },
+      {
+        "day": "2026-07-30",
+        "time": "2026-07-30T15:51:00.000+08:00",
+        "events": [
           {
             "event_id": "NO.219",
             "time": "2026-07-30T15:51:00.000+08:00",
@@ -8347,6 +9184,86 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T11:47:33.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.628",
+            "time": "2026-08-12T11:47:33.000+08:00",
+            "type": "代码提交",
+            "summary": "邬子亮提交代码：协议：feature优化+要塞优化",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:13:59.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.770",
+            "time": "2026-08-13T15:13:59.000+08:00",
+            "type": "节点流转",
+            "summary": "仝夏瀛更新节点状态：更新了字段: role_693a5f3c55a59ec79cc8f589_story_role_8c8e43",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:14:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.771",
+            "time": "2026-08-13T15:14:00.000+08:00",
+            "type": "人员分配",
+            "summary": "仝夏瀛进行人员分配：负责人变更: 1人 → 1人",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "分配研发人员"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:14:11.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.772",
+            "time": "2026-08-13T15:14:11.000+08:00",
+            "type": "排期变更",
+            "summary": "仝夏瀛调整排期：排期调整: 2026-08-18 ~ 2026-08-20",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "设计中"
+          }
+        ],
+        "title": "更新需求与排期"
       }
     ],
     "载具队列": [
@@ -9191,6 +10108,99 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T14:55:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.709",
+            "time": "2026-08-12T14:55:00.000+08:00",
+            "type": "代码提交",
+            "summary": "chenyang.li1提交了升级解锁通知序列 [需求单:载具适应性相关优化][链接:https://project.feishu.cn/t0k6tk/story/detail/7068183122]",
+            "participants": [
+              "chenyang.li1"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          },
+          {
+            "event_id": "NO.711",
+            "time": "2026-08-12T15:14:00.000+08:00",
+            "type": "代码提交",
+            "summary": "yang.liu6提交了修改载具适应性描述",
+            "participants": [
+              "yang.liu6"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T15:13:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.710",
+            "time": "2026-08-12T15:13:00.000+08:00",
+            "type": "协议变更",
+            "summary": "yang.liu6提交了修改载具适应性描述",
+            "participants": [
+              "yang.liu6"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:10:07.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.768",
+            "time": "2026-08-13T15:10:07.000+08:00",
+            "type": "节点流转",
+            "summary": "邬子亮更新节点状态：更新了完成日期",
+            "participants": [
+              "邬子亮"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "推进项目节点"
+      },
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:21:05.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.769",
+            "time": "2026-08-13T15:21:05.000+08:00",
+            "type": "排期变更",
+            "summary": "仝夏瀛调整排期：排期调整: 2026-08-14 ~ 2026-08-19",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "更新需求与排期"
       }
     ],
     "地图编辑器": [
@@ -9213,6 +10223,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T15:58:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.713",
+            "time": "2026-08-12T15:58:00.000+08:00",
+            "type": "协议变更",
+            "summary": "zezhen.zhang提交了修改地图，更新关卡位置",
+            "participants": [
+              "zezhen.zhang"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "服务器提交协议"
       }
     ],
     "改装系统": [
@@ -9231,7 +10261,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           }
         ],
         "title": "创建需求"
@@ -9251,7 +10281,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           }
         ],
         "title": "分配研发人员"
@@ -9271,7 +10301,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           }
         ],
         "title": "推进项目节点"
@@ -9291,7 +10321,7 @@ window.GVG_STORY_DATA = {
             "link": "",
             "attachments": [],
             "confirmed": false,
-            "stage": "设计中"
+            "stage": "开发中"
           }
         ],
         "title": "更新需求与排期"
@@ -9443,6 +10473,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "服务器提交协议"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T12:07:01.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.627",
+            "time": "2026-08-12T12:07:01.000+08:00",
+            "type": "代码提交",
+            "summary": "李辰扬提交代码：仓库页签修改 [需求单:改装系统][链接:https://project.feishu.cn/t0k",
+            "participants": [
+              "李辰扬"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "背包系统": [
@@ -10565,6 +11615,26 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T16:53:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.719",
+            "time": "2026-08-12T16:53:00.000+08:00",
+            "type": "代码提交",
+            "summary": "xun.jiang提交了狼蛛技能",
+            "participants": [
+              "xun.jiang"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
       }
     ],
     "王虫设计（3-6个）": [
@@ -11670,6 +12740,70 @@ window.GVG_STORY_DATA = {
           }
         ],
         "title": "提交代码"
+      },
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T15:58:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.712",
+            "time": "2026-08-12T15:58:00.000+08:00",
+            "type": "Review反馈",
+            "summary": "junhua.kang反馈了隐藏发起宣战坐标 [Review单:【发起宣战】宣战界面，移除坐标这个信息。][链接:https://project.feishu.cn/t0k6tk/issue/detail/7072407355]",
+            "participants": [
+              "junhua.kang"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "待发布"
+          }
+        ],
+        "title": "提出Review"
+      }
+    ],
+    "联盟资源整体设计": [
+      {
+        "day": "2026-08-12",
+        "time": "2026-08-12T16:29:00.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.716",
+            "time": "2026-08-12T16:29:00.000+08:00",
+            "type": "代码提交",
+            "summary": "junhua.kang提交了改装美术资源",
+            "participants": [
+              "junhua.kang"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "提交代码"
+      }
+    ],
+    "联盟": [
+      {
+        "day": "2026-08-13",
+        "time": "2026-08-13T15:51:08.000+08:00",
+        "events": [
+          {
+            "event_id": "NO.773",
+            "time": "2026-08-13T15:51:08.000+08:00",
+            "type": "排期变更",
+            "summary": "仝夏瀛调整排期：排期调整: 2026-08-17 ~ 2026-08-18",
+            "participants": [
+              "仝夏瀛"
+            ],
+            "link": "",
+            "attachments": [],
+            "confirmed": false,
+            "stage": "开发中"
+          }
+        ],
+        "title": "更新需求与排期"
       }
     ],
     "地图LOD设计*": [
